@@ -34,6 +34,11 @@ Edition server engine in Go.
    go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
    go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
    ```
+7. For items, save the BDS console output while the dump runs (for example
+   `bedrock_server > out.log`) and convert it:
+   ```bash
+   go run ./cmd/blockstates items -log out.log -out data/<version>
+   ```
 
 ### How it works
 

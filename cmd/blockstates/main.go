@@ -3,6 +3,7 @@
 //
 //	blockstates convert -world <bds>/worlds/helixdump -out data/1.26.52
 //	blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
+//	blockstates items -log <bds console log> -out data/1.26.52
 package main
 
 import (
@@ -16,6 +17,7 @@ import (
 	"strings"
 
 	"github.com/helix-bedrock/helix-data/blockstate"
+	"github.com/helix-bedrock/helix-data/item"
 	"github.com/helix-bedrock/world/mcdb/leveldat"
 )
 
@@ -28,7 +30,7 @@ func main() {
 
 func run(args []string, out io.Writer) error {
 	if len(args) == 0 {
-		return errors.New("usage: blockstates convert|compare|experiments [flags]")
+		return errors.New("usage: blockstates convert|compare|experiments|items [flags]")
 	}
 	switch args[0] {
 	case "convert":
@@ -37,6 +39,8 @@ func run(args []string, out io.Writer) error {
 		return compare(args[1:], out)
 	case "experiments":
 		return experiments(args[1:], out)
+	case "items":
+		return items(args[1:], out)
 	default:
 		return fmt.Errorf("unknown command %q", args[0])
 	}
@@ -78,6 +82,45 @@ func convert(args []string, out io.Writer) error {
 		return err
 	}
 	_, err = fmt.Fprintf(out, "%d blocks, %d states\n", len(d.Defaults), len(d.States))
+	return err
+}
+
+// items writes items.json from the HELIXDUMP-ITEM lines of a BDS console
+// log saved while the dump ran.
+func items(args []string, out io.Writer) error {
+	fs := flag.NewFlagSet("items", flag.ContinueOnError)
+	logPath := fs.String("log", "", "BDS console output saved while the dump ran (required)")
+	dir := fs.String("out", "", "output directory (required)")
+	if err := fs.Parse(args); err != nil {
+		return err
+	}
+	if *logPath == "" || *dir == "" {
+		return errors.New("items needs -log and -out")
+	}
+	f, err := os.Open(*logPath)
+	if err != nil {
+		return err
+	}
+	list, err := item.FromLog(f)
+	_ = f.Close()
+	if err != nil {
+		return err
+	}
+	if err := os.MkdirAll(*dir, 0o750); err != nil {
+		return err
+	}
+	o, err := os.Create(filepath.Join(*dir, "items.json"))
+	if err != nil {
+		return err
+	}
+	if err := item.WriteJSON(o, list); err != nil {
+		_ = o.Close()
+		return err
+	}
+	if err := o.Close(); err != nil {
+		return err
+	}
+	_, err = fmt.Fprintf(out, "%d items\n", len(list))
 	return err
 }
 

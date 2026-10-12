@@ -20,11 +20,13 @@ golangci-lint run
 go test -race ./...
 go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
 go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
+go run ./cmd/blockstates items -log <bds console log> -out data/<version>
 ```
 
 ## Layout
 
-- `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures.
+- `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures and print every item type with its stack size.
+- `item/`: reads the item lines of the BDS console log and writes and reads `items.json`.
 - `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
 - `data/`: the `data` Go package, which embeds the current version's files so the engine can load them.
