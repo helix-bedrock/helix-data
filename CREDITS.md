@@ -12,6 +12,7 @@ No ported code. `bds-dump` and `cmd/blockstates` were written for Helix.
 | Path | Source | How |
 |---|---|---|
 | `data/1.26.52/block_states.nbt`, `block_defaults.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Saved by BDS through `bds-dump`, converted by `cmd/blockstates convert` |
+| `data/1.26.52/items.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Printed by BDS through `bds-dump` (`ItemTypes.getAll()`, `ItemStack.maxAmount`), converted by `cmd/blockstates items` |
 
 [CloudburstMC/Data](https://github.com/CloudburstMC/Data)'s 1.26.50
 `block_palette.nbt` (commit `a8a4341`) is used only to compare against; none

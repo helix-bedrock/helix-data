@@ -16,9 +16,10 @@
 //   HELIXDUMP-BEGIN {"blocks":N}
 //   HELIXDUMP-BATCH {"id":"helixdump:p1","placed":N}
 //   HELIXDUMP-SKIP {"name":...,"states":{...},"error":"..."}
-//   HELIXDUMP-END {"blocks":N,"placed":N,"structures":N,"skipped":N}
+//   HELIXDUMP-ITEM {"name":...,"maxStack":N}
+//   HELIXDUMP-END {"blocks":N,"placed":N,"structures":N,"skipped":N,"items":N}
 // After HELIXDUMP-END, stop the server with "stop" so the world is written.
-import { BlockPermutation, BlockStates, BlockTypes, StructureSaveMode, system, world } from "@minecraft/server";
+import { BlockPermutation, BlockStates, BlockTypes, ItemStack, ItemTypes, StructureSaveMode, system, world } from "@minecraft/server";
 
 // Each structure holds one SIDE x 1 x SIDE layer.
 const SIDE = 64;
@@ -147,7 +148,19 @@ function* dump() {
   yield* waitLoaded(dim, VOID_POS);
   dim.getBlock(VOID_POS).setPermutation(BlockPermutation.resolve("minecraft:structure_void"));
 
-  console.log("HELIXDUMP-END " + JSON.stringify({ blocks: types.length, placed, structures, skipped }));
+  // Items: every item type and how many fit in one stack. The Script API
+  // reports BDS's own value, so no stack size is guessed.
+  const items = ItemTypes.getAll().map((t) => t.id).sort();
+  for (const name of items) {
+    try {
+      const maxStack = new ItemStack(name, 1).maxAmount;
+      console.log("HELIXDUMP-ITEM " + JSON.stringify({ name, maxStack }));
+    } catch (e) {
+      console.log("HELIXDUMP-SKIP " + JSON.stringify({ name, item: true, error: String(e) }));
+    }
+  }
+
+  console.log("HELIXDUMP-END " + JSON.stringify({ blocks: types.length, placed, structures, skipped, items: items.length }));
 }
 
 world.afterEvents.worldLoad.subscribe(() => {

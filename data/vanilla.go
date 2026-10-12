@@ -8,6 +8,7 @@ import (
 	"fmt"
 
 	"github.com/helix-bedrock/helix-data/blockstate"
+	"github.com/helix-bedrock/helix-data/item"
 )
 
 // Version is the Minecraft version the data is from.
@@ -24,4 +25,17 @@ func BlockStates() ([]blockstate.VersionedState, error) {
 		return nil, fmt.Errorf("data: block states: %w", err)
 	}
 	return states, nil
+}
+
+//go:embed 1.26.52/items.json
+var items []byte
+
+// Items returns every item type of [Version] with its stack size, as BDS
+// reports it, sorted by name. Each call decodes a fresh copy.
+func Items() ([]item.Item, error) {
+	list, err := item.ReadJSON(bytes.NewReader(items))
+	if err != nil {
+		return nil, fmt.Errorf("data: items: %w", err)
+	}
+	return list, nil
 }
