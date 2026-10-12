@@ -1,0 +1,22 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Helix block state dump",
+    "description": "Prints every block state to the server console for helix-data. Not for normal worlds.",
+    "uuid": "6f2b8f0e-4c1a-4b7e-9a51-1d3c5e7a9b20",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 26, 50]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "b8e4d2c6-7a3f-4e19-8c05-2f6a9d1e3b47",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    { "module_name": "@minecraft/server", "version": "2.0.0" }
+  ]
+}
