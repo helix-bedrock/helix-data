@@ -27,6 +27,7 @@ go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_pa
 - `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures.
 - `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
+- `data/`: the `data` Go package, which embeds the current version's files so the engine can load them.
 - `data/<version>/`: generated output. Never edit by hand.
 
 ## Invariants: do not break these
