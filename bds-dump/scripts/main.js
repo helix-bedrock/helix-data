@@ -8,8 +8,11 @@
 // with its version number, into the structure's palette. Duplicates and
 // aliases disappear there.
 //
-// Structures are saved to the world as helixdump:p<N> (all combinations)
-// and helixdump:d<N> (default permutations only). Console lines:
+// structure_void cannot be stored in a structure, so one is left in the
+// world for the converter to read from the chunk on disk.
+//
+// Structures are saved to the world as helixdump:p<N> (all combinations) and
+// helixdump:d<N> (default permutations only). Console lines:
 //   HELIXDUMP-BEGIN {"blocks":N}
 //   HELIXDUMP-BATCH {"id":"helixdump:p1","placed":N}
 //   HELIXDUMP-SKIP {"name":...,"states":{...},"error":"..."}
@@ -21,6 +24,20 @@ import { BlockPermutation, BlockStates, BlockTypes, StructureSaveMode, system, w
 const SIDE = 64;
 const PER_BATCH = SIDE * SIDE;
 const MAX_EXTRA_INT = 15;
+
+// structure_void is placed here, in a ticking area so the chunk is loaded.
+const VOID_POS = { x: 0, y: 250, z: 0 };
+
+function* waitLoaded(dim, pos) {
+  for (;;) {
+    try {
+      if (dim.getBlock(pos) !== undefined) return;
+    } catch {
+      // Not loaded yet.
+    }
+    yield;
+  }
+}
 
 function* combinations(names, values, i, current) {
   if (i === names.length) {
@@ -125,6 +142,11 @@ function* dump() {
     }
     yield;
   }
+  const dim = world.getDimension("overworld");
+  dim.runCommand(`tickingarea add ${VOID_POS.x} ${VOID_POS.y} ${VOID_POS.z} ${VOID_POS.x} ${VOID_POS.y} ${VOID_POS.z} helixvoid true`);
+  yield* waitLoaded(dim, VOID_POS);
+  dim.getBlock(VOID_POS).setPermutation(BlockPermutation.resolve("minecraft:structure_void"));
+
   console.log("HELIXDUMP-END " + JSON.stringify({ blocks: types.length, placed, structures, skipped }));
 }
 

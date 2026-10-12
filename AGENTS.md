@@ -18,15 +18,15 @@ go build ./...
 go vet ./...
 golangci-lint run
 go test -race ./...
-go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -fill block_palette.nbt -out data/<version>
+go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
 go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
 ```
 
 ## Layout
 
 - `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures.
-- `blockstate/`: reads those structures from the world, writes `block_states.nbt`, reads and compares palettes.
-- `cmd/blockstates/`: command line for the above.
+- `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
+- `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
 - `data/<version>/`: generated output. Never edit by hand.
 
 ## Invariants: do not break these
@@ -36,9 +36,8 @@ go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_pa
 2. `block_states.nbt` uses pmmp's `canonical_block_states.nbt` layout:
    little-endian NBT compounds `{name, states, version}` one after another.
    Boolean properties are bytes, numbers are int32.
-3. States come from BDS. The only exception is `-fill` for the blocks in
-   `blockstate.DefaultFillBlocks`; never add to that list without showing
-   BDS cannot produce the block, and credit the source.
+3. Every state comes from BDS. Other palettes are only compared against,
+   never copied in.
 
 ## Gotchas
 
@@ -50,4 +49,6 @@ go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_pa
 - Placing blocks in the world makes BDS recompute neighbour properties (fence
   connections, stair corners); the add-on writes into empty structures
   instead (`structureManager.createEmpty`, `@minecraft/server` 2.10.0).
+- Other palettes list fire, redstone_wire and chorus_plant connection
+  properties that BDS 1.26.52 never stores or sends. Do not add them.
 - The server must be stopped with `stop`, or the structures never reach disk.

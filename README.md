@@ -31,7 +31,7 @@ Edition server engine in Go.
    `stop` so the world is written to disk.
 6. Convert it:
    ```bash
-   go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -fill block_palette.nbt -out data/<version>
+   go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
    go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
    ```
 
@@ -43,17 +43,24 @@ palette exactly as it would on disk, with its version number, and rejects
 combinations a block does not have. `cmd/blockstates` reads those palettes
 with `helix-bedrock/world`'s LevelDB.
 
-The Script API cannot set a few properties, so `-fill` adds the states of
-these blocks from CloudburstMC/Data's palette (`blockstate.DefaultFillBlocks`):
+`minecraft:structure_void` cannot be stored in a structure, so the add-on
+places one in the world and the converter reads it from the chunk on disk.
 
-- `minecraft:fire`, `minecraft:redstone_wire`, `minecraft:chorus_plant`: their
-  connection properties are computed from neighbours. BDS (and the game) save
-  them on disk without those properties; the forms with them come from
-  Cloudburst. Both forms are kept.
-- `minecraft:structure_void`: cannot be stored in a structure.
+### Compared with CloudburstMC/Data (1.26.52)
 
-Experimental blocks (`disc_press`, `ice_crystal`, `icicle` in 1.26.52) are not
-included.
+`compare` against CloudburstMC/Data's 1.26.50 `block_palette.nbt`: 22,058
+states are identical. The differences, all checked against BDS:
+
+- Cloudburst lists `minecraft:fire`, `redstone_wire` and `chorus_plant` with
+  connection properties (1,872 states). BDS 1.26.52 never stores or sends
+  those properties: built next to real neighbours, these blocks were saved
+  and sent to a joined client without them. The 33 forms BDS does use are in
+  our data and not in Cloudburst's.
+- `disc_press`, `ice_crystal` and `icicle` (30 states) do not exist in BDS
+  1.26.52, with or without experiments.
+
+`blockstate.NetworkHash` computes the network ID of a state; its test pins
+IDs BDS 1.26.52.3 sent to a client.
 
 ## Contributing
 

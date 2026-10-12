@@ -16,6 +16,7 @@ import (
 	"strings"
 
 	"github.com/helix-bedrock/helix-data/blockstate"
+	"github.com/helix-bedrock/world/mcdb/leveldat"
 )
 
 func main() {
@@ -27,13 +28,15 @@ func main() {
 
 func run(args []string, out io.Writer) error {
 	if len(args) == 0 {
-		return errors.New("usage: blockstates convert|compare [flags]")
+		return errors.New("usage: blockstates convert|compare|experiments [flags]")
 	}
 	switch args[0] {
 	case "convert":
 		return convert(args[1:], out)
 	case "compare":
 		return compare(args[1:], out)
+	case "experiments":
+		return experiments(args[1:], out)
 	default:
 		return fmt.Errorf("unknown command %q", args[0])
 	}
@@ -43,8 +46,6 @@ func convert(args []string, out io.Writer) error {
 	fs := flag.NewFlagSet("convert", flag.ContinueOnError)
 	world := fs.String("world", "", "BDS world folder the dump ran in (required)")
 	dir := fs.String("out", "", "output directory (required)")
-	fill := fs.String("fill", "", "palette (CloudburstMC/Data block_palette.nbt) to add the -fill-blocks states from")
-	fillBlocks := fs.String("fill-blocks", blockstate.DefaultFillBlocks, "comma-separated blocks whose states the dump cannot produce")
 	if err := fs.Parse(args); err != nil {
 		return err
 	}
@@ -54,22 +55,6 @@ func convert(args []string, out io.Writer) error {
 	d, err := blockstate.FromWorld(filepath.Join(*world, "db"))
 	if err != nil {
 		return err
-	}
-	if *fill != "" {
-		f, err := os.Open(*fill)
-		if err != nil {
-			return err
-		}
-		p, err := blockstate.ReadPalette(f)
-		_ = f.Close()
-		if err != nil {
-			return err
-		}
-		n, err := d.Fill(p, strings.Split(*fillBlocks, ","))
-		if err != nil {
-			return err
-		}
-		_, _ = fmt.Fprintf(out, "added %d states from %s for %s\n", n, *fill, *fillBlocks)
 	}
 	if err := os.MkdirAll(*dir, 0o750); err != nil {
 		return err
@@ -142,4 +127,44 @@ func compare(args []string, out io.Writer) error {
 		}
 	}
 	return w.Flush()
+}
+
+// experiments turns experiment toggles on in a world's level.dat, so a dump
+// run in that world includes experimental blocks.
+func experiments(args []string, out io.Writer) error {
+	fs := flag.NewFlagSet("experiments", flag.ContinueOnError)
+	world := fs.String("world", "", "BDS world folder (required)")
+	enable := fs.String("enable", "", "comma-separated experiment toggle names (required)")
+	if err := fs.Parse(args); err != nil {
+		return err
+	}
+	if *world == "" || *enable == "" {
+		return errors.New("experiments needs -world and -enable")
+	}
+	path := filepath.Join(*world, "level.dat")
+	ld, err := leveldat.ReadFile(path)
+	if err != nil {
+		return err
+	}
+	var d leveldat.Data
+	if err := ld.Unmarshal(&d); err != nil {
+		return err
+	}
+	if d.Experiments == nil {
+		d.Experiments = map[string]any{}
+	}
+	for _, name := range strings.Split(*enable, ",") {
+		d.Experiments[strings.TrimSpace(name)] = uint8(1)
+	}
+	d.Experiments["experiments_ever_used"] = uint8(1)
+	d.Experiments["saved_with_toggled_experiments"] = uint8(1)
+	d.ExperimentalGamePlay = true
+	if err := ld.Marshal(d); err != nil {
+		return err
+	}
+	if err := ld.WriteFile(path); err != nil {
+		return err
+	}
+	_, err = fmt.Fprintf(out, "enabled %s in %s\n", *enable, path)
+	return err
 }

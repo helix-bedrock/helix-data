@@ -45,17 +45,32 @@ type Dump struct {
 	Defaults map[string]map[string]any
 }
 
-// Structure identifier prefixes the add-on saves under.
+// Structure identifier prefixes the add-on saves under: every combination
+// and default permutations.
 const (
 	allPrefix     = "helixdump:p"
 	defaultPrefix = "helixdump:d"
 )
+
+// chunkOnly lists blocks that cannot be stored in a structure; the add-on
+// leaves one in the world and FromWorld reads it from the chunk.
+var chunkOnly = []string{"minecraft:structure_void"}
 
 // FromWorld reads the structures the add-on saved in a BDS world's db folder.
 func FromWorld(dbDir string) (*Dump, error) {
 	all, err := ReadStructures(dbDir, allPrefix)
 	if err != nil {
 		return nil, err
+	}
+	fromChunks, err := ReadChunkStates(dbDir, chunkOnly)
+	if err != nil {
+		return nil, err
+	}
+	for _, name := range chunkOnly {
+		if len(fromChunks[name]) == 0 {
+			return nil, fmt.Errorf("blockstate: %s not found in any chunk of %s", name, dbDir)
+		}
+		all["chunk:"+name] = fromChunks[name]
 	}
 	defs, err := ReadStructures(dbDir, defaultPrefix)
 	if err != nil {
@@ -75,6 +90,9 @@ func FromWorld(dbDir string) (*Dump, error) {
 		}
 	}
 	slices.SortFunc(d.States, func(a, b VersionedState) int { return strings.Compare(a.Key(), b.Key()) })
+	for _, name := range chunkOnly {
+		defs["chunk:"+name] = fromChunks[name][:1]
+	}
 	for _, list := range defs {
 		for _, s := range list {
 			if old, ok := d.Defaults[s.Name]; ok && (State{s.Name, old}).Key() != s.Key() {
@@ -196,52 +214,4 @@ func (d *Dump) DefaultsJSON() ([]byte, error) {
 		return nil, fmt.Errorf("blockstate: defaults: %w", err)
 	}
 	return buf.Bytes(), nil
-}
-
-// DefaultFillBlocks lists the blocks the dump cannot produce every state of.
-// fire, redstone_wire and chorus_plant have neighbour properties the Script
-// API cannot set (BDS saves them without those properties), and
-// structure_void cannot be stored in a structure.
-const DefaultFillBlocks = "minecraft:fire,minecraft:redstone_wire,minecraft:chorus_plant,minecraft:structure_void"
-
-// Fill adds the states of blocks from palette to the dump, keeping the
-// dump's own states. New states get the version the dump's states use. It
-// returns how many states were added.
-func (d *Dump) Fill(palette []State, blocks []string) (int, error) {
-	if len(d.States) == 0 {
-		return 0, fmt.Errorf("blockstate: fill: empty dump")
-	}
-	version := d.States[0].Version
-	want := map[string]bool{}
-	for _, b := range blocks {
-		want[b] = true
-	}
-	have := map[string]bool{}
-	for _, s := range d.States {
-		have[s.Key()] = true
-	}
-	found := map[string]bool{}
-	n := 0
-	for _, s := range palette {
-		if !want[s.Name] {
-			continue
-		}
-		found[s.Name] = true
-		if have[s.Key()] {
-			continue
-		}
-		have[s.Key()] = true
-		d.States = append(d.States, VersionedState{s, version})
-		n++
-		if _, ok := d.Defaults[s.Name]; !ok && len(s.Properties) == 0 {
-			d.Defaults[s.Name] = map[string]any{}
-		}
-	}
-	for b := range want {
-		if !found[b] {
-			return 0, fmt.Errorf("blockstate: fill: %s is not in the palette", b)
-		}
-	}
-	slices.SortFunc(d.States, func(a, b VersionedState) int { return strings.Compare(a.Key(), b.Key()) })
-	return n, nil
 }
