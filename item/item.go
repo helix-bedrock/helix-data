@@ -17,6 +17,12 @@ type Item struct {
 	Name string `json:"name"`
 	// MaxStack is how many fit in one stack (ItemStack.maxAmount).
 	MaxStack int `json:"maxStack"`
+	// Tags are the item's tags (ItemStack.getTags()), such as
+	// "minecraft:is_armor".
+	Tags []string `json:"tags,omitempty"`
+	// Components are the type IDs of the components the Script API exposes
+	// for the item (ItemStack.getComponents()).
+	Components []string `json:"components,omitempty"`
 }
 
 // logPrefix starts every item line the add-on prints.

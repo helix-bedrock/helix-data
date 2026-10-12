@@ -8,7 +8,7 @@ import (
 
 func TestFromLogRoundTrip(t *testing.T) {
 	log := `[INFO] other line
-[2026 INFO] [Scripting] HELIXDUMP-ITEM {"name":"minecraft:stone","maxStack":64}
+[2026 INFO] [Scripting] HELIXDUMP-ITEM {"name":"minecraft:stone","maxStack":64,"tags":["a"],"components":["b"]}
 [2026 INFO] [Scripting] HELIXDUMP-ITEM {"name":"minecraft:bed","maxStack":1}
 `
 	items, err := FromLog(strings.NewReader(log))
@@ -23,7 +23,7 @@ func TestFromLogRoundTrip(t *testing.T) {
 		t.Fatal(err)
 	}
 	back, err := ReadJSON(&buf)
-	if err != nil || len(back) != 2 || back[0] != items[0] {
+	if err != nil || len(back) != 2 || back[0].Name != items[0].Name || back[1].Tags[0] != "a" || back[1].Components[0] != "b" {
 		t.Fatalf("round trip: %+v, %v", back, err)
 	}
 }

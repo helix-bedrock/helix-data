@@ -16,7 +16,7 @@
 //   HELIXDUMP-BEGIN {"blocks":N}
 //   HELIXDUMP-BATCH {"id":"helixdump:p1","placed":N}
 //   HELIXDUMP-SKIP {"name":...,"states":{...},"error":"..."}
-//   HELIXDUMP-ITEM {"name":...,"maxStack":N}
+//   HELIXDUMP-ITEM {"name":...,"maxStack":N,"tags":[...],"components":[...]}
 //   HELIXDUMP-END {"blocks":N,"placed":N,"structures":N,"skipped":N,"items":N}
 // After HELIXDUMP-END, stop the server with "stop" so the world is written.
 import { BlockPermutation, BlockStates, BlockTypes, ItemStack, ItemTypes, StructureSaveMode, system, world } from "@minecraft/server";
@@ -153,8 +153,11 @@ function* dump() {
   const items = ItemTypes.getAll().map((t) => t.id).sort();
   for (const name of items) {
     try {
-      const maxStack = new ItemStack(name, 1).maxAmount;
-      console.log("HELIXDUMP-ITEM " + JSON.stringify({ name, maxStack }));
+      const stack = new ItemStack(name, 1);
+      const maxStack = stack.maxAmount;
+      const tags = stack.getTags().sort();
+      const components = stack.getComponents().map((c) => c.typeId).sort();
+      console.log("HELIXDUMP-ITEM " + JSON.stringify({ name, maxStack, tags, components }));
     } catch (e) {
       console.log("HELIXDUMP-SKIP " + JSON.stringify({ name, item: true, error: String(e) }));
     }
