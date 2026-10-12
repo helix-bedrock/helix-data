@@ -18,14 +18,14 @@ go build ./...
 go vet ./...
 golangci-lint run
 go test -race ./...
-go run ./cmd/blockstates convert -log dump.log -version 18168865 -out data/<version>
-go run ./cmd/blockstates compare -dump dump.log -palette block_palette.nbt
+go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -fill block_palette.nbt -out data/<version>
+go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
 ```
 
 ## Layout
 
-- `bds-dump/`: behaviour pack (Script API) that prints block states to the BDS console.
-- `blockstate/`: parses the dump, writes `block_states.nbt`, reads and compares palettes.
+- `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures.
+- `blockstate/`: reads those structures from the world, writes `block_states.nbt`, reads and compares palettes.
 - `cmd/blockstates/`: command line for the above.
 - `data/<version>/`: generated output. Never edit by hand.
 
@@ -36,14 +36,18 @@ go run ./cmd/blockstates compare -dump dump.log -palette block_palette.nbt
 2. `block_states.nbt` uses pmmp's `canonical_block_states.nbt` layout:
    little-endian NBT compounds `{name, states, version}` one after another.
    Boolean properties are bytes, numbers are int32.
-3. A dump without a `HELIXDUMP-END` line is rejected, never half-converted.
+3. States come from BDS. The only exception is `-fill` for the blocks in
+   `blockstate.DefaultFillBlocks`; never add to that list without showing
+   BDS cannot produce the block, and credit the source.
 
 ## Gotchas
 
-- You cannot run BDS. A human runs the dump and gives you the log; say which
-  steps you did not run.
-- The Script API cannot read block version numbers or network runtime IDs;
-  `-version` is passed in, and runtime IDs are computed by the engine.
-- `bds-dump` lists every combination of a block's properties and asks BDS to
-  resolve it; combinations BDS rejects are logged as `HELIXDUMP-SKIP`.
-  Check those after each new version.
+- You can run BDS yourself if the person points you at a BDS folder; work on
+  a copy so their worlds stay untouched. You still cannot join the game.
+- `BlockPermutation.getAllStates()` returns legacy alias properties
+  (`stone_type` on `minecraft:stone`) and `BlockStates` value lists are shared
+  between blocks. Only what BDS saves in a structure is trusted.
+- Placing blocks in the world makes BDS recompute neighbour properties (fence
+  connections, stair corners); the add-on writes into empty structures
+  instead (`structureManager.createEmpty`, `@minecraft/server` 2.10.0).
+- The server must be stopped with `stop`, or the structures never reach disk.

@@ -21,23 +21,39 @@ Edition server engine in Go.
 
 1. Download BDS for the target version from minecraft.net and run it once.
 2. Copy `bds-dump/` to `behavior_packs/helix-dump/` in the BDS folder.
-3. In `worlds/<level-name>/`, create `world_behavior_packs.json`:
+3. In `server.properties`, set `level-name=helixdump` and
+   `content-log-console-output-enabled=true`.
+4. Create `worlds/helixdump/world_behavior_packs.json`:
    ```json
    [{ "pack_id": "6f2b8f0e-4c1a-4b7e-9a51-1d3c5e7a9b20", "version": [1, 0, 0] }]
    ```
-   Use a throwaway world; nobody needs to join.
-4. Start BDS with its output saved to a file, for example
-   `bedrock_server.exe > dump.log` (Windows) or `./bedrock_server > dump.log` (Linux).
-5. Wait until the log contains `HELIXDUMP-END`, then type `stop`.
+5. Start BDS. When the console prints `HELIXDUMP-END` (a few seconds), type
+   `stop` so the world is written to disk.
 6. Convert it:
    ```bash
-   go run ./cmd/blockstates convert -log dump.log -version 18168865 -out data/1.26.52
-   go run ./cmd/blockstates compare -dump dump.log -palette block_palette.nbt
+   go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -fill block_palette.nbt -out data/<version>
+   go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
    ```
 
-`-version` is the block version number stored in each state. The Script API
-cannot read it, so it is passed in; for 1.26.50+ it is `18168865`, the value
-in CloudburstMC/Data's 1.26.50 palette.
+### How it works
+
+The add-on writes every combination of every block's properties into
+structures and saves them to the world. BDS stores each block in a structure
+palette exactly as it would on disk, with its version number, and rejects
+combinations a block does not have. `cmd/blockstates` reads those palettes
+with `helix-bedrock/world`'s LevelDB.
+
+The Script API cannot set a few properties, so `-fill` adds the states of
+these blocks from CloudburstMC/Data's palette (`blockstate.DefaultFillBlocks`):
+
+- `minecraft:fire`, `minecraft:redstone_wire`, `minecraft:chorus_plant`: their
+  connection properties are computed from neighbours. BDS (and the game) save
+  them on disk without those properties; the forms with them come from
+  Cloudburst. Both forms are kept.
+- `minecraft:structure_void`: cannot be stored in a structure.
+
+Experimental blocks (`disc_press`, `ice_crystal`, `icicle` in 1.26.52) are not
+included.
 
 ## Contributing
 

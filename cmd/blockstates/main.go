@@ -1,8 +1,8 @@
-// Command blockstates turns a BDS console log from the bds-dump add-on into
-// data files, and compares the result with another palette.
+// Command blockstates reads the block states the bds-dump add-on made BDS
+// save, writes them as data files, and compares them with another palette.
 //
-//	blockstates convert -log bds.log -version 18168865 -out data/1.26.52
-//	blockstates compare -dump bds.log -palette block_palette.nbt
+//	blockstates convert -world <bds>/worlds/helixdump -out data/1.26.52
+//	blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
 package main
 
 import (
@@ -13,6 +13,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"github.com/helix-bedrock/helix-data/blockstate"
 )
@@ -38,29 +39,37 @@ func run(args []string, out io.Writer) error {
 	}
 }
 
-func readDump(path string) (*blockstate.Dump, error) {
-	f, err := os.Open(path) //nolint:gosec // path comes from the command line
-	if err != nil {
-		return nil, err
-	}
-	defer func() { _ = f.Close() }()
-	return blockstate.ReadDump(f)
-}
-
 func convert(args []string, out io.Writer) error {
 	fs := flag.NewFlagSet("convert", flag.ContinueOnError)
-	logPath := fs.String("log", "", "BDS console log containing the dump")
-	version := fs.Int("version", 0, "block version number to store in every state (required)")
+	world := fs.String("world", "", "BDS world folder the dump ran in (required)")
 	dir := fs.String("out", "", "output directory (required)")
+	fill := fs.String("fill", "", "palette (CloudburstMC/Data block_palette.nbt) to add the -fill-blocks states from")
+	fillBlocks := fs.String("fill-blocks", blockstate.DefaultFillBlocks, "comma-separated blocks whose states the dump cannot produce")
 	if err := fs.Parse(args); err != nil {
 		return err
 	}
-	if *logPath == "" || *dir == "" || *version <= 0 {
-		return errors.New("convert needs -log, -version and -out")
+	if *world == "" || *dir == "" {
+		return errors.New("convert needs -world and -out")
 	}
-	d, err := readDump(*logPath)
+	d, err := blockstate.FromWorld(filepath.Join(*world, "db"))
 	if err != nil {
 		return err
+	}
+	if *fill != "" {
+		f, err := os.Open(*fill)
+		if err != nil {
+			return err
+		}
+		p, err := blockstate.ReadPalette(f)
+		_ = f.Close()
+		if err != nil {
+			return err
+		}
+		n, err := d.Fill(p, strings.Split(*fillBlocks, ","))
+		if err != nil {
+			return err
+		}
+		_, _ = fmt.Fprintf(out, "added %d states from %s for %s\n", n, *fill, *fillBlocks)
 	}
 	if err := os.MkdirAll(*dir, 0o750); err != nil {
 		return err
@@ -69,7 +78,7 @@ func convert(args []string, out io.Writer) error {
 	if err != nil {
 		return err
 	}
-	if err := blockstate.WriteNBT(f, d.States, int32(*version)); err != nil { //nolint:gosec // checked > 0; versions fit in int32
+	if err := blockstate.WriteNBT(f, d.States); err != nil {
 		_ = f.Close()
 		return err
 	}
@@ -83,22 +92,22 @@ func convert(args []string, out io.Writer) error {
 	if err := os.WriteFile(filepath.Join(*dir, "block_defaults.json"), def, 0o600); err != nil {
 		return err
 	}
-	_, err = fmt.Fprintf(out, "%d blocks, %d states, %d skipped combinations\n", len(d.Defaults), len(d.States), len(d.Skipped))
+	_, err = fmt.Fprintf(out, "%d blocks, %d states\n", len(d.Defaults), len(d.States))
 	return err
 }
 
 func compare(args []string, out io.Writer) error {
 	fs := flag.NewFlagSet("compare", flag.ContinueOnError)
-	logPath := fs.String("dump", "", "BDS console log containing the dump")
-	palette := fs.String("palette", "", "gzipped big-endian block_palette.nbt (CloudburstMC/Data)")
+	world := fs.String("world", "", "BDS world folder the dump ran in (required)")
+	palette := fs.String("palette", "", "gzipped big-endian block_palette.nbt, as in CloudburstMC/Data (required)")
 	limit := fs.Int("limit", 50, "differences to print per side")
 	if err := fs.Parse(args); err != nil {
 		return err
 	}
-	if *logPath == "" || *palette == "" {
-		return errors.New("compare needs -dump and -palette")
+	if *world == "" || *palette == "" {
+		return errors.New("compare needs -world and -palette")
 	}
-	d, err := readDump(*logPath)
+	d, err := blockstate.FromWorld(filepath.Join(*world, "db"))
 	if err != nil {
 		return err
 	}
@@ -111,15 +120,14 @@ func compare(args []string, out io.Writer) error {
 	if err != nil {
 		return err
 	}
-	diff := blockstate.Compare(d.States, p)
+	diff := blockstate.Compare(d.Plain(), p)
 	// Write errors stick in the bufio.Writer and are returned by Flush.
 	w := bufio.NewWriter(out)
-	_, _ = fmt.Fprintf(w, "same: %d, only in dump: %d, only in palette: %d, skipped by BDS: %d\n",
-		diff.Same, len(diff.OnlyA), len(diff.OnlyB), len(d.Skipped))
+	_, _ = fmt.Fprintf(w, "same: %d, only in dump: %d, only in palette: %d\n", diff.Same, len(diff.OnlyA), len(diff.OnlyB))
 	sections := []struct {
 		title string
 		list  []string
-	}{{"only in dump", diff.OnlyA}, {"only in palette", diff.OnlyB}, {"skipped by BDS", d.Skipped}}
+	}{{"only in dump", diff.OnlyA}, {"only in palette", diff.OnlyB}}
 	for _, sec := range sections {
 		if len(sec.list) == 0 {
 			continue

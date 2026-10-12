@@ -1,13 +1,11 @@
-// Package blockstate reads the block state dump printed by the bds-dump
-// add-on, writes it as data files, and compares it with other palettes.
+// Package blockstate reads the block states BDS saved for the bds-dump
+// add-on, writes them as data files, and compares them with other palettes.
 package blockstate
 
 import (
-	"bufio"
 	"bytes"
 	"compress/gzip"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"io"
 	"slices"
@@ -39,120 +37,59 @@ func (s State) Key() string {
 	return b.String()
 }
 
-// Dump is everything one run of the add-on printed.
+// Dump is what one run of the add-on saved.
 type Dump struct {
-	// States lists every state in the order BDS printed them.
-	States []State
-	// Defaults maps each block name to its default property values.
+	// States lists every distinct state, sorted by Key.
+	States []VersionedState
+	// Defaults maps each block name to the properties of its default state.
 	Defaults map[string]map[string]any
-	// Skipped lists combinations BDS refused, with its error.
-	Skipped []string
 }
 
+// Structure identifier prefixes the add-on saves under.
 const (
-	markState   = "HELIXDUMP "
-	markDefault = "HELIXDUMP-DEFAULT "
-	markSkip    = "HELIXDUMP-SKIP "
-	markEnd     = "HELIXDUMP-END "
+	allPrefix     = "helixdump:p"
+	defaultPrefix = "helixdump:d"
 )
 
-type line struct {
-	Name   string         `json:"name"`
-	States map[string]any `json:"states"`
-	Error  string         `json:"error"`
-}
-
-// ReadDump reads a BDS console log. Lines without a HELIXDUMP marker are
-// ignored, so the whole log can be passed in. It fails if the log does not
-// contain the end marker, which means the dump was cut off.
-func ReadDump(r io.Reader) (*Dump, error) {
+// FromWorld reads the structures the add-on saved in a BDS world's db folder.
+func FromWorld(dbDir string) (*Dump, error) {
+	all, err := ReadStructures(dbDir, allPrefix)
+	if err != nil {
+		return nil, err
+	}
+	defs, err := ReadStructures(dbDir, defaultPrefix)
+	if err != nil {
+		return nil, err
+	}
+	if len(all) == 0 || len(defs) == 0 {
+		return nil, fmt.Errorf("blockstate: %s has no helixdump structures; did the dump finish and the server stop cleanly?", dbDir)
+	}
 	d := &Dump{Defaults: map[string]map[string]any{}}
-	sc := bufio.NewScanner(r)
-	sc.Buffer(make([]byte, 0, 64*1024), 16*1024*1024)
-	ended := false
-	n := 0
-	for sc.Scan() {
-		n++
-		text := sc.Text()
-		mark, rest, ok := cut(text)
-		if !ok {
-			continue
-		}
-		if mark == markEnd {
-			ended = true
-			continue
-		}
-		var l line
-		if err := json.Unmarshal([]byte(rest), &l); err != nil {
-			return nil, fmt.Errorf("blockstate: line %d: %w", n, err)
-		}
-		props, err := convert(l.States)
-		if err != nil {
-			return nil, fmt.Errorf("blockstate: line %d: %s: %w", n, l.Name, err)
-		}
-		switch mark {
-		case markState:
-			d.States = append(d.States, State{Name: l.Name, Properties: props})
-		case markDefault:
-			d.Defaults[l.Name] = props
-		case markSkip:
-			d.Skipped = append(d.Skipped, fmt.Sprintf("%s %v: %s", l.Name, l.States, l.Error))
+	seen := map[string]bool{}
+	for _, list := range all {
+		for _, s := range list {
+			if k := s.Key(); !seen[k] {
+				seen[k] = true
+				d.States = append(d.States, s)
+			}
 		}
 	}
-	if err := sc.Err(); err != nil {
-		return nil, fmt.Errorf("blockstate: read log: %w", err)
-	}
-	if !ended {
-		return nil, errors.New("blockstate: no HELIXDUMP-END line; the dump did not finish")
+	slices.SortFunc(d.States, func(a, b VersionedState) int { return strings.Compare(a.Key(), b.Key()) })
+	for _, list := range defs {
+		for _, s := range list {
+			if old, ok := d.Defaults[s.Name]; ok && (State{s.Name, old}).Key() != s.Key() {
+				return nil, fmt.Errorf("blockstate: two default states for %s", s.Name)
+			}
+			d.Defaults[s.Name] = s.Properties
+		}
 	}
 	return d, nil
-}
-
-// cut finds the marker in a log line. BDS prefixes script output with a
-// timestamp and "[Scripting]", so the marker can be anywhere.
-func cut(text string) (mark, rest string, ok bool) {
-	i := strings.Index(text, "HELIXDUMP")
-	if i < 0 {
-		return "", "", false
-	}
-	text = text[i:]
-	for _, m := range []string{markDefault, markSkip, markEnd, markState} {
-		if r, found := strings.CutPrefix(text, m); found {
-			return m, r, true
-		}
-	}
-	return "", "", false
-}
-
-// convert turns JSON values into the NBT types Bedrock uses.
-func convert(in map[string]any) (map[string]any, error) {
-	out := make(map[string]any, len(in))
-	for k, v := range in {
-		switch v := v.(type) {
-		case bool:
-			if v {
-				out[k] = uint8(1)
-			} else {
-				out[k] = uint8(0)
-			}
-		case float64:
-			if v != float64(int32(v)) {
-				return nil, fmt.Errorf("property %s: %v is not an int32", k, v)
-			}
-			out[k] = int32(v)
-		case string:
-			out[k] = v
-		default:
-			return nil, fmt.Errorf("property %s: unsupported type %T", k, v)
-		}
-	}
-	return out, nil
 }
 
 // WriteNBT writes states as little-endian NBT compounds one after another,
 // each {name, states, version}: the canonical_block_states.nbt layout pmmp
 // and Dragonfly read.
-func WriteNBT(w io.Writer, states []State, version int32) error {
+func WriteNBT(w io.Writer, states []VersionedState) error {
 	for _, s := range states {
 		props := s.Properties
 		if props == nil {
@@ -161,7 +98,7 @@ func WriteNBT(w io.Writer, states []State, version int32) error {
 		b, err := nbt.MarshalEncoding(map[string]any{
 			"name":    s.Name,
 			"states":  props,
-			"version": version,
+			"version": s.Version,
 		}, nbt.LittleEndian)
 		if err != nil {
 			return fmt.Errorf("blockstate: encode %s: %w", s.Name, err)
@@ -241,6 +178,15 @@ func Compare(a, b []State) Diff {
 	return d
 }
 
+// Plain returns the states without version numbers, for Compare.
+func (d *Dump) Plain() []State {
+	out := make([]State, len(d.States))
+	for i, s := range d.States {
+		out[i] = s.State
+	}
+	return out
+}
+
 // DefaultsJSON returns the defaults as indented JSON with sorted keys.
 func (d *Dump) DefaultsJSON() ([]byte, error) {
 	var buf bytes.Buffer
@@ -250,4 +196,52 @@ func (d *Dump) DefaultsJSON() ([]byte, error) {
 		return nil, fmt.Errorf("blockstate: defaults: %w", err)
 	}
 	return buf.Bytes(), nil
+}
+
+// DefaultFillBlocks lists the blocks the dump cannot produce every state of.
+// fire, redstone_wire and chorus_plant have neighbour properties the Script
+// API cannot set (BDS saves them without those properties), and
+// structure_void cannot be stored in a structure.
+const DefaultFillBlocks = "minecraft:fire,minecraft:redstone_wire,minecraft:chorus_plant,minecraft:structure_void"
+
+// Fill adds the states of blocks from palette to the dump, keeping the
+// dump's own states. New states get the version the dump's states use. It
+// returns how many states were added.
+func (d *Dump) Fill(palette []State, blocks []string) (int, error) {
+	if len(d.States) == 0 {
+		return 0, fmt.Errorf("blockstate: fill: empty dump")
+	}
+	version := d.States[0].Version
+	want := map[string]bool{}
+	for _, b := range blocks {
+		want[b] = true
+	}
+	have := map[string]bool{}
+	for _, s := range d.States {
+		have[s.Key()] = true
+	}
+	found := map[string]bool{}
+	n := 0
+	for _, s := range palette {
+		if !want[s.Name] {
+			continue
+		}
+		found[s.Name] = true
+		if have[s.Key()] {
+			continue
+		}
+		have[s.Key()] = true
+		d.States = append(d.States, VersionedState{s, version})
+		n++
+		if _, ok := d.Defaults[s.Name]; !ok && len(s.Properties) == 0 {
+			d.Defaults[s.Name] = map[string]any{}
+		}
+	}
+	for b := range want {
+		if !found[b] {
+			return 0, fmt.Errorf("blockstate: fill: %s is not in the palette", b)
+		}
+	}
+	slices.SortFunc(d.States, func(a, b VersionedState) int { return strings.Compare(a.Key(), b.Key()) })
+	return n, nil
 }
