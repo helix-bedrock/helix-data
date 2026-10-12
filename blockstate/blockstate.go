@@ -3,9 +3,11 @@
 package blockstate
 
 import (
+	"bufio"
 	"bytes"
 	"compress/gzip"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"slices"
@@ -214,4 +216,30 @@ func (d *Dump) DefaultsJSON() ([]byte, error) {
 		return nil, fmt.Errorf("blockstate: defaults: %w", err)
 	}
 	return buf.Bytes(), nil
+}
+
+// ReadNBT reads states written by WriteNBT.
+func ReadNBT(r io.Reader) ([]VersionedState, error) {
+	br := bufio.NewReader(r)
+	dec := nbt.NewDecoderWithEncoding(br, nbt.LittleEndian)
+	var out []VersionedState
+	for {
+		// The decoder reports a clean end of input as a truncated tag, so
+		// look for the end first.
+		if _, err := br.Peek(1); errors.Is(err, io.EOF) {
+			return out, nil
+		}
+		var e struct {
+			Name    string         `nbt:"name"`
+			States  map[string]any `nbt:"states"`
+			Version int32          `nbt:"version"`
+		}
+		if err := dec.Decode(&e); err != nil {
+			return nil, fmt.Errorf("blockstate: read state %d: %w", len(out), err)
+		}
+		if e.States == nil {
+			e.States = map[string]any{}
+		}
+		out = append(out, VersionedState{State: State{Name: e.Name, Properties: e.States}, Version: e.Version})
+	}
 }
