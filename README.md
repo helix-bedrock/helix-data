@@ -1,29 +1,66 @@
-<!-- TEMPLATE: replace everything in <angle brackets>, then delete this line. -->
+# helix-data
 
-# <repo-name>
+Minecraft: Bedrock Edition game data for Helix, and the tools that build it
+from the official Bedrock Dedicated Server (BDS).
 
-<One sentence: what this is and who it's for.>
-
-**Status:** <experimental | in development | stable>
+**Status:** in development
 
 Part of [Helix](https://github.com/helix-bedrock), an open-source Minecraft: Bedrock
 Edition server engine in Go.
 
-## Install
+## What is here
 
-```bash
-go get github.com/helix-bedrock/<repo-name>
-```
+| Path | What it is |
+|---|---|
+| `bds-dump/` | A BDS behaviour pack that prints every block state to the server console |
+| `cmd/blockstates` | Turns that console log into `block_states.nbt` and `block_defaults.json`, and compares it with other palettes |
+| `blockstate` | The Go package behind `cmd/blockstates` |
+| `data/<version>/` | Generated files, one folder per Minecraft version |
 
-## Example
+## Dumping block states from BDS
 
-```go
-// <Smallest useful example.>
-```
+1. Download BDS for the target version from minecraft.net and run it once.
+2. Copy `bds-dump/` to `behavior_packs/helix-dump/` in the BDS folder.
+3. In `server.properties`, set `level-name=helixdump` and
+   `content-log-console-output-enabled=true`.
+4. Create `worlds/helixdump/world_behavior_packs.json`:
+   ```json
+   [{ "pack_id": "6f2b8f0e-4c1a-4b7e-9a51-1d3c5e7a9b20", "version": [1, 0, 0] }]
+   ```
+5. Start BDS. When the console prints `HELIXDUMP-END` (a few seconds), type
+   `stop` so the world is written to disk.
+6. Convert it:
+   ```bash
+   go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
+   go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
+   ```
 
-## Documentation
+### How it works
 
-API docs: <https://pkg.go.dev/github.com/helix-bedrock/<repo-name>>
+The add-on writes every combination of every block's properties into
+structures and saves them to the world. BDS stores each block in a structure
+palette exactly as it would on disk, with its version number, and rejects
+combinations a block does not have. `cmd/blockstates` reads those palettes
+with `helix-bedrock/world`'s LevelDB.
+
+`minecraft:structure_void` cannot be stored in a structure, so the add-on
+places one in the world and the converter reads it from the chunk on disk.
+
+### Compared with CloudburstMC/Data (1.26.52)
+
+`compare` against CloudburstMC/Data's 1.26.50 `block_palette.nbt`: 22,058
+states are identical. The differences, all checked against BDS:
+
+- Cloudburst lists `minecraft:fire`, `redstone_wire` and `chorus_plant` with
+  connection properties (1,872 states). BDS 1.26.52 never stores or sends
+  those properties: built next to real neighbours, these blocks were saved
+  and sent to a joined client without them. The 33 forms BDS does use are in
+  our data and not in Cloudburst's.
+- `disc_press`, `ice_crystal` and `icicle` (30 states) do not exist in BDS
+  1.26.52, with or without experiments.
+
+`blockstate.NetworkHash` computes the network ID of a state; its test pins
+IDs BDS 1.26.52.3 sent to a client.
 
 ## Contributing
 
@@ -33,5 +70,6 @@ AI-assisted contributions follow the
 
 ## License
 
-<MIT | GPL-3.0>. See [`LICENSE`](LICENSE). Ported code and its sources are listed
-in [`CREDITS.md`](CREDITS.md).
+The code is MIT; see [`LICENSE`](LICENSE). Generated data describes Minecraft
+and comes from Mojang's server; where each file comes from is listed in
+[`CREDITS.md`](CREDITS.md).

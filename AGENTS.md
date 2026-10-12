@@ -1,5 +1,3 @@
-<!-- TEMPLATE: fill in each section for this repo, then delete this line. -->
-
 # AGENTS.md
 
 Rules for AI coding agents working in this repo. Also read the org-wide rules in
@@ -9,7 +7,9 @@ disagree, this file wins for this repo.
 
 ## What this repo is
 
-<What it does, what it does not do, and who uses it.>
+Game data for Helix generated from BDS, and the tools that generate it. It
+holds data and small tools only; no engine code. `helix-bedrock/world` and the
+engine read the files in `data/`.
 
 ## Commands
 
@@ -18,22 +18,37 @@ go build ./...
 go vet ./...
 golangci-lint run
 go test -race ./...
-go test -run=^$ -bench=. -benchmem ./...   # benchmarks
+go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
+go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
 ```
 
 ## Layout
 
-<Main packages and what each one owns.>
+- `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures.
+- `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
+- `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
+- `data/<version>/`: generated output. Never edit by hand.
 
 ## Invariants: do not break these
 
-<!-- Things that must stay true. Examples:
-1. This package never imports the engine.
-2. Decoding never allocates more than the input size.
-3. The on-disk format matches BDS byte for byte. -->
-
-1. <...>
+1. Every file in `data/` is generated from BDS by a tool in this repo, and
+   `CREDITS.md` says which BDS version and which tool.
+2. `block_states.nbt` uses pmmp's `canonical_block_states.nbt` layout:
+   little-endian NBT compounds `{name, states, version}` one after another.
+   Boolean properties are bytes, numbers are int32.
+3. Every state comes from BDS. Other palettes are only compared against,
+   never copied in.
 
 ## Gotchas
 
-<Non-obvious traps: generated files, test data, platform quirks.>
+- You can run BDS yourself if the person points you at a BDS folder; work on
+  a copy so their worlds stay untouched. You still cannot join the game.
+- `BlockPermutation.getAllStates()` returns legacy alias properties
+  (`stone_type` on `minecraft:stone`) and `BlockStates` value lists are shared
+  between blocks. Only what BDS saves in a structure is trusted.
+- Placing blocks in the world makes BDS recompute neighbour properties (fence
+  connections, stair corners); the add-on writes into empty structures
+  instead (`structureManager.createEmpty`, `@minecraft/server` 2.10.0).
+- Other palettes list fire, redstone_wire and chorus_plant connection
+  properties that BDS 1.26.52 never stores or sends. Do not add them.
+- The server must be stopped with `stop`, or the structures never reach disk.

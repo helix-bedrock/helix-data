@@ -32,3 +32,6 @@ Thumbs.db
 .env
 *.pem
 *.key
+
+# BDS console logs from running the dump
+*.log
