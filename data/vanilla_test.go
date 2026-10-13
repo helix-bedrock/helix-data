@@ -59,3 +59,15 @@ func TestEntities(t *testing.T) {
 		t.Error("no zombie loot table")
 	}
 }
+
+func TestSpawnRules(t *testing.T) {
+	rules, err := SpawnRules()
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, id := range []string{"minecraft:zombie", "minecraft:cow"} {
+		if _, ok := rules[id]; !ok {
+			t.Errorf("no spawn rule for %s", id)
+		}
+	}
+}

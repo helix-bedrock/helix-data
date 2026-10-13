@@ -30,7 +30,7 @@ go run ./cmd/entities -bds <bds folder> -out data/<version>
 - `item/`: reads the item lines of the BDS console log and writes and reads `items.json`.
 - `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
 - `brarchive/`: reads the `.brarchive` files BDS packs behaviour pack folders into.
-- `cmd/entities/`: writes `entities.json` and `entity_loot.json` from BDS's vanilla behaviour packs.
+- `cmd/entities/`: writes `entities.json`, `entity_loot.json` and `spawn_rules.json` from BDS's vanilla behaviour packs.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
 - `data/`: the `data` Go package, which embeds the current version's files so the engine can load them.
 - `data/<version>/`: generated output. Never edit by hand.

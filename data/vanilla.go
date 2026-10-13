@@ -69,3 +69,17 @@ func EntityLoot() (map[string]json.RawMessage, error) {
 	}
 	return m, nil
 }
+
+//go:embed 1.26.52/spawn_rules.json
+var spawnRules []byte
+
+// SpawnRules returns every vanilla spawn rule of [Version], keyed by entity
+// identifier such as "minecraft:zombie". Each value is the spawn rule file
+// BDS uses. Each call decodes a fresh copy.
+func SpawnRules() (map[string]json.RawMessage, error) {
+	var m map[string]json.RawMessage
+	if err := json.Unmarshal(spawnRules, &m); err != nil {
+		return nil, fmt.Errorf("data: spawn rules: %w", err)
+	}
+	return m, nil
+}

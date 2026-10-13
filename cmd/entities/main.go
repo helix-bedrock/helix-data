@@ -1,5 +1,6 @@
-// Command entities writes entities.json and entity_loot.json from a BDS
-// install: every vanilla entity definition and entity loot table, with the
+// Command entities writes entities.json, entity_loot.json and
+// spawn_rules.json from a BDS install: every vanilla entity definition,
+// entity loot table and spawn rule, with the
 // vanilla behaviour packs layered the way BDS layers them.
 //
 //	go run ./cmd/entities -bds <bds folder> -out data/<version>
@@ -40,9 +41,12 @@ func run(bds, out string) error {
 	if err != nil {
 		return err
 	}
-	entities, loot := map[string]json.RawMessage{}, map[string]json.RawMessage{}
+	entities, loot, spawns := map[string]json.RawMessage{}, map[string]json.RawMessage{}, map[string]json.RawMessage{}
 	for _, p := range packs {
-		if err := readEntities(p, entities); err != nil {
+		if err := readArchive(p, "entities.brarchive", "minecraft:entity", entities); err != nil {
+			return err
+		}
+		if err := readArchive(p, "spawn_rules.brarchive", "minecraft:spawn_rules", spawns); err != nil {
 			return err
 		}
 		if err := readLoot(p, loot); err != nil {
@@ -55,7 +59,10 @@ func run(bds, out string) error {
 	if err := write(filepath.Join(out, "entity_loot.json"), loot); err != nil {
 		return err
 	}
-	fmt.Printf("%d entities, %d loot tables from %d packs\n", len(entities), len(loot), len(packs))
+	if err := write(filepath.Join(out, "spawn_rules.json"), spawns); err != nil {
+		return err
+	}
+	fmt.Printf("%d entities, %d loot tables, %d spawn rules from %d packs\n", len(entities), len(loot), len(spawns), len(packs))
 	return nil
 }
 
@@ -97,8 +104,10 @@ func vanillaPacks(dir string) ([]string, error) {
 	return out, nil
 }
 
-func readEntities(pack string, into map[string]json.RawMessage) error {
-	b, err := os.ReadFile(filepath.Join(pack, "__brarchive", "entities.brarchive"))
+// readArchive reads the JSON files of one archive, keyed by the identifier
+// in their description under root, such as "minecraft:entity".
+func readArchive(pack, archive, root string, into map[string]json.RawMessage) error {
+	b, err := os.ReadFile(filepath.Join(pack, "__brarchive", archive))
 	if os.IsNotExist(err) {
 		return nil
 	} else if err != nil {
@@ -109,17 +118,21 @@ func readEntities(pack string, into map[string]json.RawMessage) error {
 		return fmt.Errorf("%s: %w", pack, err)
 	}
 	for _, f := range files {
-		var doc struct {
-			Entity struct {
-				Description struct {
-					Identifier string `json:"identifier"`
-				} `json:"description"`
-			} `json:"minecraft:entity"`
-		}
+		var doc map[string]json.RawMessage
 		if err := json.Unmarshal(f.Data, &doc); err != nil {
 			return fmt.Errorf("%s: %s: %w", pack, f.Name, err)
 		}
-		id := doc.Entity.Description.Identifier
+		var body struct {
+			Description struct {
+				Identifier string `json:"identifier"`
+			} `json:"description"`
+		}
+		if raw, ok := doc[root]; ok {
+			if err := json.Unmarshal(raw, &body); err != nil {
+				return fmt.Errorf("%s: %s: %w", pack, f.Name, err)
+			}
+		}
+		id := body.Description.Identifier
 		if id == "" {
 			// vanilla_1.16.100 has an npc.json with only a component and no
 			// identifier, so it cannot apply to any entity.

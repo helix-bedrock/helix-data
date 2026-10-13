@@ -39,7 +39,7 @@ Edition server engine in Go.
    ```bash
    go run ./cmd/blockstates items -log out.log -out data/<version>
    ```
-8. Entities and their loot tables need no dump: they are read straight from
+8. Entities, their loot tables and spawn rules need no dump: they are read straight from
    the BDS folder.
    ```bash
    go run ./cmd/entities -bds <bds folder> -out data/<version>
