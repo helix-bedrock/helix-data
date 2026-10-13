@@ -22,6 +22,7 @@ go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<versio
 go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
 go run ./cmd/blockstates items -log <bds console log> -out data/<version>
 go run ./cmd/entities -bds <bds folder> -out data/<version>
+go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/<version>
 ```
 
 ## Layout
@@ -31,6 +32,7 @@ go run ./cmd/entities -bds <bds folder> -out data/<version>
 - `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
 - `brarchive/`: reads the `.brarchive` files BDS packs behaviour pack folders into.
 - `cmd/entities/`: writes `entities.json`, `entity_loot.json` and `spawn_rules.json` from BDS's vanilla behaviour packs.
+- `cmd/worldgen/`: writes `worldgen.json` and `biome_tree.json` from Java Edition's vanilla datapack.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
 - `data/`: the `data` Go package, which embeds the current version's files so the engine can load them.
 - `data/<version>/`: generated output. Never edit by hand.
@@ -38,7 +40,11 @@ go run ./cmd/entities -bds <bds folder> -out data/<version>
 ## Invariants: do not break these
 
 1. Every file in `data/` is generated from BDS by a tool in this repo, and
-   `CREDITS.md` says which BDS version and which tool.
+   `CREDITS.md` says which BDS version and which tool. The one exception is
+   world generation (`worldgen.json`, `biome_tree.json`): BDS compiles its
+   generator into the server and ships no data for it, so these come from
+   Java Edition, whose terrain and biomes match Bedrock's since 1.18.
+   `CREDITS.md` names the Java version.
 2. `block_states.nbt` uses pmmp's `canonical_block_states.nbt` layout:
    little-endian NBT compounds `{name, states, version}` one after another.
    Boolean properties are bytes, numbers are int32.
