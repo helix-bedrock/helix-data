@@ -28,7 +28,7 @@ import (
 )
 
 // folders are the parts of the datapack's worldgen folder terrain needs.
-var folders = []string{"density_function", "noise", "noise_settings"}
+var folders = []string{"density_function", "noise", "noise_settings", "material_rule", "material_condition"}
 
 func main() {
 	pack := flag.String("datapack", "", "the datapack's data/minecraft/worldgen folder")

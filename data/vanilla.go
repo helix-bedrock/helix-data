@@ -88,7 +88,7 @@ func SpawnRules() (map[string]json.RawMessage, error) {
 var worldgen []byte
 
 // Worldgen returns Java Edition's world generation data that Helix uses
-// for terrain: density functions, noises and noise settings, keyed by
+// for terrain: density functions, noises, noise settings and material rules and conditions, keyed by
 // their Minecraft name such as "density_function/overworld/depth" or
 // "noise_settings/overworld". See CREDITS.md for why it is Java's. Each call
 // decodes a fresh copy.
