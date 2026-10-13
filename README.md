@@ -39,6 +39,11 @@ Edition server engine in Go.
    ```bash
    go run ./cmd/blockstates items -log out.log -out data/<version>
    ```
+8. Entities, their loot tables and spawn rules need no dump: they are read straight from
+   the BDS folder.
+   ```bash
+   go run ./cmd/entities -bds <bds folder> -out data/<version>
+   ```
 
 ### How it works
 
@@ -78,3 +83,13 @@ AI-assisted contributions follow the
 The code is MIT; see [`LICENSE`](LICENSE). Generated data describes Minecraft
 and comes from Mojang's server; where each file comes from is listed in
 [`CREDITS.md`](CREDITS.md).
+
+## World generation data
+
+BDS ships no world generation data, so `worldgen.json` and
+`biome_tree.json` come from Java Edition, whose terrain and biomes match
+Bedrock's since 1.18 (see CREDITS.md):
+
+```bash
+go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/<version>
+```
