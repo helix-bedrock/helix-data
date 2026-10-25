@@ -3,7 +3,7 @@
 Minecraft: Bedrock Edition game data for Helix, and the tools that build it
 from the official Bedrock Dedicated Server (BDS).
 
-**Status as of 2026-10-25:** in development. `data/1.26.52/vanilla/` holds every vanilla behaviour pack file Helix reads, stacked as BDS 1.26.52.3 stacks them, and `data/1.26.52/bds/` the world generator tables read from BDS's code.
+**Status as of 2026-10-25:** in development. `data/1.26.52/vanilla/` holds every vanilla behaviour pack file Helix reads, stacked as BDS 1.26.52.3 stacks them, and `data/1.26.52/bds/` the tables read from BDS: world generator tables from its code, and `block_materials.json` (every block's material type and the material flags) read from the running server.
 
 Part of [Helix](https://github.com/helix-bedrock), an open-source Minecraft: Bedrock
 Edition server engine in Go.

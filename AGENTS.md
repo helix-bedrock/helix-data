@@ -48,9 +48,10 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
    generator into the server and ships no data for it, so these come from
    Java Edition, whose terrain and biomes match Bedrock's since 1.18.
    `CREDITS.md` names the Java version. The other exception is `bds/`:
-   tables read out of BDS's code with IDA (jigsaw pools, block rules), which
-   no tool in this repo can make; each file's `source` field says where in
-   BDS it came from.
+   tables read out of BDS's code with IDA (jigsaw pools, block rules) or
+   from the running server under a debugger (block materials), which no
+   tool in this repo can make; each file's `source` field says where in BDS
+   it came from.
 2. `block_states.nbt` uses pmmp's `canonical_block_states.nbt` layout:
    little-endian NBT compounds `{name, states, version}` one after another.
    Boolean properties are bytes, numbers are int32.
