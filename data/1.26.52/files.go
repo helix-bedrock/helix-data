@@ -12,13 +12,14 @@ import (
 	"io/fs"
 )
 
-//go:embed vanilla bds
+//go:embed vanilla bds spawn_rules.json
 var tree embed.FS
 
 // FS is the read-only file tree: "vanilla/..." holds the vanilla behaviour
 // pack folders (biomes, features, feature_rules, loot_tables, recipes,
 // spawn_groups, structures, trading, worldgen) as BDS stacks them, and
-// "bds/..." the tables extracted from BDS's code. Files whose name starts
+// "bds/..." the tables extracted from BDS's code, and spawn_rules.json every
+// entity's spawn rules file keyed by identifier. Files whose name starts
 // with "_" or "." (such as _provenance.tsv) are not embedded.
 type FS struct{}
 
