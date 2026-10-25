@@ -6,9 +6,13 @@ import (
 )
 
 func archive(files ...File) []byte {
-	b := make([]byte, headerSize+entrySize*len(files))
+	size := 0
+	for _, f := range files {
+		size += len(f.Data)
+	}
+	b := make([]byte, headerSize+entrySize*len(files), headerSize+entrySize*len(files)+size)
 	binary.LittleEndian.PutUint32(b[8:], uint32(len(files)))
-	var data []byte
+	data := make([]byte, 0, size)
 	for i, f := range files {
 		e := b[headerSize+i*entrySize:]
 		e[0] = byte(len(f.Name))

@@ -37,11 +37,11 @@ func main() {
 	flag.Parse()
 	if *pack == "" || *tree == "" || *out == "" {
 		flag.Usage()
-		os.Exit(2)
+		os.Exit(2) //nolint:forbidigo // a command reports failure through its exit status
 	}
 	if err := run(*pack, *tree, *out); err != nil {
 		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+		os.Exit(1) //nolint:forbidigo // a command reports failure through its exit status
 	}
 }
 
@@ -53,7 +53,7 @@ func run(pack, tree, out string) error {
 			if err != nil || d.IsDir() || !strings.HasSuffix(path, ".json") {
 				return err
 			}
-			b, err := os.ReadFile(path)
+			b, err := os.ReadFile(path) //nolint:gosec // the path is one the person passed on the command line
 			if err != nil {
 				return err
 			}
@@ -76,7 +76,7 @@ func run(pack, tree, out string) error {
 	if err := write(filepath.Join(out, "worldgen.json"), files); err != nil {
 		return err
 	}
-	b, err := os.ReadFile(tree)
+	b, err := os.ReadFile(tree) //nolint:gosec // the path is one the person passed on the command line
 	if err != nil {
 		return err
 	}
@@ -84,7 +84,7 @@ func run(pack, tree, out string) error {
 	if err := json.Compact(&c, b); err != nil {
 		return fmt.Errorf("%s: %w", tree, err)
 	}
-	if err := os.WriteFile(filepath.Join(out, "biome_tree.json"), append(c.Bytes(), '\n'), 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(out, "biome_tree.json"), append(c.Bytes(), '\n'), 0o644); err != nil { //nolint:gosec // generated data files are committed and must be readable
 		return err
 	}
 	fmt.Printf("%d world generation files and the biome tree\n", len(files))
@@ -110,5 +110,5 @@ func write(path string, m map[string]json.RawMessage) error {
 		buf.WriteByte('\n')
 	}
 	buf.WriteString("}\n")
-	return os.WriteFile(path, buf.Bytes(), 0o644)
+	return os.WriteFile(path, buf.Bytes(), 0o644) //nolint:gosec // generated data files are committed and must be readable
 }

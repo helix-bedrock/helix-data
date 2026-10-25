@@ -41,11 +41,11 @@ func main() {
 	flag.Parse()
 	if *bds == "" || *out == "" {
 		flag.Usage()
-		os.Exit(2)
+		os.Exit(2) //nolint:forbidigo // a command reports failure through its exit status
 	}
 	if err := run(*bds, filepath.Join(*out, "vanilla")); err != nil {
 		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+		os.Exit(1) //nolint:forbidigo // a command reports failure through its exit status
 	}
 }
 
@@ -55,7 +55,7 @@ func run(bds, out string) error {
 		return err
 	}
 	for k, from := range pinned {
-		b, err := os.ReadFile(filepath.Join(bds, "behavior_packs", from, filepath.FromSlash(k)))
+		b, err := os.ReadFile(filepath.Join(bds, "behavior_packs", from, filepath.FromSlash(k))) //nolint:gosec // the path is one the person passed on the command line
 		if err != nil {
 			return fmt.Errorf("pinned %s: %w", k, err)
 		}
@@ -69,15 +69,15 @@ func run(bds, out string) error {
 	for _, k := range slices.Sorted(maps.Keys(files)) {
 		f := files[k]
 		p := filepath.Join(out, filepath.FromSlash(k))
-		if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil {
+		if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil { //nolint:gosec // generated data folders are committed and must be readable
 			return err
 		}
-		if err := os.WriteFile(p, f.Data, 0o644); err != nil {
+		if err := os.WriteFile(p, f.Data, 0o644); err != nil { //nolint:gosec // generated data files are committed and must be readable
 			return err
 		}
 		fmt.Fprintf(&prov, "%s\t%s\n", k, f.From)
 	}
-	if err := os.WriteFile(filepath.Join(out, "_provenance.tsv"), []byte(prov.String()), 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(out, "_provenance.tsv"), []byte(prov.String()), 0o644); err != nil { //nolint:gosec // generated data files are committed and must be readable
 		return err
 	}
 	fmt.Printf("%d files\n", len(files))

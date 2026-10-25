@@ -28,11 +28,11 @@ func main() {
 	flag.Parse()
 	if *bds == "" || *out == "" {
 		flag.Usage()
-		os.Exit(2)
+		os.Exit(2) //nolint:forbidigo // a command reports failure through its exit status
 	}
 	if err := run(*bds, *out); err != nil {
 		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+		os.Exit(1) //nolint:forbidigo // a command reports failure through its exit status
 	}
 }
 
@@ -69,7 +69,7 @@ func run(bds, out string) error {
 // readArchive reads the JSON files of one archive, keyed by the identifier
 // in their description under root, such as "minecraft:entity".
 func readArchive(pack, archive, root string, into map[string]json.RawMessage) error {
-	b, err := os.ReadFile(filepath.Join(pack, "__brarchive", archive))
+	b, err := os.ReadFile(filepath.Join(pack, "__brarchive", archive)) //nolint:gosec // the path is one the person passed on the command line
 	if os.IsNotExist(err) {
 		return nil
 	} else if err != nil {
@@ -116,7 +116,7 @@ func readLoot(pack string, into map[string]json.RawMessage) error {
 		if err != nil || d.IsDir() || !strings.HasSuffix(path, ".json") {
 			return err
 		}
-		b, err := os.ReadFile(path)
+		b, err := os.ReadFile(path) //nolint:gosec // the path is one the person passed on the command line
 		if err != nil {
 			return err
 		}
@@ -156,5 +156,5 @@ func write(path string, m map[string]json.RawMessage) error {
 		buf.WriteByte('\n')
 	}
 	buf.WriteString("}\n")
-	return os.WriteFile(path, buf.Bytes(), 0o644)
+	return os.WriteFile(path, buf.Bytes(), 0o644) //nolint:gosec // generated data files are committed and must be readable
 }
