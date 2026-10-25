@@ -16,10 +16,10 @@ import (
 	"os"
 	"path/filepath"
 	"slices"
-	"strconv"
 	"strings"
 
 	"github.com/helix-bedrock/helix-data/brarchive"
+	"github.com/helix-bedrock/helix-data/pack"
 )
 
 func main() {
@@ -37,7 +37,7 @@ func main() {
 }
 
 func run(bds, out string) error {
-	packs, err := vanillaPacks(filepath.Join(bds, "behavior_packs"))
+	packs, err := pack.Vanilla(filepath.Join(bds, "behavior_packs"))
 	if err != nil {
 		return err
 	}
@@ -64,44 +64,6 @@ func run(bds, out string) error {
 	}
 	fmt.Printf("%d entities, %d loot tables, %d spawn rules from %d packs\n", len(entities), len(loot), len(spawns), len(packs))
 	return nil
-}
-
-// vanillaPacks returns the vanilla packs in the order BDS stacks them:
-// "vanilla" first, then "vanilla_<version>" from oldest to newest, so a
-// later pack overrides an earlier one.
-func vanillaPacks(dir string) ([]string, error) {
-	des, err := os.ReadDir(dir)
-	if err != nil {
-		return nil, fmt.Errorf("read behaviour packs: %w", err)
-	}
-	type pack struct {
-		path string
-		ver  []int
-	}
-	var packs []pack
-	for _, de := range des {
-		name := de.Name()
-		switch {
-		case name == "vanilla":
-			packs = append(packs, pack{path: filepath.Join(dir, name)})
-		case strings.HasPrefix(name, "vanilla_"):
-			var ver []int
-			for _, s := range strings.Split(strings.TrimPrefix(name, "vanilla_"), ".") {
-				n, err := strconv.Atoi(s)
-				if err != nil {
-					return nil, fmt.Errorf("pack %s: bad version", name)
-				}
-				ver = append(ver, n)
-			}
-			packs = append(packs, pack{path: filepath.Join(dir, name), ver: ver})
-		}
-	}
-	slices.SortFunc(packs, func(a, b pack) int { return slices.Compare(a.ver, b.ver) })
-	out := make([]string, len(packs))
-	for i, p := range packs {
-		out[i] = p.path
-	}
-	return out, nil
 }
 
 // readArchive reads the JSON files of one archive, keyed by the identifier

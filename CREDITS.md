@@ -5,7 +5,7 @@ Sources of the code and data in this repo, as required by the
 
 ## Code
 
-No ported code. `bds-dump`, `brarchive`, `cmd/blockstates`, `cmd/entities` and `cmd/worldgen` were written for Helix.
+No ported code. `bds-dump`, `brarchive`, `pack`, `cmd/blockstates`, `cmd/entities`, `cmd/vanilla` and `cmd/worldgen` were written for Helix.
 
 ## Data
 
@@ -14,6 +14,9 @@ No ported code. `bds-dump`, `brarchive`, `cmd/blockstates`, `cmd/entities` and `
 | `data/1.26.52/block_states.nbt`, `block_defaults.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Saved by BDS through `bds-dump`, converted by `cmd/blockstates convert` |
 | `data/1.26.52/items.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Printed by BDS through `bds-dump` (`ItemTypes.getAll()`, `ItemStack.maxAmount`), converted by `cmd/blockstates items` |
 | `data/1.26.52/entities.json`, `entity_loot.json`, `spawn_rules.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Read from BDS's vanilla behaviour packs (`__brarchive/entities.brarchive`, `spawn_rules.brarchive`, `loot_tables/entities`) by `cmd/entities`, packs layered as BDS layers them |
+
+| `data/1.26.52/vanilla/` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | The vanilla behaviour packs and `definitions/` stacked as BDS stacks them, by `cmd/vanilla`; `_provenance.tsv` names each file's pack |
+| `data/1.26.52/bds/` | Bedrock Dedicated Server 1.26.52.3 Linux (Mojang) | Tables read out of BDS's code with IDA for the world generator (jigsaw pools and elements, block rules, liquid holders, top support); each file's `source` names the BDS functions. Moved from `helix-bedrock/worldgen` |
 
 ### World generation (Java Edition)
 

@@ -1,6 +1,9 @@
 package data
 
-import "testing"
+import (
+	"io/fs"
+	"testing"
+)
 
 func TestBlockStates(t *testing.T) {
 	states, err := BlockStates()
@@ -84,5 +87,31 @@ func TestWorldgen(t *testing.T) {
 	}
 	if len(BiomeTree()) < 1000 {
 		t.Fatal("biome tree is empty")
+	}
+}
+
+func TestFiles(t *testing.T) {
+	f := Files()
+	for _, p := range []string{"vanilla/biomes/plains.biome.json", "vanilla/trading/librarian_trades.json", "bds/villages.json"} {
+		b, err := f.ReadFile(p)
+		if err != nil || len(b) == 0 {
+			t.Errorf("%s: %d bytes, %v", p, len(b), err)
+		}
+	}
+	n := 0
+	if err := fs.WalkDir(f, "vanilla", func(_ string, d fs.DirEntry, err error) error {
+		if err == nil && !d.IsDir() {
+			n++
+		}
+		return err
+	}); err != nil {
+		t.Fatal(err)
+	}
+	// The count cmd/vanilla printed for 1.26.52.3.
+	if n != 4270 {
+		t.Errorf("got %d vanilla files, want 4270", n)
+	}
+	if _, err := f.Open("../vanilla.go"); err == nil {
+		t.Error("opened a path outside the tree")
 	}
 }

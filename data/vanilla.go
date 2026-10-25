@@ -9,6 +9,7 @@ import (
 	"fmt"
 
 	"github.com/helix-bedrock/helix-data/blockstate"
+	files "github.com/helix-bedrock/helix-data/data/1.26.52"
 	"github.com/helix-bedrock/helix-data/item"
 )
 
@@ -107,3 +108,7 @@ var biomeTree []byte
 // Edition's search tree, raw. Walking this exact tree, not searching the
 // leaves for the nearest, is what picks the same biomes as the game.
 func BiomeTree() []byte { return bytes.Clone(biomeTree) }
+
+// Files returns the vanilla pack files and BDS tables of [Version]; see
+// [files.FS].
+func Files() files.FS { return files.Files() }
