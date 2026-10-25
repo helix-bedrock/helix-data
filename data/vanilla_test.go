@@ -1,6 +1,7 @@
 package data
 
 import (
+	"encoding/json"
 	"io/fs"
 	"testing"
 )
@@ -123,5 +124,27 @@ func TestFilesSpawnRules(t *testing.T) {
 	}
 	if len(b) == 0 {
 		t.Fatal("empty spawn_rules.json")
+	}
+}
+
+func TestFilesBlockMaterials(t *testing.T) {
+	b, err := fs.ReadFile(Files(), "bds/block_materials.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	var m struct {
+		Materials []struct {
+			Type int `json:"type"`
+		} `json:"materials"`
+		Blocks map[string]int `json:"blocks"`
+	}
+	if err := json.Unmarshal(b, &m); err != nil {
+		t.Fatal(err)
+	}
+	if len(m.Blocks) < 1400 || len(m.Materials) == 0 {
+		t.Fatalf("%d blocks, %d materials", len(m.Blocks), len(m.Materials))
+	}
+	if m.Blocks["minecraft:water"] != 5 || m.Blocks["minecraft:air"] != 0 {
+		t.Fatalf("water %d, air %d", m.Blocks["minecraft:water"], m.Blocks["minecraft:air"])
 	}
 }
