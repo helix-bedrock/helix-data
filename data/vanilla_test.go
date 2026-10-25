@@ -1,6 +1,9 @@
 package data
 
-import "testing"
+import (
+	"io/fs"
+	"testing"
+)
 
 func TestBlockStates(t *testing.T) {
 	states, err := BlockStates()
@@ -35,5 +38,80 @@ func TestItems(t *testing.T) {
 		if n, ok := want[it.Name]; ok && it.MaxStack != n {
 			t.Errorf("%s: max stack %d, want %d", it.Name, it.MaxStack, n)
 		}
+	}
+}
+
+func TestEntities(t *testing.T) {
+	ents, err := Entities()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(ents) != 129 {
+		t.Fatalf("got %d entities, want 129", len(ents))
+	}
+	for _, id := range []string{"minecraft:zombie", "minecraft:cow", "minecraft:player"} {
+		if _, ok := ents[id]; !ok {
+			t.Errorf("no %s", id)
+		}
+	}
+	loot, err := EntityLoot()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, ok := loot["loot_tables/entities/zombie.json"]; !ok {
+		t.Error("no zombie loot table")
+	}
+}
+
+func TestSpawnRules(t *testing.T) {
+	rules, err := SpawnRules()
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, id := range []string{"minecraft:zombie", "minecraft:cow"} {
+		if _, ok := rules[id]; !ok {
+			t.Errorf("no spawn rule for %s", id)
+		}
+	}
+}
+
+func TestWorldgen(t *testing.T) {
+	wg, err := Worldgen()
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, k := range []string{"noise_settings/overworld", "density_function/overworld/continents", "noise/continentalness"} {
+		if _, ok := wg[k]; !ok {
+			t.Errorf("no %s", k)
+		}
+	}
+	if len(BiomeTree()) < 1000 {
+		t.Fatal("biome tree is empty")
+	}
+}
+
+func TestFiles(t *testing.T) {
+	f := Files()
+	for _, p := range []string{"vanilla/biomes/plains.biome.json", "vanilla/trading/librarian_trades.json", "bds/villages.json"} {
+		b, err := f.ReadFile(p)
+		if err != nil || len(b) == 0 {
+			t.Errorf("%s: %d bytes, %v", p, len(b), err)
+		}
+	}
+	n := 0
+	if err := fs.WalkDir(f, "vanilla", func(_ string, d fs.DirEntry, err error) error {
+		if err == nil && !d.IsDir() {
+			n++
+		}
+		return err
+	}); err != nil {
+		t.Fatal(err)
+	}
+	// The count cmd/vanilla printed for 1.26.52.3.
+	if n != 4270 {
+		t.Errorf("got %d vanilla files, want 4270", n)
+	}
+	if _, err := f.Open("../vanilla.go"); err == nil {
+		t.Error("opened a path outside the tree")
 	}
 }

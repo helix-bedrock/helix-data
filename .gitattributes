@@ -3,3 +3,6 @@
 testdata/** -text
 *.png binary
 *.ldb binary
+*.nbt binary
+*.mcstructure binary
+*.dat binary

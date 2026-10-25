@@ -3,7 +3,7 @@
 Minecraft: Bedrock Edition game data for Helix, and the tools that build it
 from the official Bedrock Dedicated Server (BDS).
 
-**Status:** in development
+**Status as of 2026-10-25:** in development. `data/1.26.52/vanilla/` holds every vanilla behaviour pack file Helix reads, stacked as BDS 1.26.52.3 stacks them, and `data/1.26.52/bds/` the world generator tables read from BDS's code.
 
 Part of [Helix](https://github.com/helix-bedrock), an open-source Minecraft: Bedrock
 Edition server engine in Go.
@@ -39,6 +39,21 @@ Edition server engine in Go.
    ```bash
    go run ./cmd/blockstates items -log out.log -out data/<version>
    ```
+8. Entities, their loot tables and spawn rules need no dump: they are read straight from
+   the BDS folder.
+   ```bash
+   go run ./cmd/entities -bds <bds folder> -out data/<version>
+   ```
+9. The vanilla behaviour pack files (biomes, features, feature rules, all
+   loot tables, recipes, spawn groups, structures, trading and jigsaw
+   world generation) need no dump either. BDS ships one pack per game
+   version holding only what changed; `cmd/vanilla` stacks them the way BDS
+   does and writes one complete `data/<version>/vanilla/`:
+   ```bash
+   go run ./cmd/vanilla -bds <bds folder> -out data/<version>
+   ```
+   Go code reads them, and the BDS tables in `data/<version>/bds/`, through
+   `data.Files()`.
 
 ### How it works
 
@@ -78,3 +93,13 @@ AI-assisted contributions follow the
 The code is MIT; see [`LICENSE`](LICENSE). Generated data describes Minecraft
 and comes from Mojang's server; where each file comes from is listed in
 [`CREDITS.md`](CREDITS.md).
+
+## World generation data
+
+BDS ships no world generation data, so `worldgen.json` and
+`biome_tree.json` come from Java Edition, whose terrain and biomes match
+Bedrock's since 1.18 (see CREDITS.md):
+
+```bash
+go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/<version>
+```
