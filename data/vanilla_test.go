@@ -115,3 +115,13 @@ func TestFiles(t *testing.T) {
 		t.Error("opened a path outside the tree")
 	}
 }
+
+func TestFilesSpawnRules(t *testing.T) {
+	b, err := fs.ReadFile(Files(), "spawn_rules.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(b) == 0 {
+		t.Fatal("empty spawn_rules.json")
+	}
+}
