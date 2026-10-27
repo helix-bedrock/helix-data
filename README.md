@@ -3,7 +3,7 @@
 Minecraft: Bedrock Edition game data for Helix, and the tools that build it
 from the official Bedrock Dedicated Server (BDS).
 
-**Status as of 2026-10-25:** in development. `data/1.26.52/vanilla/` holds every vanilla behaviour pack file Helix reads, stacked as BDS 1.26.52.3 stacks them, and `data/1.26.52/bds/` the tables read from BDS: world generator tables from its code, and `block_materials.json` (every block's material type and the material flags) read from the running server.
+**Status as of 2026-10-27:** in development. The `data` package now serves `data/1.26.60/` (BDS 1.26.60.6): 23,960 block states of 1,480 blocks read from the running server, 1,623 items, and every vanilla behaviour pack file Helix reads, stacked as BDS stacks them. Its `bds/` tables are still the 1.26.52.3 ones (each file's `source` says so) until they are read again from 1.26.60.6. `data/1.26.52/` stays as it was.
 
 Part of [Helix](https://github.com/helix-bedrock), an open-source Minecraft: Bedrock
 Edition server engine in Go.
@@ -78,6 +78,16 @@ states are identical. The differences, all checked against BDS:
   our data and not in Cloudburst's.
 - `disc_press`, `ice_crystal` and `icicle` (30 states) do not exist in BDS
   1.26.52, with or without experiments.
+
+### 1.26.60
+
+BDS 1.26.60.6 adds `disc_press`, `ice_crystal` and `icicle`, and the
+connection properties of `fire`, `redstone_wire` and `chorus_plant` (1,902
+states added, 33 removed). The states were read from the running server
+(the `update-block-states` skill) and checked against the add-on: the same
+1,480 blocks and defaults. The add-on misses 7 states (awake
+`creaking_heart`, `sculk_sensor_phase` 2) that BDS turns into other states
+when saving a structure; 1.26.52's data has them too.
 
 `blockstate.NetworkHash` computes the network ID of a state; its test pins
 IDs BDS 1.26.52.3 sent to a client.
