@@ -71,8 +71,13 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
 - Placing blocks in the world makes BDS recompute neighbour properties (fence
   connections, stair corners); the add-on writes into empty structures
   instead (`structureManager.createEmpty`, `@minecraft/server` 2.10.0).
-- Other palettes list fire, redstone_wire and chorus_plant connection
-  properties that BDS 1.26.52 never stores or sends. Do not add them.
+- Other palettes listed fire, redstone_wire and chorus_plant connection
+  properties that BDS 1.26.52 never stores or sends. BDS 1.26.60 has them, so
+  only `data/1.26.60/` and later hold them.
+- From 1.26.60 the add-on misses a few states (awake `creaking_heart`,
+  `sculk_sensor_phase` 2) because saving a structure changes them. Read
+  block states from the running server (`update-block-states` skill) and use
+  the add-on only to check them.
 - The server must be stopped with `stop`, or the structures never reach disk.
 - `.brarchive` files list binary structures (`.nbt`, `.mcstructure`) as
   empty entries; the real file sits next to the archive. `pack` skips empty

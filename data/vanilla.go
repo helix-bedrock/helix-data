@@ -9,18 +9,18 @@ import (
 	"fmt"
 
 	"github.com/helix-bedrock/helix-data/blockstate"
-	files "github.com/helix-bedrock/helix-data/data/1.26.52"
+	files "github.com/helix-bedrock/helix-data/data/1.26.60"
 	"github.com/helix-bedrock/helix-data/item"
 )
 
 // Version is the Minecraft version the data is from.
-const Version = "1.26.52"
+const Version = "1.26.60"
 
-//go:embed 1.26.52/block_states.nbt
+//go:embed 1.26.60/block_states.nbt
 var blockStates []byte
 
 // BlockStates returns every block state of [Version] as BDS saved it, in the
-// order of data/1.26.52/block_states.nbt. Each call decodes a fresh copy.
+// order of data/1.26.60/block_states.nbt. Each call decodes a fresh copy.
 func BlockStates() ([]blockstate.VersionedState, error) {
 	states, err := blockstate.ReadNBT(bytes.NewReader(blockStates))
 	if err != nil {
@@ -29,7 +29,7 @@ func BlockStates() ([]blockstate.VersionedState, error) {
 	return states, nil
 }
 
-//go:embed 1.26.52/items.json
+//go:embed 1.26.60/items.json
 var items []byte
 
 // Items returns every item type of [Version] with its stack size, as BDS
@@ -42,7 +42,7 @@ func Items() ([]item.Item, error) {
 	return list, nil
 }
 
-//go:embed 1.26.52/entities.json
+//go:embed 1.26.60/entities.json
 var entities []byte
 
 // Entities returns every vanilla entity definition of [Version], keyed by
@@ -57,7 +57,7 @@ func Entities() (map[string]json.RawMessage, error) {
 	return m, nil
 }
 
-//go:embed 1.26.52/entity_loot.json
+//go:embed 1.26.60/entity_loot.json
 var entityLoot []byte
 
 // EntityLoot returns every entity loot table of [Version], keyed by the
@@ -71,7 +71,7 @@ func EntityLoot() (map[string]json.RawMessage, error) {
 	return m, nil
 }
 
-//go:embed 1.26.52/spawn_rules.json
+//go:embed 1.26.60/spawn_rules.json
 var spawnRules []byte
 
 // SpawnRules returns every vanilla spawn rule of [Version], keyed by entity
@@ -85,7 +85,7 @@ func SpawnRules() (map[string]json.RawMessage, error) {
 	return m, nil
 }
 
-//go:embed 1.26.52/worldgen.json
+//go:embed 1.26.60/worldgen.json
 var worldgen []byte
 
 // Worldgen returns Java Edition's world generation data that Helix uses
@@ -101,7 +101,7 @@ func Worldgen() (map[string]json.RawMessage, error) {
 	return m, nil
 }
 
-//go:embed 1.26.52/biome_tree.json
+//go:embed 1.26.60/biome_tree.json
 var biomeTree []byte
 
 // BiomeTree returns the overworld's and nether's biome parameters as Java
