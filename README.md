@@ -3,7 +3,7 @@
 Minecraft: Bedrock Edition game data for Helix, and the tools that build it
 from the official Bedrock Dedicated Server (BDS).
 
-**Status as of 2026-10-27:** in development. The `data` package now serves `data/1.26.60/` (BDS 1.26.60.6): 23,960 block states of 1,480 blocks read from the running server, 1,623 items, and every vanilla behaviour pack file Helix reads, stacked as BDS stacks them. Its `bds/` tables are still the 1.26.52.3 ones (each file's `source` says so) until they are read again from 1.26.60.6. `data/1.26.52/` stays as it was.
+**Status as of 2026-10-27:** in development. The `data` package now serves `data/1.26.60/` (BDS 1.26.60.6): 23,960 block states of 1,480 blocks read from the running server, 1,623 items, and every vanilla behaviour pack file Helix reads, stacked as BDS stacks them, plus each experimental pack's files under `experiments/` (Drop 4 of 2026's ice caves among them). Its `bds/` tables are still the 1.26.52.3 ones (each file's `source` says so) until they are read again from 1.26.60.6. `data/1.26.52/` stays as it was.
 
 Part of [Helix](https://github.com/helix-bedrock), an open-source Minecraft: Bedrock
 Edition server engine in Go.
@@ -52,6 +52,10 @@ Edition server engine in Go.
    ```bash
    go run ./cmd/vanilla -bds <bds folder> -out data/<version>
    ```
+   It also writes `data/<version>/experiments/<name>/`: the files of each
+   experimental pack (`experimental_y_2026_drop_4` becomes `y_2026_drop_4`)
+   on their own. BDS loads an enabled experiment's pack above every vanilla
+   pack, so a reader puts these files over `vanilla/`.
    Go code reads them, and the BDS tables in `data/<version>/bds/`, through
    `data.Files()`.
 
