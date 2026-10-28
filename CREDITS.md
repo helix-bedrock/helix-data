@@ -20,6 +20,7 @@ No ported code. `bds-dump`, `brarchive`, `pack`, `cmd/blockstates`, `cmd/entitie
 | `data/1.26.60/items.json` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | Printed by BDS through `bds-dump`, converted by `cmd/blockstates items` |
 | `data/1.26.60/entities.json`, `entity_loot.json`, `spawn_rules.json` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | Read from BDS's vanilla behaviour packs by `cmd/entities` |
 | `data/1.26.60/vanilla/` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | The vanilla behaviour packs and `definitions/` stacked by `cmd/vanilla` |
+| `data/1.26.60/experiments/` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | Each `experimental_*` behaviour pack's own files, written unstacked by `cmd/vanilla` |
 | `data/1.26.60/bds/` | Bedrock Dedicated Server 1.26.52.3 Linux (Mojang) | Copied from `data/1.26.52/bds/` until the tables are read from 1.26.60.6; each file's `source` names the build |
 | `data/1.26.52/bds/` | Bedrock Dedicated Server 1.26.52.3 Linux (Mojang) | Tables read out of BDS's code with IDA for the world generator (jigsaw pools and elements, block rules, liquid holders, top support), and `block_materials.json`, read from the running server under a debugger; each file's `source` names the BDS functions. Moved from `helix-bedrock/worldgen` |
 

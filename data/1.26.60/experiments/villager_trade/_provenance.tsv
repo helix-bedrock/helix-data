@@ -1,0 +1,7 @@
+loot_tables/chests/abandoned_mineshaft.json	experimental_villager_trade
+loot_tables/chests/ancient_city.json	experimental_villager_trade
+loot_tables/chests/desert_pyramid.json	experimental_villager_trade
+loot_tables/chests/jungle_temple.json	experimental_villager_trade
+loot_tables/chests/pillager_outpost.json	experimental_villager_trade
+trading/economy_trades/armorer_trades.json	experimental_villager_trade
+trading/economy_trades/librarian_trades.json	experimental_villager_trade

@@ -47,6 +47,56 @@ func main() {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1) //nolint:forbidigo // a command reports failure through its exit status
 	}
+	if err := runExperiments(*bds, filepath.Join(*out, "experiments")); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1) //nolint:forbidigo // a command reports failure through its exit status
+	}
+}
+
+// runExperiments writes each experimental pack's own files to
+// <out>/<name>, where name is the pack folder without "experimental_". The
+// files are not stacked: a world with the experiment on reads them over
+// vanilla/.
+func runExperiments(bds, out string) error {
+	packs, err := pack.Experiments(filepath.Join(bds, "behavior_packs"))
+	if err != nil {
+		return err
+	}
+	if err := os.RemoveAll(out); err != nil {
+		return err
+	}
+	for _, p := range packs {
+		files, err := pack.Read(p, dirs)
+		if err != nil {
+			return err
+		}
+		if len(files) == 0 {
+			continue
+		}
+		name := strings.TrimPrefix(filepath.Base(p), pack.ExperimentPrefix)
+		if err := write(filepath.Join(out, name), files); err != nil {
+			return err
+		}
+		fmt.Printf("experiment %s: %d files\n", name, len(files))
+	}
+	return nil
+}
+
+// write puts files under out with _provenance.tsv naming each file's pack.
+func write(out string, files map[string]pack.File) error {
+	var prov strings.Builder
+	for _, k := range slices.Sorted(maps.Keys(files)) {
+		f := files[k]
+		p := filepath.Join(out, filepath.FromSlash(k))
+		if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil { //nolint:gosec // generated data folders are committed and must be readable
+			return err
+		}
+		if err := os.WriteFile(p, f.Data, 0o644); err != nil { //nolint:gosec // generated data files are committed and must be readable
+			return err
+		}
+		fmt.Fprintf(&prov, "%s\t%s\n", k, f.From)
+	}
+	return os.WriteFile(filepath.Join(out, "_provenance.tsv"), []byte(prov.String()), 0o644) //nolint:gosec // generated data files are committed and must be readable
 }
 
 func run(bds, out string) error {
@@ -65,19 +115,7 @@ func run(bds, out string) error {
 	if err := os.RemoveAll(out); err != nil {
 		return err
 	}
-	var prov strings.Builder
-	for _, k := range slices.Sorted(maps.Keys(files)) {
-		f := files[k]
-		p := filepath.Join(out, filepath.FromSlash(k))
-		if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil { //nolint:gosec // generated data folders are committed and must be readable
-			return err
-		}
-		if err := os.WriteFile(p, f.Data, 0o644); err != nil { //nolint:gosec // generated data files are committed and must be readable
-			return err
-		}
-		fmt.Fprintf(&prov, "%s\t%s\n", k, f.From)
-	}
-	if err := os.WriteFile(filepath.Join(out, "_provenance.tsv"), []byte(prov.String()), 0o644); err != nil { //nolint:gosec // generated data files are committed and must be readable
+	if err := write(out, files); err != nil {
 		return err
 	}
 	fmt.Printf("%d files\n", len(files))

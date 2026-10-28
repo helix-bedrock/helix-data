@@ -33,7 +33,7 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
 - `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
 - `brarchive/`: reads the `.brarchive` files BDS packs behaviour pack folders into.
 - `pack/`: stacks BDS's vanilla behaviour packs (`vanilla`, then `vanilla_<version>` oldest first, over `definitions/`) the way BDS does, unpacking their archives.
-- `cmd/vanilla/`: writes `vanilla/` from the stacked packs: biomes, features, feature_rules, loot_tables, recipes, spawn_groups, structures, trading and worldgen, with `_provenance.tsv` naming each file's pack.
+- `cmd/vanilla/`: writes `vanilla/` from the stacked packs: biomes, features, feature_rules, loot_tables, recipes, spawn_groups, structures, trading and worldgen, with `_provenance.tsv` naming each file's pack, and `experiments/<name>/` with each `experimental_*` pack's own files, unstacked (BDS loads an enabled experiment's pack above every vanilla pack).
 - `cmd/entities/`: writes `entities.json`, `entity_loot.json` and `spawn_rules.json` from BDS's vanilla behaviour packs.
 - `cmd/worldgen/`: writes `worldgen.json` and `biome_tree.json` from Java Edition's vanilla datapack.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.

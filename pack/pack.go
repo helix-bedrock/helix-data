@@ -80,6 +80,7 @@ func Stack(bds string, dirs []string) (map[string]File, error) {
 		top, _, _ := strings.Cut(p, "/")
 		return slices.Contains(dirs, top)
 	}
+	// definitions/ is no pack folder, so Read does not apply to it.
 	if err := readLoose(filepath.Join(bds, Definitions), Definitions, keep, out); err != nil {
 		return nil, err
 	}
@@ -88,20 +89,56 @@ func Stack(bds string, dirs []string) (map[string]File, error) {
 		return nil, err
 	}
 	for _, p := range packs {
-		name := filepath.Base(p)
-		files := map[string]File{}
-		if err := readArchives(p, name, keep, files); err != nil {
-			return nil, err
-		}
-		// The plain files go second: archives list binary structures as
-		// empty entries and the real file sits next to them.
-		if err := readLoose(p, name, keep, files); err != nil {
+		files, err := Read(p, dirs)
+		if err != nil {
 			return nil, err
 		}
 		for k, f := range files {
 			out[k] = f
 		}
 	}
+	return out, nil
+}
+
+// Read returns the files of the top-level folders dirs of one pack folder,
+// on their own, keyed like [Stack].
+func Read(dir string, dirs []string) (map[string]File, error) {
+	keep := func(p string) bool {
+		top, _, _ := strings.Cut(p, "/")
+		return slices.Contains(dirs, top)
+	}
+	name := filepath.Base(dir)
+	files := map[string]File{}
+	if err := readArchives(dir, name, keep, files); err != nil {
+		return nil, err
+	}
+	// The plain files go second: archives list binary structures as empty
+	// entries and the real file sits next to them.
+	if err := readLoose(dir, name, keep, files); err != nil {
+		return nil, err
+	}
+	return files, nil
+}
+
+// ExperimentPrefix starts the folder name of every experimental pack, such
+// as "experimental_y_2026_drop_4".
+const ExperimentPrefix = "experimental_"
+
+// Experiments returns the experimental pack folders under dir, sorted by
+// name. BDS loads the pack of each experiment a world turns on above every
+// vanilla pack, so its files replace the stacked ones at the same path.
+func Experiments(dir string) ([]string, error) {
+	des, err := os.ReadDir(dir)
+	if err != nil {
+		return nil, fmt.Errorf("pack: read behaviour packs: %w", err)
+	}
+	var out []string
+	for _, de := range des {
+		if de.IsDir() && strings.HasPrefix(de.Name(), ExperimentPrefix) {
+			out = append(out, filepath.Join(dir, de.Name()))
+		}
+	}
+	slices.Sort(out)
 	return out, nil
 }
 
