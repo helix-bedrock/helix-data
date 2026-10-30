@@ -148,3 +148,35 @@ func TestFilesBlockMaterials(t *testing.T) {
 		t.Fatalf("water %d, air %d", m.Blocks["minecraft:water"], m.Blocks["minecraft:air"])
 	}
 }
+
+// TestBlockProperties checks that every block state has properties and
+// that per-state arrays match the block's state count.
+func TestBlockProperties(t *testing.T) {
+	props, err := AllBlockProperties()
+	if err != nil {
+		t.Fatal(err)
+	}
+	states, err := BlockStates()
+	if err != nil {
+		t.Fatal(err)
+	}
+	count := map[string]int{}
+	for _, s := range states {
+		count[s.Name]++
+	}
+	if len(props) != len(count) {
+		t.Fatalf("%d blocks with properties, %d blocks with states", len(props), len(count))
+	}
+	for name, n := range count {
+		p, ok := props[name]
+		if !ok {
+			t.Fatalf("%s has no properties", name)
+		}
+		if l := len(p.LightEmission); l != 1 && l != n {
+			t.Fatalf("%s: %d light emission values for %d states", name, l, n)
+		}
+	}
+	if got := props["minecraft:stone"].LightDampening.At(0); got != 15 {
+		t.Fatalf("stone light dampening %d, want 15", got)
+	}
+}
