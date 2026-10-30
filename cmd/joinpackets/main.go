@@ -1,6 +1,7 @@
 // Command joinpackets writes the registry packets BDS sends every joining
 // player (item registry, creative content, crafting data, biome
-// definitions, actor identifiers) as their raw payloads, and StartGame's
+// definitions, actor identifiers, and the voxel shapes and jigsaw
+// structure data sent before StartGame) as their raw payloads, and StartGame's
 // block definitions (the data-driven vanilla blocks), from a capture of
 // a real join: a JSON-lines file with one {"p": packet class, "hex":
 // header and payload} row per packet sent, in order.
@@ -35,6 +36,8 @@ var files = map[string]string{
 	"BiomeDefinitionListPacket":       "biome_definition_list.bin",
 	"AvailableActorIdentifiersPacket": "available_actor_identifiers.bin",
 	"StartGamePacket":                 "start_game_blocks.bin",
+	"VoxelShapesPacket":               "voxel_shapes.bin",
+	"JigsawStructureDataPacket":       "jigsaw_structure_data.bin",
 }
 
 func main() {

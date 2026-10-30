@@ -158,3 +158,29 @@ type blockList struct{ blocks []protocol.BlockEntry }
 
 func (*blockList) ID() uint32               { return 0 }
 func (b *blockList) Marshal(io protocol.IO) { protocol.Slice(io, &b.blocks) }
+
+//go:embed 1.26.60/bds/packets/voxel_shapes.bin
+var voxelShapes []byte
+
+// VoxelShapes returns the VoxelShapes packet BDS sends joining players
+// before StartGame: the named block shapes the client uses.
+func VoxelShapes() (*packet.VoxelShapes, error) {
+	var pk packet.VoxelShapes
+	if err := decodePacket(&pk, voxelShapes, 0); err != nil {
+		return nil, fmt.Errorf("data: voxel shapes: %w", err)
+	}
+	return &pk, nil
+}
+
+//go:embed 1.26.60/bds/packets/jigsaw_structure_data.bin
+var jigsawStructureData []byte
+
+// JigsawStructureData returns the JigsawStructureData packet BDS sends
+// joining players before StartGame.
+func JigsawStructureData() (*packet.JigsawStructureData, error) {
+	var pk packet.JigsawStructureData
+	if err := decodePacket(&pk, jigsawStructureData, 0); err != nil {
+		return nil, fmt.Errorf("data: jigsaw structure data: %w", err)
+	}
+	return &pk, nil
+}

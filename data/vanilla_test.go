@@ -244,4 +244,10 @@ func TestJoinPackets(t *testing.T) {
 	if len(blocks) != 98 {
 		t.Fatalf("%d block definitions, want BDS's 98", len(blocks))
 	}
+	if _, err := VoxelShapes(); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := JigsawStructureData(); err != nil {
+		t.Fatal(err)
+	}
 }
