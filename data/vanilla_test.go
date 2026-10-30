@@ -237,4 +237,11 @@ func TestJoinPackets(t *testing.T) {
 	if _, err := CraftingData(); err != nil {
 		t.Fatal(err)
 	}
+	blocks, err := BlockDefinitions()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(blocks) != 98 {
+		t.Fatalf("%d block definitions, want BDS's 98", len(blocks))
+	}
 }

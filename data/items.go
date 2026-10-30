@@ -137,3 +137,24 @@ func decodePacket(pk packet.Packet, b []byte, shield int32) (err error) {
 	}
 	return nil
 }
+
+//go:embed 1.26.60/bds/packets/start_game_blocks.bin
+var startGameBlocks []byte
+
+// BlockDefinitions returns the block definitions BDS sends joining players
+// in StartGame: the vanilla blocks defined by data (components, states,
+// geometry) rather than built into the client. Without them the client
+// does not know those blocks.
+func BlockDefinitions() ([]protocol.BlockEntry, error) {
+	var pk blockList
+	if err := decodePacket(&pk, startGameBlocks, 0); err != nil {
+		return nil, fmt.Errorf("data: start game blocks: %w", err)
+	}
+	return pk.blocks, nil
+}
+
+// blockList reads StartGame's block list on its own.
+type blockList struct{ blocks []protocol.BlockEntry }
+
+func (*blockList) ID() uint32               { return 0 }
+func (b *blockList) Marshal(io protocol.IO) { protocol.Slice(io, &b.blocks) }

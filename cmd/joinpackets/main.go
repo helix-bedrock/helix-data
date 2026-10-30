@@ -1,6 +1,7 @@
 // Command joinpackets writes the registry packets BDS sends every joining
 // player (item registry, creative content, crafting data, biome
-// definitions, actor identifiers) as their raw payloads, from a capture of
+// definitions, actor identifiers) as their raw payloads, and StartGame's
+// block definitions (the data-driven vanilla blocks), from a capture of
 // a real join: a JSON-lines file with one {"p": packet class, "hex":
 // header and payload} row per packet sent, in order.
 //
@@ -33,6 +34,7 @@ var files = map[string]string{
 	"CraftingDataPacket":              "crafting_data.bin",
 	"BiomeDefinitionListPacket":       "biome_definition_list.bin",
 	"AvailableActorIdentifiersPacket": "available_actor_identifiers.bin",
+	"StartGamePacket":                 "start_game_blocks.bin",
 }
 
 func main() {
@@ -100,8 +102,16 @@ func run(capture, out string) error {
 		if !ok {
 			return fmt.Errorf("no %s in the capture", class)
 		}
-		if _, payload, err = decode(b, shield); err != nil {
+		var pk packet.Packet
+		if pk, payload, err = decode(b, shield); err != nil {
 			return fmt.Errorf("%s: %w", class, err)
+		}
+		if sg, ok := pk.(*packet.StartGame); ok {
+			// Only the block list: the rest is about the world and player
+			// the capture was made with.
+			var w bytes.Buffer
+			protocol.Slice(protocol.NewWriter(&w, shield), &sg.Blocks)
+			payload = w.Bytes()
 		}
 		if err := os.WriteFile(filepath.Join(out, name), payload, 0o644); err != nil { //nolint:gosec // data files are meant to be readable
 			return err
