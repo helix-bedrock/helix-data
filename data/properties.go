@@ -76,3 +76,18 @@ func AllBlockProperties() (map[string]BlockProperties, error) {
 	}
 	return doc.Blocks, nil
 }
+
+//go:embed 1.26.60/block_defaults.json
+var blockDefaults []byte
+
+// BlockDefaults returns each block's default state of [Version]: block
+// name to property values. JSON has one number type, so numbers (including
+// the bytes boolean properties use) are float64. Each call decodes a fresh
+// copy.
+func BlockDefaults() (map[string]map[string]any, error) {
+	var m map[string]map[string]any
+	if err := json.Unmarshal(blockDefaults, &m); err != nil {
+		return nil, fmt.Errorf("data: block defaults: %w", err)
+	}
+	return m, nil
+}
