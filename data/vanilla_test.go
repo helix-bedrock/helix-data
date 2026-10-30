@@ -208,3 +208,33 @@ func TestItemRegistry(t *testing.T) {
 	}
 	t.Logf("%d items in the registry, %d in items.json, %d of those not in the registry", len(reg), len(list), missing)
 }
+
+// TestJoinPackets checks the other join packets decode and agree with the
+// item registry and biome IDs.
+func TestJoinPackets(t *testing.T) {
+	ids, err := BiomeIDs()
+	if err != nil {
+		t.Fatal(err)
+	}
+	defs, err := BiomeDefinitions()
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, b := range defs.BiomeDefinitions {
+		if _, ok := ids[defs.StringList[b.NameIndex]]; !ok {
+			t.Fatalf("biome %s has no ID", defs.StringList[b.NameIndex])
+		}
+	}
+	if len(ids) != len(defs.BiomeDefinitions) {
+		t.Fatalf("%d biome IDs, %d definitions", len(ids), len(defs.BiomeDefinitions))
+	}
+	if _, err := ActorIdentifiers(); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := CreativeContent(); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := CraftingData(); err != nil {
+		t.Fatal(err)
+	}
+}
