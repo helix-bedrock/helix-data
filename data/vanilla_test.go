@@ -251,3 +251,19 @@ func TestJoinPackets(t *testing.T) {
 		t.Fatal(err)
 	}
 }
+
+func TestMiningData(t *testing.T) {
+	m, err := MiningData()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if p := m.Items["minecraft:iron_pickaxe"]; p.Rule != "digger" || p.Tier != 2 || p.Speed != 6 || p.Tag != "minecraft:is_pickaxe_item_destructible" {
+		t.Errorf("iron pickaxe %+v", p)
+	}
+	if b := m.Blocks["minecraft:obsidian"]; !b.NeedsTool || len(b.Tags) == 0 {
+		t.Errorf("obsidian %+v", b)
+	}
+	if len(m.Blocks) != 1480 || len(m.TierTags) != 4 {
+		t.Errorf("%d blocks, %d tier tags", len(m.Blocks), len(m.TierTags))
+	}
+}

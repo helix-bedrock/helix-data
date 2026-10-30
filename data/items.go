@@ -201,3 +201,70 @@ func ItemEquipment() (armorSlots map[string]uint8, offhand []string, err error) 
 	}
 	return doc.ArmorSlots, doc.Offhand, nil
 }
+
+//go:embed 1.26.60/bds/mining.json
+var mining []byte
+
+// Mining is what BDS's mining speed rules read: the items whose speed BDS
+// works out in code and every block type's tags.
+type Mining struct {
+	// TierTags are the block tags that ask for a digger of at least tier
+	// 1, 2, 3 and 4 to count as the right tool.
+	TierTags []string `json:"tierTags"`
+	// Items are the tools, keyed by item name.
+	Items map[string]MiningItem `json:"items"`
+	// Sword, Shears and Mace are the block lists and tags of those rules.
+	Sword  MiningSword  `json:"sword"`
+	Shears MiningShears `json:"shears"`
+	Mace   struct {
+		Tag string `json:"tag"`
+	} `json:"mace"`
+	// Blocks are every block type's tags and whether it needs the right
+	// tool, keyed by block name.
+	Blocks map[string]MiningBlock `json:"blocks"`
+}
+
+// MiningItem is a tool: Rule is "digger", "sword", "shears" or "mace". A
+// digger mines blocks with Tag at Speed and counts as the right tool for
+// blocks whose tier tag asks for at most Tier.
+type MiningItem struct {
+	Rule  string  `json:"rule"`
+	Tag   string  `json:"tag"`
+	Tier  int     `json:"tier"`
+	Speed float32 `json:"speed"`
+}
+
+// MiningSword lists the blocks swords mine at 15, 30 and 1.5; Tag marks
+// the blocks a sword is the right tool for.
+type MiningSword struct {
+	Tag      string   `json:"tag"`
+	Speed15  []string `json:"speed15"`
+	Speed30  []string `json:"speed30"`
+	Speed1_5 []string `json:"speed1_5"`
+}
+
+// MiningShears lists the blocks shears mine at 15, 5 and 2 plus the
+// Efficiency bonus (Tag also gives 5); Tag and CanDestroy mark the blocks
+// shears are the right tool for.
+type MiningShears struct {
+	Tag        string   `json:"tag"`
+	CanDestroy []string `json:"canDestroy"`
+	Plus15     []string `json:"plus15"`
+	Plus5      []string `json:"plus5"`
+	Plus2      []string `json:"plus2"`
+}
+
+// MiningBlock is a block type's tags and whether it needs the right tool.
+type MiningBlock struct {
+	Tags      []string `json:"tags"`
+	NeedsTool bool     `json:"needsTool"`
+}
+
+// MiningData returns the mining table. Each call decodes a fresh copy.
+func MiningData() (*Mining, error) {
+	var m Mining
+	if err := json.Unmarshal(mining, &m); err != nil {
+		return nil, fmt.Errorf("data: mining: %w", err)
+	}
+	return &m, nil
+}
