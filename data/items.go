@@ -184,3 +184,20 @@ func JigsawStructureData() (*packet.JigsawStructureData, error) {
 	}
 	return &pk, nil
 }
+
+//go:embed 1.26.60/bds/item_equipment.json
+var itemEquipment []byte
+
+// ItemEquipment returns, as BDS checks them, the armour slot of every item
+// a player may wear (0 head, 1 chest, 2 legs, 3 feet) and the items the
+// offhand accepts. Each call decodes a fresh copy.
+func ItemEquipment() (armorSlots map[string]uint8, offhand []string, err error) {
+	var doc struct {
+		ArmorSlots map[string]uint8 `json:"armorSlots"`
+		Offhand    []string         `json:"offhand"`
+	}
+	if err := json.Unmarshal(itemEquipment, &doc); err != nil {
+		return nil, nil, fmt.Errorf("data: item equipment: %w", err)
+	}
+	return doc.ArmorSlots, doc.Offhand, nil
+}
