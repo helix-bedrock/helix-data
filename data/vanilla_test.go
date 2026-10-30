@@ -180,3 +180,31 @@ func TestBlockProperties(t *testing.T) {
 		t.Fatalf("stone light dampening %d, want 15", got)
 	}
 }
+
+// TestItemRegistry checks BDS's item list against items.json.
+func TestItemRegistry(t *testing.T) {
+	reg, err := ItemRegistry()
+	if err != nil {
+		t.Fatal(err)
+	}
+	list, err := Items()
+	if err != nil {
+		t.Fatal(err)
+	}
+	ids := map[int16]string{}
+	names := map[string]bool{}
+	for _, it := range reg {
+		if other, dup := ids[it.RuntimeID]; dup {
+			t.Fatalf("%s and %s share ID %d", it.Name, other, it.RuntimeID)
+		}
+		ids[it.RuntimeID] = it.Name
+		names[it.Name] = true
+	}
+	missing := 0
+	for _, it := range list {
+		if !names[it.Name] {
+			missing++
+		}
+	}
+	t.Logf("%d items in the registry, %d in items.json, %d of those not in the registry", len(reg), len(list), missing)
+}

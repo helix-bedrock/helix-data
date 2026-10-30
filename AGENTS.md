@@ -23,6 +23,7 @@ go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_pa
 go run ./cmd/blockstates items -log <bds console log> -out data/<version>
 go run ./cmd/entities -bds <bds folder> -out data/<version>
 go run ./cmd/vanilla -bds <bds folder> -out data/<version>
+go run ./cmd/joinpackets -capture <join.jsonl> -out data/<version>/bds/packets
 go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/<version>
 ```
 
@@ -36,6 +37,7 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
 - `cmd/vanilla/`: writes `vanilla/` from the stacked packs: biomes, features, feature_rules, loot_tables, recipes, spawn_groups, structures, trading and worldgen, with `_provenance.tsv` naming each file's pack, and `experiments/<name>/` with each `experimental_*` pack's own files, unstacked (BDS loads an enabled experiment's pack above every vanilla pack).
 - `cmd/entities/`: writes `entities.json`, `entity_loot.json` and `spawn_rules.json` from BDS's vanilla behaviour packs.
 - `cmd/worldgen/`: writes `worldgen.json` and `biome_tree.json` from Java Edition's vanilla datapack.
+- `cmd/joinpackets/`: writes `bds/packets/` from a capture of a real join on BDS: the raw payloads of the registry packets, each checked to decode and encode back byte for byte.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
 - `data/`: the `data` Go package, which embeds the current version's files so the engine can load them.
 - `data/<version>/`: generated output. Never edit by hand.
