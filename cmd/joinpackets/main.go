@@ -55,7 +55,7 @@ func main() {
 }
 
 func run(capture, out string) error {
-	f, err := os.Open(capture)
+	f, err := os.Open(capture) //nolint:gosec // the path is one the person passed on the command line
 	if err != nil {
 		return err
 	}
@@ -87,7 +87,7 @@ func run(capture, out string) error {
 	if !ok {
 		return errors.New("no ItemRegistryPacket in the capture")
 	}
-	pk, payload, err := decode(items, 0)
+	pk, _, err := decode(items, 0)
 	if err != nil {
 		return fmt.Errorf("ItemRegistryPacket: %w", err)
 	}
@@ -105,8 +105,8 @@ func run(capture, out string) error {
 		if !ok {
 			return fmt.Errorf("no %s in the capture", class)
 		}
-		var pk packet.Packet
-		if pk, payload, err = decode(b, shield); err != nil {
+		pk, payload, err := decode(b, shield)
+		if err != nil {
 			return fmt.Errorf("%s: %w", class, err)
 		}
 		if sg, ok := pk.(*packet.StartGame); ok {
