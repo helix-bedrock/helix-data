@@ -3,6 +3,7 @@ package data
 import (
 	"encoding/json"
 	"io/fs"
+	"slices"
 	"testing"
 )
 
@@ -265,5 +266,23 @@ func TestMiningData(t *testing.T) {
 	}
 	if len(m.Blocks) != 1480 || len(m.TierTags) != 4 {
 		t.Errorf("%d blocks, %d tier tags", len(m.Blocks), len(m.TierTags))
+	}
+}
+
+// TestBreakPlace checks a few known values of BDS 1.26.60's break and
+// place table.
+func TestBreakPlace(t *testing.T) {
+	b, err := BreakPlaceData()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if d := b.Items["minecraft:iron_pickaxe"]; d.MaxDamage != 250 || d.Rule != "digger" {
+		t.Errorf("iron pickaxe: %+v", d)
+	}
+	if d := b.Items["minecraft:shears"]; d.MaxDamage != 238 || d.Rule != "shears" {
+		t.Errorf("shears: %+v", d)
+	}
+	if !slices.Contains(b.Replaceable, "minecraft:water") || slices.Contains(b.Replaceable, "minecraft:stone") {
+		t.Error("replaceable list is wrong")
 	}
 }

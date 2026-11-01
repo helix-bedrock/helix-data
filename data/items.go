@@ -268,3 +268,38 @@ func MiningData() (*Mining, error) {
 	}
 	return &m, nil
 }
+
+//go:embed 1.26.60/bds/break_place.json
+var breakPlace []byte
+
+// BreakPlace is what BDS reads when a player breaks or places a block: how
+// held items wear and which blocks a placed block may replace.
+type BreakPlace struct {
+	// Items are the items with a max damage, keyed by name.
+	Items map[string]Durability `json:"items"`
+	// Replaceable are the block types carrying BDS's replaceable
+	// component: a block placed on one takes its place.
+	Replaceable []string `json:"replaceable"`
+	// NotReplacedBy lists, per replaceable block, the blocks that do not
+	// replace it (light blocks are not replaced by light blocks).
+	NotReplacedBy map[string][]string `json:"notReplacedBy"`
+}
+
+// Durability is an item's max damage and the rule it wears by when it
+// breaks a block: "weapon" (2 on a block with a destroy time above 0),
+// "digger" (1 on such a block), "shears" (1 on any block), "none", or
+// "component" (a data-driven item component decides).
+type Durability struct {
+	MaxDamage int    `json:"maxDamage"`
+	Rule      string `json:"rule"`
+}
+
+// BreakPlaceData returns the break and place table. Each call decodes a
+// fresh copy.
+func BreakPlaceData() (*BreakPlace, error) {
+	var b BreakPlace
+	if err := json.Unmarshal(breakPlace, &b); err != nil {
+		return nil, fmt.Errorf("data: break and place: %w", err)
+	}
+	return &b, nil
+}

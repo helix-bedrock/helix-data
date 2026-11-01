@@ -1,0 +1,644 @@
+{
+ "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill) once the server started, memory reads only: each item's max damage and the rule its durability follows when it breaks a block (weapon: 2 on a block with a destroy time above 0; digger: 1 on such a block; shears: 1 on any block; none; component: a data-driven item component decides), for items with a max damage; and the block types that carry BDS's replaceable component, which the base canBeBuiltOver reads (a placed block may replace them). Light blocks override canBeBuiltOver: they are not replaced by another light block. Leaf litter, pink petals, wildflowers and snow layer have their own rules on top (stacking, layer height), not listed here.",
+ "items": {
+  "minecraft:bow": {
+   "maxDamage": 384,
+   "rule": "none"
+  },
+  "minecraft:brush": {
+   "maxDamage": 64,
+   "rule": "none"
+  },
+  "minecraft:carrot_on_a_stick": {
+   "maxDamage": 26,
+   "rule": "none"
+  },
+  "minecraft:chainmail_boots": {
+   "maxDamage": 195,
+   "rule": "none"
+  },
+  "minecraft:chainmail_chestplate": {
+   "maxDamage": 240,
+   "rule": "none"
+  },
+  "minecraft:chainmail_helmet": {
+   "maxDamage": 165,
+   "rule": "none"
+  },
+  "minecraft:chainmail_leggings": {
+   "maxDamage": 225,
+   "rule": "none"
+  },
+  "minecraft:copper_axe": {
+   "maxDamage": 190,
+   "rule": "digger"
+  },
+  "minecraft:copper_boots": {
+   "maxDamage": 143,
+   "rule": "none"
+  },
+  "minecraft:copper_chestplate": {
+   "maxDamage": 176,
+   "rule": "none"
+  },
+  "minecraft:copper_helmet": {
+   "maxDamage": 121,
+   "rule": "none"
+  },
+  "minecraft:copper_hoe": {
+   "maxDamage": 190,
+   "rule": "digger"
+  },
+  "minecraft:copper_leggings": {
+   "maxDamage": 165,
+   "rule": "none"
+  },
+  "minecraft:copper_pickaxe": {
+   "maxDamage": 190,
+   "rule": "digger"
+  },
+  "minecraft:copper_shovel": {
+   "maxDamage": 190,
+   "rule": "digger"
+  },
+  "minecraft:copper_sword": {
+   "maxDamage": 190,
+   "rule": "weapon"
+  },
+  "minecraft:crossbow": {
+   "maxDamage": 464,
+   "rule": "none"
+  },
+  "minecraft:diamond_axe": {
+   "maxDamage": 1561,
+   "rule": "digger"
+  },
+  "minecraft:diamond_boots": {
+   "maxDamage": 429,
+   "rule": "none"
+  },
+  "minecraft:diamond_chestplate": {
+   "maxDamage": 528,
+   "rule": "none"
+  },
+  "minecraft:diamond_helmet": {
+   "maxDamage": 363,
+   "rule": "none"
+  },
+  "minecraft:diamond_hoe": {
+   "maxDamage": 1561,
+   "rule": "digger"
+  },
+  "minecraft:diamond_leggings": {
+   "maxDamage": 495,
+   "rule": "none"
+  },
+  "minecraft:diamond_pickaxe": {
+   "maxDamage": 1561,
+   "rule": "digger"
+  },
+  "minecraft:diamond_shovel": {
+   "maxDamage": 1561,
+   "rule": "digger"
+  },
+  "minecraft:diamond_sword": {
+   "maxDamage": 1561,
+   "rule": "weapon"
+  },
+  "minecraft:elytra": {
+   "maxDamage": 432,
+   "rule": "none"
+  },
+  "minecraft:flint_and_steel": {
+   "maxDamage": 64,
+   "rule": "weapon"
+  },
+  "minecraft:glow_stick": {
+   "maxDamage": 100,
+   "rule": "none"
+  },
+  "minecraft:golden_axe": {
+   "maxDamage": 32,
+   "rule": "digger"
+  },
+  "minecraft:golden_boots": {
+   "maxDamage": 91,
+   "rule": "none"
+  },
+  "minecraft:golden_chestplate": {
+   "maxDamage": 112,
+   "rule": "none"
+  },
+  "minecraft:golden_helmet": {
+   "maxDamage": 77,
+   "rule": "none"
+  },
+  "minecraft:golden_hoe": {
+   "maxDamage": 32,
+   "rule": "digger"
+  },
+  "minecraft:golden_leggings": {
+   "maxDamage": 105,
+   "rule": "none"
+  },
+  "minecraft:golden_pickaxe": {
+   "maxDamage": 32,
+   "rule": "digger"
+  },
+  "minecraft:golden_shovel": {
+   "maxDamage": 32,
+   "rule": "digger"
+  },
+  "minecraft:golden_sword": {
+   "maxDamage": 32,
+   "rule": "weapon"
+  },
+  "minecraft:iron_axe": {
+   "maxDamage": 250,
+   "rule": "digger"
+  },
+  "minecraft:iron_boots": {
+   "maxDamage": 195,
+   "rule": "none"
+  },
+  "minecraft:iron_chestplate": {
+   "maxDamage": 240,
+   "rule": "none"
+  },
+  "minecraft:iron_helmet": {
+   "maxDamage": 165,
+   "rule": "none"
+  },
+  "minecraft:iron_hoe": {
+   "maxDamage": 250,
+   "rule": "digger"
+  },
+  "minecraft:iron_leggings": {
+   "maxDamage": 225,
+   "rule": "none"
+  },
+  "minecraft:iron_pickaxe": {
+   "maxDamage": 250,
+   "rule": "digger"
+  },
+  "minecraft:iron_shovel": {
+   "maxDamage": 250,
+   "rule": "digger"
+  },
+  "minecraft:iron_sword": {
+   "maxDamage": 250,
+   "rule": "weapon"
+  },
+  "minecraft:leather_boots": {
+   "maxDamage": 65,
+   "rule": "none"
+  },
+  "minecraft:leather_chestplate": {
+   "maxDamage": 80,
+   "rule": "none"
+  },
+  "minecraft:leather_helmet": {
+   "maxDamage": 55,
+   "rule": "none"
+  },
+  "minecraft:leather_leggings": {
+   "maxDamage": 75,
+   "rule": "none"
+  },
+  "minecraft:mace": {
+   "maxDamage": 500,
+   "rule": "weapon"
+  },
+  "minecraft:netherite_axe": {
+   "maxDamage": 2031,
+   "rule": "digger"
+  },
+  "minecraft:netherite_boots": {
+   "maxDamage": 481,
+   "rule": "none"
+  },
+  "minecraft:netherite_chestplate": {
+   "maxDamage": 592,
+   "rule": "none"
+  },
+  "minecraft:netherite_helmet": {
+   "maxDamage": 407,
+   "rule": "none"
+  },
+  "minecraft:netherite_hoe": {
+   "maxDamage": 2031,
+   "rule": "digger"
+  },
+  "minecraft:netherite_leggings": {
+   "maxDamage": 555,
+   "rule": "none"
+  },
+  "minecraft:netherite_pickaxe": {
+   "maxDamage": 2031,
+   "rule": "digger"
+  },
+  "minecraft:netherite_shovel": {
+   "maxDamage": 2031,
+   "rule": "digger"
+  },
+  "minecraft:netherite_sword": {
+   "maxDamage": 2031,
+   "rule": "weapon"
+  },
+  "minecraft:shears": {
+   "maxDamage": 238,
+   "rule": "shears"
+  },
+  "minecraft:shield": {
+   "maxDamage": 336,
+   "rule": "none"
+  },
+  "minecraft:sparkler": {
+   "maxDamage": 100,
+   "rule": "none"
+  },
+  "minecraft:stone_axe": {
+   "maxDamage": 131,
+   "rule": "digger"
+  },
+  "minecraft:stone_hoe": {
+   "maxDamage": 131,
+   "rule": "digger"
+  },
+  "minecraft:stone_pickaxe": {
+   "maxDamage": 131,
+   "rule": "digger"
+  },
+  "minecraft:stone_shovel": {
+   "maxDamage": 131,
+   "rule": "digger"
+  },
+  "minecraft:stone_sword": {
+   "maxDamage": 131,
+   "rule": "weapon"
+  },
+  "minecraft:trident": {
+   "maxDamage": 250,
+   "rule": "weapon"
+  },
+  "minecraft:turtle_helmet": {
+   "maxDamage": 275,
+   "rule": "none"
+  },
+  "minecraft:wooden_axe": {
+   "maxDamage": 59,
+   "rule": "digger"
+  },
+  "minecraft:wooden_hoe": {
+   "maxDamage": 59,
+   "rule": "digger"
+  },
+  "minecraft:wooden_pickaxe": {
+   "maxDamage": 59,
+   "rule": "digger"
+  },
+  "minecraft:wooden_shovel": {
+   "maxDamage": 59,
+   "rule": "digger"
+  },
+  "minecraft:wooden_sword": {
+   "maxDamage": 59,
+   "rule": "weapon"
+  }
+ },
+ "replaceable": [
+  "minecraft:air",
+  "minecraft:bubble_column",
+  "minecraft:bush",
+  "minecraft:crimson_roots",
+  "minecraft:deadbush",
+  "minecraft:fern",
+  "minecraft:fire",
+  "minecraft:flowing_lava",
+  "minecraft:flowing_water",
+  "minecraft:glow_lichen",
+  "minecraft:large_fern",
+  "minecraft:lava",
+  "minecraft:leaf_litter",
+  "minecraft:light_block_0",
+  "minecraft:light_block_1",
+  "minecraft:light_block_10",
+  "minecraft:light_block_11",
+  "minecraft:light_block_12",
+  "minecraft:light_block_13",
+  "minecraft:light_block_14",
+  "minecraft:light_block_15",
+  "minecraft:light_block_2",
+  "minecraft:light_block_3",
+  "minecraft:light_block_4",
+  "minecraft:light_block_5",
+  "minecraft:light_block_6",
+  "minecraft:light_block_7",
+  "minecraft:light_block_8",
+  "minecraft:light_block_9",
+  "minecraft:nether_sprouts",
+  "minecraft:red_shrub",
+  "minecraft:resin_clump",
+  "minecraft:sculk_vein",
+  "minecraft:seagrass",
+  "minecraft:short_dry_grass",
+  "minecraft:short_grass",
+  "minecraft:snow_layer",
+  "minecraft:soul_fire",
+  "minecraft:tall_dry_grass",
+  "minecraft:tall_grass",
+  "minecraft:vine",
+  "minecraft:warped_roots",
+  "minecraft:water"
+ ],
+ "notReplacedBy": {
+  "minecraft:light_block_0": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_1": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_10": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_11": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_12": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_13": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_14": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_15": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_2": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_3": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_4": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_5": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_6": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_7": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_8": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ],
+  "minecraft:light_block_9": [
+   "minecraft:light_block_0",
+   "minecraft:light_block_1",
+   "minecraft:light_block_10",
+   "minecraft:light_block_11",
+   "minecraft:light_block_12",
+   "minecraft:light_block_13",
+   "minecraft:light_block_14",
+   "minecraft:light_block_15",
+   "minecraft:light_block_2",
+   "minecraft:light_block_3",
+   "minecraft:light_block_4",
+   "minecraft:light_block_5",
+   "minecraft:light_block_6",
+   "minecraft:light_block_7",
+   "minecraft:light_block_8",
+   "minecraft:light_block_9"
+  ]
+ }
+}
