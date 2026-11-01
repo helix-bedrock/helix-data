@@ -1,5 +1,8 @@
 {
  "blocks": {
+  "minecraft:acacia_button": {
+   "boxes": []
+  },
   "minecraft:acacia_leaves": {
    "boxes": [
     [
@@ -117,6 +120,18 @@
     ]
    ]
   },
+  "minecraft:azalea": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
   "minecraft:azalea_leaves": {
    "boxes": [
     [
@@ -155,6 +170,9 @@
      1.0
     ]
    ]
+  },
+  "minecraft:bamboo_button": {
+   "boxes": []
   },
   "minecraft:bamboo_mosaic": {
    "boxes": [
@@ -291,6 +309,9 @@
   "minecraft:beetroot": {
    "boxes": []
   },
+  "minecraft:birch_button": {
+   "boxes": []
+  },
   "minecraft:birch_leaves": {
    "boxes": [
     [
@@ -348,6 +369,18 @@
      1.0,
      1.0,
      1.0
+    ]
+   ]
+  },
+  "minecraft:black_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
     ]
    ]
   },
@@ -444,6 +477,18 @@
      1.0,
      1.0,
      1.0
+    ]
+   ]
+  },
+  "minecraft:blue_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
     ]
    ]
   },
@@ -591,6 +636,18 @@
     ]
    ]
   },
+  "minecraft:brown_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:brown_concrete": {
    "boxes": [
     [
@@ -717,6 +774,18 @@
   "minecraft:bush": {
    "boxes": []
   },
+  "minecraft:cactus": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.9375,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:cactus_flower": {
    "boxes": []
   },
@@ -765,6 +834,18 @@
      1.0,
      0.4375,
      1.0
+    ]
+   ]
+  },
+  "minecraft:candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
     ]
    ]
   },
@@ -830,6 +911,9 @@
      1.0
     ]
    ]
+  },
+  "minecraft:cherry_button": {
+   "boxes": []
   },
   "minecraft:cherry_leaves": {
    "boxes": [
@@ -1416,6 +1500,9 @@
     ]
    ]
   },
+  "minecraft:crimson_button": {
+   "boxes": []
+  },
   "minecraft:crimson_fungus": {
    "boxes": []
   },
@@ -1527,6 +1614,18 @@
     ]
    ]
   },
+  "minecraft:cyan_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:cyan_concrete": {
    "boxes": [
     [
@@ -1600,6 +1699,9 @@
    ]
   },
   "minecraft:dandelion": {
+   "boxes": []
+  },
+  "minecraft:dark_oak_button": {
    "boxes": []
   },
   "minecraft:dark_oak_leaves": {
@@ -3621,6 +3723,18 @@
     ]
    ]
   },
+  "minecraft:end_portal": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.25,
+     1.0
+    ]
+   ]
+  },
   "minecraft:end_stone": {
    "boxes": [
     [
@@ -3795,6 +3909,18 @@
     ]
    ]
   },
+  "minecraft:flowering_azalea": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
   "minecraft:flowing_lava": {
    "boxes": []
   },
@@ -3963,6 +4089,18 @@
     ]
    ]
   },
+  "minecraft:gray_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:gray_concrete": {
    "boxes": [
     [
@@ -4032,6 +4170,18 @@
      1.0,
      1.0,
      1.0
+    ]
+   ]
+  },
+  "minecraft:green_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
     ]
    ]
   },
@@ -4578,6 +4728,9 @@
     ]
    ]
   },
+  "minecraft:jungle_button": {
+   "boxes": []
+  },
   "minecraft:jungle_leaves": {
    "boxes": [
     [
@@ -4749,6 +4902,18 @@
   "minecraft:light_block_9": {
    "boxes": []
   },
+  "minecraft:light_blue_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:light_blue_concrete": {
    "boxes": [
     [
@@ -4821,6 +4986,18 @@
     ]
    ]
   },
+  "minecraft:light_gray_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:light_gray_concrete": {
    "boxes": [
     [
@@ -4889,6 +5066,18 @@
   },
   "minecraft:lily_of_the_valley": {
    "boxes": []
+  },
+  "minecraft:lime_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
   },
   "minecraft:lime_concrete": {
    "boxes": [
@@ -5070,6 +5259,18 @@
     ]
    ]
   },
+  "minecraft:magenta_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:magenta_concrete": {
    "boxes": [
     [
@@ -5153,6 +5354,9 @@
      1.0
     ]
    ]
+  },
+  "minecraft:mangrove_button": {
+   "boxes": []
   },
   "minecraft:mangrove_leaves": {
    "boxes": [
@@ -5541,6 +5745,18 @@
   "minecraft:open_eyeblossom": {
    "boxes": []
   },
+  "minecraft:orange_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:orange_concrete": {
    "boxes": [
     [
@@ -5754,6 +5970,9 @@
     ]
    ]
   },
+  "minecraft:pale_oak_button": {
+   "boxes": []
+  },
   "minecraft:pale_oak_leaves": {
    "boxes": [
     [
@@ -5828,6 +6047,18 @@
   },
   "minecraft:peony": {
    "boxes": []
+  },
+  "minecraft:pink_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
   },
   "minecraft:pink_concrete": {
    "boxes": [
@@ -5982,6 +6213,9 @@
     ]
    ]
   },
+  "minecraft:polished_blackstone_button": {
+   "boxes": []
+  },
   "minecraft:polished_blackstone_pressure_plate": {
    "boxes": []
   },
@@ -6056,6 +6290,9 @@
      1.0
     ]
    ]
+  },
+  "minecraft:poplar_button": {
+   "boxes": []
   },
   "minecraft:poplar_log": {
    "boxes": [
@@ -6188,6 +6425,18 @@
   },
   "minecraft:pumpkin_stem": {
    "boxes": []
+  },
+  "minecraft:purple_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
   },
   "minecraft:purple_concrete": {
    "boxes": [
@@ -6369,6 +6618,18 @@
      1.0,
      1.0,
      1.0
+    ]
+   ]
+  },
+  "minecraft:red_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
     ]
    ]
   },
@@ -7119,6 +7380,9 @@
   "minecraft:spore_blossom": {
    "boxes": []
   },
+  "minecraft:spruce_button": {
+   "boxes": []
+  },
   "minecraft:spruce_leaves": {
    "boxes": [
     [
@@ -7220,6 +7484,9 @@
      1.0
     ]
    ]
+  },
+  "minecraft:stone_button": {
+   "boxes": []
   },
   "minecraft:stone_pressure_plate": {
    "boxes": []
@@ -7857,6 +8124,9 @@
   "minecraft:wall_sign": {
    "boxes": []
   },
+  "minecraft:warped_button": {
+   "boxes": []
+  },
   "minecraft:warped_fungus": {
    "boxes": []
   },
@@ -7934,6 +8204,18 @@
   },
   "minecraft:water": {
    "boxes": []
+  },
+  "minecraft:waterlily": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.09375,
+     0.9375
+    ]
+   ]
   },
   "minecraft:waxed_chiseled_copper": {
    "boxes": [
@@ -8376,6 +8658,18 @@
   "minecraft:wheat": {
    "boxes": []
   },
+  "minecraft:white_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
+  },
   "minecraft:white_concrete": {
    "boxes": [
     [
@@ -8457,8 +8751,23 @@
   "minecraft:wither_rose": {
    "boxes": []
   },
+  "minecraft:wooden_button": {
+   "boxes": []
+  },
   "minecraft:wooden_pressure_plate": {
    "boxes": []
+  },
+  "minecraft:yellow_candle_cake": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     0.5,
+     0.9375
+    ]
+   ]
   },
   "minecraft:yellow_concrete": {
    "boxes": [
@@ -8546,13 +8855,6 @@
   }
  },
  "computed": {
-  "minecraft:acacia_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
-  },
   "minecraft:acacia_door": {
    "methods": [
     "collision"
@@ -8583,13 +8885,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:acacia_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:acacia_slab": {
    "methods": [
@@ -8607,13 +8909,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:amethyst_cluster": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "amethyst"
   },
   "minecraft:andesite_double_slab": {
    "methods": [
@@ -8643,26 +8945,13 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
-  },
-  "minecraft:azalea": {
-   "methods": [
-    "collision"
-   ],
-   "rule": ""
+   "rule": "anvil"
   },
   "minecraft:bamboo": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:bamboo_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "bamboo"
   },
   "minecraft:bamboo_door": {
    "methods": [
@@ -8694,7 +8983,7 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:bamboo_mosaic_double_slab": {
    "methods": [
@@ -8718,7 +9007,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:bamboo_slab": {
    "methods": [
@@ -8736,27 +9025,20 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:bell": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "bell"
   },
   "minecraft:big_dripleaf": {
    "methods": [
     "collision",
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:birch_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "big_dripleaf"
   },
   "minecraft:birch_door": {
    "methods": [
@@ -8788,13 +9070,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:birch_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:birch_slab": {
    "methods": [
@@ -8812,19 +9094,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:black_candle": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:black_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:black_carpet": {
    "methods": [
@@ -8855,7 +9131,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:black_stained_glass_pane": {
    "methods": [
@@ -8910,13 +9186,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:blue_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:blue_carpet": {
    "methods": [
@@ -8947,7 +9217,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:blue_stained_glass_pane": {
    "methods": [
@@ -8986,7 +9256,7 @@
     "collision",
     "shapes"
    ],
-   "rule": ""
+   "rule": "brewing_stand"
   },
   "minecraft:brick_double_slab": {
    "methods": [
@@ -9016,13 +9286,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:brown_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:brown_carpet": {
    "methods": [
@@ -9053,7 +9317,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:brown_stained_glass_pane": {
    "methods": [
@@ -9080,42 +9344,23 @@
    ],
    "rule": "stairs"
   },
-  "minecraft:cactus": {
-   "methods": [
-    "collision"
-   ],
-   "rule": ""
-  },
   "minecraft:cake": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "cake"
   },
   "minecraft:candle": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:cauldron": {
    "methods": [
     "shapes"
    ],
-   "rule": ""
-  },
-  "minecraft:cherry_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "cauldron"
   },
   "minecraft:cherry_door": {
    "methods": [
@@ -9147,13 +9392,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:cherry_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:cherry_slab": {
    "methods": [
@@ -9171,19 +9416,19 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:chipped_anvil": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "anvil"
   },
   "minecraft:chorus_plant": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "chorus_plant"
   },
   "minecraft:cinnabar_brick_double_slab": {
    "methods": [
@@ -9279,13 +9524,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "cocoa"
   },
   "minecraft:composter": {
    "methods": [
     "shapes"
    ],
-   "rule": ""
+   "rule": "composter"
   },
   "minecraft:copper_bars": {
    "methods": [
@@ -9298,7 +9543,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:copper_door": {
    "methods": [
@@ -9310,26 +9555,19 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:creeper_head": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:crimson_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "skull"
   },
   "minecraft:crimson_door": {
    "methods": [
@@ -9361,13 +9599,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:crimson_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:crimson_slab": {
    "methods": [
@@ -9385,7 +9623,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:cut_copper_slab": {
    "methods": [
@@ -9427,13 +9665,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:cyan_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:cyan_carpet": {
    "methods": [
@@ -9464,7 +9696,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:cyan_stained_glass_pane": {
    "methods": [
@@ -9495,14 +9727,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
-  },
-  "minecraft:dark_oak_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "anvil"
   },
   "minecraft:dark_oak_door": {
    "methods": [
@@ -9534,13 +9759,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:dark_oak_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:dark_oak_slab": {
    "methods": [
@@ -9558,7 +9783,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:dark_prismarine_double_slab": {
    "methods": [
@@ -9630,7 +9855,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "anvil"
   },
   "minecraft:diorite_double_slab": {
    "methods": [
@@ -9666,7 +9891,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "skull"
   },
   "minecraft:end_brick_stairs": {
    "methods": [
@@ -9678,25 +9903,19 @@
    "methods": [
     "shapes"
    ],
-   "rule": ""
-  },
-  "minecraft:end_portal": {
-   "methods": [
-    "shapes"
-   ],
-   "rule": ""
+   "rule": "end_gateway"
   },
   "minecraft:end_portal_frame": {
    "methods": [
     "shapes"
    ],
-   "rule": ""
+   "rule": "end_portal_frame"
   },
   "minecraft:end_rod": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:end_stone_brick_double_slab": {
    "methods": [
@@ -9727,7 +9946,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:exposed_copper_door": {
    "methods": [
@@ -9739,13 +9958,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:exposed_copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:exposed_cut_copper_slab": {
    "methods": [
@@ -9769,19 +9988,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:fence_gate": {
    "methods": [
     "collision"
    ],
    "rule": "fence_gate"
-  },
-  "minecraft:flowering_azalea": {
-   "methods": [
-    "collision"
-   ],
-   "rule": ""
   },
   "minecraft:glass_pane": {
    "methods": [
@@ -9818,13 +10031,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:gray_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:gray_carpet": {
    "methods": [
@@ -9855,7 +10062,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:gray_stained_glass_pane": {
    "methods": [
@@ -9886,13 +10093,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:green_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:green_carpet": {
    "methods": [
@@ -9923,7 +10124,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:green_stained_glass_pane": {
    "methods": [
@@ -9954,7 +10155,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "grindstone"
   },
   "minecraft:hard_black_stained_glass_pane": {
    "methods": [
@@ -10079,19 +10280,19 @@
    "methods": [
     "shapes"
    ],
-   "rule": ""
+   "rule": "hopper"
   },
   "minecraft:ice_crystal": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "amethyst"
   },
   "minecraft:icicle": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "dripstone"
   },
   "minecraft:iron_bars": {
    "methods": [
@@ -10104,7 +10305,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:iron_door": {
    "methods": [
@@ -10116,14 +10317,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:jungle_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:jungle_door": {
    "methods": [
@@ -10155,13 +10349,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:jungle_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:jungle_slab": {
    "methods": [
@@ -10179,37 +10373,31 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:ladder": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "ladder"
   },
   "minecraft:lantern": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:large_amethyst_bud": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "amethyst"
   },
   "minecraft:light_blue_candle": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:light_blue_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:light_blue_carpet": {
    "methods": [
@@ -10240,7 +10428,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:light_blue_stained_glass_pane": {
    "methods": [
@@ -10271,13 +10459,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:light_gray_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:light_gray_carpet": {
    "methods": [
@@ -10308,7 +10490,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:light_gray_stained_glass_pane": {
    "methods": [
@@ -10339,19 +10521,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:lime_candle": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:lime_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:lime_carpet": {
    "methods": [
@@ -10382,7 +10558,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:lime_stained_glass_pane": {
    "methods": [
@@ -10413,13 +10589,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:magenta_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:magenta_carpet": {
    "methods": [
@@ -10450,7 +10620,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:magenta_stained_glass_pane": {
    "methods": [
@@ -10476,13 +10646,6 @@
     "shapes"
    ],
    "rule": "stairs"
-  },
-  "minecraft:mangrove_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
   },
   "minecraft:mangrove_door": {
    "methods": [
@@ -10514,13 +10677,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:mangrove_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:mangrove_slab": {
    "methods": [
@@ -10538,13 +10701,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:medium_amethyst_bud": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "amethyst"
   },
   "minecraft:moss_carpet": {
    "methods": [
@@ -10605,7 +10768,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "moving_block"
   },
   "minecraft:mud_brick_double_slab": {
    "methods": [
@@ -10698,13 +10861,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:oak_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:oak_slab": {
    "methods": [
@@ -10722,13 +10885,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:orange_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:orange_carpet": {
    "methods": [
@@ -10759,7 +10916,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:orange_stained_glass_pane": {
    "methods": [
@@ -10797,7 +10954,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:oxidized_copper_door": {
    "methods": [
@@ -10809,13 +10966,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:oxidized_copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:oxidized_cut_copper_slab": {
    "methods": [
@@ -10839,21 +10996,14 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:pale_moss_carpet": {
    "methods": [
     "collision",
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:pale_oak_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "pale_moss_carpet"
   },
   "minecraft:pale_oak_door": {
    "methods": [
@@ -10885,13 +11035,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:pale_oak_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:pale_oak_slab": {
    "methods": [
@@ -10909,7 +11059,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:petrified_oak_double_slab": {
    "methods": [
@@ -10927,19 +11077,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "skull"
   },
   "minecraft:pink_candle": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:pink_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:pink_carpet": {
    "methods": [
@@ -10970,7 +11114,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:pink_stained_glass_pane": {
    "methods": [
@@ -11002,26 +11146,26 @@
     "collision",
     "shapes"
    ],
-   "rule": ""
+   "rule": "piston_arm"
   },
   "minecraft:pitcher_crop": {
    "methods": [
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "pitcher_crop"
   },
   "minecraft:player_head": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "skull"
   },
   "minecraft:pointed_dripstone": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "dripstone"
   },
   "minecraft:polished_andesite_double_slab": {
    "methods": [
@@ -11064,13 +11208,6 @@
     "collision"
    ],
    "rule": "wall"
-  },
-  "minecraft:polished_blackstone_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
   },
   "minecraft:polished_blackstone_double_slab": {
    "methods": [
@@ -11228,13 +11365,6 @@
    ],
    "rule": "wall"
   },
-  "minecraft:poplar_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
-  },
   "minecraft:poplar_door": {
    "methods": [
     "collision"
@@ -11265,13 +11395,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:poplar_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:poplar_slab": {
    "methods": [
@@ -11289,13 +11419,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:powder_snow": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "powder_snow"
   },
   "minecraft:prismarine_brick_double_slab": {
    "methods": [
@@ -11343,13 +11473,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:purple_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:purple_carpet": {
    "methods": [
@@ -11380,7 +11504,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:purple_stained_glass_pane": {
    "methods": [
@@ -11447,13 +11571,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:red_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:red_carpet": {
    "methods": [
@@ -11532,7 +11650,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:red_stained_glass_pane": {
    "methods": [
@@ -11611,19 +11729,19 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "scaffolding"
   },
   "minecraft:skeleton_skull": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "skull"
   },
   "minecraft:small_amethyst_bud": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "amethyst"
   },
   "minecraft:smooth_quartz_double_slab": {
    "methods": [
@@ -11696,20 +11814,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "snow_layer"
   },
   "minecraft:soul_lantern": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:spruce_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:spruce_door": {
    "methods": [
@@ -11741,13 +11852,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:spruce_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:spruce_slab": {
    "methods": [
@@ -11765,14 +11876,14 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:sticky_piston_arm_collision": {
    "methods": [
     "collision",
     "shapes"
    ],
-   "rule": ""
+   "rule": "piston_arm"
   },
   "minecraft:stone_brick_double_slab": {
    "methods": [
@@ -11797,13 +11908,6 @@
     "collision"
    ],
    "rule": "wall"
-  },
-  "minecraft:stone_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
   },
   "minecraft:stone_stairs": {
    "methods": [
@@ -11851,7 +11955,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "dripstone"
   },
   "minecraft:sulfur_stairs": {
    "methods": [
@@ -11869,7 +11973,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:tuff_brick_double_slab": {
    "methods": [
@@ -11923,14 +12027,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
-  },
-  "minecraft:warped_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:warped_door": {
    "methods": [
@@ -11962,13 +12059,13 @@
     "collision",
     "visual"
    ],
-   "rule": ""
+   "rule": "hanging_sign"
   },
   "minecraft:warped_shelf": {
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shelf"
   },
   "minecraft:warped_slab": {
    "methods": [
@@ -11986,13 +12083,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:waterlily": {
-   "methods": [
-    "collision"
-   ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:waxed_copper_bars": {
    "methods": [
@@ -12005,7 +12096,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:waxed_copper_door": {
    "methods": [
@@ -12017,13 +12108,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:waxed_copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:waxed_cut_copper_slab": {
    "methods": [
@@ -12054,7 +12145,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:waxed_exposed_copper_door": {
    "methods": [
@@ -12066,13 +12157,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:waxed_exposed_copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:waxed_exposed_cut_copper_slab": {
    "methods": [
@@ -12096,13 +12187,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:waxed_lightning_rod": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:waxed_oxidized_copper_bars": {
    "methods": [
@@ -12115,7 +12206,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:waxed_oxidized_copper_door": {
    "methods": [
@@ -12127,13 +12218,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:waxed_oxidized_copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:waxed_oxidized_cut_copper_slab": {
    "methods": [
@@ -12157,7 +12248,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:waxed_weathered_copper_bars": {
    "methods": [
@@ -12170,7 +12261,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:waxed_weathered_copper_door": {
    "methods": [
@@ -12182,13 +12273,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:waxed_weathered_copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:waxed_weathered_cut_copper_slab": {
    "methods": [
@@ -12212,7 +12303,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:weathered_copper_bars": {
    "methods": [
@@ -12225,7 +12316,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "chain"
   },
   "minecraft:weathered_copper_door": {
    "methods": [
@@ -12237,13 +12328,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "lantern"
   },
   "minecraft:weathered_copper_trapdoor": {
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "trapdoor"
   },
   "minecraft:weathered_cut_copper_slab": {
    "methods": [
@@ -12267,19 +12358,13 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "rod"
   },
   "minecraft:white_candle": {
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:white_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:white_carpet": {
    "methods": [
@@ -12310,7 +12395,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:white_stained_glass_pane": {
    "methods": [
@@ -12341,14 +12426,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:wooden_button": {
-   "methods": [
-    "collision",
-    "visual"
-   ],
-   "rule": ""
+   "rule": "skull"
   },
   "minecraft:wooden_door": {
    "methods": [
@@ -12360,13 +12438,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
-  },
-  "minecraft:yellow_candle_cake": {
-   "methods": [
-    "visual"
-   ],
-   "rule": ""
+   "rule": "candle"
   },
   "minecraft:yellow_carpet": {
    "methods": [
@@ -12397,7 +12469,7 @@
    "methods": [
     "collision"
    ],
-   "rule": ""
+   "rule": "shulker_box"
   },
   "minecraft:yellow_stained_glass_pane": {
    "methods": [
@@ -12428,7 +12500,7 @@
    "methods": [
     "visual"
    ],
-   "rule": ""
+   "rule": "skull"
   }
  },
  "source": "BDS 1.26.60.6 Linux, read from memory at startup: each Block's collision component (data-driven boxes; disabled = no collision) and, for block types whose collision code is BlockType's own, the type's shape. Blocks whose type computes its shape in code are listed under computed with the methods it overrides and, once read from BDS's code, the rule Helix ports it as; their shapes are not data."
