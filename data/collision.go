@@ -17,10 +17,20 @@ type Box [6]float32
 type Collision struct {
 	// Blocks are the blocks whose shape is data, keyed by name.
 	Blocks map[string]CollisionBlock `json:"blocks"`
-	// Computed lists the blocks whose shape BDS computes in code, with the
-	// methods their block type replaces ("collision", "shapes", "visual").
-	// Their shapes are not in this file.
-	Computed map[string][]string `json:"computed"`
+	// Computed lists the blocks whose shape BDS computes in code. Their
+	// shapes are not in this file.
+	Computed map[string]ComputedCollision `json:"computed"`
+}
+
+// ComputedCollision is how BDS computes a block's shape.
+type ComputedCollision struct {
+	// Methods are the methods the block type replaces: "collision",
+	// "shapes", "visual".
+	Methods []string `json:"methods"`
+	// Rule names the shape rule the block follows (blocks sharing BDS's
+	// function share a rule), or is empty while that function is not
+	// read yet.
+	Rule string `json:"rule"`
 }
 
 // CollisionBlock is one block's collision: Boxes for every state, or, when
