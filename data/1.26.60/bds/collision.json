@@ -1,0 +1,10602 @@
+{
+ "blocks": {
+  "minecraft:acacia_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:acacia_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:acacia_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:acacia_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:allium": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:allow": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:amethyst_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:ancient_debris": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:andesite": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:azalea_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:azalea_leaves_flowered": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:azure_bluet": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:bamboo_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bamboo_mosaic": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bamboo_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:barrel": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:barrier": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:basalt": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:beacon": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bed": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.5625,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bedrock": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bee_nest": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:beehive": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:birch_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:birch_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:birch_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:birch_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:black_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:black_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:black_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:black_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:black_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:black_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blackstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blast_furnace": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blue_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blue_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blue_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blue_ice": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blue_orchid": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:blue_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blue_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:blue_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bone_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bookshelf": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brain_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brick_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brown_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brown_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brown_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brown_mushroom_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brown_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brown_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:brown_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:bubble_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:budding_amethyst": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:calcite": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:calibrated_sculk_sensor": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.5,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:camera": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:campfire": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.4375,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cartography_table": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:carved_pumpkin": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chain_command_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chemical_heat": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cherry_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cherry_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cherry_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cherry_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:chiseled_bookshelf": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_cinnabar": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_deepslate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_nether_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_polished_blackstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_quartz_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_red_sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_resin_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_sulfur": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_tuff": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chiseled_tuff_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:chorus_flower": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cinnabar": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cinnabar_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:clay": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:client_request_placeholder_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:closed_eyeblossom": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:coal_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:coal_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:coarse_dirt": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cobbled_deepslate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cobblestone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:command_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:compound_creator": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:conduit": {
+   "boxes": [
+    [
+     0.25,
+     0.0,
+     0.25,
+     0.75,
+     0.5,
+     0.75
+    ]
+   ]
+  },
+  "minecraft:copper_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:copper_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cornflower": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:cracked_deepslate_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cracked_deepslate_tiles": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cracked_nether_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cracked_polished_blackstone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cracked_stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:crafter": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:crafting_table": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:creaking_heart": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:crimson_hyphae": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:crimson_nylium": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:crimson_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:crimson_roots": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:crimson_stem": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:crying_obsidian": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cut_red_sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cut_sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cyan_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cyan_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cyan_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cyan_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cyan_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:cyan_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dandelion": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:dark_oak_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dark_oak_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dark_oak_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dark_oak_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dark_prismarine": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:daylight_detector": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.375,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:daylight_detector_inverted": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.375,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dead_brain_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dead_bubble_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dead_fire_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dead_horn_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dead_tube_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:decorated_pot": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.0625,
+     0.9375,
+     1.0,
+     0.9375
+    ]
+   ]
+  },
+  "minecraft:deepslate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_coal_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_copper_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_diamond_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_emerald_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_gold_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_iron_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_lapis_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_redstone_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deepslate_tiles": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deny": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deprecated_purpur_block_1": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:deprecated_purpur_block_2": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:diamond_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:diamond_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:diorite": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dirt": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dirt_with_roots": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:disc_press": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dispenser": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dragon_egg": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dried_ghast": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.625,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:dried_kelp_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dripstone_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:dropper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_0": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_1": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_10": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_100": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_101": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_102": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_103": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_104": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_105": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_106": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_107": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_108": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_109": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_11": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_110": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_111": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_112": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_113": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_114": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_115": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_116": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_117": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_118": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_12": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_13": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_14": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_15": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_16": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_17": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_18": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_19": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_2": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_20": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_21": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_22": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_23": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_24": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_25": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_26": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_27": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_28": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_29": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_3": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_30": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_31": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_32": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_33": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_34": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_35": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_36": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_37": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_38": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_39": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_4": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_40": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_41": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_42": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_43": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_44": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_45": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_46": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_47": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_48": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_49": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_5": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_50": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_51": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_52": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_53": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_54": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_55": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_56": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_57": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_58": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_59": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_6": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_60": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_61": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_62": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_63": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_64": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_65": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_66": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_67": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_68": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_69": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_7": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_70": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_71": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_72": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_73": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_74": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_75": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_76": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_77": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_78": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_79": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_8": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_80": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_81": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_82": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_83": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_84": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_85": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_86": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_87": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_88": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_89": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_9": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_90": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_91": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_92": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_93": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_94": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_95": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_96": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_97": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_98": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_99": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:element_constructor": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:emerald_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:emerald_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:enchanting_table": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.75,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:end_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:end_stone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:ender_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:exposed_chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:exposed_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:exposed_copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:exposed_copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:exposed_copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:exposed_copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:exposed_cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:fire_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:fletching_table": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:flower_pot": {
+   "boxes": [
+    [
+     0.3125,
+     0.0,
+     0.3125,
+     0.6875,
+     0.375,
+     0.6875
+    ]
+   ]
+  },
+  "minecraft:frosted_ice": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:furnace": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gilded_blackstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:glowingobsidian": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:glowstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gold_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gold_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:golden_dandelion": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:granite": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:grass_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gravel": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gray_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gray_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gray_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gray_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gray_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:gray_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:green_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:green_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:green_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:green_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:green_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:green_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_black_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_blue_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_brown_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_cyan_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_gray_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_green_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_light_blue_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_light_gray_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_lime_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_magenta_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_orange_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_pink_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_purple_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_red_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_white_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hard_yellow_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hardened_clay": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:hay_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:heavy_core": {
+   "boxes": [
+    [
+     0.25,
+     0.0,
+     0.25,
+     0.75,
+     0.5,
+     0.75
+    ]
+   ]
+  },
+  "minecraft:honeycomb_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:horn_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:ice": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:infested_chiseled_stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:infested_cobblestone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:infested_cracked_stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:infested_deepslate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:infested_mossy_stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:infested_stone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:infested_stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:info_update": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:info_update2": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:invisible_bedrock": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:iron_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:iron_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:jigsaw": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:jukebox": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:jungle_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:jungle_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:jungle_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:jungle_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lab_table": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lapis_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lapis_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lectern": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.9,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_blue_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_blue_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_blue_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_blue_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_blue_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_blue_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_gray_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_gray_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_gray_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_gray_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:light_gray_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lily_of_the_valley": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:lime_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lime_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lime_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lime_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lime_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lime_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lit_blast_furnace": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lit_deepslate_redstone_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lit_furnace": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lit_pumpkin": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lit_redstone_lamp": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lit_redstone_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lit_smoker": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:lodestone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:loom": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:magenta_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:magenta_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:magenta_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:magenta_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:magenta_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:magenta_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:magma": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mangrove_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mangrove_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mangrove_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mangrove_roots": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mangrove_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:material_reducer": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:melon_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:moss_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mossy_cobblestone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mossy_stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mud_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:muddy_mangrove_roots": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mushroom_stem": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:mycelium": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:nether_brick": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:nether_gold_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:nether_wart_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:netherite_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:netherrack": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:netherreactor": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:noteblock": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oak_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oak_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oak_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oak_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:observer": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:obsidian": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:ochre_froglight": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:open_eyeblossom": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:orange_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:orange_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:orange_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:orange_poplar_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:orange_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:orange_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:orange_tulip": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:orange_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oxeye_daisy": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:oxidized_chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oxidized_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oxidized_copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oxidized_copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:oxidized_copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:oxidized_copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:oxidized_cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:packed_ice": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:packed_mud": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pale_moss_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pale_oak_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pale_oak_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pale_oak_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pale_oak_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pearlescent_froglight": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pink_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pink_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pink_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pink_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pink_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pink_tulip": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:pink_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:piston": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:podzol": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_andesite": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_basalt": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_blackstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_blackstone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_cinnabar": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_deepslate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_diorite": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_granite": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_sulfur": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:polished_tuff": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:poplar_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:poplar_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:poplar_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:poppy": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:potent_sulfur": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:powered_comparator": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.125,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:powered_repeater": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.125,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:prismarine": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:prismarine_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:pumpkin": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purple_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purple_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purple_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purple_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purple_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purple_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purpur_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:purpur_pillar": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:quartz_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:quartz_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:quartz_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:quartz_pillar": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:raw_copper_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:raw_gold_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:raw_iron_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_mushroom_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_nether_brick": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_poplar_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_sand": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_shrub": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:red_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:red_tulip": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:red_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:redstone_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:redstone_lamp": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:redstone_ore": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:reinforced_deepslate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:repeating_command_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:reserved6": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:resin_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:resin_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:respawn_anchor": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sand": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sculk": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sculk_catalyst": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sculk_sensor": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.5,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sculk_shrieker": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.5,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sea_lantern": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:shelf_mushroom": {
+   "note": "component overrides the type's code",
+   "states": [
+    {
+     "boxes": [
+      [
+       0.1875,
+       0.25,
+       0.0,
+       0.8125,
+       0.6875,
+       0.4375
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       0
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "south"
+      ]
+     }
+    },
+    {
+     "boxes": [
+      [
+       0.5625,
+       0.25,
+       0.1875,
+       1.0,
+       0.6875,
+       0.8125
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       0
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "west"
+      ]
+     }
+    },
+    {
+     "boxes": [
+      [
+       0.1875,
+       0.25,
+       0.5625,
+       0.8125,
+       0.6875,
+       1.0
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       0
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "north"
+      ]
+     }
+    },
+    {
+     "boxes": [
+      [
+       0.0,
+       0.25,
+       0.1875,
+       0.4375,
+       0.6875,
+       0.8125
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       0
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "east"
+      ]
+     }
+    },
+    {
+     "boxes": [
+      [
+       0.0625,
+       0.25,
+       0.0,
+       0.9375,
+       0.6875,
+       0.625
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       1
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "south"
+      ]
+     }
+    },
+    {
+     "boxes": [
+      [
+       0.375,
+       0.25,
+       0.0625,
+       1.0,
+       0.6875,
+       0.9375
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       1
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "west"
+      ]
+     }
+    },
+    {
+     "boxes": [
+      [
+       0.0625,
+       0.25,
+       0.375,
+       0.9375,
+       0.6875,
+       1.0
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       1
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "north"
+      ]
+     }
+    },
+    {
+     "boxes": [
+      [
+       0.0,
+       0.25,
+       0.0625,
+       0.625,
+       0.6875,
+       0.9375
+      ]
+     ],
+     "states": {
+      "growth": [
+       "int",
+       1
+      ],
+      "minecraft:cardinal_direction": [
+       "string",
+       "east"
+      ]
+     }
+    }
+   ]
+  },
+  "minecraft:shroomlight": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:silver_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:slime": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:smithing_table": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:smoker": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:smooth_basalt": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:smooth_quartz": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:smooth_red_sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:smooth_sandstone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:smooth_stone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sniffer_egg": {
+   "boxes": [
+    [
+     0.0625,
+     0.0,
+     0.125,
+     0.9375,
+     1.0,
+     0.875
+    ]
+   ]
+  },
+  "minecraft:snow": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:soul_campfire": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.4375,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:soul_soil": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sponge": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:spruce_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:spruce_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:spruce_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:spruce_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sticky_piston": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stone": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stone_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stonecutter": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stonecutter_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.5625,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:straw_bed": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.25,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_acacia_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_acacia_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_bamboo_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_birch_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_birch_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_cherry_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_cherry_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_crimson_hyphae": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_crimson_stem": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_dark_oak_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_dark_oak_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_jungle_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_jungle_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_mangrove_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_mangrove_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_oak_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_oak_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_pale_oak_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_pale_oak_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_poplar_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_poplar_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_spruce_log": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_spruce_wood": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_warped_hyphae": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:stripped_warped_stem": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:structure_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sulfur": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:sulfur_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:suspicious_gravel": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:suspicious_sand": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:target": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:tinted_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:tnt": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:torchflower": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:trapped_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:tube_coral_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:tuff": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:tuff_bricks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:turtle_egg": {
+   "boxes": [
+    [
+     0.2,
+     0.0,
+     0.2,
+     0.8,
+     0.45,
+     0.8
+    ]
+   ]
+  },
+  "minecraft:underwater_tnt": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:unknown": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:unpowered_comparator": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.125,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:unpowered_repeater": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.125,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:vault": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:verdant_froglight": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:warped_hyphae": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:warped_nylium": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:warped_planks": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:warped_roots": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:warped_stem": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:warped_wart_block": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:waxed_copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:waxed_copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_exposed_chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_exposed_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_exposed_copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_exposed_copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:waxed_exposed_copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:waxed_exposed_copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_exposed_cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_oxidized_chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_oxidized_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_oxidized_cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_weathered_chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_weathered_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_weathered_copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_weathered_copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:waxed_weathered_copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:waxed_weathered_copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:waxed_weathered_cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:weathered_chiseled_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:weathered_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:weathered_copper_bulb": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:weathered_copper_chest": {
+   "boxes": [
+    [
+     0.025,
+     0.0,
+     0.025,
+     0.975,
+     0.95,
+     0.975
+    ]
+   ]
+  },
+  "minecraft:weathered_copper_golem_statue": {
+   "boxes": [
+    [
+     0.1875,
+     0.0,
+     0.1875,
+     0.8125,
+     0.875,
+     0.8125
+    ]
+   ]
+  },
+  "minecraft:weathered_copper_grate": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:weathered_cut_copper": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:wet_sponge": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:white_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:white_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:white_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:white_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:white_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:white_tulip": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:white_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:wither_rose": {
+   "boxes": [],
+   "note": "component overrides the type's code"
+  },
+  "minecraft:yellow_concrete": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:yellow_concrete_powder": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:yellow_glazed_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:yellow_poplar_leaves": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:yellow_stained_glass": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:yellow_terracotta": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  },
+  "minecraft:yellow_wool": {
+   "boxes": [
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   ]
+  }
+ },
+ "computed": {
+  "minecraft:acacia_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:acacia_door": [
+   "collision"
+  ],
+  "minecraft:acacia_double_slab": [
+   "visual"
+  ],
+  "minecraft:acacia_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:acacia_fence_gate": [
+   "collision"
+  ],
+  "minecraft:acacia_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:acacia_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:acacia_sapling": [
+   "collision"
+  ],
+  "minecraft:acacia_shelf": [
+   "collision"
+  ],
+  "minecraft:acacia_slab": [
+   "visual"
+  ],
+  "minecraft:acacia_stairs": [
+   "shapes"
+  ],
+  "minecraft:acacia_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:acacia_trapdoor": [
+   "visual"
+  ],
+  "minecraft:acacia_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:activator_rail": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:air": [
+   "collision",
+   "shapes",
+   "visual"
+  ],
+  "minecraft:amethyst_cluster": [
+   "visual"
+  ],
+  "minecraft:andesite_double_slab": [
+   "visual"
+  ],
+  "minecraft:andesite_slab": [
+   "visual"
+  ],
+  "minecraft:andesite_stairs": [
+   "shapes"
+  ],
+  "minecraft:andesite_wall": [
+   "collision"
+  ],
+  "minecraft:anvil": [
+   "collision"
+  ],
+  "minecraft:azalea": [
+   "collision"
+  ],
+  "minecraft:bamboo": [
+   "visual"
+  ],
+  "minecraft:bamboo_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:bamboo_door": [
+   "collision"
+  ],
+  "minecraft:bamboo_double_slab": [
+   "visual"
+  ],
+  "minecraft:bamboo_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:bamboo_fence_gate": [
+   "collision"
+  ],
+  "minecraft:bamboo_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:bamboo_mosaic_double_slab": [
+   "visual"
+  ],
+  "minecraft:bamboo_mosaic_slab": [
+   "visual"
+  ],
+  "minecraft:bamboo_mosaic_stairs": [
+   "shapes"
+  ],
+  "minecraft:bamboo_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:bamboo_sapling": [
+   "collision"
+  ],
+  "minecraft:bamboo_shelf": [
+   "collision"
+  ],
+  "minecraft:bamboo_slab": [
+   "visual"
+  ],
+  "minecraft:bamboo_stairs": [
+   "shapes"
+  ],
+  "minecraft:bamboo_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:bamboo_trapdoor": [
+   "visual"
+  ],
+  "minecraft:bamboo_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:beetroot": [
+   "collision"
+  ],
+  "minecraft:bell": [
+   "visual"
+  ],
+  "minecraft:big_dripleaf": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:birch_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:birch_door": [
+   "collision"
+  ],
+  "minecraft:birch_double_slab": [
+   "visual"
+  ],
+  "minecraft:birch_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:birch_fence_gate": [
+   "collision"
+  ],
+  "minecraft:birch_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:birch_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:birch_sapling": [
+   "collision"
+  ],
+  "minecraft:birch_shelf": [
+   "collision"
+  ],
+  "minecraft:birch_slab": [
+   "visual"
+  ],
+  "minecraft:birch_stairs": [
+   "shapes"
+  ],
+  "minecraft:birch_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:birch_trapdoor": [
+   "visual"
+  ],
+  "minecraft:birch_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:black_candle": [
+   "visual"
+  ],
+  "minecraft:black_candle_cake": [
+   "visual"
+  ],
+  "minecraft:black_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:black_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:black_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:black_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:black_shulker_box": [
+   "collision"
+  ],
+  "minecraft:black_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:black_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:black_wool_slab": [
+   "visual"
+  ],
+  "minecraft:black_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:blackstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:blackstone_slab": [
+   "visual"
+  ],
+  "minecraft:blackstone_stairs": [
+   "shapes"
+  ],
+  "minecraft:blackstone_wall": [
+   "collision"
+  ],
+  "minecraft:blue_candle": [
+   "visual"
+  ],
+  "minecraft:blue_candle_cake": [
+   "visual"
+  ],
+  "minecraft:blue_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:blue_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:blue_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:blue_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:blue_shulker_box": [
+   "collision"
+  ],
+  "minecraft:blue_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:blue_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:blue_wool_slab": [
+   "visual"
+  ],
+  "minecraft:blue_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:border_block": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:brain_coral": [
+   "collision"
+  ],
+  "minecraft:brain_coral_fan": [
+   "collision"
+  ],
+  "minecraft:brain_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:brewing_stand": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:brick_slab": [
+   "visual"
+  ],
+  "minecraft:brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:brick_wall": [
+   "collision"
+  ],
+  "minecraft:brown_candle": [
+   "visual"
+  ],
+  "minecraft:brown_candle_cake": [
+   "visual"
+  ],
+  "minecraft:brown_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:brown_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:brown_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:brown_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:brown_mushroom": [
+   "collision"
+  ],
+  "minecraft:brown_shulker_box": [
+   "collision"
+  ],
+  "minecraft:brown_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:brown_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:brown_wool_slab": [
+   "visual"
+  ],
+  "minecraft:brown_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:bubble_column": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:bubble_coral": [
+   "collision"
+  ],
+  "minecraft:bubble_coral_fan": [
+   "collision"
+  ],
+  "minecraft:bubble_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:bush": [
+   "collision"
+  ],
+  "minecraft:cactus": [
+   "collision"
+  ],
+  "minecraft:cactus_flower": [
+   "collision"
+  ],
+  "minecraft:cake": [
+   "visual"
+  ],
+  "minecraft:candle": [
+   "visual"
+  ],
+  "minecraft:candle_cake": [
+   "visual"
+  ],
+  "minecraft:carrots": [
+   "collision"
+  ],
+  "minecraft:cauldron": [
+   "shapes"
+  ],
+  "minecraft:cave_vines": [
+   "collision"
+  ],
+  "minecraft:cave_vines_body_with_berries": [
+   "collision"
+  ],
+  "minecraft:cave_vines_head_with_berries": [
+   "collision"
+  ],
+  "minecraft:chalkboard": [
+   "collision"
+  ],
+  "minecraft:cherry_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:cherry_door": [
+   "collision"
+  ],
+  "minecraft:cherry_double_slab": [
+   "visual"
+  ],
+  "minecraft:cherry_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:cherry_fence_gate": [
+   "collision"
+  ],
+  "minecraft:cherry_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:cherry_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:cherry_sapling": [
+   "collision"
+  ],
+  "minecraft:cherry_shelf": [
+   "collision"
+  ],
+  "minecraft:cherry_slab": [
+   "visual"
+  ],
+  "minecraft:cherry_stairs": [
+   "shapes"
+  ],
+  "minecraft:cherry_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:cherry_trapdoor": [
+   "visual"
+  ],
+  "minecraft:cherry_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:chipped_anvil": [
+   "collision"
+  ],
+  "minecraft:chorus_plant": [
+   "collision"
+  ],
+  "minecraft:cinnabar_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:cinnabar_brick_slab": [
+   "visual"
+  ],
+  "minecraft:cinnabar_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:cinnabar_brick_wall": [
+   "collision"
+  ],
+  "minecraft:cinnabar_double_slab": [
+   "visual"
+  ],
+  "minecraft:cinnabar_slab": [
+   "visual"
+  ],
+  "minecraft:cinnabar_stairs": [
+   "shapes"
+  ],
+  "minecraft:cinnabar_wall": [
+   "collision"
+  ],
+  "minecraft:cobbled_deepslate_double_slab": [
+   "visual"
+  ],
+  "minecraft:cobbled_deepslate_slab": [
+   "visual"
+  ],
+  "minecraft:cobbled_deepslate_stairs": [
+   "shapes"
+  ],
+  "minecraft:cobbled_deepslate_wall": [
+   "collision"
+  ],
+  "minecraft:cobblestone_double_slab": [
+   "visual"
+  ],
+  "minecraft:cobblestone_slab": [
+   "visual"
+  ],
+  "minecraft:cobblestone_wall": [
+   "collision"
+  ],
+  "minecraft:cocoa": [
+   "visual"
+  ],
+  "minecraft:colored_torch_blue": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:colored_torch_green": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:colored_torch_purple": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:colored_torch_red": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:composter": [
+   "shapes"
+  ],
+  "minecraft:copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:copper_chain": [
+   "visual"
+  ],
+  "minecraft:copper_door": [
+   "collision"
+  ],
+  "minecraft:copper_lantern": [
+   "visual"
+  ],
+  "minecraft:copper_torch": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:creeper_head": [
+   "visual"
+  ],
+  "minecraft:crimson_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:crimson_door": [
+   "collision"
+  ],
+  "minecraft:crimson_double_slab": [
+   "visual"
+  ],
+  "minecraft:crimson_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:crimson_fence_gate": [
+   "collision"
+  ],
+  "minecraft:crimson_fungus": [
+   "collision"
+  ],
+  "minecraft:crimson_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:crimson_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:crimson_shelf": [
+   "collision"
+  ],
+  "minecraft:crimson_slab": [
+   "visual"
+  ],
+  "minecraft:crimson_stairs": [
+   "shapes"
+  ],
+  "minecraft:crimson_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:crimson_trapdoor": [
+   "visual"
+  ],
+  "minecraft:crimson_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:cut_red_sandstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:cut_red_sandstone_slab": [
+   "visual"
+  ],
+  "minecraft:cut_sandstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:cut_sandstone_slab": [
+   "visual"
+  ],
+  "minecraft:cyan_candle": [
+   "visual"
+  ],
+  "minecraft:cyan_candle_cake": [
+   "visual"
+  ],
+  "minecraft:cyan_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:cyan_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:cyan_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:cyan_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:cyan_shulker_box": [
+   "collision"
+  ],
+  "minecraft:cyan_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:cyan_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:cyan_wool_slab": [
+   "visual"
+  ],
+  "minecraft:cyan_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:damaged_anvil": [
+   "collision"
+  ],
+  "minecraft:dark_oak_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:dark_oak_door": [
+   "collision"
+  ],
+  "minecraft:dark_oak_double_slab": [
+   "visual"
+  ],
+  "minecraft:dark_oak_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:dark_oak_fence_gate": [
+   "collision"
+  ],
+  "minecraft:dark_oak_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:dark_oak_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:dark_oak_sapling": [
+   "collision"
+  ],
+  "minecraft:dark_oak_shelf": [
+   "collision"
+  ],
+  "minecraft:dark_oak_slab": [
+   "visual"
+  ],
+  "minecraft:dark_oak_stairs": [
+   "shapes"
+  ],
+  "minecraft:dark_oak_trapdoor": [
+   "visual"
+  ],
+  "minecraft:dark_prismarine_double_slab": [
+   "visual"
+  ],
+  "minecraft:dark_prismarine_slab": [
+   "visual"
+  ],
+  "minecraft:dark_prismarine_stairs": [
+   "shapes"
+  ],
+  "minecraft:darkoak_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:darkoak_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:dead_brain_coral": [
+   "collision"
+  ],
+  "minecraft:dead_brain_coral_fan": [
+   "collision"
+  ],
+  "minecraft:dead_brain_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:dead_bubble_coral": [
+   "collision"
+  ],
+  "minecraft:dead_bubble_coral_fan": [
+   "collision"
+  ],
+  "minecraft:dead_bubble_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:dead_fire_coral": [
+   "collision"
+  ],
+  "minecraft:dead_fire_coral_fan": [
+   "collision"
+  ],
+  "minecraft:dead_fire_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:dead_horn_coral": [
+   "collision"
+  ],
+  "minecraft:dead_horn_coral_fan": [
+   "collision"
+  ],
+  "minecraft:dead_horn_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:dead_tube_coral": [
+   "collision"
+  ],
+  "minecraft:dead_tube_coral_fan": [
+   "collision"
+  ],
+  "minecraft:dead_tube_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:deadbush": [
+   "collision"
+  ],
+  "minecraft:deepslate_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:deepslate_brick_slab": [
+   "visual"
+  ],
+  "minecraft:deepslate_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:deepslate_brick_wall": [
+   "collision"
+  ],
+  "minecraft:deepslate_tile_double_slab": [
+   "visual"
+  ],
+  "minecraft:deepslate_tile_slab": [
+   "visual"
+  ],
+  "minecraft:deepslate_tile_stairs": [
+   "shapes"
+  ],
+  "minecraft:deepslate_tile_wall": [
+   "collision"
+  ],
+  "minecraft:deprecated_anvil": [
+   "collision"
+  ],
+  "minecraft:detector_rail": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:diorite_double_slab": [
+   "visual"
+  ],
+  "minecraft:diorite_slab": [
+   "visual"
+  ],
+  "minecraft:diorite_stairs": [
+   "shapes"
+  ],
+  "minecraft:diorite_wall": [
+   "collision"
+  ],
+  "minecraft:double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:dragon_head": [
+   "visual"
+  ],
+  "minecraft:end_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:end_gateway": [
+   "shapes"
+  ],
+  "minecraft:end_portal": [
+   "shapes"
+  ],
+  "minecraft:end_portal_frame": [
+   "shapes"
+  ],
+  "minecraft:end_rod": [
+   "visual"
+  ],
+  "minecraft:end_stone_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:end_stone_brick_slab": [
+   "visual"
+  ],
+  "minecraft:end_stone_brick_wall": [
+   "collision"
+  ],
+  "minecraft:exposed_copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:exposed_copper_chain": [
+   "visual"
+  ],
+  "minecraft:exposed_copper_door": [
+   "collision"
+  ],
+  "minecraft:exposed_copper_lantern": [
+   "visual"
+  ],
+  "minecraft:exposed_copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:exposed_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:exposed_cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:exposed_double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:exposed_lightning_rod": [
+   "visual"
+  ],
+  "minecraft:farmland": [
+   "collision"
+  ],
+  "minecraft:fence_gate": [
+   "collision"
+  ],
+  "minecraft:fern": [
+   "collision"
+  ],
+  "minecraft:fire": [
+   "collision"
+  ],
+  "minecraft:fire_coral": [
+   "collision"
+  ],
+  "minecraft:fire_coral_fan": [
+   "collision"
+  ],
+  "minecraft:fire_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:firefly_bush": [
+   "collision"
+  ],
+  "minecraft:flowering_azalea": [
+   "collision"
+  ],
+  "minecraft:flowing_lava": [
+   "collision"
+  ],
+  "minecraft:flowing_water": [
+   "collision"
+  ],
+  "minecraft:frame": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:frog_spawn": [
+   "collision"
+  ],
+  "minecraft:glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:glow_frame": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:glow_lichen": [
+   "collision"
+  ],
+  "minecraft:golden_rail": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:granite_double_slab": [
+   "visual"
+  ],
+  "minecraft:granite_slab": [
+   "visual"
+  ],
+  "minecraft:granite_stairs": [
+   "shapes"
+  ],
+  "minecraft:granite_wall": [
+   "collision"
+  ],
+  "minecraft:grass_path": [
+   "collision"
+  ],
+  "minecraft:gray_candle": [
+   "visual"
+  ],
+  "minecraft:gray_candle_cake": [
+   "visual"
+  ],
+  "minecraft:gray_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:gray_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:gray_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:gray_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:gray_shulker_box": [
+   "collision"
+  ],
+  "minecraft:gray_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:gray_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:gray_wool_slab": [
+   "visual"
+  ],
+  "minecraft:gray_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:green_candle": [
+   "visual"
+  ],
+  "minecraft:green_candle_cake": [
+   "visual"
+  ],
+  "minecraft:green_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:green_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:green_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:green_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:green_shulker_box": [
+   "collision"
+  ],
+  "minecraft:green_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:green_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:green_wool_slab": [
+   "visual"
+  ],
+  "minecraft:green_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:grindstone": [
+   "visual"
+  ],
+  "minecraft:hanging_roots": [
+   "collision"
+  ],
+  "minecraft:hard_black_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_blue_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_brown_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_cyan_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_gray_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_green_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_light_blue_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_light_gray_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_lime_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_magenta_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_orange_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_pink_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_purple_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_red_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_white_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:hard_yellow_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:heavy_weighted_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:honey_block": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:hopper": [
+   "shapes"
+  ],
+  "minecraft:horn_coral": [
+   "collision"
+  ],
+  "minecraft:horn_coral_fan": [
+   "collision"
+  ],
+  "minecraft:horn_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:ice_crystal": [
+   "visual"
+  ],
+  "minecraft:icicle": [
+   "visual"
+  ],
+  "minecraft:iron_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:iron_chain": [
+   "visual"
+  ],
+  "minecraft:iron_door": [
+   "collision"
+  ],
+  "minecraft:iron_trapdoor": [
+   "visual"
+  ],
+  "minecraft:jungle_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:jungle_door": [
+   "collision"
+  ],
+  "minecraft:jungle_double_slab": [
+   "visual"
+  ],
+  "minecraft:jungle_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:jungle_fence_gate": [
+   "collision"
+  ],
+  "minecraft:jungle_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:jungle_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:jungle_sapling": [
+   "collision"
+  ],
+  "minecraft:jungle_shelf": [
+   "collision"
+  ],
+  "minecraft:jungle_slab": [
+   "visual"
+  ],
+  "minecraft:jungle_stairs": [
+   "shapes"
+  ],
+  "minecraft:jungle_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:jungle_trapdoor": [
+   "visual"
+  ],
+  "minecraft:jungle_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:kelp": [
+   "collision"
+  ],
+  "minecraft:ladder": [
+   "visual"
+  ],
+  "minecraft:lantern": [
+   "visual"
+  ],
+  "minecraft:large_amethyst_bud": [
+   "visual"
+  ],
+  "minecraft:large_fern": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:lava": [
+   "collision"
+  ],
+  "minecraft:leaf_litter": [
+   "collision"
+  ],
+  "minecraft:lever": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:light_block_0": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_1": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_10": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_11": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_12": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_13": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_14": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_15": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_2": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_3": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_4": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_5": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_6": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_7": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_8": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_block_9": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_blue_candle": [
+   "visual"
+  ],
+  "minecraft:light_blue_candle_cake": [
+   "visual"
+  ],
+  "minecraft:light_blue_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:light_blue_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:light_blue_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:light_blue_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:light_blue_shulker_box": [
+   "collision"
+  ],
+  "minecraft:light_blue_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_blue_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:light_blue_wool_slab": [
+   "visual"
+  ],
+  "minecraft:light_blue_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:light_gray_candle": [
+   "visual"
+  ],
+  "minecraft:light_gray_candle_cake": [
+   "visual"
+  ],
+  "minecraft:light_gray_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:light_gray_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:light_gray_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:light_gray_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:light_gray_shulker_box": [
+   "collision"
+  ],
+  "minecraft:light_gray_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:light_gray_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:light_gray_wool_slab": [
+   "visual"
+  ],
+  "minecraft:light_gray_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:light_weighted_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:lightning_rod": [
+   "visual"
+  ],
+  "minecraft:lilac": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:lime_candle": [
+   "visual"
+  ],
+  "minecraft:lime_candle_cake": [
+   "visual"
+  ],
+  "minecraft:lime_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:lime_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:lime_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:lime_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:lime_shulker_box": [
+   "collision"
+  ],
+  "minecraft:lime_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:lime_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:lime_wool_slab": [
+   "visual"
+  ],
+  "minecraft:lime_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:magenta_candle": [
+   "visual"
+  ],
+  "minecraft:magenta_candle_cake": [
+   "visual"
+  ],
+  "minecraft:magenta_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:magenta_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:magenta_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:magenta_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:magenta_shulker_box": [
+   "collision"
+  ],
+  "minecraft:magenta_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:magenta_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:magenta_wool_slab": [
+   "visual"
+  ],
+  "minecraft:magenta_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:mangrove_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:mangrove_door": [
+   "collision"
+  ],
+  "minecraft:mangrove_double_slab": [
+   "visual"
+  ],
+  "minecraft:mangrove_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:mangrove_fence_gate": [
+   "collision"
+  ],
+  "minecraft:mangrove_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:mangrove_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:mangrove_propagule": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:mangrove_shelf": [
+   "collision"
+  ],
+  "minecraft:mangrove_slab": [
+   "visual"
+  ],
+  "minecraft:mangrove_stairs": [
+   "shapes"
+  ],
+  "minecraft:mangrove_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:mangrove_trapdoor": [
+   "visual"
+  ],
+  "minecraft:mangrove_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:medium_amethyst_bud": [
+   "visual"
+  ],
+  "minecraft:melon_stem": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:mob_spawner": [
+   "collision"
+  ],
+  "minecraft:moss_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:mossy_cobblestone_double_slab": [
+   "visual"
+  ],
+  "minecraft:mossy_cobblestone_slab": [
+   "visual"
+  ],
+  "minecraft:mossy_cobblestone_stairs": [
+   "shapes"
+  ],
+  "minecraft:mossy_cobblestone_wall": [
+   "collision"
+  ],
+  "minecraft:mossy_stone_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:mossy_stone_brick_slab": [
+   "visual"
+  ],
+  "minecraft:mossy_stone_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:mossy_stone_brick_wall": [
+   "collision"
+  ],
+  "minecraft:moving_block": [
+   "collision"
+  ],
+  "minecraft:mud": [
+   "collision"
+  ],
+  "minecraft:mud_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:mud_brick_slab": [
+   "visual"
+  ],
+  "minecraft:mud_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:mud_brick_wall": [
+   "collision"
+  ],
+  "minecraft:nether_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:nether_brick_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:nether_brick_slab": [
+   "visual"
+  ],
+  "minecraft:nether_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:nether_brick_wall": [
+   "collision"
+  ],
+  "minecraft:nether_sprouts": [
+   "collision"
+  ],
+  "minecraft:nether_wart": [
+   "collision"
+  ],
+  "minecraft:normal_stone_double_slab": [
+   "visual"
+  ],
+  "minecraft:normal_stone_slab": [
+   "visual"
+  ],
+  "minecraft:normal_stone_stairs": [
+   "shapes"
+  ],
+  "minecraft:oak_double_slab": [
+   "visual"
+  ],
+  "minecraft:oak_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:oak_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:oak_sapling": [
+   "collision"
+  ],
+  "minecraft:oak_shelf": [
+   "collision"
+  ],
+  "minecraft:oak_slab": [
+   "visual"
+  ],
+  "minecraft:oak_stairs": [
+   "shapes"
+  ],
+  "minecraft:orange_candle": [
+   "visual"
+  ],
+  "minecraft:orange_candle_cake": [
+   "visual"
+  ],
+  "minecraft:orange_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:orange_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:orange_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:orange_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:orange_shulker_box": [
+   "collision"
+  ],
+  "minecraft:orange_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:orange_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:orange_wool_slab": [
+   "visual"
+  ],
+  "minecraft:orange_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:oxidized_copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:oxidized_copper_chain": [
+   "visual"
+  ],
+  "minecraft:oxidized_copper_door": [
+   "collision"
+  ],
+  "minecraft:oxidized_copper_lantern": [
+   "visual"
+  ],
+  "minecraft:oxidized_copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:oxidized_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:oxidized_cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:oxidized_double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:oxidized_lightning_rod": [
+   "visual"
+  ],
+  "minecraft:pale_hanging_moss": [
+   "collision"
+  ],
+  "minecraft:pale_moss_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:pale_oak_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:pale_oak_door": [
+   "collision"
+  ],
+  "minecraft:pale_oak_double_slab": [
+   "visual"
+  ],
+  "minecraft:pale_oak_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:pale_oak_fence_gate": [
+   "collision"
+  ],
+  "minecraft:pale_oak_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:pale_oak_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:pale_oak_sapling": [
+   "collision"
+  ],
+  "minecraft:pale_oak_shelf": [
+   "collision"
+  ],
+  "minecraft:pale_oak_slab": [
+   "visual"
+  ],
+  "minecraft:pale_oak_stairs": [
+   "shapes"
+  ],
+  "minecraft:pale_oak_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:pale_oak_trapdoor": [
+   "visual"
+  ],
+  "minecraft:pale_oak_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:peony": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:petrified_oak_double_slab": [
+   "visual"
+  ],
+  "minecraft:petrified_oak_slab": [
+   "visual"
+  ],
+  "minecraft:piglin_head": [
+   "visual"
+  ],
+  "minecraft:pink_candle": [
+   "visual"
+  ],
+  "minecraft:pink_candle_cake": [
+   "visual"
+  ],
+  "minecraft:pink_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:pink_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:pink_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:pink_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:pink_petals": [
+   "collision"
+  ],
+  "minecraft:pink_shulker_box": [
+   "collision"
+  ],
+  "minecraft:pink_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:pink_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:pink_wool_slab": [
+   "visual"
+  ],
+  "minecraft:pink_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:piston_arm_collision": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:pitcher_crop": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:pitcher_plant": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:player_head": [
+   "visual"
+  ],
+  "minecraft:pointed_dripstone": [
+   "visual"
+  ],
+  "minecraft:polished_andesite_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_andesite_slab": [
+   "visual"
+  ],
+  "minecraft:polished_andesite_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_blackstone_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_blackstone_brick_slab": [
+   "visual"
+  ],
+  "minecraft:polished_blackstone_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_blackstone_brick_wall": [
+   "collision"
+  ],
+  "minecraft:polished_blackstone_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:polished_blackstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_blackstone_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:polished_blackstone_slab": [
+   "visual"
+  ],
+  "minecraft:polished_blackstone_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_blackstone_wall": [
+   "collision"
+  ],
+  "minecraft:polished_cinnabar_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_cinnabar_slab": [
+   "visual"
+  ],
+  "minecraft:polished_cinnabar_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_cinnabar_wall": [
+   "collision"
+  ],
+  "minecraft:polished_deepslate_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_deepslate_slab": [
+   "visual"
+  ],
+  "minecraft:polished_deepslate_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_deepslate_wall": [
+   "collision"
+  ],
+  "minecraft:polished_diorite_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_diorite_slab": [
+   "visual"
+  ],
+  "minecraft:polished_diorite_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_granite_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_granite_slab": [
+   "visual"
+  ],
+  "minecraft:polished_granite_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_sulfur_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_sulfur_slab": [
+   "visual"
+  ],
+  "minecraft:polished_sulfur_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_sulfur_wall": [
+   "collision"
+  ],
+  "minecraft:polished_tuff_double_slab": [
+   "visual"
+  ],
+  "minecraft:polished_tuff_slab": [
+   "visual"
+  ],
+  "minecraft:polished_tuff_stairs": [
+   "shapes"
+  ],
+  "minecraft:polished_tuff_wall": [
+   "collision"
+  ],
+  "minecraft:poplar_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:poplar_door": [
+   "collision"
+  ],
+  "minecraft:poplar_double_slab": [
+   "visual"
+  ],
+  "minecraft:poplar_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:poplar_fence_gate": [
+   "collision"
+  ],
+  "minecraft:poplar_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:poplar_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:poplar_sapling": [
+   "collision"
+  ],
+  "minecraft:poplar_shelf": [
+   "collision"
+  ],
+  "minecraft:poplar_slab": [
+   "visual"
+  ],
+  "minecraft:poplar_stairs": [
+   "shapes"
+  ],
+  "minecraft:poplar_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:poplar_trapdoor": [
+   "visual"
+  ],
+  "minecraft:poplar_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:portal": [
+   "collision"
+  ],
+  "minecraft:potatoes": [
+   "collision"
+  ],
+  "minecraft:powder_snow": [
+   "collision"
+  ],
+  "minecraft:prismarine_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:prismarine_brick_slab": [
+   "visual"
+  ],
+  "minecraft:prismarine_bricks_stairs": [
+   "shapes"
+  ],
+  "minecraft:prismarine_double_slab": [
+   "visual"
+  ],
+  "minecraft:prismarine_slab": [
+   "visual"
+  ],
+  "minecraft:prismarine_stairs": [
+   "shapes"
+  ],
+  "minecraft:prismarine_wall": [
+   "collision"
+  ],
+  "minecraft:pumpkin_stem": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:purple_candle": [
+   "visual"
+  ],
+  "minecraft:purple_candle_cake": [
+   "visual"
+  ],
+  "minecraft:purple_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:purple_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:purple_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:purple_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:purple_shulker_box": [
+   "collision"
+  ],
+  "minecraft:purple_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:purple_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:purple_wool_slab": [
+   "visual"
+  ],
+  "minecraft:purple_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:purpur_double_slab": [
+   "visual"
+  ],
+  "minecraft:purpur_slab": [
+   "visual"
+  ],
+  "minecraft:purpur_stairs": [
+   "shapes"
+  ],
+  "minecraft:quartz_double_slab": [
+   "visual"
+  ],
+  "minecraft:quartz_slab": [
+   "visual"
+  ],
+  "minecraft:quartz_stairs": [
+   "shapes"
+  ],
+  "minecraft:rail": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:red_candle": [
+   "visual"
+  ],
+  "minecraft:red_candle_cake": [
+   "visual"
+  ],
+  "minecraft:red_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:red_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:red_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:red_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:red_mushroom": [
+   "collision"
+  ],
+  "minecraft:red_nether_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:red_nether_brick_slab": [
+   "visual"
+  ],
+  "minecraft:red_nether_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:red_nether_brick_wall": [
+   "collision"
+  ],
+  "minecraft:red_sandstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:red_sandstone_slab": [
+   "visual"
+  ],
+  "minecraft:red_sandstone_stairs": [
+   "shapes"
+  ],
+  "minecraft:red_sandstone_wall": [
+   "collision"
+  ],
+  "minecraft:red_shulker_box": [
+   "collision"
+  ],
+  "minecraft:red_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:red_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:red_wool_slab": [
+   "visual"
+  ],
+  "minecraft:red_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:redstone_torch": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:redstone_wire": [
+   "collision"
+  ],
+  "minecraft:reeds": [
+   "collision"
+  ],
+  "minecraft:resin_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:resin_brick_slab": [
+   "visual"
+  ],
+  "minecraft:resin_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:resin_brick_wall": [
+   "collision"
+  ],
+  "minecraft:resin_clump": [
+   "collision"
+  ],
+  "minecraft:rose_bush": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:sandstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:sandstone_slab": [
+   "visual"
+  ],
+  "minecraft:sandstone_stairs": [
+   "shapes"
+  ],
+  "minecraft:sandstone_wall": [
+   "collision"
+  ],
+  "minecraft:scaffolding": [
+   "collision"
+  ],
+  "minecraft:sculk_vein": [
+   "collision"
+  ],
+  "minecraft:sea_pickle": [
+   "collision"
+  ],
+  "minecraft:seagrass": [
+   "collision"
+  ],
+  "minecraft:short_dry_grass": [
+   "collision"
+  ],
+  "minecraft:short_grass": [
+   "collision"
+  ],
+  "minecraft:skeleton_skull": [
+   "visual"
+  ],
+  "minecraft:small_amethyst_bud": [
+   "visual"
+  ],
+  "minecraft:small_dripleaf_block": [
+   "collision"
+  ],
+  "minecraft:smooth_quartz_double_slab": [
+   "visual"
+  ],
+  "minecraft:smooth_quartz_slab": [
+   "visual"
+  ],
+  "minecraft:smooth_quartz_stairs": [
+   "shapes"
+  ],
+  "minecraft:smooth_red_sandstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:smooth_red_sandstone_slab": [
+   "visual"
+  ],
+  "minecraft:smooth_red_sandstone_stairs": [
+   "shapes"
+  ],
+  "minecraft:smooth_sandstone_double_slab": [
+   "visual"
+  ],
+  "minecraft:smooth_sandstone_slab": [
+   "visual"
+  ],
+  "minecraft:smooth_sandstone_stairs": [
+   "shapes"
+  ],
+  "minecraft:smooth_stone_double_slab": [
+   "visual"
+  ],
+  "minecraft:smooth_stone_slab": [
+   "visual"
+  ],
+  "minecraft:snow_layer": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:soul_fire": [
+   "collision"
+  ],
+  "minecraft:soul_lantern": [
+   "visual"
+  ],
+  "minecraft:soul_sand": [
+   "collision"
+  ],
+  "minecraft:soul_torch": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:spore_blossom": [
+   "collision"
+  ],
+  "minecraft:spruce_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:spruce_door": [
+   "collision"
+  ],
+  "minecraft:spruce_double_slab": [
+   "visual"
+  ],
+  "minecraft:spruce_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:spruce_fence_gate": [
+   "collision"
+  ],
+  "minecraft:spruce_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:spruce_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:spruce_sapling": [
+   "collision"
+  ],
+  "minecraft:spruce_shelf": [
+   "collision"
+  ],
+  "minecraft:spruce_slab": [
+   "visual"
+  ],
+  "minecraft:spruce_stairs": [
+   "shapes"
+  ],
+  "minecraft:spruce_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:spruce_trapdoor": [
+   "visual"
+  ],
+  "minecraft:spruce_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:standing_banner": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:sticky_piston_arm_collision": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:stone_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:stone_brick_slab": [
+   "visual"
+  ],
+  "minecraft:stone_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:stone_brick_wall": [
+   "collision"
+  ],
+  "minecraft:stone_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:stone_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:stone_stairs": [
+   "shapes"
+  ],
+  "minecraft:structure_void": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:sulfur_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:sulfur_brick_slab": [
+   "visual"
+  ],
+  "minecraft:sulfur_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:sulfur_brick_wall": [
+   "collision"
+  ],
+  "minecraft:sulfur_double_slab": [
+   "visual"
+  ],
+  "minecraft:sulfur_slab": [
+   "visual"
+  ],
+  "minecraft:sulfur_spike": [
+   "visual"
+  ],
+  "minecraft:sulfur_stairs": [
+   "shapes"
+  ],
+  "minecraft:sulfur_wall": [
+   "collision"
+  ],
+  "minecraft:sunflower": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:sweet_berry_bush": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:tall_dry_grass": [
+   "collision"
+  ],
+  "minecraft:tall_grass": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:torch": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:torchflower_crop": [
+   "collision"
+  ],
+  "minecraft:trapdoor": [
+   "visual"
+  ],
+  "minecraft:trial_spawner": [
+   "collision"
+  ],
+  "minecraft:trip_wire": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:tripwire_hook": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:tube_coral": [
+   "collision"
+  ],
+  "minecraft:tube_coral_fan": [
+   "collision"
+  ],
+  "minecraft:tube_coral_wall_fan": [
+   "collision"
+  ],
+  "minecraft:tuff_brick_double_slab": [
+   "visual"
+  ],
+  "minecraft:tuff_brick_slab": [
+   "visual"
+  ],
+  "minecraft:tuff_brick_stairs": [
+   "shapes"
+  ],
+  "minecraft:tuff_brick_wall": [
+   "collision"
+  ],
+  "minecraft:tuff_double_slab": [
+   "visual"
+  ],
+  "minecraft:tuff_slab": [
+   "visual"
+  ],
+  "minecraft:tuff_stairs": [
+   "shapes"
+  ],
+  "minecraft:tuff_wall": [
+   "collision"
+  ],
+  "minecraft:twisting_vines": [
+   "collision"
+  ],
+  "minecraft:underwater_torch": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:undyed_shulker_box": [
+   "collision"
+  ],
+  "minecraft:unlit_redstone_torch": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:vine": [
+   "collision"
+  ],
+  "minecraft:wall_banner": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:warped_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:warped_door": [
+   "collision"
+  ],
+  "minecraft:warped_double_slab": [
+   "visual"
+  ],
+  "minecraft:warped_fence": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:warped_fence_gate": [
+   "collision"
+  ],
+  "minecraft:warped_fungus": [
+   "collision"
+  ],
+  "minecraft:warped_hanging_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:warped_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:warped_shelf": [
+   "collision"
+  ],
+  "minecraft:warped_slab": [
+   "visual"
+  ],
+  "minecraft:warped_stairs": [
+   "shapes"
+  ],
+  "minecraft:warped_standing_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:warped_trapdoor": [
+   "visual"
+  ],
+  "minecraft:warped_wall_sign": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:water": [
+   "collision"
+  ],
+  "minecraft:waterlily": [
+   "collision"
+  ],
+  "minecraft:waxed_copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:waxed_copper_chain": [
+   "visual"
+  ],
+  "minecraft:waxed_copper_door": [
+   "collision"
+  ],
+  "minecraft:waxed_copper_lantern": [
+   "visual"
+  ],
+  "minecraft:waxed_copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:waxed_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:waxed_double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_exposed_copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:waxed_exposed_copper_chain": [
+   "visual"
+  ],
+  "minecraft:waxed_exposed_copper_door": [
+   "collision"
+  ],
+  "minecraft:waxed_exposed_copper_lantern": [
+   "visual"
+  ],
+  "minecraft:waxed_exposed_copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:waxed_exposed_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_exposed_cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:waxed_exposed_double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_exposed_lightning_rod": [
+   "visual"
+  ],
+  "minecraft:waxed_lightning_rod": [
+   "visual"
+  ],
+  "minecraft:waxed_oxidized_copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:waxed_oxidized_copper_chain": [
+   "visual"
+  ],
+  "minecraft:waxed_oxidized_copper_door": [
+   "collision"
+  ],
+  "minecraft:waxed_oxidized_copper_lantern": [
+   "visual"
+  ],
+  "minecraft:waxed_oxidized_copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:waxed_oxidized_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_oxidized_cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:waxed_oxidized_double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_oxidized_lightning_rod": [
+   "visual"
+  ],
+  "minecraft:waxed_weathered_copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:waxed_weathered_copper_chain": [
+   "visual"
+  ],
+  "minecraft:waxed_weathered_copper_door": [
+   "collision"
+  ],
+  "minecraft:waxed_weathered_copper_lantern": [
+   "visual"
+  ],
+  "minecraft:waxed_weathered_copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:waxed_weathered_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_weathered_cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:waxed_weathered_double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:waxed_weathered_lightning_rod": [
+   "visual"
+  ],
+  "minecraft:weathered_copper_bars": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:weathered_copper_chain": [
+   "visual"
+  ],
+  "minecraft:weathered_copper_door": [
+   "collision"
+  ],
+  "minecraft:weathered_copper_lantern": [
+   "visual"
+  ],
+  "minecraft:weathered_copper_trapdoor": [
+   "visual"
+  ],
+  "minecraft:weathered_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:weathered_cut_copper_stairs": [
+   "shapes"
+  ],
+  "minecraft:weathered_double_cut_copper_slab": [
+   "visual"
+  ],
+  "minecraft:weathered_lightning_rod": [
+   "visual"
+  ],
+  "minecraft:web": [
+   "collision"
+  ],
+  "minecraft:weeping_vines": [
+   "collision"
+  ],
+  "minecraft:wheat": [
+   "collision"
+  ],
+  "minecraft:white_candle": [
+   "visual"
+  ],
+  "minecraft:white_candle_cake": [
+   "visual"
+  ],
+  "minecraft:white_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:white_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:white_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:white_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:white_shulker_box": [
+   "collision"
+  ],
+  "minecraft:white_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:white_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:white_wool_slab": [
+   "visual"
+  ],
+  "minecraft:white_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:wildflowers": [
+   "collision"
+  ],
+  "minecraft:wither_skeleton_skull": [
+   "visual"
+  ],
+  "minecraft:wooden_button": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:wooden_door": [
+   "collision"
+  ],
+  "minecraft:wooden_pressure_plate": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:yellow_candle": [
+   "visual"
+  ],
+  "minecraft:yellow_candle_cake": [
+   "visual"
+  ],
+  "minecraft:yellow_carpet": [
+   "collision",
+   "visual"
+  ],
+  "minecraft:yellow_concrete_double_slab": [
+   "visual"
+  ],
+  "minecraft:yellow_concrete_slab": [
+   "visual"
+  ],
+  "minecraft:yellow_concrete_stairs": [
+   "shapes"
+  ],
+  "minecraft:yellow_shulker_box": [
+   "collision"
+  ],
+  "minecraft:yellow_stained_glass_pane": [
+   "collision",
+   "shapes"
+  ],
+  "minecraft:yellow_wool_double_slab": [
+   "visual"
+  ],
+  "minecraft:yellow_wool_slab": [
+   "visual"
+  ],
+  "minecraft:yellow_wool_stairs": [
+   "shapes"
+  ],
+  "minecraft:zombie_head": [
+   "visual"
+  ]
+ },
+ "source": "BDS 1.26.60.6 Linux, read from memory at startup: each Block's collision component (data-driven boxes; disabled = no collision) and, for block types whose collision code is BlockType's own, the type's shape. Blocks whose type computes its shape in code are listed under computed with the methods it overrides; their shapes are not data and must be ported as rules."
+}
