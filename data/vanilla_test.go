@@ -286,3 +286,16 @@ func TestBreakPlace(t *testing.T) {
 		t.Error("replaceable list is wrong")
 	}
 }
+
+func TestCollisionData(t *testing.T) {
+	c, err := CollisionData()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if b := c.Blocks["minecraft:stone"]; len(b.Boxes) != 1 || b.Boxes[0] != (Box{0, 0, 0, 1, 1, 1}) {
+		t.Fatalf("stone: %+v", b)
+	}
+	if len(c.Blocks["minecraft:shelf_mushroom"].States) == 0 || len(c.Computed["minecraft:oak_stairs"]) == 0 {
+		t.Fatal("per-state or computed entries missing")
+	}
+}
