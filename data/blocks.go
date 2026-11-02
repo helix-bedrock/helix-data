@@ -73,6 +73,39 @@ func PlacementData() (map[string]Placement, error) {
 	return doc.Blocks, nil
 }
 
+//go:embed 1.26.60/bds/connections.json
+var connections []byte
+
+// Connection is a block's rule for what connects to it: Groups is a bit set of
+// the connecting block's groups, Faces of the sides that accept it (1 << face,
+// in the order down, up, north, south, west, east). States, when set, lists the
+// rule of each state of a block whose rule depends on its state; a state with
+// Groups -1 has no rule. A block with no rule lets everything connect.
+type Connection struct {
+	Groups int               `json:"groups"`
+	Faces  int               `json:"faces"`
+	States []StateConnection `json:"states,omitempty"`
+}
+
+// StateConnection is one state's Connection.
+type StateConnection struct {
+	States map[string]any `json:"states"`
+	Groups int            `json:"groups"`
+	Faces  int            `json:"faces"`
+}
+
+// ConnectionData returns the connection rule of every block with one, keyed by
+// block name. Each call decodes a fresh copy.
+func ConnectionData() (map[string]Connection, error) {
+	var doc struct {
+		Blocks map[string]Connection `json:"blocks"`
+	}
+	if err := json.Unmarshal(connections, &doc); err != nil {
+		return nil, fmt.Errorf("data: connections: %w", err)
+	}
+	return doc.Blocks, nil
+}
+
 //go:embed 1.26.60/bds/liquids.json
 var liquids []byte
 
