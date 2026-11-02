@@ -134,3 +134,24 @@ func Liquids() (LiquidFacts, error) {
 	}
 	return doc, nil
 }
+
+//go:embed 1.26.60/bds/chest_obstruction.json
+var chestObstruction []byte
+
+// ChestObstruction lists the blocks that do not stop a chest under them opening
+// whatever their shape: Blocks in every state, States in only those states. Any
+// other block stops it if its collision boxes reach the lid.
+type ChestObstruction struct {
+	Blocks []string                    `json:"blocks"`
+	States map[string][]map[string]any `json:"states"`
+}
+
+// ChestObstructionData returns BDS's chest obstruction lists. Each call decodes a
+// fresh copy.
+func ChestObstructionData() (ChestObstruction, error) {
+	var doc ChestObstruction
+	if err := json.Unmarshal(chestObstruction, &doc); err != nil {
+		return ChestObstruction{}, fmt.Errorf("data: chest obstruction: %w", err)
+	}
+	return doc, nil
+}
