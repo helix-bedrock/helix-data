@@ -318,3 +318,17 @@ func TestBlockFacts(t *testing.T) {
 		t.Fatalf("liquids: %v", err)
 	}
 }
+
+func TestBlockDrops(t *testing.T) {
+	drops, err := BlockDrops()
+	if err != nil {
+		t.Fatal(err)
+	}
+	stone, ok := drops["minecraft:stone"]
+	if !ok || stone.Drops == nil || stone.Drops.Else == nil || stone.Drops.Else.Of.Name != "minecraft:cobblestone" {
+		t.Errorf("stone drops %+v", stone)
+	}
+	if drops["minecraft:diamond_ore"].XP != [2]int32{3, 7} {
+		t.Errorf("diamond ore xp %v", drops["minecraft:diamond_ore"].XP)
+	}
+}

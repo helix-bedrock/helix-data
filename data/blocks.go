@@ -155,3 +155,49 @@ func ChestObstructionData() (ChestObstruction, error) {
 	}
 	return doc, nil
 }
+
+//go:embed 1.26.60/bds/block_drops.json
+var blockDrops []byte
+
+// DropNode is one step of a block's drop rule as BDS 1.26.60 builds it: an item
+// list, a count or a test, by Kind. Which fields are set depends on Kind.
+type DropNode struct {
+	Kind    string    `json:"kind"`
+	Name    string    `json:"name,omitempty"`
+	State   string    `json:"state,omitempty"`
+	States  []string  `json:"states,omitempty"`
+	Value   int32     `json:"value,omitempty"`
+	Add     int32     `json:"add,omitempty"`
+	N       int32     `json:"n,omitempty"`
+	Min     int32     `json:"min,omitempty"`
+	Max     int32     `json:"max,omitempty"`
+	Table   []float64 `json:"table,omitempty"`
+	Seeds   string    `json:"seeds,omitempty"`
+	Product string    `json:"product,omitempty"`
+	Count   *DropNode `json:"count,omitempty"`
+	Of      *DropNode `json:"of,omitempty"`
+	A       *DropNode `json:"a,omitempty"`
+	B       *DropNode `json:"b,omitempty"`
+	If      *DropNode `json:"if,omitempty"`
+	Then    *DropNode `json:"then,omitempty"`
+	Else    *DropNode `json:"else,omitempty"`
+}
+
+// BlockDrop is what a block drops: Drops is its rule, or nil if the block drops
+// by its loot table in vanilla/loot_tables/blocks. XP is its experience range.
+type BlockDrop struct {
+	XP    [2]int32  `json:"xp"`
+	Drops *DropNode `json:"drops,omitempty"`
+}
+
+// BlockDrops returns BDS's drop rule of every block, by block name. Each call
+// decodes a fresh copy.
+func BlockDrops() (map[string]BlockDrop, error) {
+	var doc struct {
+		Blocks map[string]BlockDrop `json:"blocks"`
+	}
+	if err := json.Unmarshal(blockDrops, &doc); err != nil {
+		return nil, fmt.Errorf("data: block drops: %w", err)
+	}
+	return doc.Blocks, nil
+}
