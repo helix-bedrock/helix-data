@@ -72,3 +72,30 @@ func PlacementData() (map[string]Placement, error) {
 	}
 	return doc.Blocks, nil
 }
+
+//go:embed 1.26.60/bds/liquids.json
+var liquids []byte
+
+// LiquidFacts are how BDS's liquids treat each block: Reaction is what a
+// liquid flowing into the block does ("blocking", "broken": replaced,
+// "popped": replaced and the block drops, "no_reaction": the liquid goes
+// in the block's second layer), CanContain lists the blocks that can hold
+// a liquid in their second layer, Solid the blocks whose material is
+// solid, and FlowByShape the blocks whose own shape decides where a liquid
+// in them may flow.
+type LiquidFacts struct {
+	Reaction    map[string][]string `json:"reaction"`
+	CanContain  []string            `json:"can_contain"`
+	Solid       []string            `json:"solid"`
+	FlowByShape []string            `json:"flow_by_shape"`
+}
+
+// Liquids returns the liquid facts of every block. Each call decodes a
+// fresh copy.
+func Liquids() (LiquidFacts, error) {
+	var doc LiquidFacts
+	if err := json.Unmarshal(liquids, &doc); err != nil {
+		return doc, fmt.Errorf("data: liquids: %w", err)
+	}
+	return doc, nil
+}

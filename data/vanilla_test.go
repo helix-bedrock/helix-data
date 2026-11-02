@@ -313,4 +313,8 @@ func TestBlockFacts(t *testing.T) {
 	if err != nil || m["minecraft:water"] != MaterialWater {
 		t.Fatalf("materials: water %d, %v", m["minecraft:water"], err)
 	}
+	l, err := Liquids()
+	if err != nil || !slices.Contains(l.Reaction["blocking"], "minecraft:stone") || !slices.Contains(l.CanContain, "minecraft:oak_stairs") {
+		t.Fatalf("liquids: %v", err)
+	}
 }
