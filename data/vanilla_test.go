@@ -299,3 +299,14 @@ func TestCollisionData(t *testing.T) {
 		t.Fatal("per-state or computed entries missing")
 	}
 }
+
+func TestBlockFacts(t *testing.T) {
+	c, err := Climbable()
+	if err != nil || !slices.Contains(c, "minecraft:ladder") || slices.Contains(c, "minecraft:stone") {
+		t.Fatalf("climbable %v, %v", c, err)
+	}
+	m, err := BlockMaterials()
+	if err != nil || m["minecraft:water"] != MaterialWater {
+		t.Fatalf("materials: water %d, %v", m["minecraft:water"], err)
+	}
+}

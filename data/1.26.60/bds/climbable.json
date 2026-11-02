@@ -1,0 +1,12 @@
+{
+ "source": "BDS 1.26.60.6 Linux, read from the running server's memory at \"Server started.\" (bds-runtime-dump skill): every block type whose climbable flag is set, the flag BDS's movement reads to let a mob or player climb the block at its feet and to clear its fall distance. 1480 block types read.",
+ "climbable": [
+  "minecraft:cave_vines",
+  "minecraft:cave_vines_body_with_berries",
+  "minecraft:cave_vines_head_with_berries",
+  "minecraft:ladder",
+  "minecraft:twisting_vines",
+  "minecraft:vine",
+  "minecraft:weeping_vines"
+ ]
+}
