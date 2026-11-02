@@ -88,6 +88,8 @@ type LiquidFacts struct {
 	CanContain  []string            `json:"can_contain"`
 	Solid       []string            `json:"solid"`
 	FlowByShape []string            `json:"flow_by_shape"`
+	// LavaBlocking lists the blocks that stop lava flowing into them.
+	LavaBlocking []string `json:"lava_blocking"`
 }
 
 // Liquids returns the liquid facts of every block. Each call decodes a
