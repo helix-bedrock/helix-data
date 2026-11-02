@@ -305,6 +305,10 @@ func TestBlockFacts(t *testing.T) {
 	if err != nil || !slices.Contains(c, "minecraft:ladder") || slices.Contains(c, "minecraft:stone") {
 		t.Fatalf("climbable %v, %v", c, err)
 	}
+	pl, err := PlacementData()
+	if err != nil || pl["minecraft:oak_stairs"].Rule != "stairs" || len(pl["minecraft:furnace"].Traits) != 1 {
+		t.Fatalf("placement: stairs %+v, furnace %+v, %v", pl["minecraft:oak_stairs"], pl["minecraft:furnace"], err)
+	}
 	m, err := BlockMaterials()
 	if err != nil || m["minecraft:water"] != MaterialWater {
 		t.Fatalf("materials: water %d, %v", m["minecraft:water"], err)

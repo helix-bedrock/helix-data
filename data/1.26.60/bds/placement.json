@@ -1,0 +1,3316 @@
+{
+ "source": "BDS 1.26.60.6 Linux, read from the running server's memory once it started (bds-runtime-dump skill): for each block type, the placement rule its getPlacementBlock follows (blocks sharing BDS's function share a rule; 'pending' rules need the world and are not ported yet) and the placement traits (cardinal or facing direction with its rotation offset, vertical half, block face) BDS applies in order. Blocks placed in their item's state are left out.",
+ "blocks": {
+  "minecraft:acacia_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:acacia_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:acacia_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:acacia_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:acacia_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:acacia_log": {
+   "rule": "pillar"
+  },
+  "minecraft:acacia_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:acacia_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:acacia_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:acacia_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:acacia_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:amethyst_cluster": {
+   "traits": [
+    {
+     "kind": "block_face"
+    }
+   ]
+  },
+  "minecraft:andesite_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:andesite_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:andesite_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:andesite_wall": {
+   "rule": "pending"
+  },
+  "minecraft:anvil": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 90.0
+    }
+   ]
+  },
+  "minecraft:azalea_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:azalea_leaves_flowered": {
+   "rule": "leaves"
+  },
+  "minecraft:bamboo": {
+   "rule": "pending"
+  },
+  "minecraft:bamboo_block": {
+   "rule": "pillar"
+  },
+  "minecraft:bamboo_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:bamboo_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:bamboo_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:bamboo_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:bamboo_mosaic_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:bamboo_mosaic_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:bamboo_mosaic_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:bamboo_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:bamboo_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:bamboo_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:bamboo_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:barrel": {
+   "rule": "look_facing"
+  },
+  "minecraft:basalt": {
+   "rule": "pillar"
+  },
+  "minecraft:bee_nest": {
+   "rule": "yaw_direction_offset"
+  },
+  "minecraft:beehive": {
+   "rule": "yaw_direction_offset"
+  },
+  "minecraft:bell": {
+   "rule": "bell"
+  },
+  "minecraft:big_dripleaf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:birch_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:birch_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:birch_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:birch_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:birch_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:birch_log": {
+   "rule": "pillar"
+  },
+  "minecraft:birch_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:birch_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:birch_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:birch_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:birch_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:black_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:black_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:black_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:black_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:black_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:black_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:black_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:black_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:blackstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:blackstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:blackstone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:blackstone_wall": {
+   "rule": "pending"
+  },
+  "minecraft:blast_furnace": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:blue_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:blue_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:blue_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:blue_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:blue_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:blue_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:blue_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:blue_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:bone_block": {
+   "rule": "pillar"
+  },
+  "minecraft:border_block": {
+   "rule": "pending"
+  },
+  "minecraft:brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:brown_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:brown_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:brown_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:brown_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:brown_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:brown_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:brown_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:brown_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:calibrated_sculk_sensor": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 0.0
+    }
+   ]
+  },
+  "minecraft:campfire": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 0.0
+    }
+   ]
+  },
+  "minecraft:carved_pumpkin": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:chain_command_block": {
+   "rule": "look_facing"
+  },
+  "minecraft:cherry_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:cherry_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:cherry_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cherry_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:cherry_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:cherry_log": {
+   "rule": "pillar"
+  },
+  "minecraft:cherry_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:cherry_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cherry_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:cherry_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:cherry_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:chipped_anvil": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 90.0
+    }
+   ]
+  },
+  "minecraft:chiseled_bookshelf": {
+   "rule": "yaw_direction_offset"
+  },
+  "minecraft:cinnabar_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cinnabar_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cinnabar_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:cinnabar_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:cinnabar_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cinnabar_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cinnabar_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:cinnabar_wall": {
+   "rule": "pending"
+  },
+  "minecraft:cobbled_deepslate_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cobbled_deepslate_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cobbled_deepslate_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:cobbled_deepslate_wall": {
+   "rule": "pending"
+  },
+  "minecraft:cobblestone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cobblestone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cobblestone_wall": {
+   "rule": "pending"
+  },
+  "minecraft:cocoa": {
+   "rule": "cocoa"
+  },
+  "minecraft:colored_torch_blue": {
+   "rule": "torch"
+  },
+  "minecraft:colored_torch_green": {
+   "rule": "torch"
+  },
+  "minecraft:colored_torch_purple": {
+   "rule": "torch"
+  },
+  "minecraft:colored_torch_red": {
+   "rule": "torch"
+  },
+  "minecraft:command_block": {
+   "rule": "look_facing"
+  },
+  "minecraft:compound_creator": {
+   "rule": "yaw_direction"
+  },
+  "minecraft:copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:copper_torch": {
+   "rule": "torch"
+  },
+  "minecraft:copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:crafter": {
+   "rule": "pending"
+  },
+  "minecraft:creaking_heart": {
+   "rule": "pillar"
+  },
+  "minecraft:creeper_head": {
+   "rule": "skull"
+  },
+  "minecraft:crimson_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:crimson_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:crimson_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:crimson_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:crimson_hyphae": {
+   "rule": "pillar"
+  },
+  "minecraft:crimson_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:crimson_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:crimson_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:crimson_stem": {
+   "rule": "pillar"
+  },
+  "minecraft:crimson_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:cut_red_sandstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cut_red_sandstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cut_sandstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cut_sandstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cyan_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cyan_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cyan_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:cyan_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:cyan_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:cyan_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cyan_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:cyan_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:damaged_anvil": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 90.0
+    }
+   ]
+  },
+  "minecraft:dark_oak_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:dark_oak_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:dark_oak_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:dark_oak_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:dark_oak_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:dark_oak_log": {
+   "rule": "pillar"
+  },
+  "minecraft:dark_oak_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:dark_oak_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:dark_oak_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:dark_oak_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:dark_oak_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:dark_prismarine_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:dark_prismarine_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:dark_prismarine_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:decorated_pot": {
+   "rule": "yaw_direction_offset"
+  },
+  "minecraft:deepslate": {
+   "rule": "pillar"
+  },
+  "minecraft:deepslate_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:deepslate_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:deepslate_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:deepslate_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:deepslate_tile_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:deepslate_tile_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:deepslate_tile_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:deepslate_tile_wall": {
+   "rule": "pending"
+  },
+  "minecraft:deprecated_anvil": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 90.0
+    }
+   ]
+  },
+  "minecraft:diorite_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:diorite_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:diorite_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:diorite_wall": {
+   "rule": "pending"
+  },
+  "minecraft:disc_press": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 0.0
+    }
+   ]
+  },
+  "minecraft:dispenser": {
+   "rule": "look_facing"
+  },
+  "minecraft:double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:dragon_head": {
+   "rule": "skull"
+  },
+  "minecraft:dried_ghast": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:dropper": {
+   "rule": "look_facing"
+  },
+  "minecraft:element_constructor": {
+   "rule": "yaw_direction"
+  },
+  "minecraft:end_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:end_portal_frame": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:end_rod": {
+   "rule": "end_rod"
+  },
+  "minecraft:end_stone_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:end_stone_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:end_stone_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:ender_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:exposed_copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:exposed_copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:exposed_copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:exposed_copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:exposed_copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:exposed_copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:exposed_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:exposed_cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:exposed_double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:exposed_lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:frame": {
+   "rule": "face_facing"
+  },
+  "minecraft:furnace": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:glow_frame": {
+   "rule": "face_facing"
+  },
+  "minecraft:glow_lichen": {
+   "rule": "pending"
+  },
+  "minecraft:granite_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:granite_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:granite_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:granite_wall": {
+   "rule": "pending"
+  },
+  "minecraft:gray_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:gray_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:gray_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:gray_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:gray_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:gray_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:gray_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:gray_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:green_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:green_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:green_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:green_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:green_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:green_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:green_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:green_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:grindstone": {
+   "rule": "grindstone"
+  },
+  "minecraft:hay_block": {
+   "rule": "pillar"
+  },
+  "minecraft:hopper": {
+   "rule": "hopper"
+  },
+  "minecraft:ice_crystal": {
+   "traits": [
+    {
+     "kind": "block_face"
+    }
+   ]
+  },
+  "minecraft:icicle": {
+   "rule": "pending"
+  },
+  "minecraft:infested_deepslate": {
+   "rule": "pillar"
+  },
+  "minecraft:iron_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:iron_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:iron_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:jigsaw": {
+   "rule": "pending"
+  },
+  "minecraft:jungle_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:jungle_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:jungle_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:jungle_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:jungle_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:jungle_log": {
+   "rule": "pillar"
+  },
+  "minecraft:jungle_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:jungle_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:jungle_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:jungle_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:jungle_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:lab_table": {
+   "rule": "yaw_direction"
+  },
+  "minecraft:ladder": {
+   "rule": "ladder"
+  },
+  "minecraft:lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:large_amethyst_bud": {
+   "traits": [
+    {
+     "kind": "block_face"
+    }
+   ]
+  },
+  "minecraft:leaf_litter": {
+   "rule": "pending"
+  },
+  "minecraft:lectern": {
+   "rule": "pending"
+  },
+  "minecraft:lever": {
+   "rule": "lever"
+  },
+  "minecraft:light_blue_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_blue_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_blue_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:light_blue_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:light_blue_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:light_blue_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_blue_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_blue_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:light_gray_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_gray_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_gray_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:light_gray_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:light_gray_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_gray_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:light_gray_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:lime_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:lime_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:lime_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:lime_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:lime_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:lime_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:lime_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:lime_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:lit_blast_furnace": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:lit_furnace": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:lit_pumpkin": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:lit_smoker": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:loom": {
+   "rule": "yaw_direction_offset"
+  },
+  "minecraft:magenta_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:magenta_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:magenta_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:magenta_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:magenta_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:magenta_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:magenta_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:magenta_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:mangrove_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:mangrove_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:mangrove_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mangrove_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:mangrove_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:mangrove_log": {
+   "rule": "pillar"
+  },
+  "minecraft:mangrove_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:mangrove_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mangrove_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:mangrove_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:mangrove_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:material_reducer": {
+   "rule": "yaw_direction"
+  },
+  "minecraft:medium_amethyst_bud": {
+   "traits": [
+    {
+     "kind": "block_face"
+    }
+   ]
+  },
+  "minecraft:mossy_cobblestone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mossy_cobblestone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mossy_cobblestone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:mossy_cobblestone_wall": {
+   "rule": "pending"
+  },
+  "minecraft:mossy_stone_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mossy_stone_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mossy_stone_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:mossy_stone_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:mud_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mud_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:mud_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:mud_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:muddy_mangrove_roots": {
+   "rule": "pillar"
+  },
+  "minecraft:nether_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:nether_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:nether_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:nether_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:normal_stone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:normal_stone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:normal_stone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:oak_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:oak_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:oak_log": {
+   "rule": "pillar"
+  },
+  "minecraft:oak_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:oak_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:oak_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:oak_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:observer": {
+   "traits": [
+    {
+     "kind": "facing",
+     "offset": 0.0
+    }
+   ]
+  },
+  "minecraft:ochre_froglight": {
+   "rule": "pillar"
+  },
+  "minecraft:orange_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:orange_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:orange_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:orange_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:orange_poplar_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:orange_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:orange_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:orange_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:orange_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:oxidized_copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:oxidized_copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:oxidized_copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:oxidized_copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:oxidized_copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:oxidized_copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:oxidized_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:oxidized_cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:oxidized_double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:oxidized_lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:pale_hanging_moss": {
+   "rule": "pending"
+  },
+  "minecraft:pale_oak_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:pale_oak_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:pale_oak_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:pale_oak_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:pale_oak_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:pale_oak_log": {
+   "rule": "pillar"
+  },
+  "minecraft:pale_oak_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:pale_oak_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:pale_oak_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:pale_oak_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:pale_oak_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:pearlescent_froglight": {
+   "rule": "pillar"
+  },
+  "minecraft:petrified_oak_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:petrified_oak_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:piglin_head": {
+   "rule": "skull"
+  },
+  "minecraft:pink_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:pink_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:pink_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:pink_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:pink_petals": {
+   "rule": "pending"
+  },
+  "minecraft:pink_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:pink_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:pink_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:pink_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:piston": {
+   "rule": "piston"
+  },
+  "minecraft:player_head": {
+   "rule": "skull"
+  },
+  "minecraft:pointed_dripstone": {
+   "rule": "pending"
+  },
+  "minecraft:polished_andesite_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_andesite_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_andesite_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_basalt": {
+   "rule": "pillar"
+  },
+  "minecraft:polished_blackstone_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_blackstone_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_blackstone_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_blackstone_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:polished_blackstone_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:polished_blackstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_blackstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_blackstone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_blackstone_wall": {
+   "rule": "pending"
+  },
+  "minecraft:polished_cinnabar_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_cinnabar_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_cinnabar_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_cinnabar_wall": {
+   "rule": "pending"
+  },
+  "minecraft:polished_deepslate_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_deepslate_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_deepslate_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_deepslate_wall": {
+   "rule": "pending"
+  },
+  "minecraft:polished_diorite_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_diorite_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_diorite_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_granite_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_granite_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_granite_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_sulfur_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_sulfur_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_sulfur_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_sulfur_wall": {
+   "rule": "pending"
+  },
+  "minecraft:polished_tuff_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_tuff_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:polished_tuff_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:polished_tuff_wall": {
+   "rule": "pending"
+  },
+  "minecraft:poplar_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:poplar_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:poplar_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:poplar_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:poplar_log": {
+   "rule": "pillar"
+  },
+  "minecraft:poplar_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:poplar_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:poplar_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:poplar_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:poplar_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:powered_comparator": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:powered_repeater": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:prismarine_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:prismarine_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:prismarine_bricks_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:prismarine_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:prismarine_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:prismarine_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:prismarine_wall": {
+   "rule": "pending"
+  },
+  "minecraft:pumpkin": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:purple_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:purple_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:purple_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:purple_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:purple_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:purple_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:purple_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:purple_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:purpur_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:purpur_pillar": {
+   "rule": "pillar"
+  },
+  "minecraft:purpur_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:purpur_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:quartz_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:quartz_pillar": {
+   "rule": "pillar"
+  },
+  "minecraft:quartz_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:quartz_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:red_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:red_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:red_nether_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_nether_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_nether_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:red_nether_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:red_poplar_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:red_sandstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_sandstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_sandstone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:red_sandstone_wall": {
+   "rule": "pending"
+  },
+  "minecraft:red_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:red_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:red_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:redstone_torch": {
+   "rule": "torch"
+  },
+  "minecraft:redstone_wire": {
+   "rule": "pending"
+  },
+  "minecraft:repeating_command_block": {
+   "rule": "look_facing"
+  },
+  "minecraft:resin_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:resin_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:resin_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:resin_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:resin_clump": {
+   "rule": "pending"
+  },
+  "minecraft:sandstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:sandstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:sandstone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:sandstone_wall": {
+   "rule": "pending"
+  },
+  "minecraft:scaffolding": {
+   "rule": "pending"
+  },
+  "minecraft:sculk_vein": {
+   "rule": "pending"
+  },
+  "minecraft:shelf_mushroom": {
+   "rule": "pending"
+  },
+  "minecraft:silver_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:skeleton_skull": {
+   "rule": "skull"
+  },
+  "minecraft:small_amethyst_bud": {
+   "traits": [
+    {
+     "kind": "block_face"
+    }
+   ]
+  },
+  "minecraft:small_dripleaf_block": {
+   "rule": "pending"
+  },
+  "minecraft:smoker": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:smooth_quartz_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:smooth_quartz_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:smooth_quartz_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:smooth_red_sandstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:smooth_red_sandstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:smooth_red_sandstone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:smooth_sandstone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:smooth_sandstone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:smooth_sandstone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:smooth_stone_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:smooth_stone_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:snow_layer": {
+   "rule": "pending"
+  },
+  "minecraft:soul_campfire": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 0.0
+    }
+   ]
+  },
+  "minecraft:soul_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:soul_torch": {
+   "rule": "torch"
+  },
+  "minecraft:spruce_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:spruce_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:spruce_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:spruce_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:spruce_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:spruce_log": {
+   "rule": "pillar"
+  },
+  "minecraft:spruce_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:spruce_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:spruce_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:spruce_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:spruce_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:sticky_piston": {
+   "rule": "piston"
+  },
+  "minecraft:stone_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:stone_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:stone_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:stone_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:stone_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:stone_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:stonecutter_block": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:straw_bed": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 0.0
+    }
+   ]
+  },
+  "minecraft:stripped_acacia_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_acacia_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_bamboo_block": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_birch_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_birch_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_cherry_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_cherry_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_crimson_hyphae": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_crimson_stem": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_dark_oak_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_dark_oak_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_jungle_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_jungle_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_mangrove_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_mangrove_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_oak_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_oak_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_pale_oak_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_pale_oak_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_poplar_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_poplar_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_spruce_log": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_spruce_wood": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_warped_hyphae": {
+   "rule": "pillar"
+  },
+  "minecraft:stripped_warped_stem": {
+   "rule": "pillar"
+  },
+  "minecraft:structure_block": {
+   "rule": "pending"
+  },
+  "minecraft:sulfur_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:sulfur_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:sulfur_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:sulfur_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:sulfur_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:sulfur_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:sulfur_spike": {
+   "rule": "pending"
+  },
+  "minecraft:sulfur_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:sulfur_wall": {
+   "rule": "pending"
+  },
+  "minecraft:torch": {
+   "rule": "torch"
+  },
+  "minecraft:trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:trapped_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:tripwire_hook": {
+   "rule": "tripwire_hook"
+  },
+  "minecraft:tuff_brick_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:tuff_brick_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:tuff_brick_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:tuff_brick_wall": {
+   "rule": "pending"
+  },
+  "minecraft:tuff_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:tuff_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:tuff_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:tuff_wall": {
+   "rule": "pending"
+  },
+  "minecraft:underwater_torch": {
+   "rule": "torch"
+  },
+  "minecraft:undyed_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:unlit_redstone_torch": {
+   "rule": "torch"
+  },
+  "minecraft:unpowered_comparator": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:unpowered_repeater": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:vault": {
+   "rule": "vault"
+  },
+  "minecraft:verdant_froglight": {
+   "rule": "pillar"
+  },
+  "minecraft:vine": {
+   "rule": "vine"
+  },
+  "minecraft:warped_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:warped_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:warped_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:warped_fence_gate": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:warped_hyphae": {
+   "rule": "pillar"
+  },
+  "minecraft:warped_shelf": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:warped_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:warped_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:warped_stem": {
+   "rule": "pillar"
+  },
+  "minecraft:warped_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:waxed_copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:waxed_copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:waxed_copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:waxed_copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:waxed_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:waxed_double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_exposed_copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:waxed_exposed_copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_exposed_copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:waxed_exposed_copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_exposed_copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:waxed_exposed_copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:waxed_exposed_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_exposed_cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:waxed_exposed_double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_exposed_lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:waxed_lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:waxed_oxidized_copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:waxed_oxidized_copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:waxed_oxidized_copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:waxed_oxidized_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_oxidized_cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:waxed_oxidized_double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_oxidized_lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:waxed_weathered_copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:waxed_weathered_copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_weathered_copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:waxed_weathered_copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:waxed_weathered_copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:waxed_weathered_copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:waxed_weathered_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_weathered_cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:waxed_weathered_double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:waxed_weathered_lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:weathered_copper_chain": {
+   "rule": "pillar"
+  },
+  "minecraft:weathered_copper_chest": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:weathered_copper_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:weathered_copper_golem_statue": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 180.0
+    }
+   ]
+  },
+  "minecraft:weathered_copper_lantern": {
+   "rule": "lantern"
+  },
+  "minecraft:weathered_copper_trapdoor": {
+   "rule": "trapdoor"
+  },
+  "minecraft:weathered_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:weathered_cut_copper_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:weathered_double_cut_copper_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:weathered_lightning_rod": {
+   "rule": "face_facing"
+  },
+  "minecraft:white_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:white_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:white_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:white_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:white_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:white_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:white_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:white_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:wildflowers": {
+   "rule": "pending"
+  },
+  "minecraft:wither_skeleton_skull": {
+   "rule": "skull"
+  },
+  "minecraft:wooden_button": {
+   "rule": "face_facing"
+  },
+  "minecraft:wooden_door": {
+   "traits": [
+    {
+     "kind": "cardinal",
+     "offset": 270.0
+    }
+   ]
+  },
+  "minecraft:yellow_concrete_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:yellow_concrete_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:yellow_concrete_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:yellow_glazed_terracotta": {
+   "rule": "glazed_terracotta"
+  },
+  "minecraft:yellow_poplar_leaves": {
+   "rule": "leaves"
+  },
+  "minecraft:yellow_shulker_box": {
+   "rule": "pending"
+  },
+  "minecraft:yellow_wool_double_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:yellow_wool_slab": {
+   "traits": [
+    {
+     "kind": "vertical_half"
+    }
+   ]
+  },
+  "minecraft:yellow_wool_stairs": {
+   "rule": "stairs"
+  },
+  "minecraft:zombie_head": {
+   "rule": "skull"
+  }
+ }
+}
