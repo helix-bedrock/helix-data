@@ -9,34 +9,10 @@ No ported code. `bds-dump`, `brarchive`, `pack`, `cmd/blockstates`, `cmd/entitie
 
 ## Data
 
-| Path | Source | How |
-|---|---|---|
-| `data/1.26.52/block_states.nbt`, `block_defaults.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Saved by BDS through `bds-dump`, converted by `cmd/blockstates convert` |
-| `data/1.26.52/items.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Printed by BDS through `bds-dump` (`ItemTypes.getAll()`, `ItemStack.maxAmount`), converted by `cmd/blockstates items` |
-| `data/1.26.52/entities.json`, `entity_loot.json`, `spawn_rules.json` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | Read from BDS's vanilla behaviour packs (`__brarchive/entities.brarchive`, `spawn_rules.brarchive`, `loot_tables/entities`) by `cmd/entities`, packs layered as BDS layers them |
-
-| `data/1.26.52/vanilla/` | Bedrock Dedicated Server 1.26.52.3 (Mojang) | The vanilla behaviour packs and `definitions/` stacked as BDS stacks them, by `cmd/vanilla`; `_provenance.tsv` names each file's pack |
-| `data/1.26.60/block_states.nbt`, `block_defaults.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server under gdb (every Block's serialization tag when BDS hashes it for the network), converted by the workspace's `update-block-states` skill; checked against `bds-dump` |
-| `data/1.26.60/items.json` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | Printed by BDS through `bds-dump`, converted by `cmd/blockstates items` |
-| `data/1.26.60/entities.json`, `entity_loot.json`, `spawn_rules.json` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | Read from BDS's vanilla behaviour packs by `cmd/entities` |
-| `data/1.26.60/vanilla/` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | The vanilla behaviour packs and `definitions/` stacked by `cmd/vanilla` |
-| `data/1.26.60/experiments/` | Bedrock Dedicated Server 1.26.60.6 (Mojang) | Each `experimental_*` behaviour pack's own files, written unstacked by `cmd/vanilla` |
-| `data/1.26.60/bds/block_properties.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server under a debugger: each block state's light emission and dampening, flame and burn odds, explosion resistance, friction and destroy time, at "Server started." (the update-block-states skill's `probe_block_raw.py` and `to_properties.py`) |
-| `data/1.26.60/bds/biome_ids.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server under a debugger: the name and numeric ID of every vanilla biome as BDS registers it (the bds-runtime-dump skill's `tools/probe_biome_ids.py` and `tools/to_biome_ids.py`) |
-| `data/1.26.60/bds/mining.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server's memory under a debugger once it started (the bds-runtime-dump skill): every block type's tags and whether it needs the right tool, each digger's block tag and tier, and the block lists BDS's sword and shears mining speeds check |
-| `data/1.26.60/bds/break_place.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server's memory under a debugger once it started (the bds-runtime-dump skill): each item's max damage and the rule it wears by when breaking blocks, and the block types carrying the replaceable component that BDS's canBeBuiltOver reads |
-| `data/1.26.60/bds/collision.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server's memory under a debugger once it started (the bds-runtime-dump skill): each block state's data-driven collision boxes and, for blocks whose collision is BDS's default, the block type's shape; blocks whose shape BDS computes in code are listed, not given |
-| `data/1.26.60/bds/climbable.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server's memory under a debugger once it started (the bds-runtime-dump skill): the block types whose climbable flag is set, which BDS's movement reads for climbing and to clear fall distance |
-| `data/1.26.60/bds/item_equipment.json` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | Read from the running server under a debugger: for every item, the armour slot BDS's armour container accepts it in and whether its offhand container accepts it, asked of BDS itself once the server started (the bds-runtime-dump skill) |
-| `data/1.26.60/bds/packets/` | Bedrock Dedicated Server 1.26.60.6 Linux (Mojang) | The registry packets BDS sent a real client joining (item registry, creative content, crafting data, biome definitions, actor identifiers) the VoxelShapes and JigsawStructureData packets sent before StartGame, and StartGame's block definitions (`start_game_blocks.bin`, only the list), captured from the running server under a debugger and written by `cmd/joinpackets`, which checks each one decodes and encodes back byte for byte with helix-bedrock/protocol |
-| `data/1.26.60/bds/` (other files) | Bedrock Dedicated Server 1.26.52.3 Linux (Mojang) | Copied from `data/1.26.52/bds/` until the tables are read from 1.26.60.6; each file's `source` names the build |
-| `data/1.26.52/bds/` | Bedrock Dedicated Server 1.26.52.3 Linux (Mojang) | Tables read out of BDS's code with IDA for the world generator (jigsaw pools and elements, block rules, liquid holders, top support), and `block_materials.json`, read from the running server under a debugger; each file's `source` names the BDS functions. Moved from `helix-bedrock/worldgen` |
-
 ### World generation (Java Edition)
 
-BDS ships no world generation data, so these two files come from Java
-Edition (Mojang), whose terrain shape and biomes match Bedrock's for the same
-seed since 1.18:
+These two files come from Java Edition, whose terrain shape and biomes match
+Bedrock's for the same seed since 1.18:
 
 | Path | Source | How |
 |---|---|---|

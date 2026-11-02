@@ -104,8 +104,7 @@ AI-assisted contributions follow the
 
 ## License
 
-The code is MIT; see [`LICENSE`](LICENSE). Generated data describes Minecraft
-and comes from Mojang's server; where each file comes from is listed in
+The code is MIT; see [`LICENSE`](LICENSE). Third-party sources are listed in
 [`CREDITS.md`](CREDITS.md).
 
 ## World generation data
