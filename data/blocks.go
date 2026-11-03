@@ -73,6 +73,28 @@ func PlacementData() (map[string]Placement, error) {
 	return doc.Blocks, nil
 }
 
+//go:embed 1.26.60/bds/support.json
+var support []byte
+
+// Support is what BDS lets blocks be attached to. Rules is each block's rule
+// for which faces hold something attached (a block not listed holds nothing),
+// HangFrom the blocks a lantern may also hang from, Solid the blocks a ladder
+// may lean on.
+type Support struct {
+	Rules    map[string]string `json:"rules"`
+	HangFrom []string          `json:"hang_from"`
+	Solid    []string          `json:"solid"`
+}
+
+// SupportData returns BDS's attachment rules.
+func SupportData() (*Support, error) {
+	var doc Support
+	if err := json.Unmarshal(support, &doc); err != nil {
+		return nil, fmt.Errorf("data: support: %w", err)
+	}
+	return &doc, nil
+}
+
 //go:embed 1.26.60/bds/connections.json
 var connections []byte
 
