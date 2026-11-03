@@ -332,3 +332,30 @@ func TrimData() (*packet.TrimData, error) {
 	}
 	return pk, nil
 }
+
+//go:embed 1.26.60/bds/item_combat.json
+var itemCombat []byte
+
+// ArmorValue is what a piece of armour gives its wearer.
+type ArmorValue struct {
+	Protection int32 `json:"protection"`
+	Toughness  int32 `json:"toughness"`
+}
+
+// ItemCombat is what BDS's items do in a fight: Damage is each item's melee
+// damage, Armor each armour item's values, and HitWearOne the weapons that wear
+// by 1 per hit where other durable items wear by 2.
+type ItemCombat struct {
+	Damage     map[string]int32      `json:"damage"`
+	Armor      map[string]ArmorValue `json:"armor"`
+	HitWearOne []string              `json:"hit_wear_one"`
+}
+
+// ItemCombatData returns the item combat table. Each call decodes a fresh copy.
+func ItemCombatData() (*ItemCombat, error) {
+	var c ItemCombat
+	if err := json.Unmarshal(itemCombat, &c); err != nil {
+		return nil, fmt.Errorf("data: item combat: %w", err)
+	}
+	return &c, nil
+}

@@ -1,0 +1,220 @@
+{
+ "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill) once the server started, memory reads only: each item's melee damage as its getAttackDamage reads it, the armour protection and toughness each armour item gives, and the weapons that wear by 1 per hit (other durable items wear by 2).",
+ "damage": {
+  "minecraft:copper_axe": 4,
+  "minecraft:copper_hoe": 3,
+  "minecraft:copper_pickaxe": 3,
+  "minecraft:copper_shovel": 2,
+  "minecraft:copper_spear": 2,
+  "minecraft:copper_sword": 5,
+  "minecraft:diamond_axe": 6,
+  "minecraft:diamond_hoe": 5,
+  "minecraft:diamond_pickaxe": 5,
+  "minecraft:diamond_shovel": 4,
+  "minecraft:diamond_spear": 4,
+  "minecraft:diamond_sword": 7,
+  "minecraft:golden_axe": 3,
+  "minecraft:golden_hoe": 2,
+  "minecraft:golden_pickaxe": 2,
+  "minecraft:golden_shovel": 1,
+  "minecraft:golden_spear": 1,
+  "minecraft:golden_sword": 4,
+  "minecraft:iron_axe": 5,
+  "minecraft:iron_hoe": 4,
+  "minecraft:iron_pickaxe": 4,
+  "minecraft:iron_shovel": 3,
+  "minecraft:iron_spear": 3,
+  "minecraft:iron_sword": 6,
+  "minecraft:mace": 5,
+  "minecraft:netherite_axe": 7,
+  "minecraft:netherite_hoe": 6,
+  "minecraft:netherite_pickaxe": 6,
+  "minecraft:netherite_shovel": 5,
+  "minecraft:netherite_spear": 5,
+  "minecraft:netherite_sword": 8,
+  "minecraft:stone_axe": 4,
+  "minecraft:stone_hoe": 3,
+  "minecraft:stone_pickaxe": 3,
+  "minecraft:stone_shovel": 2,
+  "minecraft:stone_spear": 2,
+  "minecraft:stone_sword": 5,
+  "minecraft:trident": 8,
+  "minecraft:wooden_axe": 3,
+  "minecraft:wooden_hoe": 2,
+  "minecraft:wooden_pickaxe": 2,
+  "minecraft:wooden_shovel": 1,
+  "minecraft:wooden_spear": 1,
+  "minecraft:wooden_sword": 4
+ },
+ "armor": {
+  "minecraft:chainmail_boots": {
+   "protection": 1,
+   "toughness": 0
+  },
+  "minecraft:chainmail_chestplate": {
+   "protection": 5,
+   "toughness": 0
+  },
+  "minecraft:chainmail_helmet": {
+   "protection": 2,
+   "toughness": 0
+  },
+  "minecraft:chainmail_leggings": {
+   "protection": 4,
+   "toughness": 0
+  },
+  "minecraft:copper_boots": {
+   "protection": 1,
+   "toughness": 0
+  },
+  "minecraft:copper_chestplate": {
+   "protection": 4,
+   "toughness": 0
+  },
+  "minecraft:copper_helmet": {
+   "protection": 2,
+   "toughness": 0
+  },
+  "minecraft:copper_horse_armor": {
+   "protection": 4,
+   "toughness": 0
+  },
+  "minecraft:copper_leggings": {
+   "protection": 3,
+   "toughness": 0
+  },
+  "minecraft:copper_nautilus_armor": {
+   "protection": 4,
+   "toughness": 0
+  },
+  "minecraft:diamond_boots": {
+   "protection": 3,
+   "toughness": 2
+  },
+  "minecraft:diamond_chestplate": {
+   "protection": 8,
+   "toughness": 2
+  },
+  "minecraft:diamond_helmet": {
+   "protection": 3,
+   "toughness": 2
+  },
+  "minecraft:diamond_horse_armor": {
+   "protection": 11,
+   "toughness": 2
+  },
+  "minecraft:diamond_leggings": {
+   "protection": 6,
+   "toughness": 2
+  },
+  "minecraft:diamond_nautilus_armor": {
+   "protection": 11,
+   "toughness": 2
+  },
+  "minecraft:golden_boots": {
+   "protection": 1,
+   "toughness": 0
+  },
+  "minecraft:golden_chestplate": {
+   "protection": 5,
+   "toughness": 0
+  },
+  "minecraft:golden_helmet": {
+   "protection": 2,
+   "toughness": 0
+  },
+  "minecraft:golden_horse_armor": {
+   "protection": 7,
+   "toughness": 0
+  },
+  "minecraft:golden_leggings": {
+   "protection": 3,
+   "toughness": 0
+  },
+  "minecraft:golden_nautilus_armor": {
+   "protection": 7,
+   "toughness": 0
+  },
+  "minecraft:iron_boots": {
+   "protection": 2,
+   "toughness": 0
+  },
+  "minecraft:iron_chestplate": {
+   "protection": 6,
+   "toughness": 0
+  },
+  "minecraft:iron_helmet": {
+   "protection": 2,
+   "toughness": 0
+  },
+  "minecraft:iron_horse_armor": {
+   "protection": 5,
+   "toughness": 0
+  },
+  "minecraft:iron_leggings": {
+   "protection": 5,
+   "toughness": 0
+  },
+  "minecraft:iron_nautilus_armor": {
+   "protection": 5,
+   "toughness": 0
+  },
+  "minecraft:leather_boots": {
+   "protection": 1,
+   "toughness": 0
+  },
+  "minecraft:leather_chestplate": {
+   "protection": 3,
+   "toughness": 0
+  },
+  "minecraft:leather_helmet": {
+   "protection": 1,
+   "toughness": 0
+  },
+  "minecraft:leather_horse_armor": {
+   "protection": 3,
+   "toughness": 0
+  },
+  "minecraft:leather_leggings": {
+   "protection": 2,
+   "toughness": 0
+  },
+  "minecraft:netherite_boots": {
+   "protection": 3,
+   "toughness": 3
+  },
+  "minecraft:netherite_chestplate": {
+   "protection": 8,
+   "toughness": 3
+  },
+  "minecraft:netherite_helmet": {
+   "protection": 3,
+   "toughness": 3
+  },
+  "minecraft:netherite_horse_armor": {
+   "protection": 19,
+   "toughness": 3
+  },
+  "minecraft:netherite_leggings": {
+   "protection": 6,
+   "toughness": 3
+  },
+  "minecraft:netherite_nautilus_armor": {
+   "protection": 19,
+   "toughness": 3
+  },
+  "minecraft:turtle_helmet": {
+   "protection": 2,
+   "toughness": 0
+  }
+ },
+ "hit_wear_one": [
+  "minecraft:copper_sword",
+  "minecraft:diamond_sword",
+  "minecraft:golden_sword",
+  "minecraft:iron_sword",
+  "minecraft:netherite_sword",
+  "minecraft:stone_sword",
+  "minecraft:wooden_sword"
+ ]
+}
