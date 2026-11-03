@@ -73,6 +73,30 @@ func PlacementData() (map[string]Placement, error) {
 	return doc.Blocks, nil
 }
 
+//go:embed 1.26.60/bds/piston_move.json
+var pistonMove []byte
+
+// PistonMove is what BDS's pistons do with blocks. A block in no list moves
+// normally.
+type PistonMove struct {
+	// Immovable stops a piston, Breaks is destroyed by being pushed, NoPull is
+	// pushed but never pulled, and Sticky takes its neighbours along.
+	Immovable []string `json:"immovable"`
+	Breaks    []string `json:"breaks"`
+	NoPull    []string `json:"no_pull"`
+	Sticky    []string `json:"sticky"`
+}
+
+// PistonMoveData returns the piston rules of [Version]. Each call decodes a
+// fresh copy.
+func PistonMoveData() (*PistonMove, error) {
+	var doc PistonMove
+	if err := json.Unmarshal(pistonMove, &doc); err != nil {
+		return nil, fmt.Errorf("data: piston move: %w", err)
+	}
+	return &doc, nil
+}
+
 //go:embed 1.26.60/bds/support.json
 var support []byte
 
