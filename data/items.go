@@ -359,3 +359,52 @@ func ItemCombatData() (*ItemCombat, error) {
 	}
 	return &c, nil
 }
+
+//go:embed 1.26.60/bds/enchantments.json
+var enchantments []byte
+
+// Enchantment is one of BDS's enchantments as bds/enchantments.json holds it. MinCost
+// and MaxCost are {a, b}: the cost at level l is a + b*l.
+type Enchantment struct {
+	ID           int16    `json:"id"`
+	Name         string   `json:"name"`
+	Translation  string   `json:"translation"`
+	Frequency    int32    `json:"frequency"`
+	Lootable     bool     `json:"lootable"`
+	Primary      uint32   `json:"primary"`
+	Secondary    uint32   `json:"secondary"`
+	Group        int32    `json:"group"`
+	Activation   uint8    `json:"activation"`
+	MaxLevel     int32    `json:"max_level"`
+	MinCost      [2]int32 `json:"min_cost"`
+	MaxCost      [2]int32 `json:"max_cost"`
+	Treasure     bool     `json:"treasure"`
+	Discoverable bool     `json:"discoverable"`
+}
+
+// EnchantItem is what an item takes enchantments on and how well.
+type EnchantItem struct {
+	Slot  uint32 `json:"slot"`
+	Value int32  `json:"value"`
+}
+
+// Enchanting is helix-data's bds/enchantments.json: every enchantment, each item's
+// enchant slot and value, each item's repair materials, the blocks bookshelf power
+// passes through, and the words of an enchanting table's option names.
+type Enchanting struct {
+	Enchantments []Enchantment          `json:"enchantments"`
+	Items        map[string]EnchantItem `json:"items"`
+	Repair       map[string][]string    `json:"repair"`
+	Transmit     []string               `json:"transmit"`
+	Bookshelf    string                 `json:"bookshelf"`
+	OptionWords  []string               `json:"option_words"`
+}
+
+// EnchantingData returns BDS's enchantment tables.
+func EnchantingData() (*Enchanting, error) {
+	var e Enchanting
+	if err := json.Unmarshal(enchantments, &e); err != nil {
+		return nil, fmt.Errorf("data: enchanting: %w", err)
+	}
+	return &e, nil
+}

@@ -1,0 +1,1893 @@
+{
+ "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill), memory reads only: every enchantment in the live list, each item's enchant slot and value, each item's repair materials, the blocks whose flag lets bookshelf power through. Costs and activations read in the binary.",
+ "enchantments": [
+  {
+   "id": 0,
+   "name": "minecraft:protection",
+   "translation": "enchantment.protect.all",
+   "frequency": 30,
+   "lootable": true,
+   "primary": 15,
+   "secondary": 0,
+   "group": 3,
+   "activation": 0,
+   "max_level": 4,
+   "min_cost": [
+    -10,
+    11
+   ],
+   "max_cost": [
+    10,
+    11
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 1,
+   "name": "minecraft:fire_protection",
+   "translation": "enchantment.protect.fire",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 15,
+   "secondary": 0,
+   "group": 3,
+   "activation": 0,
+   "max_level": 4,
+   "min_cost": [
+    2,
+    8
+   ],
+   "max_cost": [
+    14,
+    8
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 2,
+   "name": "minecraft:feather_falling",
+   "translation": "enchantment.protect.fall",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 4,
+   "secondary": 0,
+   "group": 0,
+   "activation": 0,
+   "max_level": 4,
+   "min_cost": [
+    -1,
+    6
+   ],
+   "max_cost": [
+    9,
+    6
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 3,
+   "name": "minecraft:blast_protection",
+   "translation": "enchantment.protect.explosion",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 15,
+   "secondary": 0,
+   "group": 3,
+   "activation": 0,
+   "max_level": 4,
+   "min_cost": [
+    -3,
+    8
+   ],
+   "max_cost": [
+    9,
+    8
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 4,
+   "name": "minecraft:projectile_protection",
+   "translation": "enchantment.protect.projectile",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 15,
+   "secondary": 0,
+   "group": 3,
+   "activation": 0,
+   "max_level": 4,
+   "min_cost": [
+    -3,
+    6
+   ],
+   "max_cost": [
+    12,
+    6
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 5,
+   "name": "minecraft:thorns",
+   "translation": "enchantment.thorns",
+   "frequency": 1,
+   "lootable": true,
+   "primary": 2,
+   "secondary": 13,
+   "group": 0,
+   "activation": 0,
+   "max_level": 3,
+   "min_cost": [
+    -10,
+    20
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 6,
+   "name": "minecraft:respiration",
+   "translation": "enchantment.oxygen",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 1,
+   "secondary": 0,
+   "group": 0,
+   "activation": 0,
+   "max_level": 3,
+   "min_cost": [
+    0,
+    10
+   ],
+   "max_cost": [
+    30,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 7,
+   "name": "minecraft:depth_strider",
+   "translation": "enchantment.waterWalker",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 4,
+   "secondary": 0,
+   "group": 4,
+   "activation": 0,
+   "max_level": 3,
+   "min_cost": [
+    0,
+    10
+   ],
+   "max_cost": [
+    10,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 8,
+   "name": "minecraft:aqua_affinity",
+   "translation": "enchantment.waterWorker",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 1,
+   "secondary": 0,
+   "group": 0,
+   "activation": 0,
+   "max_level": 1,
+   "min_cost": [
+    1,
+    0
+   ],
+   "max_cost": [
+    41,
+    0
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 9,
+   "name": "minecraft:sharpness",
+   "translation": "enchantment.damage.all",
+   "frequency": 30,
+   "lootable": true,
+   "primary": 8388624,
+   "secondary": 512,
+   "group": 1,
+   "activation": 1,
+   "max_level": 5,
+   "min_cost": [
+    -10,
+    11
+   ],
+   "max_cost": [
+    10,
+    11
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 10,
+   "name": "minecraft:smite",
+   "translation": "enchantment.damage.undead",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 12582928,
+   "secondary": 512,
+   "group": 1,
+   "activation": 1,
+   "max_level": 5,
+   "min_cost": [
+    -3,
+    8
+   ],
+   "max_cost": [
+    17,
+    8
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 11,
+   "name": "minecraft:bane_of_arthropods",
+   "translation": "enchantment.damage.arthropods",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 12582928,
+   "secondary": 512,
+   "group": 1,
+   "activation": 1,
+   "max_level": 5,
+   "min_cost": [
+    -3,
+    8
+   ],
+   "max_cost": [
+    17,
+    8
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 12,
+   "name": "minecraft:knockback",
+   "translation": "enchantment.knockback",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 8388624,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 2,
+   "min_cost": [
+    -15,
+    20
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 13,
+   "name": "minecraft:fire_aspect",
+   "translation": "enchantment.fire",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 12582928,
+   "secondary": 0,
+   "group": 0,
+   "activation": 1,
+   "max_level": 2,
+   "min_cost": [
+    -10,
+    20
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 14,
+   "name": "minecraft:looting",
+   "translation": "enchantment.lootBonus",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 8388624,
+   "secondary": 0,
+   "group": 0,
+   "activation": 1,
+   "max_level": 3,
+   "min_cost": [
+    6,
+    9
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 15,
+   "name": "minecraft:efficiency",
+   "translation": "enchantment.digging",
+   "frequency": 30,
+   "lootable": true,
+   "primary": 3648,
+   "secondary": 128,
+   "group": 0,
+   "activation": 2,
+   "max_level": 5,
+   "min_cost": [
+    -9,
+    10
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 16,
+   "name": "minecraft:silk_touch",
+   "translation": "enchantment.untouching",
+   "frequency": 1,
+   "lootable": true,
+   "primary": 3648,
+   "secondary": 128,
+   "group": 2,
+   "activation": 1,
+   "max_level": 1,
+   "min_cost": [
+    15,
+    0
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 17,
+   "name": "minecraft:unbreaking",
+   "translation": "enchantment.durability",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 8461951,
+   "secondary": 7528896,
+   "group": 0,
+   "activation": 1,
+   "max_level": 3,
+   "min_cost": [
+    -3,
+    8
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 18,
+   "name": "minecraft:fortune",
+   "translation": "enchantment.lootBonusDigger",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 3648,
+   "secondary": 0,
+   "group": 2,
+   "activation": 1,
+   "max_level": 3,
+   "min_cost": [
+    6,
+    9
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 19,
+   "name": "minecraft:power",
+   "translation": "enchantment.arrowDamage",
+   "frequency": 30,
+   "lootable": true,
+   "primary": 32,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 5,
+   "min_cost": [
+    -9,
+    10
+   ],
+   "max_cost": [
+    6,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 20,
+   "name": "minecraft:punch",
+   "translation": "enchantment.arrowKnockback",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 32,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 2,
+   "min_cost": [
+    -8,
+    20
+   ],
+   "max_cost": [
+    17,
+    20
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 21,
+   "name": "minecraft:flame",
+   "translation": "enchantment.arrowFire",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 32,
+   "secondary": 0,
+   "group": 0,
+   "activation": 1,
+   "max_level": 1,
+   "min_cost": [
+    20,
+    0
+   ],
+   "max_cost": [
+    50,
+    0
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 22,
+   "name": "minecraft:infinity",
+   "translation": "enchantment.arrowInfinite",
+   "frequency": 1,
+   "lootable": true,
+   "primary": 32,
+   "secondary": 0,
+   "group": 5,
+   "activation": 2,
+   "max_level": 1,
+   "min_cost": [
+    20,
+    0
+   ],
+   "max_cost": [
+    50,
+    0
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 23,
+   "name": "minecraft:luck_of_the_sea",
+   "translation": "enchantment.lootBonusFishing",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 4096,
+   "secondary": 0,
+   "group": 0,
+   "activation": 1,
+   "max_level": 3,
+   "min_cost": [
+    6,
+    9
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 24,
+   "name": "minecraft:lure",
+   "translation": "enchantment.fishingSpeed",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 4096,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 3,
+   "min_cost": [
+    6,
+    9
+   ],
+   "max_cost": [
+    51,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 25,
+   "name": "minecraft:frost_walker",
+   "translation": "enchantment.frostwalker",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 4,
+   "secondary": 0,
+   "group": 4,
+   "activation": 0,
+   "max_level": 2,
+   "min_cost": [
+    0,
+    10
+   ],
+   "max_cost": [
+    15,
+    10
+   ],
+   "treasure": true,
+   "discoverable": true
+  },
+  {
+   "id": 26,
+   "name": "minecraft:mending",
+   "translation": "enchantment.mending",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 8461951,
+   "secondary": 7528896,
+   "group": 5,
+   "activation": 2,
+   "max_level": 1,
+   "min_cost": [
+    0,
+    25
+   ],
+   "max_cost": [
+    50,
+    25
+   ],
+   "treasure": true,
+   "discoverable": true
+  },
+  {
+   "id": 27,
+   "name": "minecraft:binding",
+   "translation": "enchantment.curse.binding",
+   "frequency": 1,
+   "lootable": true,
+   "primary": 278543,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 1,
+   "min_cost": [
+    25,
+    0
+   ],
+   "max_cost": [
+    50,
+    0
+   ],
+   "treasure": true,
+   "discoverable": true
+  },
+  {
+   "id": 28,
+   "name": "minecraft:vanishing",
+   "translation": "enchantment.curse.vanishing",
+   "frequency": 1,
+   "lootable": true,
+   "primary": 4294967295,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 1,
+   "min_cost": [
+    25,
+    0
+   ],
+   "max_cost": [
+    50,
+    0
+   ],
+   "treasure": true,
+   "discoverable": true
+  },
+  {
+   "id": 29,
+   "name": "minecraft:impaling",
+   "translation": "enchantment.tridentImpaling",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 32768,
+   "secondary": 0,
+   "group": 0,
+   "activation": 1,
+   "max_level": 5,
+   "min_cost": [
+    -7,
+    8
+   ],
+   "max_cost": [
+    13,
+    8
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 30,
+   "name": "minecraft:riptide",
+   "translation": "enchantment.tridentRiptide",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 32768,
+   "secondary": 0,
+   "group": 6,
+   "activation": 2,
+   "max_level": 3,
+   "min_cost": [
+    10,
+    7
+   ],
+   "max_cost": [
+    50,
+    0
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 31,
+   "name": "minecraft:loyalty",
+   "translation": "enchantment.tridentLoyalty",
+   "frequency": 30,
+   "lootable": true,
+   "primary": 32768,
+   "secondary": 0,
+   "group": 6,
+   "activation": 2,
+   "max_level": 3,
+   "min_cost": [
+    5,
+    7
+   ],
+   "max_cost": [
+    50,
+    0
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 32,
+   "name": "minecraft:channeling",
+   "translation": "enchantment.tridentChanneling",
+   "frequency": 1,
+   "lootable": true,
+   "primary": 32768,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 1,
+   "min_cost": [
+    25,
+    0
+   ],
+   "max_cost": [
+    50,
+    0
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 33,
+   "name": "minecraft:multishot",
+   "translation": "enchantment.crossbowMultishot",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 65536,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 1,
+   "min_cost": [
+    20,
+    0
+   ],
+   "max_cost": [
+    70,
+    0
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 34,
+   "name": "minecraft:piercing",
+   "translation": "enchantment.crossbowPiercing",
+   "frequency": 30,
+   "lootable": true,
+   "primary": 65536,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 4,
+   "min_cost": [
+    -9,
+    10
+   ],
+   "max_cost": [
+    41,
+    10
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 35,
+   "name": "minecraft:quick_charge",
+   "translation": "enchantment.crossbowQuickCharge",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 65536,
+   "secondary": 0,
+   "group": 0,
+   "activation": 2,
+   "max_level": 3,
+   "min_cost": [
+    -8,
+    20
+   ],
+   "max_cost": [
+    42,
+    20
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 36,
+   "name": "minecraft:soul_speed",
+   "translation": "enchantment.soul_speed",
+   "frequency": 1,
+   "lootable": false,
+   "primary": 4,
+   "secondary": 0,
+   "group": 0,
+   "activation": 0,
+   "max_level": 3,
+   "min_cost": [
+    0,
+    10
+   ],
+   "max_cost": [
+    15,
+    10
+   ],
+   "treasure": true,
+   "discoverable": false
+  },
+  {
+   "id": 37,
+   "name": "minecraft:swift_sneak",
+   "translation": "enchantment.swift_sneak",
+   "frequency": 1,
+   "lootable": false,
+   "primary": 8,
+   "secondary": 0,
+   "group": 0,
+   "activation": 0,
+   "max_level": 3,
+   "min_cost": [
+    0,
+    10
+   ],
+   "max_cost": [
+    15,
+    10
+   ],
+   "treasure": true,
+   "discoverable": false
+  },
+  {
+   "id": 38,
+   "name": "minecraft:wind_burst",
+   "translation": "enchantment.heavy_weapon.windburst",
+   "frequency": 3,
+   "lootable": false,
+   "primary": 4194304,
+   "secondary": 0,
+   "group": 0,
+   "activation": 1,
+   "max_level": 3,
+   "min_cost": [
+    6,
+    9
+   ],
+   "max_cost": [
+    56,
+    9
+   ],
+   "treasure": true,
+   "discoverable": false
+  },
+  {
+   "id": 39,
+   "name": "minecraft:density",
+   "translation": "enchantment.heavy_weapon.density",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 4194304,
+   "secondary": 0,
+   "group": 1,
+   "activation": 1,
+   "max_level": 5,
+   "min_cost": [
+    -3,
+    8
+   ],
+   "max_cost": [
+    17,
+    8
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 40,
+   "name": "minecraft:breach",
+   "translation": "enchantment.heavy_weapon.breach",
+   "frequency": 3,
+   "lootable": true,
+   "primary": 4194304,
+   "secondary": 0,
+   "group": 1,
+   "activation": 1,
+   "max_level": 4,
+   "min_cost": [
+    6,
+    9
+   ],
+   "max_cost": [
+    56,
+    9
+   ],
+   "treasure": false,
+   "discoverable": true
+  },
+  {
+   "id": 41,
+   "name": "minecraft:lunge",
+   "translation": "enchantment.lunge",
+   "frequency": 10,
+   "lootable": true,
+   "primary": 8388608,
+   "secondary": 0,
+   "group": 0,
+   "activation": 1,
+   "max_level": 3,
+   "min_cost": [
+    -3,
+    8
+   ],
+   "max_cost": [
+    17,
+    8
+   ],
+   "treasure": false,
+   "discoverable": true
+  }
+ ],
+ "items": {
+  "minecraft:book": {
+   "slot": 4294967295,
+   "value": 1
+  },
+  "minecraft:bow": {
+   "slot": 32,
+   "value": 1
+  },
+  "minecraft:brush": {
+   "slot": 2097152,
+   "value": 0
+  },
+  "minecraft:carrot_on_a_stick": {
+   "slot": 8192,
+   "value": 1
+  },
+  "minecraft:carved_pumpkin": {
+   "slot": 262144,
+   "value": 0
+  },
+  "minecraft:chainmail_boots": {
+   "slot": 4,
+   "value": 12
+  },
+  "minecraft:chainmail_chestplate": {
+   "slot": 2,
+   "value": 12
+  },
+  "minecraft:chainmail_helmet": {
+   "slot": 1,
+   "value": 12
+  },
+  "minecraft:chainmail_leggings": {
+   "slot": 8,
+   "value": 12
+  },
+  "minecraft:compass": {
+   "slot": 524288,
+   "value": 0
+  },
+  "minecraft:copper_axe": {
+   "slot": 512,
+   "value": 13
+  },
+  "minecraft:copper_boots": {
+   "slot": 4,
+   "value": 8
+  },
+  "minecraft:copper_chestplate": {
+   "slot": 2,
+   "value": 8
+  },
+  "minecraft:copper_helmet": {
+   "slot": 1,
+   "value": 8
+  },
+  "minecraft:copper_hoe": {
+   "slot": 64,
+   "value": 13
+  },
+  "minecraft:copper_leggings": {
+   "slot": 8,
+   "value": 8
+  },
+  "minecraft:copper_pickaxe": {
+   "slot": 1024,
+   "value": 13
+  },
+  "minecraft:copper_shovel": {
+   "slot": 2048,
+   "value": 13
+  },
+  "minecraft:copper_spear": {
+   "slot": 8388608,
+   "value": 13
+  },
+  "minecraft:copper_sword": {
+   "slot": 16,
+   "value": 13
+  },
+  "minecraft:creeper_head": {
+   "slot": 262144,
+   "value": 0
+  },
+  "minecraft:crossbow": {
+   "slot": 65536,
+   "value": 1
+  },
+  "minecraft:diamond_axe": {
+   "slot": 512,
+   "value": 10
+  },
+  "minecraft:diamond_boots": {
+   "slot": 4,
+   "value": 10
+  },
+  "minecraft:diamond_chestplate": {
+   "slot": 2,
+   "value": 10
+  },
+  "minecraft:diamond_helmet": {
+   "slot": 1,
+   "value": 10
+  },
+  "minecraft:diamond_hoe": {
+   "slot": 64,
+   "value": 10
+  },
+  "minecraft:diamond_leggings": {
+   "slot": 8,
+   "value": 10
+  },
+  "minecraft:diamond_pickaxe": {
+   "slot": 1024,
+   "value": 10
+  },
+  "minecraft:diamond_shovel": {
+   "slot": 2048,
+   "value": 10
+  },
+  "minecraft:diamond_spear": {
+   "slot": 8388608,
+   "value": 10
+  },
+  "minecraft:diamond_sword": {
+   "slot": 16,
+   "value": 10
+  },
+  "minecraft:dragon_head": {
+   "slot": 262144,
+   "value": 0
+  },
+  "minecraft:elytra": {
+   "slot": 16384,
+   "value": 0
+  },
+  "minecraft:enchanted_book": {
+   "slot": 4294967295,
+   "value": 1
+  },
+  "minecraft:fishing_rod": {
+   "slot": 4096,
+   "value": 1
+  },
+  "minecraft:flint_and_steel": {
+   "slot": 256,
+   "value": 0
+  },
+  "minecraft:golden_axe": {
+   "slot": 512,
+   "value": 22
+  },
+  "minecraft:golden_boots": {
+   "slot": 4,
+   "value": 25
+  },
+  "minecraft:golden_chestplate": {
+   "slot": 2,
+   "value": 25
+  },
+  "minecraft:golden_helmet": {
+   "slot": 1,
+   "value": 25
+  },
+  "minecraft:golden_hoe": {
+   "slot": 64,
+   "value": 22
+  },
+  "minecraft:golden_leggings": {
+   "slot": 8,
+   "value": 25
+  },
+  "minecraft:golden_pickaxe": {
+   "slot": 1024,
+   "value": 22
+  },
+  "minecraft:golden_shovel": {
+   "slot": 2048,
+   "value": 22
+  },
+  "minecraft:golden_spear": {
+   "slot": 8388608,
+   "value": 22
+  },
+  "minecraft:golden_sword": {
+   "slot": 16,
+   "value": 22
+  },
+  "minecraft:iron_axe": {
+   "slot": 512,
+   "value": 14
+  },
+  "minecraft:iron_boots": {
+   "slot": 4,
+   "value": 9
+  },
+  "minecraft:iron_chestplate": {
+   "slot": 2,
+   "value": 9
+  },
+  "minecraft:iron_helmet": {
+   "slot": 1,
+   "value": 9
+  },
+  "minecraft:iron_hoe": {
+   "slot": 64,
+   "value": 14
+  },
+  "minecraft:iron_leggings": {
+   "slot": 8,
+   "value": 9
+  },
+  "minecraft:iron_pickaxe": {
+   "slot": 1024,
+   "value": 14
+  },
+  "minecraft:iron_shovel": {
+   "slot": 2048,
+   "value": 14
+  },
+  "minecraft:iron_spear": {
+   "slot": 8388608,
+   "value": 14
+  },
+  "minecraft:iron_sword": {
+   "slot": 16,
+   "value": 14
+  },
+  "minecraft:leather_boots": {
+   "slot": 4,
+   "value": 15
+  },
+  "minecraft:leather_chestplate": {
+   "slot": 2,
+   "value": 15
+  },
+  "minecraft:leather_helmet": {
+   "slot": 1,
+   "value": 15
+  },
+  "minecraft:leather_leggings": {
+   "slot": 8,
+   "value": 15
+  },
+  "minecraft:lodestone_compass": {
+   "slot": 524288,
+   "value": 0
+  },
+  "minecraft:mace": {
+   "slot": 4194304,
+   "value": 10
+  },
+  "minecraft:netherite_axe": {
+   "slot": 512,
+   "value": 15
+  },
+  "minecraft:netherite_boots": {
+   "slot": 4,
+   "value": 15
+  },
+  "minecraft:netherite_chestplate": {
+   "slot": 2,
+   "value": 15
+  },
+  "minecraft:netherite_helmet": {
+   "slot": 1,
+   "value": 15
+  },
+  "minecraft:netherite_hoe": {
+   "slot": 64,
+   "value": 15
+  },
+  "minecraft:netherite_leggings": {
+   "slot": 8,
+   "value": 15
+  },
+  "minecraft:netherite_pickaxe": {
+   "slot": 1024,
+   "value": 15
+  },
+  "minecraft:netherite_shovel": {
+   "slot": 2048,
+   "value": 15
+  },
+  "minecraft:netherite_spear": {
+   "slot": 8388608,
+   "value": 15
+  },
+  "minecraft:netherite_sword": {
+   "slot": 16,
+   "value": 15
+  },
+  "minecraft:piglin_head": {
+   "slot": 262144,
+   "value": 0
+  },
+  "minecraft:player_head": {
+   "slot": 262144,
+   "value": 0
+  },
+  "minecraft:recovery_compass": {
+   "slot": 524288,
+   "value": 0
+  },
+  "minecraft:shears": {
+   "slot": 128,
+   "value": 0
+  },
+  "minecraft:shield": {
+   "slot": 131072,
+   "value": 0
+  },
+  "minecraft:skeleton_skull": {
+   "slot": 262144,
+   "value": 0
+  },
+  "minecraft:stone_axe": {
+   "slot": 512,
+   "value": 5
+  },
+  "minecraft:stone_hoe": {
+   "slot": 64,
+   "value": 5
+  },
+  "minecraft:stone_pickaxe": {
+   "slot": 1024,
+   "value": 5
+  },
+  "minecraft:stone_shovel": {
+   "slot": 2048,
+   "value": 5
+  },
+  "minecraft:stone_spear": {
+   "slot": 8388608,
+   "value": 5
+  },
+  "minecraft:stone_sword": {
+   "slot": 16,
+   "value": 5
+  },
+  "minecraft:trident": {
+   "slot": 32768,
+   "value": 1
+  },
+  "minecraft:turtle_helmet": {
+   "slot": 1,
+   "value": 9
+  },
+  "minecraft:warped_fungus_on_a_stick": {
+   "slot": 1048576,
+   "value": 1
+  },
+  "minecraft:wither_skeleton_skull": {
+   "slot": 262144,
+   "value": 0
+  },
+  "minecraft:wooden_axe": {
+   "slot": 512,
+   "value": 15
+  },
+  "minecraft:wooden_hoe": {
+   "slot": 64,
+   "value": 15
+  },
+  "minecraft:wooden_pickaxe": {
+   "slot": 1024,
+   "value": 15
+  },
+  "minecraft:wooden_shovel": {
+   "slot": 2048,
+   "value": 15
+  },
+  "minecraft:wooden_spear": {
+   "slot": 8388608,
+   "value": 15
+  },
+  "minecraft:wooden_sword": {
+   "slot": 16,
+   "value": 15
+  },
+  "minecraft:zombie_head": {
+   "slot": 262144,
+   "value": 0
+  }
+ },
+ "repair": {
+  "minecraft:chainmail_boots": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:chainmail_chestplate": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:chainmail_helmet": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:chainmail_leggings": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:copper_axe": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_boots": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_chestplate": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_helmet": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_hoe": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_leggings": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_pickaxe": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_shovel": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:copper_sword": [
+   "minecraft:copper_ingot"
+  ],
+  "minecraft:diamond_axe": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_boots": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_chestplate": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_helmet": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_hoe": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_leggings": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_pickaxe": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_shovel": [
+   "minecraft:diamond"
+  ],
+  "minecraft:diamond_sword": [
+   "minecraft:diamond"
+  ],
+  "minecraft:elytra": [
+   "minecraft:phantom_membrane"
+  ],
+  "minecraft:golden_axe": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_boots": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_chestplate": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_helmet": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_hoe": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_leggings": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_pickaxe": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_shovel": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:golden_sword": [
+   "minecraft:gold_ingot"
+  ],
+  "minecraft:iron_axe": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_boots": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_chestplate": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_helmet": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_hoe": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_leggings": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_pickaxe": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_shovel": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:iron_sword": [
+   "minecraft:iron_ingot"
+  ],
+  "minecraft:leather_boots": [
+   "minecraft:leather"
+  ],
+  "minecraft:leather_chestplate": [
+   "minecraft:leather"
+  ],
+  "minecraft:leather_helmet": [
+   "minecraft:leather"
+  ],
+  "minecraft:leather_leggings": [
+   "minecraft:leather"
+  ],
+  "minecraft:mace": [
+   "minecraft:breeze_rod"
+  ],
+  "minecraft:netherite_axe": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_boots": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_chestplate": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_helmet": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_hoe": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_leggings": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_pickaxe": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_shovel": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:netherite_sword": [
+   "minecraft:netherite_ingot"
+  ],
+  "minecraft:shield": [
+   "minecraft:oak_planks",
+   "minecraft:spruce_planks",
+   "minecraft:birch_planks",
+   "minecraft:jungle_planks",
+   "minecraft:acacia_planks",
+   "minecraft:dark_oak_planks",
+   "minecraft:crimson_planks",
+   "minecraft:warped_planks",
+   "minecraft:mangrove_planks",
+   "minecraft:bamboo_planks",
+   "minecraft:cherry_planks",
+   "minecraft:pale_oak_planks",
+   "minecraft:poplar_planks"
+  ],
+  "minecraft:stone_axe": [
+   "minecraft:stone",
+   "minecraft:cobblestone",
+   "minecraft:cobbled_deepslate",
+   "minecraft:blackstone"
+  ],
+  "minecraft:stone_hoe": [
+   "minecraft:stone",
+   "minecraft:cobblestone",
+   "minecraft:cobbled_deepslate",
+   "minecraft:blackstone"
+  ],
+  "minecraft:stone_pickaxe": [
+   "minecraft:stone",
+   "minecraft:cobblestone",
+   "minecraft:cobbled_deepslate",
+   "minecraft:blackstone"
+  ],
+  "minecraft:stone_shovel": [
+   "minecraft:stone",
+   "minecraft:cobblestone",
+   "minecraft:cobbled_deepslate",
+   "minecraft:blackstone"
+  ],
+  "minecraft:stone_sword": [
+   "minecraft:stone",
+   "minecraft:cobblestone",
+   "minecraft:cobbled_deepslate",
+   "minecraft:blackstone"
+  ],
+  "minecraft:turtle_helmet": [
+   "minecraft:turtle_scute"
+  ],
+  "minecraft:wolf_armor": [
+   "minecraft:armadillo_scute"
+  ],
+  "minecraft:wooden_axe": [
+   "minecraft:oak_planks",
+   "minecraft:spruce_planks",
+   "minecraft:birch_planks",
+   "minecraft:jungle_planks",
+   "minecraft:acacia_planks",
+   "minecraft:dark_oak_planks",
+   "minecraft:crimson_planks",
+   "minecraft:warped_planks",
+   "minecraft:mangrove_planks",
+   "minecraft:bamboo_planks",
+   "minecraft:cherry_planks",
+   "minecraft:pale_oak_planks",
+   "minecraft:poplar_planks"
+  ],
+  "minecraft:wooden_hoe": [
+   "minecraft:oak_planks",
+   "minecraft:spruce_planks",
+   "minecraft:birch_planks",
+   "minecraft:jungle_planks",
+   "minecraft:acacia_planks",
+   "minecraft:dark_oak_planks",
+   "minecraft:crimson_planks",
+   "minecraft:warped_planks",
+   "minecraft:mangrove_planks",
+   "minecraft:bamboo_planks",
+   "minecraft:cherry_planks",
+   "minecraft:pale_oak_planks",
+   "minecraft:poplar_planks"
+  ],
+  "minecraft:wooden_pickaxe": [
+   "minecraft:oak_planks",
+   "minecraft:spruce_planks",
+   "minecraft:birch_planks",
+   "minecraft:jungle_planks",
+   "minecraft:acacia_planks",
+   "minecraft:dark_oak_planks",
+   "minecraft:crimson_planks",
+   "minecraft:warped_planks",
+   "minecraft:mangrove_planks",
+   "minecraft:bamboo_planks",
+   "minecraft:cherry_planks",
+   "minecraft:pale_oak_planks",
+   "minecraft:poplar_planks"
+  ],
+  "minecraft:wooden_shovel": [
+   "minecraft:oak_planks",
+   "minecraft:spruce_planks",
+   "minecraft:birch_planks",
+   "minecraft:jungle_planks",
+   "minecraft:acacia_planks",
+   "minecraft:dark_oak_planks",
+   "minecraft:crimson_planks",
+   "minecraft:warped_planks",
+   "minecraft:mangrove_planks",
+   "minecraft:bamboo_planks",
+   "minecraft:cherry_planks",
+   "minecraft:pale_oak_planks",
+   "minecraft:poplar_planks"
+  ],
+  "minecraft:wooden_sword": [
+   "minecraft:oak_planks",
+   "minecraft:spruce_planks",
+   "minecraft:birch_planks",
+   "minecraft:jungle_planks",
+   "minecraft:acacia_planks",
+   "minecraft:dark_oak_planks",
+   "minecraft:crimson_planks",
+   "minecraft:warped_planks",
+   "minecraft:mangrove_planks",
+   "minecraft:bamboo_planks",
+   "minecraft:cherry_planks",
+   "minecraft:pale_oak_planks",
+   "minecraft:poplar_planks"
+  ]
+ },
+ "transmit": [
+  "minecraft:acacia_double_slab",
+  "minecraft:acacia_pressure_plate",
+  "minecraft:acacia_slab",
+  "minecraft:acacia_trapdoor",
+  "minecraft:air",
+  "minecraft:andesite_double_slab",
+  "minecraft:andesite_slab",
+  "minecraft:bamboo_double_slab",
+  "minecraft:bamboo_mosaic_double_slab",
+  "minecraft:bamboo_mosaic_slab",
+  "minecraft:bamboo_pressure_plate",
+  "minecraft:bamboo_slab",
+  "minecraft:bamboo_trapdoor",
+  "minecraft:birch_double_slab",
+  "minecraft:birch_pressure_plate",
+  "minecraft:birch_slab",
+  "minecraft:birch_trapdoor",
+  "minecraft:black_carpet",
+  "minecraft:blackstone_double_slab",
+  "minecraft:blackstone_slab",
+  "minecraft:blue_carpet",
+  "minecraft:brain_coral_block",
+  "minecraft:brick_double_slab",
+  "minecraft:brick_slab",
+  "minecraft:brown_carpet",
+  "minecraft:bubble_coral_block",
+  "minecraft:cherry_double_slab",
+  "minecraft:cherry_pressure_plate",
+  "minecraft:cherry_slab",
+  "minecraft:cherry_trapdoor",
+  "minecraft:cinnabar_brick_double_slab",
+  "minecraft:cinnabar_brick_slab",
+  "minecraft:cinnabar_double_slab",
+  "minecraft:cinnabar_slab",
+  "minecraft:cobbled_deepslate_double_slab",
+  "minecraft:cobbled_deepslate_slab",
+  "minecraft:cobblestone_double_slab",
+  "minecraft:cobblestone_slab",
+  "minecraft:copper_trapdoor",
+  "minecraft:crimson_double_slab",
+  "minecraft:crimson_pressure_plate",
+  "minecraft:crimson_slab",
+  "minecraft:crimson_trapdoor",
+  "minecraft:cut_copper_slab",
+  "minecraft:cut_red_sandstone_double_slab",
+  "minecraft:cut_red_sandstone_slab",
+  "minecraft:cut_sandstone_double_slab",
+  "minecraft:cut_sandstone_slab",
+  "minecraft:cyan_carpet",
+  "minecraft:dark_oak_double_slab",
+  "minecraft:dark_oak_pressure_plate",
+  "minecraft:dark_oak_slab",
+  "minecraft:dark_oak_trapdoor",
+  "minecraft:dark_prismarine_double_slab",
+  "minecraft:dark_prismarine_slab",
+  "minecraft:daylight_detector",
+  "minecraft:daylight_detector_inverted",
+  "minecraft:dead_brain_coral_block",
+  "minecraft:dead_bubble_coral_block",
+  "minecraft:dead_fire_coral_block",
+  "minecraft:dead_horn_coral_block",
+  "minecraft:dead_tube_coral_block",
+  "minecraft:deepslate_brick_double_slab",
+  "minecraft:deepslate_brick_slab",
+  "minecraft:deepslate_tile_double_slab",
+  "minecraft:deepslate_tile_slab",
+  "minecraft:diorite_double_slab",
+  "minecraft:diorite_slab",
+  "minecraft:double_cut_copper_slab",
+  "minecraft:end_stone_brick_double_slab",
+  "minecraft:end_stone_brick_slab",
+  "minecraft:exposed_copper_trapdoor",
+  "minecraft:exposed_cut_copper_slab",
+  "minecraft:exposed_double_cut_copper_slab",
+  "minecraft:exposed_lightning_rod",
+  "minecraft:fire_coral_block",
+  "minecraft:flowing_water",
+  "minecraft:granite_double_slab",
+  "minecraft:granite_slab",
+  "minecraft:gray_carpet",
+  "minecraft:green_carpet",
+  "minecraft:heavy_weighted_pressure_plate",
+  "minecraft:horn_coral_block",
+  "minecraft:iron_trapdoor",
+  "minecraft:jungle_double_slab",
+  "minecraft:jungle_pressure_plate",
+  "minecraft:jungle_slab",
+  "minecraft:jungle_trapdoor",
+  "minecraft:light_block_0",
+  "minecraft:light_block_1",
+  "minecraft:light_block_10",
+  "minecraft:light_block_11",
+  "minecraft:light_block_12",
+  "minecraft:light_block_13",
+  "minecraft:light_block_14",
+  "minecraft:light_block_15",
+  "minecraft:light_block_2",
+  "minecraft:light_block_3",
+  "minecraft:light_block_4",
+  "minecraft:light_block_5",
+  "minecraft:light_block_6",
+  "minecraft:light_block_7",
+  "minecraft:light_block_8",
+  "minecraft:light_block_9",
+  "minecraft:light_blue_carpet",
+  "minecraft:light_gray_carpet",
+  "minecraft:light_weighted_pressure_plate",
+  "minecraft:lightning_rod",
+  "minecraft:lime_carpet",
+  "minecraft:magenta_carpet",
+  "minecraft:mangrove_double_slab",
+  "minecraft:mangrove_pressure_plate",
+  "minecraft:mangrove_slab",
+  "minecraft:mangrove_trapdoor",
+  "minecraft:mossy_cobblestone_double_slab",
+  "minecraft:mossy_cobblestone_slab",
+  "minecraft:mossy_stone_brick_double_slab",
+  "minecraft:mossy_stone_brick_slab",
+  "minecraft:mud_brick_double_slab",
+  "minecraft:mud_brick_slab",
+  "minecraft:nether_brick_double_slab",
+  "minecraft:nether_brick_slab",
+  "minecraft:normal_stone_double_slab",
+  "minecraft:normal_stone_slab",
+  "minecraft:oak_double_slab",
+  "minecraft:oak_slab",
+  "minecraft:orange_carpet",
+  "minecraft:oxidized_copper_trapdoor",
+  "minecraft:oxidized_cut_copper_slab",
+  "minecraft:oxidized_double_cut_copper_slab",
+  "minecraft:oxidized_lightning_rod",
+  "minecraft:pale_oak_double_slab",
+  "minecraft:pale_oak_pressure_plate",
+  "minecraft:pale_oak_slab",
+  "minecraft:pale_oak_trapdoor",
+  "minecraft:petrified_oak_double_slab",
+  "minecraft:petrified_oak_slab",
+  "minecraft:pink_carpet",
+  "minecraft:polished_andesite_double_slab",
+  "minecraft:polished_andesite_slab",
+  "minecraft:polished_blackstone_brick_double_slab",
+  "minecraft:polished_blackstone_brick_slab",
+  "minecraft:polished_blackstone_double_slab",
+  "minecraft:polished_blackstone_pressure_plate",
+  "minecraft:polished_blackstone_slab",
+  "minecraft:polished_cinnabar_double_slab",
+  "minecraft:polished_cinnabar_slab",
+  "minecraft:polished_deepslate_double_slab",
+  "minecraft:polished_deepslate_slab",
+  "minecraft:polished_diorite_double_slab",
+  "minecraft:polished_diorite_slab",
+  "minecraft:polished_granite_double_slab",
+  "minecraft:polished_granite_slab",
+  "minecraft:polished_sulfur_double_slab",
+  "minecraft:polished_sulfur_slab",
+  "minecraft:poplar_double_slab",
+  "minecraft:poplar_pressure_plate",
+  "minecraft:poplar_slab",
+  "minecraft:poplar_trapdoor",
+  "minecraft:prismarine_brick_double_slab",
+  "minecraft:prismarine_brick_slab",
+  "minecraft:prismarine_double_slab",
+  "minecraft:prismarine_slab",
+  "minecraft:purple_carpet",
+  "minecraft:purpur_double_slab",
+  "minecraft:purpur_slab",
+  "minecraft:quartz_double_slab",
+  "minecraft:quartz_slab",
+  "minecraft:red_carpet",
+  "minecraft:red_nether_brick_double_slab",
+  "minecraft:red_nether_brick_slab",
+  "minecraft:red_sandstone_double_slab",
+  "minecraft:red_sandstone_slab",
+  "minecraft:sandstone_double_slab",
+  "minecraft:sandstone_slab",
+  "minecraft:smooth_quartz_double_slab",
+  "minecraft:smooth_quartz_slab",
+  "minecraft:smooth_red_sandstone_double_slab",
+  "minecraft:smooth_red_sandstone_slab",
+  "minecraft:smooth_sandstone_double_slab",
+  "minecraft:smooth_sandstone_slab",
+  "minecraft:smooth_stone_double_slab",
+  "minecraft:smooth_stone_slab",
+  "minecraft:snow_layer",
+  "minecraft:spruce_double_slab",
+  "minecraft:spruce_pressure_plate",
+  "minecraft:spruce_slab",
+  "minecraft:spruce_trapdoor",
+  "minecraft:stone_brick_double_slab",
+  "minecraft:stone_brick_slab",
+  "minecraft:stone_pressure_plate",
+  "minecraft:sulfur_brick_double_slab",
+  "minecraft:sulfur_brick_slab",
+  "minecraft:sulfur_double_slab",
+  "minecraft:sulfur_slab",
+  "minecraft:trapdoor",
+  "minecraft:tube_coral_block",
+  "minecraft:warped_double_slab",
+  "minecraft:warped_pressure_plate",
+  "minecraft:warped_slab",
+  "minecraft:warped_trapdoor",
+  "minecraft:water",
+  "minecraft:waxed_copper_trapdoor",
+  "minecraft:waxed_cut_copper_slab",
+  "minecraft:waxed_double_cut_copper_slab",
+  "minecraft:waxed_exposed_copper_trapdoor",
+  "minecraft:waxed_exposed_cut_copper_slab",
+  "minecraft:waxed_exposed_double_cut_copper_slab",
+  "minecraft:waxed_exposed_lightning_rod",
+  "minecraft:waxed_lightning_rod",
+  "minecraft:waxed_oxidized_copper_trapdoor",
+  "minecraft:waxed_oxidized_cut_copper_slab",
+  "minecraft:waxed_oxidized_double_cut_copper_slab",
+  "minecraft:waxed_oxidized_lightning_rod",
+  "minecraft:waxed_weathered_copper_trapdoor",
+  "minecraft:waxed_weathered_cut_copper_slab",
+  "minecraft:waxed_weathered_double_cut_copper_slab",
+  "minecraft:waxed_weathered_lightning_rod",
+  "minecraft:weathered_copper_trapdoor",
+  "minecraft:weathered_cut_copper_slab",
+  "minecraft:weathered_double_cut_copper_slab",
+  "minecraft:weathered_lightning_rod",
+  "minecraft:white_carpet",
+  "minecraft:wooden_pressure_plate",
+  "minecraft:yellow_carpet"
+ ],
+ "bookshelf": "minecraft:bookshelf",
+ "option_words": [
+  "the ",
+  "elder ",
+  "scrolls ",
+  "klaatu ",
+  "berata ",
+  "niktu ",
+  "xyzzy ",
+  "bless ",
+  "curse ",
+  "light ",
+  "darkness ",
+  "fire ",
+  "air ",
+  "earth ",
+  "water ",
+  "hot ",
+  "dry ",
+  "cold ",
+  "wet ",
+  "ignite ",
+  "snuff ",
+  "embiggen ",
+  "twist ",
+  "shorten ",
+  "stretch ",
+  "fiddle ",
+  "destroy ",
+  "imbue ",
+  "galvanize ",
+  "enchant ",
+  "free ",
+  "limited ",
+  "range ",
+  "of ",
+  "towards ",
+  "inside ",
+  "sphere ",
+  "cube ",
+  "self ",
+  "other ",
+  "ball ",
+  "mental ",
+  "physical ",
+  "grow ",
+  "shrink ",
+  "demon ",
+  "elemental ",
+  "spirit ",
+  "animal ",
+  "creature ",
+  "beast ",
+  "humanoid ",
+  "undead ",
+  "fresh ",
+  "stale "
+ ]
+}
