@@ -271,3 +271,23 @@ func RedstoneConductivity() (map[string]BlockConductivity, error) {
 	}
 	return d.Blocks, nil
 }
+
+//go:embed 1.26.60/bds/note_instruments.json
+var noteInstruments []byte
+
+// NoteInstruments is which instrument a note block plays. Above holds the blocks that
+// play on top of it, Below the instrument of the block under it, 0 if not listed.
+type NoteInstruments struct {
+	Above map[string]uint8 `json:"above"`
+	Below map[string]uint8 `json:"below"`
+}
+
+// NoteInstrumentData returns the note block instruments of [Version]. Each call decodes
+// a fresh copy.
+func NoteInstrumentData() (*NoteInstruments, error) {
+	var doc NoteInstruments
+	if err := json.Unmarshal(noteInstruments, &doc); err != nil {
+		return nil, fmt.Errorf("data: note instruments: %w", err)
+	}
+	return &doc, nil
+}
