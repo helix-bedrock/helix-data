@@ -303,3 +303,32 @@ func BreakPlaceData() (*BreakPlace, error) {
 	}
 	return &b, nil
 }
+
+//go:embed 1.26.60/bds/trim.json
+var trimData []byte
+
+// TrimData returns the armour trim patterns and materials BDS 1.26.60 sends.
+func TrimData() (*packet.TrimData, error) {
+	var doc struct {
+		Patterns []struct {
+			Item string `json:"item"`
+			ID   string `json:"id"`
+		} `json:"patterns"`
+		Materials []struct {
+			ID     string `json:"id"`
+			Colour string `json:"colour"`
+			Item   string `json:"item"`
+		} `json:"materials"`
+	}
+	if err := json.Unmarshal(trimData, &doc); err != nil {
+		return nil, fmt.Errorf("data: trim data: %w", err)
+	}
+	pk := &packet.TrimData{}
+	for _, p := range doc.Patterns {
+		pk.Patterns = append(pk.Patterns, protocol.TrimPattern{ItemName: p.Item, PatternID: p.ID})
+	}
+	for _, m := range doc.Materials {
+		pk.Materials = append(pk.Materials, protocol.TrimMaterial{MaterialID: m.ID, Colour: m.Colour, ItemName: m.Item})
+	}
+	return pk, nil
+}

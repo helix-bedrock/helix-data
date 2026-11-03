@@ -1,0 +1,36 @@
+{
+"source": "BDS 1.26.60: the hardcoded trim pattern and trim material registries, as TrimData sends them; each material's item matched by name to the minecraft:trim_materials tag",
+"patterns": [
+{"item": "minecraft:ward_armor_trim_smithing_template", "id": "ward"},
+{"item": "minecraft:snout_armor_trim_smithing_template", "id": "snout"},
+{"item": "minecraft:dune_armor_trim_smithing_template", "id": "dune"},
+{"item": "minecraft:spire_armor_trim_smithing_template", "id": "spire"},
+{"item": "minecraft:wild_armor_trim_smithing_template", "id": "wild"},
+{"item": "minecraft:rib_armor_trim_smithing_template", "id": "rib"},
+{"item": "minecraft:tide_armor_trim_smithing_template", "id": "tide"},
+{"item": "minecraft:sentry_armor_trim_smithing_template", "id": "sentry"},
+{"item": "minecraft:coast_armor_trim_smithing_template", "id": "coast"},
+{"item": "minecraft:eye_armor_trim_smithing_template", "id": "eye"},
+{"item": "minecraft:vex_armor_trim_smithing_template", "id": "vex"},
+{"item": "minecraft:silence_armor_trim_smithing_template", "id": "silence"},
+{"item": "minecraft:wayfinder_armor_trim_smithing_template", "id": "wayfinder"},
+{"item": "minecraft:raiser_armor_trim_smithing_template", "id": "raiser"},
+{"item": "minecraft:shaper_armor_trim_smithing_template", "id": "shaper"},
+{"item": "minecraft:host_armor_trim_smithing_template", "id": "host"},
+{"item": "minecraft:flow_armor_trim_smithing_template", "id": "flow"},
+{"item": "minecraft:bolt_armor_trim_smithing_template", "id": "bolt"}
+],
+"materials": [
+{"id": "quartz", "colour": "§h", "item": "minecraft:quartz"},
+{"id": "iron", "colour": "§i", "item": "minecraft:iron_ingot"},
+{"id": "netherite", "colour": "§j", "item": "minecraft:netherite_ingot"},
+{"id": "redstone", "colour": "§m", "item": "minecraft:redstone"},
+{"id": "copper", "colour": "§n", "item": "minecraft:copper_ingot"},
+{"id": "gold", "colour": "§p", "item": "minecraft:gold_ingot"},
+{"id": "emerald", "colour": "§q", "item": "minecraft:emerald"},
+{"id": "diamond", "colour": "§s", "item": "minecraft:diamond"},
+{"id": "lapis", "colour": "§t", "item": "minecraft:lapis_lazuli"},
+{"id": "amethyst", "colour": "§u", "item": "minecraft:amethyst_shard"},
+{"id": "resin", "colour": "§v", "item": "minecraft:resin_brick"}
+]
+}
