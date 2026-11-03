@@ -1,0 +1,3284 @@
+{
+ "blocks": {
+  "minecraft:acacia_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:acacia_log": {
+   "power": "conductor"
+  },
+  "minecraft:acacia_planks": {
+   "power": "conductor"
+  },
+  "minecraft:acacia_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:acacia_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:acacia_wood": {
+   "power": "conductor"
+  },
+  "minecraft:allow": {
+   "power": "conductor"
+  },
+  "minecraft:amethyst_block": {
+   "power": "conductor"
+  },
+  "minecraft:ancient_debris": {
+   "power": "conductor"
+  },
+  "minecraft:andesite": {
+   "power": "conductor"
+  },
+  "minecraft:andesite_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:andesite_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:andesite_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:bamboo_block": {
+   "power": "conductor"
+  },
+  "minecraft:bamboo_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:bamboo_mosaic": {
+   "power": "conductor"
+  },
+  "minecraft:bamboo_mosaic_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:bamboo_mosaic_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:bamboo_mosaic_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:bamboo_planks": {
+   "power": "conductor"
+  },
+  "minecraft:bamboo_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:bamboo_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:barrel": {
+   "power": "conductor"
+  },
+  "minecraft:barrier": {
+   "power": "conductor"
+  },
+  "minecraft:basalt": {
+   "power": "conductor"
+  },
+  "minecraft:bedrock": {
+   "power": "conductor"
+  },
+  "minecraft:bee_nest": {
+   "power": "conductor"
+  },
+  "minecraft:beehive": {
+   "power": "conductor"
+  },
+  "minecraft:birch_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:birch_log": {
+   "power": "conductor"
+  },
+  "minecraft:birch_planks": {
+   "power": "conductor"
+  },
+  "minecraft:birch_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:birch_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:birch_wood": {
+   "power": "conductor"
+  },
+  "minecraft:black_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:black_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:black_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:black_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:black_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:black_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:black_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:black_wool": {
+   "power": "conductor"
+  },
+  "minecraft:black_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:black_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:black_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:blackstone": {
+   "power": "conductor"
+  },
+  "minecraft:blackstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:blackstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:blackstone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:blast_furnace": {
+   "power": "conductor"
+  },
+  "minecraft:blue_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:blue_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:blue_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:blue_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:blue_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:blue_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:blue_ice": {
+   "power": "conductor"
+  },
+  "minecraft:blue_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:blue_wool": {
+   "power": "conductor"
+  },
+  "minecraft:blue_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:blue_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:blue_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:bone_block": {
+   "power": "conductor"
+  },
+  "minecraft:bookshelf": {
+   "power": "conductor"
+  },
+  "minecraft:brain_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:brick_block": {
+   "power": "conductor"
+  },
+  "minecraft:brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:brown_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:brown_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:brown_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:brown_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:brown_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:brown_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:brown_mushroom_block": {
+   "power": "conductor"
+  },
+  "minecraft:brown_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:brown_wool": {
+   "power": "conductor"
+  },
+  "minecraft:brown_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:brown_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:brown_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:bubble_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:budding_amethyst": {
+   "power": "conductor"
+  },
+  "minecraft:calcite": {
+   "power": "conductor"
+  },
+  "minecraft:camera": {
+   "power": "conductor"
+  },
+  "minecraft:cartography_table": {
+   "power": "conductor"
+  },
+  "minecraft:carved_pumpkin": {
+   "power": "conductor"
+  },
+  "minecraft:chain_command_block": {
+   "power": "conductor"
+  },
+  "minecraft:chemical_heat": {
+   "power": "conductor"
+  },
+  "minecraft:cherry_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cherry_log": {
+   "power": "conductor"
+  },
+  "minecraft:cherry_planks": {
+   "power": "conductor"
+  },
+  "minecraft:cherry_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cherry_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:cherry_wood": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_bookshelf": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_cinnabar": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_deepslate": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_nether_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_polished_blackstone": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_quartz_block": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_red_sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_resin_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_sulfur": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_tuff": {
+   "power": "conductor"
+  },
+  "minecraft:chiseled_tuff_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:cinnabar": {
+   "power": "conductor"
+  },
+  "minecraft:cinnabar_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cinnabar_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cinnabar_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:cinnabar_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:cinnabar_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cinnabar_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cinnabar_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:clay": {
+   "power": "conductor"
+  },
+  "minecraft:client_request_placeholder_block": {
+   "power": "conductor"
+  },
+  "minecraft:coal_block": {
+   "power": "conductor"
+  },
+  "minecraft:coal_ore": {
+   "power": "conductor"
+  },
+  "minecraft:coarse_dirt": {
+   "power": "conductor"
+  },
+  "minecraft:cobbled_deepslate": {
+   "power": "conductor"
+  },
+  "minecraft:cobbled_deepslate_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cobbled_deepslate_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cobbled_deepslate_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:cobblestone": {
+   "power": "conductor"
+  },
+  "minecraft:cobblestone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cobblestone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:command_block": {
+   "power": "conductor"
+  },
+  "minecraft:copper_block": {
+   "power": "conductor"
+  },
+  "minecraft:copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:copper_ore": {
+   "power": "conductor"
+  },
+  "minecraft:cracked_deepslate_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:cracked_deepslate_tiles": {
+   "power": "conductor"
+  },
+  "minecraft:cracked_nether_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:cracked_polished_blackstone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:cracked_stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:crafter": {
+   "power": "conductor"
+  },
+  "minecraft:crafting_table": {
+   "power": "conductor"
+  },
+  "minecraft:creaking_heart": {
+   "power": "conductor"
+  },
+  "minecraft:crimson_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:crimson_hyphae": {
+   "power": "conductor"
+  },
+  "minecraft:crimson_nylium": {
+   "power": "conductor"
+  },
+  "minecraft:crimson_planks": {
+   "power": "conductor"
+  },
+  "minecraft:crimson_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:crimson_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:crimson_stem": {
+   "power": "conductor"
+  },
+  "minecraft:crying_obsidian": {
+   "power": "conductor"
+  },
+  "minecraft:cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:cut_red_sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:cut_red_sandstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cut_red_sandstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cut_sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:cut_sandstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cut_sandstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cyan_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:cyan_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cyan_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:cyan_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cyan_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:cyan_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:cyan_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:cyan_wool": {
+   "power": "conductor"
+  },
+  "minecraft:cyan_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:cyan_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:cyan_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:dark_oak_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:dark_oak_log": {
+   "power": "conductor"
+  },
+  "minecraft:dark_oak_planks": {
+   "power": "conductor"
+  },
+  "minecraft:dark_oak_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:dark_oak_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:dark_oak_wood": {
+   "power": "conductor"
+  },
+  "minecraft:dark_prismarine": {
+   "power": "conductor"
+  },
+  "minecraft:dark_prismarine_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:dark_prismarine_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:dark_prismarine_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:dead_brain_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:dead_bubble_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:dead_fire_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:dead_horn_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:dead_tube_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:deepslate_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:deepslate_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_coal_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_copper_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_diamond_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_emerald_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_gold_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_iron_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_lapis_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_redstone_ore": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_tile_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:deepslate_tile_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:deepslate_tile_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:deepslate_tiles": {
+   "power": "conductor"
+  },
+  "minecraft:deny": {
+   "power": "conductor"
+  },
+  "minecraft:deprecated_purpur_block_1": {
+   "power": "conductor"
+  },
+  "minecraft:deprecated_purpur_block_2": {
+   "power": "conductor"
+  },
+  "minecraft:diamond_block": {
+   "power": "conductor"
+  },
+  "minecraft:diamond_ore": {
+   "power": "conductor"
+  },
+  "minecraft:diorite": {
+   "power": "conductor"
+  },
+  "minecraft:diorite_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:diorite_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:diorite_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:dirt": {
+   "power": "conductor"
+  },
+  "minecraft:dirt_with_roots": {
+   "power": "conductor"
+  },
+  "minecraft:dispenser": {
+   "power": "conductor"
+  },
+  "minecraft:double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:dried_kelp_block": {
+   "power": "conductor"
+  },
+  "minecraft:dripstone_block": {
+   "power": "conductor"
+  },
+  "minecraft:dropper": {
+   "power": "conductor"
+  },
+  "minecraft:element_0": {
+   "power": "conductor"
+  },
+  "minecraft:element_1": {
+   "power": "conductor"
+  },
+  "minecraft:element_10": {
+   "power": "conductor"
+  },
+  "minecraft:element_100": {
+   "power": "conductor"
+  },
+  "minecraft:element_101": {
+   "power": "conductor"
+  },
+  "minecraft:element_102": {
+   "power": "conductor"
+  },
+  "minecraft:element_103": {
+   "power": "conductor"
+  },
+  "minecraft:element_104": {
+   "power": "conductor"
+  },
+  "minecraft:element_105": {
+   "power": "conductor"
+  },
+  "minecraft:element_106": {
+   "power": "conductor"
+  },
+  "minecraft:element_107": {
+   "power": "conductor"
+  },
+  "minecraft:element_108": {
+   "power": "conductor"
+  },
+  "minecraft:element_109": {
+   "power": "conductor"
+  },
+  "minecraft:element_11": {
+   "power": "conductor"
+  },
+  "minecraft:element_110": {
+   "power": "conductor"
+  },
+  "minecraft:element_111": {
+   "power": "conductor"
+  },
+  "minecraft:element_112": {
+   "power": "conductor"
+  },
+  "minecraft:element_113": {
+   "power": "conductor"
+  },
+  "minecraft:element_114": {
+   "power": "conductor"
+  },
+  "minecraft:element_115": {
+   "power": "conductor"
+  },
+  "minecraft:element_116": {
+   "power": "conductor"
+  },
+  "minecraft:element_117": {
+   "power": "conductor"
+  },
+  "minecraft:element_118": {
+   "power": "conductor"
+  },
+  "minecraft:element_12": {
+   "power": "conductor"
+  },
+  "minecraft:element_13": {
+   "power": "conductor"
+  },
+  "minecraft:element_14": {
+   "power": "conductor"
+  },
+  "minecraft:element_15": {
+   "power": "conductor"
+  },
+  "minecraft:element_16": {
+   "power": "conductor"
+  },
+  "minecraft:element_17": {
+   "power": "conductor"
+  },
+  "minecraft:element_18": {
+   "power": "conductor"
+  },
+  "minecraft:element_19": {
+   "power": "conductor"
+  },
+  "minecraft:element_2": {
+   "power": "conductor"
+  },
+  "minecraft:element_20": {
+   "power": "conductor"
+  },
+  "minecraft:element_21": {
+   "power": "conductor"
+  },
+  "minecraft:element_22": {
+   "power": "conductor"
+  },
+  "minecraft:element_23": {
+   "power": "conductor"
+  },
+  "minecraft:element_24": {
+   "power": "conductor"
+  },
+  "minecraft:element_25": {
+   "power": "conductor"
+  },
+  "minecraft:element_26": {
+   "power": "conductor"
+  },
+  "minecraft:element_27": {
+   "power": "conductor"
+  },
+  "minecraft:element_28": {
+   "power": "conductor"
+  },
+  "minecraft:element_29": {
+   "power": "conductor"
+  },
+  "minecraft:element_3": {
+   "power": "conductor"
+  },
+  "minecraft:element_30": {
+   "power": "conductor"
+  },
+  "minecraft:element_31": {
+   "power": "conductor"
+  },
+  "minecraft:element_32": {
+   "power": "conductor"
+  },
+  "minecraft:element_33": {
+   "power": "conductor"
+  },
+  "minecraft:element_34": {
+   "power": "conductor"
+  },
+  "minecraft:element_35": {
+   "power": "conductor"
+  },
+  "minecraft:element_36": {
+   "power": "conductor"
+  },
+  "minecraft:element_37": {
+   "power": "conductor"
+  },
+  "minecraft:element_38": {
+   "power": "conductor"
+  },
+  "minecraft:element_39": {
+   "power": "conductor"
+  },
+  "minecraft:element_4": {
+   "power": "conductor"
+  },
+  "minecraft:element_40": {
+   "power": "conductor"
+  },
+  "minecraft:element_41": {
+   "power": "conductor"
+  },
+  "minecraft:element_42": {
+   "power": "conductor"
+  },
+  "minecraft:element_43": {
+   "power": "conductor"
+  },
+  "minecraft:element_44": {
+   "power": "conductor"
+  },
+  "minecraft:element_45": {
+   "power": "conductor"
+  },
+  "minecraft:element_46": {
+   "power": "conductor"
+  },
+  "minecraft:element_47": {
+   "power": "conductor"
+  },
+  "minecraft:element_48": {
+   "power": "conductor"
+  },
+  "minecraft:element_49": {
+   "power": "conductor"
+  },
+  "minecraft:element_5": {
+   "power": "conductor"
+  },
+  "minecraft:element_50": {
+   "power": "conductor"
+  },
+  "minecraft:element_51": {
+   "power": "conductor"
+  },
+  "minecraft:element_52": {
+   "power": "conductor"
+  },
+  "minecraft:element_53": {
+   "power": "conductor"
+  },
+  "minecraft:element_54": {
+   "power": "conductor"
+  },
+  "minecraft:element_55": {
+   "power": "conductor"
+  },
+  "minecraft:element_56": {
+   "power": "conductor"
+  },
+  "minecraft:element_57": {
+   "power": "conductor"
+  },
+  "minecraft:element_58": {
+   "power": "conductor"
+  },
+  "minecraft:element_59": {
+   "power": "conductor"
+  },
+  "minecraft:element_6": {
+   "power": "conductor"
+  },
+  "minecraft:element_60": {
+   "power": "conductor"
+  },
+  "minecraft:element_61": {
+   "power": "conductor"
+  },
+  "minecraft:element_62": {
+   "power": "conductor"
+  },
+  "minecraft:element_63": {
+   "power": "conductor"
+  },
+  "minecraft:element_64": {
+   "power": "conductor"
+  },
+  "minecraft:element_65": {
+   "power": "conductor"
+  },
+  "minecraft:element_66": {
+   "power": "conductor"
+  },
+  "minecraft:element_67": {
+   "power": "conductor"
+  },
+  "minecraft:element_68": {
+   "power": "conductor"
+  },
+  "minecraft:element_69": {
+   "power": "conductor"
+  },
+  "minecraft:element_7": {
+   "power": "conductor"
+  },
+  "minecraft:element_70": {
+   "power": "conductor"
+  },
+  "minecraft:element_71": {
+   "power": "conductor"
+  },
+  "minecraft:element_72": {
+   "power": "conductor"
+  },
+  "minecraft:element_73": {
+   "power": "conductor"
+  },
+  "minecraft:element_74": {
+   "power": "conductor"
+  },
+  "minecraft:element_75": {
+   "power": "conductor"
+  },
+  "minecraft:element_76": {
+   "power": "conductor"
+  },
+  "minecraft:element_77": {
+   "power": "conductor"
+  },
+  "minecraft:element_78": {
+   "power": "conductor"
+  },
+  "minecraft:element_79": {
+   "power": "conductor"
+  },
+  "minecraft:element_8": {
+   "power": "conductor"
+  },
+  "minecraft:element_80": {
+   "power": "conductor"
+  },
+  "minecraft:element_81": {
+   "power": "conductor"
+  },
+  "minecraft:element_82": {
+   "power": "conductor"
+  },
+  "minecraft:element_83": {
+   "power": "conductor"
+  },
+  "minecraft:element_84": {
+   "power": "conductor"
+  },
+  "minecraft:element_85": {
+   "power": "conductor"
+  },
+  "minecraft:element_86": {
+   "power": "conductor"
+  },
+  "minecraft:element_87": {
+   "power": "conductor"
+  },
+  "minecraft:element_88": {
+   "power": "conductor"
+  },
+  "minecraft:element_89": {
+   "power": "conductor"
+  },
+  "minecraft:element_9": {
+   "power": "conductor"
+  },
+  "minecraft:element_90": {
+   "power": "conductor"
+  },
+  "minecraft:element_91": {
+   "power": "conductor"
+  },
+  "minecraft:element_92": {
+   "power": "conductor"
+  },
+  "minecraft:element_93": {
+   "power": "conductor"
+  },
+  "minecraft:element_94": {
+   "power": "conductor"
+  },
+  "minecraft:element_95": {
+   "power": "conductor"
+  },
+  "minecraft:element_96": {
+   "power": "conductor"
+  },
+  "minecraft:element_97": {
+   "power": "conductor"
+  },
+  "minecraft:element_98": {
+   "power": "conductor"
+  },
+  "minecraft:element_99": {
+   "power": "conductor"
+  },
+  "minecraft:emerald_block": {
+   "power": "conductor"
+  },
+  "minecraft:emerald_ore": {
+   "power": "conductor"
+  },
+  "minecraft:end_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:end_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:end_stone": {
+   "power": "conductor"
+  },
+  "minecraft:end_stone_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:end_stone_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:exposed_chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:exposed_copper": {
+   "power": "conductor"
+  },
+  "minecraft:exposed_copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:exposed_cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:exposed_cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:exposed_cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:exposed_double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:fire_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:fletching_table": {
+   "power": "conductor"
+  },
+  "minecraft:furnace": {
+   "power": "conductor"
+  },
+  "minecraft:gilded_blackstone": {
+   "power": "conductor"
+  },
+  "minecraft:glowingobsidian": {
+   "power": "conductor"
+  },
+  "minecraft:glowstone": {
+   "power": "insulator"
+  },
+  "minecraft:gold_block": {
+   "power": "conductor"
+  },
+  "minecraft:gold_ore": {
+   "power": "conductor"
+  },
+  "minecraft:granite": {
+   "power": "conductor"
+  },
+  "minecraft:granite_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:granite_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:granite_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:grass_block": {
+   "power": "conductor"
+  },
+  "minecraft:gravel": {
+   "power": "conductor"
+  },
+  "minecraft:gray_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:gray_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:gray_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:gray_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:gray_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:gray_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:gray_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:gray_wool": {
+   "power": "conductor"
+  },
+  "minecraft:gray_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:gray_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:gray_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:green_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:green_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:green_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:green_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:green_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:green_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:green_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:green_wool": {
+   "power": "conductor"
+  },
+  "minecraft:green_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:green_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:green_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:hardened_clay": {
+   "power": "conductor"
+  },
+  "minecraft:hay_block": {
+   "power": "conductor"
+  },
+  "minecraft:honey_block": {
+   "power": "conductor"
+  },
+  "minecraft:honeycomb_block": {
+   "power": "conductor"
+  },
+  "minecraft:hopper": {
+   "power": "insulator"
+  },
+  "minecraft:horn_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:infested_chiseled_stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:infested_cobblestone": {
+   "power": "conductor"
+  },
+  "minecraft:infested_cracked_stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:infested_deepslate": {
+   "power": "conductor"
+  },
+  "minecraft:infested_mossy_stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:infested_stone": {
+   "power": "conductor"
+  },
+  "minecraft:infested_stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:info_update": {
+   "power": "conductor"
+  },
+  "minecraft:info_update2": {
+   "power": "conductor"
+  },
+  "minecraft:iron_block": {
+   "power": "conductor"
+  },
+  "minecraft:iron_ore": {
+   "power": "conductor"
+  },
+  "minecraft:jigsaw": {
+   "power": "conductor"
+  },
+  "minecraft:jukebox": {
+   "power": "conductor"
+  },
+  "minecraft:jungle_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:jungle_log": {
+   "power": "conductor"
+  },
+  "minecraft:jungle_planks": {
+   "power": "conductor"
+  },
+  "minecraft:jungle_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:jungle_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:jungle_wood": {
+   "power": "conductor"
+  },
+  "minecraft:lapis_block": {
+   "power": "conductor"
+  },
+  "minecraft:lapis_ore": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:light_blue_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:light_blue_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_wool": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:light_blue_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:light_blue_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:light_gray_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:light_gray_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:light_gray_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:light_gray_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:light_gray_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:light_gray_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:light_gray_wool": {
+   "power": "conductor"
+  },
+  "minecraft:light_gray_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:light_gray_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:light_gray_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:lime_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:lime_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:lime_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:lime_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:lime_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:lime_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:lime_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:lime_wool": {
+   "power": "conductor"
+  },
+  "minecraft:lime_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:lime_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:lime_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:lit_blast_furnace": {
+   "power": "conductor"
+  },
+  "minecraft:lit_deepslate_redstone_ore": {
+   "power": "conductor"
+  },
+  "minecraft:lit_furnace": {
+   "power": "conductor"
+  },
+  "minecraft:lit_pumpkin": {
+   "power": "conductor"
+  },
+  "minecraft:lit_redstone_lamp": {
+   "power": "conductor"
+  },
+  "minecraft:lit_redstone_ore": {
+   "power": "conductor"
+  },
+  "minecraft:lit_smoker": {
+   "power": "conductor"
+  },
+  "minecraft:lodestone": {
+   "power": "conductor"
+  },
+  "minecraft:loom": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:magenta_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:magenta_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_wool": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:magenta_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:magenta_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:magma": {
+   "power": "conductor"
+  },
+  "minecraft:mangrove_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:mangrove_log": {
+   "power": "conductor"
+  },
+  "minecraft:mangrove_planks": {
+   "power": "conductor"
+  },
+  "minecraft:mangrove_roots": {
+   "power": "conductor"
+  },
+  "minecraft:mangrove_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:mangrove_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:mangrove_wood": {
+   "power": "conductor"
+  },
+  "minecraft:melon_block": {
+   "power": "conductor"
+  },
+  "minecraft:mob_spawner": {
+   "power": "conductor"
+  },
+  "minecraft:moss_block": {
+   "power": "conductor"
+  },
+  "minecraft:mossy_cobblestone": {
+   "power": "conductor"
+  },
+  "minecraft:mossy_cobblestone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:mossy_cobblestone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:mossy_cobblestone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:mossy_stone_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:mossy_stone_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:mossy_stone_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:mossy_stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:mud": {
+   "power": "conductor"
+  },
+  "minecraft:mud_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:mud_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:mud_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:mud_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:muddy_mangrove_roots": {
+   "power": "conductor"
+  },
+  "minecraft:mushroom_stem": {
+   "power": "conductor"
+  },
+  "minecraft:mycelium": {
+   "power": "conductor"
+  },
+  "minecraft:nether_brick": {
+   "power": "conductor"
+  },
+  "minecraft:nether_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:nether_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:nether_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:nether_gold_ore": {
+   "power": "conductor"
+  },
+  "minecraft:nether_wart_block": {
+   "power": "conductor"
+  },
+  "minecraft:netherite_block": {
+   "power": "conductor"
+  },
+  "minecraft:netherrack": {
+   "power": "conductor"
+  },
+  "minecraft:netherreactor": {
+   "power": "conductor"
+  },
+  "minecraft:normal_stone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:normal_stone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:normal_stone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:noteblock": {
+   "power": "conductor"
+  },
+  "minecraft:oak_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:oak_log": {
+   "power": "conductor"
+  },
+  "minecraft:oak_planks": {
+   "power": "conductor"
+  },
+  "minecraft:oak_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:oak_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:oak_wood": {
+   "power": "conductor"
+  },
+  "minecraft:observer": {
+   "power": "conductor"
+  },
+  "minecraft:obsidian": {
+   "power": "conductor"
+  },
+  "minecraft:ochre_froglight": {
+   "power": "conductor"
+  },
+  "minecraft:orange_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:orange_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:orange_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:orange_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:orange_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:orange_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:orange_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:orange_wool": {
+   "power": "conductor"
+  },
+  "minecraft:orange_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:orange_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:orange_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:oxidized_chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:oxidized_copper": {
+   "power": "conductor"
+  },
+  "minecraft:oxidized_copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:oxidized_cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:oxidized_cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:oxidized_cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:oxidized_double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:packed_ice": {
+   "power": "conductor"
+  },
+  "minecraft:packed_mud": {
+   "power": "conductor"
+  },
+  "minecraft:pale_moss_block": {
+   "power": "conductor"
+  },
+  "minecraft:pale_oak_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:pale_oak_log": {
+   "power": "conductor"
+  },
+  "minecraft:pale_oak_planks": {
+   "power": "conductor"
+  },
+  "minecraft:pale_oak_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:pale_oak_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:pale_oak_wood": {
+   "power": "conductor"
+  },
+  "minecraft:pearlescent_froglight": {
+   "power": "conductor"
+  },
+  "minecraft:petrified_oak_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:petrified_oak_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:pink_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:pink_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:pink_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:pink_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:pink_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:pink_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:pink_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:pink_wool": {
+   "power": "conductor"
+  },
+  "minecraft:pink_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:pink_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:pink_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:podzol": {
+   "power": "conductor"
+  },
+  "minecraft:polished_andesite": {
+   "power": "conductor"
+  },
+  "minecraft:polished_andesite_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_andesite_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_andesite_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_basalt": {
+   "power": "conductor"
+  },
+  "minecraft:polished_blackstone": {
+   "power": "conductor"
+  },
+  "minecraft:polished_blackstone_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_blackstone_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_blackstone_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_blackstone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:polished_blackstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_blackstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_blackstone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_cinnabar": {
+   "power": "conductor"
+  },
+  "minecraft:polished_cinnabar_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_cinnabar_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_cinnabar_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_deepslate": {
+   "power": "conductor"
+  },
+  "minecraft:polished_deepslate_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_deepslate_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_deepslate_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_diorite": {
+   "power": "conductor"
+  },
+  "minecraft:polished_diorite_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_diorite_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_diorite_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_granite": {
+   "power": "conductor"
+  },
+  "minecraft:polished_granite_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_granite_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_granite_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_sulfur": {
+   "power": "conductor"
+  },
+  "minecraft:polished_sulfur_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_sulfur_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_sulfur_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:polished_tuff": {
+   "power": "conductor"
+  },
+  "minecraft:polished_tuff_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:polished_tuff_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:polished_tuff_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:poplar_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:poplar_log": {
+   "power": "conductor"
+  },
+  "minecraft:poplar_planks": {
+   "power": "conductor"
+  },
+  "minecraft:poplar_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:poplar_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:poplar_wood": {
+   "power": "conductor"
+  },
+  "minecraft:potent_sulfur": {
+   "power": "conductor"
+  },
+  "minecraft:prismarine": {
+   "power": "conductor"
+  },
+  "minecraft:prismarine_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:prismarine_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:prismarine_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:prismarine_bricks_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:prismarine_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:prismarine_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:prismarine_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:pumpkin": {
+   "power": "conductor"
+  },
+  "minecraft:purple_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:purple_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:purple_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:purple_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:purple_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:purple_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:purple_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:purple_wool": {
+   "power": "conductor"
+  },
+  "minecraft:purple_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:purple_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:purple_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:purpur_block": {
+   "power": "conductor"
+  },
+  "minecraft:purpur_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:purpur_pillar": {
+   "power": "conductor"
+  },
+  "minecraft:purpur_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:purpur_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:quartz_block": {
+   "power": "conductor"
+  },
+  "minecraft:quartz_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:quartz_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:quartz_ore": {
+   "power": "conductor"
+  },
+  "minecraft:quartz_pillar": {
+   "power": "conductor"
+  },
+  "minecraft:quartz_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:quartz_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:raw_copper_block": {
+   "power": "conductor"
+  },
+  "minecraft:raw_gold_block": {
+   "power": "conductor"
+  },
+  "minecraft:raw_iron_block": {
+   "power": "conductor"
+  },
+  "minecraft:red_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:red_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:red_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:red_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:red_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:red_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:red_mushroom_block": {
+   "power": "conductor"
+  },
+  "minecraft:red_nether_brick": {
+   "power": "conductor"
+  },
+  "minecraft:red_nether_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:red_nether_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:red_nether_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:red_sand": {
+   "power": "conductor"
+  },
+  "minecraft:red_sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:red_sandstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:red_sandstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:red_sandstone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:red_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:red_wool": {
+   "power": "conductor"
+  },
+  "minecraft:red_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:red_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:red_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:redstone_block": {
+   "power": "conductor"
+  },
+  "minecraft:redstone_lamp": {
+   "power": "conductor"
+  },
+  "minecraft:redstone_ore": {
+   "power": "conductor"
+  },
+  "minecraft:reinforced_deepslate": {
+   "power": "conductor"
+  },
+  "minecraft:repeating_command_block": {
+   "power": "conductor"
+  },
+  "minecraft:reserved6": {
+   "power": "conductor"
+  },
+  "minecraft:resin_block": {
+   "power": "conductor"
+  },
+  "minecraft:resin_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:resin_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:resin_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:resin_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:respawn_anchor": {
+   "power": "conductor"
+  },
+  "minecraft:sand": {
+   "power": "conductor"
+  },
+  "minecraft:sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:sandstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:sandstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:sandstone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:sculk": {
+   "power": "conductor"
+  },
+  "minecraft:sculk_catalyst": {
+   "power": "conductor"
+  },
+  "minecraft:shroomlight": {
+   "power": "conductor"
+  },
+  "minecraft:silver_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:slime": {
+   "power": "conductor"
+  },
+  "minecraft:smithing_table": {
+   "power": "conductor"
+  },
+  "minecraft:smoker": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_basalt": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_quartz": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_quartz_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_quartz_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:smooth_quartz_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:smooth_red_sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_red_sandstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_red_sandstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:smooth_red_sandstone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:smooth_sandstone": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_sandstone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_sandstone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:smooth_sandstone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:smooth_stone": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_stone_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:smooth_stone_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:snow": {
+   "power": "conductor"
+  },
+  "minecraft:soul_sand": {
+   "power": "conductor"
+  },
+  "minecraft:soul_soil": {
+   "power": "conductor"
+  },
+  "minecraft:sponge": {
+   "power": "conductor"
+  },
+  "minecraft:spruce_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:spruce_log": {
+   "power": "conductor"
+  },
+  "minecraft:spruce_planks": {
+   "power": "conductor"
+  },
+  "minecraft:spruce_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:spruce_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:spruce_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stone": {
+   "power": "conductor"
+  },
+  "minecraft:stone_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:stone_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:stone_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:stone_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:stone_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:stonecutter": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_acacia_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_acacia_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_bamboo_block": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_birch_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_birch_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_cherry_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_cherry_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_crimson_hyphae": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_crimson_stem": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_dark_oak_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_dark_oak_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_jungle_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_jungle_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_mangrove_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_mangrove_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_oak_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_oak_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_pale_oak_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_pale_oak_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_poplar_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_poplar_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_spruce_log": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_spruce_wood": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_warped_hyphae": {
+   "power": "conductor"
+  },
+  "minecraft:stripped_warped_stem": {
+   "power": "conductor"
+  },
+  "minecraft:structure_block": {
+   "power": "conductor"
+  },
+  "minecraft:sulfur": {
+   "power": "conductor"
+  },
+  "minecraft:sulfur_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:sulfur_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:sulfur_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:sulfur_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:sulfur_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:sulfur_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:sulfur_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:suspicious_gravel": {
+   "power": "conductor"
+  },
+  "minecraft:suspicious_sand": {
+   "power": "conductor"
+  },
+  "minecraft:target": {
+   "power": "conductor"
+  },
+  "minecraft:trial_spawner": {
+   "power": "conductor"
+  },
+  "minecraft:tube_coral_block": {
+   "power": "conductor"
+  },
+  "minecraft:tuff": {
+   "power": "conductor"
+  },
+  "minecraft:tuff_brick_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:tuff_brick_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:tuff_brick_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:tuff_bricks": {
+   "power": "conductor"
+  },
+  "minecraft:tuff_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:tuff_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:tuff_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:unknown": {
+   "power": "conductor"
+  },
+  "minecraft:vault": {
+   "power": "conductor"
+  },
+  "minecraft:verdant_froglight": {
+   "power": "conductor"
+  },
+  "minecraft:warped_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:warped_hyphae": {
+   "power": "conductor"
+  },
+  "minecraft:warped_nylium": {
+   "power": "conductor"
+  },
+  "minecraft:warped_planks": {
+   "power": "conductor"
+  },
+  "minecraft:warped_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:warped_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:warped_stem": {
+   "power": "conductor"
+  },
+  "minecraft:warped_wart_block": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:waxed_cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:waxed_double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_exposed_chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_exposed_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_exposed_copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_exposed_cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_exposed_cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:waxed_exposed_cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:waxed_exposed_double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_oxidized_chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_oxidized_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_oxidized_copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_oxidized_cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_oxidized_cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:waxed_oxidized_cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:waxed_oxidized_double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_weathered_chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_weathered_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_weathered_copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_weathered_cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:waxed_weathered_cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:waxed_weathered_cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:waxed_weathered_double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:weathered_chiseled_copper": {
+   "power": "conductor"
+  },
+  "minecraft:weathered_copper": {
+   "power": "conductor"
+  },
+  "minecraft:weathered_copper_bulb": {
+   "power": "conductor"
+  },
+  "minecraft:weathered_cut_copper": {
+   "power": "conductor"
+  },
+  "minecraft:weathered_cut_copper_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:weathered_cut_copper_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:weathered_double_cut_copper_slab": {
+   "power": "conductor"
+  },
+  "minecraft:wet_sponge": {
+   "power": "conductor"
+  },
+  "minecraft:white_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:white_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:white_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:white_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:white_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:white_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:white_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:white_wool": {
+   "power": "conductor"
+  },
+  "minecraft:white_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:white_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:white_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:yellow_concrete": {
+   "power": "conductor"
+  },
+  "minecraft:yellow_concrete_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:yellow_concrete_powder": {
+   "power": "conductor"
+  },
+  "minecraft:yellow_concrete_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:yellow_concrete_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  },
+  "minecraft:yellow_glazed_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:yellow_terracotta": {
+   "power": "conductor"
+  },
+  "minecraft:yellow_wool": {
+   "power": "conductor"
+  },
+  "minecraft:yellow_wool_double_slab": {
+   "power": "conductor"
+  },
+  "minecraft:yellow_wool_slab": {
+   "state": "minecraft:vertical_half",
+   "values": {
+    "bottom": "",
+    "top": "insulator"
+   }
+  },
+  "minecraft:yellow_wool_stairs": {
+   "state": "upside_down_bit",
+   "values": {
+    "0": "",
+    "1": "insulator"
+   }
+  }
+ },
+ "source": "BDS 1.26.60.6, Block redstone conductivity per state"
+}

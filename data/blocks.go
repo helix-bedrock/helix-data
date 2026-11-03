@@ -223,3 +223,27 @@ func BlockDrops() (map[string]BlockDrop, error) {
 	}
 	return doc.Blocks, nil
 }
+
+//go:embed 1.26.60/bds/redstone_conductivity.json
+var redstoneConductivity []byte
+
+// BlockConductivity is what one block does with redstone power: Power is
+// "conductor", "insulator" or empty. A block whose answer depends on its state
+// names that State, with the answer per state value in Values.
+type BlockConductivity struct {
+	Power  string            `json:"power,omitempty"`
+	State  string            `json:"state,omitempty"`
+	Values map[string]string `json:"values,omitempty"`
+}
+
+// RedstoneConductivity returns BDS's redstone conductivity by block name. Blocks
+// not in it take no part.
+func RedstoneConductivity() (map[string]BlockConductivity, error) {
+	var d struct {
+		Blocks map[string]BlockConductivity `json:"blocks"`
+	}
+	if err := json.Unmarshal(redstoneConductivity, &d); err != nil {
+		return nil, fmt.Errorf("data: read redstone conductivity: %w", err)
+	}
+	return d.Blocks, nil
+}
