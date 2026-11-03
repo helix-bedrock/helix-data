@@ -111,6 +111,10 @@
    "protection": 11,
    "toughness": 2
   },
+  "minecraft:elytra": {
+   "protection": 0,
+   "toughness": 0
+  },
   "minecraft:golden_boots": {
    "protection": 1,
    "toughness": 0
