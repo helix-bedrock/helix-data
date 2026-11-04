@@ -291,3 +291,26 @@ func NoteInstrumentData() (*NoteInstruments, error) {
 	}
 	return &doc, nil
 }
+
+//go:embed 1.26.60/bds/music_discs.json
+var musicDiscs []byte
+
+// MusicDisc is what a disc does in a jukebox.
+type MusicDisc struct {
+	// Sound names the song. The client plays it from the jukebox's block entity.
+	Sound string `json:"sound"`
+	// Seconds is how long the jukebox counts as playing.
+	Seconds float32 `json:"seconds"`
+	// Signal is what a comparator reads from a jukebox holding the disc.
+	Signal int32 `json:"signal"`
+}
+
+// MusicDiscData returns the music discs of [Version] by item name. Each call decodes a
+// fresh copy.
+func MusicDiscData() (map[string]MusicDisc, error) {
+	var doc map[string]MusicDisc
+	if err := json.Unmarshal(musicDiscs, &doc); err != nil {
+		return nil, fmt.Errorf("data: music discs: %w", err)
+	}
+	return doc, nil
+}
