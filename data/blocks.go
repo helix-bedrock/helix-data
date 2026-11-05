@@ -314,3 +314,23 @@ func MusicDiscData() (map[string]MusicDisc, error) {
 	}
 	return doc, nil
 }
+
+//go:embed 1.26.60/bds/block_push.json
+var blockPush []byte
+
+// BlockPush is what BDS's push of items and orbs out of blocks reads of a block type:
+// Solid lists those that push and that count as closed sides, Stairs those that push
+// more slowly.
+type BlockPush struct {
+	Solid  []string `json:"solid"`
+	Stairs []string `json:"stairs"`
+}
+
+// BlockPushData returns BDS's block facts for pushing out of blocks.
+func BlockPushData() (*BlockPush, error) {
+	var doc BlockPush
+	if err := json.Unmarshal(blockPush, &doc); err != nil {
+		return nil, fmt.Errorf("data: block push: %w", err)
+	}
+	return &doc, nil
+}
