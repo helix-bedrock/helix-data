@@ -334,3 +334,28 @@ func BlockPushData() (*BlockPush, error) {
 	}
 	return &doc, nil
 }
+
+//go:embed 1.26.60/bds/furnace.json
+var furnaceFacts []byte
+
+// Furnace is what BDS's furnaces, blast furnaces and smokers read of items. Fuel is
+// how many cooks one item burns for, by item name: a furnace burns it for its cook
+// time times that (coal blocks 80, logs and planks 1.5). FuelSeconds are the items
+// whose fuel is a minecraft:fuel component instead, burning for the cook time times
+// seconds over ten. XP is the experience one smelted item gives, by the item made.
+// CookTicks is each block's time to smelt one item.
+type Furnace struct {
+	CookTicks   map[string]int32   `json:"cook_ticks"`
+	Fuel        map[string]float32 `json:"fuel"`
+	FuelSeconds map[string]float32 `json:"fuel_seconds"`
+	XP          map[string]float32 `json:"xp"`
+}
+
+// FurnaceData returns BDS's furnace facts. Each call decodes a fresh copy.
+func FurnaceData() (*Furnace, error) {
+	var doc Furnace
+	if err := json.Unmarshal(furnaceFacts, &doc); err != nil {
+		return nil, fmt.Errorf("data: furnace: %w", err)
+	}
+	return &doc, nil
+}
