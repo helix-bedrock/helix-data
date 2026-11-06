@@ -26,6 +26,10 @@ type BlockProperties struct {
 	Friction Values[float32] `json:"friction"`
 	// DestroyTime is the block's hardness; -1 means unbreakable.
 	DestroyTime Values[float32] `json:"destroy_time"`
+	// LavaFlammable is set when lava lights fire next to the block. It is its own flag, not
+	// FlameOdds: lava does not light flowers, which burn, and lights crimson planks, which
+	// do not.
+	LavaFlammable Values[uint8] `json:"lava_flammable"`
 }
 
 // Values is one property of a block: a single value shared by every state,
