@@ -95,3 +95,22 @@ func BlockDefaults() (map[string]map[string]any, error) {
 	}
 	return m, nil
 }
+
+//go:embed 1.26.60/bds/item_flags.json
+var itemFlags []byte
+
+// ItemFlags are flags BDS keeps per item.
+type ItemFlags struct {
+	// FireResistant are the items whose dropped item fire and lava do not hurt.
+	FireResistant []string `json:"fire_resistant"`
+}
+
+// AllItemFlags returns the flags BDS keeps per item of [Version]. Each call decodes a fresh
+// copy.
+func AllItemFlags() (ItemFlags, error) {
+	var f ItemFlags
+	if err := json.Unmarshal(itemFlags, &f); err != nil {
+		return ItemFlags{}, fmt.Errorf("data: item flags: %w", err)
+	}
+	return f, nil
+}

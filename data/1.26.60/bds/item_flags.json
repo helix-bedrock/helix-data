@@ -1,0 +1,21 @@
+{
+ "source": "BDS 1.26.60.6 Linux, read at runtime: each Item's flag byte at +274, at \"Server started.\" Bit 0x20 is fire resistant: a dropped item of it takes no fire or lava damage (ItemActor isInvulnerableTo).",
+ "fire_resistant": [
+  "minecraft:ancient_debris",
+  "minecraft:netherite_axe",
+  "minecraft:netherite_block",
+  "minecraft:netherite_boots",
+  "minecraft:netherite_chestplate",
+  "minecraft:netherite_helmet",
+  "minecraft:netherite_hoe",
+  "minecraft:netherite_horse_armor",
+  "minecraft:netherite_ingot",
+  "minecraft:netherite_leggings",
+  "minecraft:netherite_nautilus_armor",
+  "minecraft:netherite_pickaxe",
+  "minecraft:netherite_scrap",
+  "minecraft:netherite_shovel",
+  "minecraft:netherite_spear",
+  "minecraft:netherite_sword"
+ ]
+}
