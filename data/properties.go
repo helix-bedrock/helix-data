@@ -114,3 +114,19 @@ func AllItemFlags() (ItemFlags, error) {
 	}
 	return f, nil
 }
+
+//go:embed 1.26.60/bds/block_types.json
+var blockTypes []byte
+
+// BlockTranslucency returns each block's translucency of [Version], 0 (opaque) to 1, keyed by
+// block name, as BDS keeps it on the block type (every state shares it). World generation reads
+// it. Each call decodes a fresh copy.
+func BlockTranslucency() (map[string]float32, error) {
+	var doc struct {
+		Translucency map[string]float32 `json:"translucency"`
+	}
+	if err := json.Unmarshal(blockTypes, &doc); err != nil {
+		return nil, fmt.Errorf("data: block types: %w", err)
+	}
+	return doc.Translucency, nil
+}
