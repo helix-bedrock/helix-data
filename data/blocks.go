@@ -359,3 +359,34 @@ func FurnaceData() (*Furnace, error) {
 	}
 	return &doc, nil
 }
+
+//go:embed 1.26.60/bds/banner.json
+var bannerFacts []byte
+
+// BannerPattern is one of BDS's banner patterns: its name, the ID banners save and
+// looms are asked for, and the type of banner pattern item a loom needs for it (-1:
+// none, the pattern is drawn with a dye alone).
+type BannerPattern struct {
+	Name     string `json:"name"`
+	ID       string `json:"id"`
+	ItemType int16  `json:"item_type"`
+}
+
+// Banner is what BDS's banners and looms read: the patterns in BDS's order, how many
+// one banner holds, the dye items with their colour (dye order, black 0 to white 15)
+// and the banner pattern items with their type.
+type Banner struct {
+	MaxPatterns  int              `json:"max_patterns"`
+	Patterns     []BannerPattern  `json:"patterns"`
+	Dyes         map[string]uint8 `json:"dyes"`
+	PatternItems map[string]int16 `json:"pattern_items"`
+}
+
+// BannerData returns BDS's banner facts. Each call decodes a fresh copy.
+func BannerData() (*Banner, error) {
+	var doc Banner
+	if err := json.Unmarshal(bannerFacts, &doc); err != nil {
+		return nil, fmt.Errorf("data: banner: %w", err)
+	}
+	return &doc, nil
+}

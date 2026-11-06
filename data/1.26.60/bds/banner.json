@@ -1,0 +1,256 @@
+{
+ "source": "BDS 1.26.60.6 (Linux): the BannerPattern registry and each item's dye flag, dye colour and banner pattern type, read at runtime; the pattern limit is the loom's and the banner block actor's",
+ "max_patterns": 6,
+ "patterns": [
+  {
+   "name": "base",
+   "id": "",
+   "item_type": -1
+  },
+  {
+   "name": "border",
+   "id": "bo",
+   "item_type": -1
+  },
+  {
+   "name": "bricks",
+   "id": "bri",
+   "item_type": 4
+  },
+  {
+   "name": "circle",
+   "id": "mc",
+   "item_type": -1
+  },
+  {
+   "name": "creeper",
+   "id": "cre",
+   "item_type": 0
+  },
+  {
+   "name": "skull",
+   "id": "sku",
+   "item_type": 1
+  },
+  {
+   "name": "cross",
+   "id": "cr",
+   "item_type": -1
+  },
+  {
+   "name": "curly_border",
+   "id": "cbo",
+   "item_type": 5
+  },
+  {
+   "name": "diagonal_up_left",
+   "id": "ld",
+   "item_type": -1
+  },
+  {
+   "name": "diagonal_up_right",
+   "id": "rud",
+   "item_type": -1
+  },
+  {
+   "name": "diagonal_left",
+   "id": "lud",
+   "item_type": -1
+  },
+  {
+   "name": "diagonal_right",
+   "id": "rd",
+   "item_type": -1
+  },
+  {
+   "name": "flower",
+   "id": "flo",
+   "item_type": 2
+  },
+  {
+   "name": "gradient",
+   "id": "gra",
+   "item_type": -1
+  },
+  {
+   "name": "gradient_up",
+   "id": "gru",
+   "item_type": -1
+  },
+  {
+   "name": "half_horizontal",
+   "id": "hh",
+   "item_type": -1
+  },
+  {
+   "name": "half_horizontal_bottom",
+   "id": "hhb",
+   "item_type": -1
+  },
+  {
+   "name": "half_vertical",
+   "id": "vh",
+   "item_type": -1
+  },
+  {
+   "name": "half_vertical_right",
+   "id": "vhr",
+   "item_type": -1
+  },
+  {
+   "name": "illager",
+   "id": "ill",
+   "item_type": -1
+  },
+  {
+   "name": "mojang",
+   "id": "moj",
+   "item_type": 3
+  },
+  {
+   "name": "rhombus",
+   "id": "mr",
+   "item_type": -1
+  },
+  {
+   "name": "small_stripes",
+   "id": "ss",
+   "item_type": -1
+  },
+  {
+   "name": "square_bottom_left",
+   "id": "bl",
+   "item_type": -1
+  },
+  {
+   "name": "square_bottom_right",
+   "id": "br",
+   "item_type": -1
+  },
+  {
+   "name": "square_top_left",
+   "id": "tl",
+   "item_type": -1
+  },
+  {
+   "name": "square_top_right",
+   "id": "tr",
+   "item_type": -1
+  },
+  {
+   "name": "straight_cross",
+   "id": "sc",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_bottom",
+   "id": "bs",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_center",
+   "id": "cs",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_downleft",
+   "id": "dls",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_downright",
+   "id": "drs",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_left",
+   "id": "ls",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_middle",
+   "id": "ms",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_right",
+   "id": "rs",
+   "item_type": -1
+  },
+  {
+   "name": "stripe_top",
+   "id": "ts",
+   "item_type": -1
+  },
+  {
+   "name": "triangle_bottom",
+   "id": "bt",
+   "item_type": -1
+  },
+  {
+   "name": "triangle_top",
+   "id": "tt",
+   "item_type": -1
+  },
+  {
+   "name": "triangles_bottom",
+   "id": "bts",
+   "item_type": -1
+  },
+  {
+   "name": "triangles_top",
+   "id": "tts",
+   "item_type": -1
+  },
+  {
+   "name": "piglin",
+   "id": "pig",
+   "item_type": 6
+  },
+  {
+   "name": "globe",
+   "id": "glb",
+   "item_type": 7
+  },
+  {
+   "name": "flow",
+   "id": "flw",
+   "item_type": 8
+  },
+  {
+   "name": "guster",
+   "id": "gus",
+   "item_type": 9
+  }
+ ],
+ "dyes": {
+  "minecraft:black_dye": 0,
+  "minecraft:blue_dye": 4,
+  "minecraft:brown_dye": 3,
+  "minecraft:cyan_dye": 6,
+  "minecraft:gray_dye": 8,
+  "minecraft:green_dye": 2,
+  "minecraft:light_blue_dye": 12,
+  "minecraft:light_gray_dye": 7,
+  "minecraft:lime_dye": 10,
+  "minecraft:magenta_dye": 13,
+  "minecraft:orange_dye": 14,
+  "minecraft:pink_dye": 9,
+  "minecraft:purple_dye": 5,
+  "minecraft:red_dye": 1,
+  "minecraft:white_dye": 15,
+  "minecraft:yellow_dye": 11
+ },
+ "pattern_items": {
+  "minecraft:bordure_indented_banner_pattern": 5,
+  "minecraft:creeper_banner_pattern": 0,
+  "minecraft:field_masoned_banner_pattern": 4,
+  "minecraft:flow_banner_pattern": 8,
+  "minecraft:flower_banner_pattern": 2,
+  "minecraft:globe_banner_pattern": 7,
+  "minecraft:guster_banner_pattern": 9,
+  "minecraft:mojang_banner_pattern": 3,
+  "minecraft:piglin_banner_pattern": 6,
+  "minecraft:skull_banner_pattern": 1
+ }
+}
