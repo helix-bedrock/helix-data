@@ -390,3 +390,46 @@ func BannerData() (*Banner, error) {
 	}
 	return &doc, nil
 }
+
+//go:embed 1.26.60/bds/precipitation.json
+var precipitation []byte
+
+// Precipitation is BDS's precipitation behaviour of a block: what rain and snow do at it.
+type Precipitation uint8
+
+// The precipitation behaviours. A block BDS gives none is PrecipitationAccumulateSnow.
+const (
+	// PrecipitationAccumulateSnow stops rain and snow settles on top (most blocks).
+	PrecipitationAccumulateSnow Precipitation = iota
+	// PrecipitationNone lets rain and snow fall through (air, torches, crops).
+	PrecipitationNone
+	// PrecipitationObstructRain stops rain, but snow never settles on it (ice, dirt paths).
+	PrecipitationObstructRain
+	// PrecipitationSnowlogging lets rain through, and snow settles into it as a covered snow
+	// layer (flowers, short grass).
+	PrecipitationSnowlogging
+)
+
+// BlockPrecipitation returns each block type's precipitation behaviour, keyed by block name;
+// block types not in the map are PrecipitationAccumulateSnow. Each call decodes a fresh copy.
+func BlockPrecipitation() (map[string]Precipitation, error) {
+	var doc struct {
+		None         []string `json:"none"`
+		ObstructRain []string `json:"obstruct_rain"`
+		Snowlogging  []string `json:"snowlogging"`
+	}
+	if err := json.Unmarshal(precipitation, &doc); err != nil {
+		return nil, fmt.Errorf("data: precipitation: %w", err)
+	}
+	m := make(map[string]Precipitation, len(doc.None)+len(doc.ObstructRain)+len(doc.Snowlogging))
+	for _, n := range doc.None {
+		m[n] = PrecipitationNone
+	}
+	for _, n := range doc.ObstructRain {
+		m[n] = PrecipitationObstructRain
+	}
+	for _, n := range doc.Snowlogging {
+		m[n] = PrecipitationSnowlogging
+	}
+	return m, nil
+}
