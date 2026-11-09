@@ -433,3 +433,26 @@ func BlockPrecipitation() (map[string]Precipitation, error) {
 	}
 	return m, nil
 }
+
+//go:embed 1.26.60/bds/grass_cover.json
+var grassCover []byte
+
+// GrassCover is what a block above a grass block does to it, as BDS 1.26.60's grass reads it.
+type GrassCover struct {
+	// Smother kills the grass when the light above it is 4 or more.
+	Smother []string `json:"smother"`
+	// DarkDies kills the grass when that light is under 4.
+	DarkDies []string `json:"dark_dies"`
+	// Stairs kill it unless upside down; Slabs when on the bottom half.
+	Stairs []string `json:"stairs"`
+	Slabs  []string `json:"slabs"`
+}
+
+// GrassCovers returns BDS 1.26.60's grass cover lists.
+func GrassCovers() (GrassCover, error) {
+	var g GrassCover
+	if err := json.Unmarshal(grassCover, &g); err != nil {
+		return GrassCover{}, fmt.Errorf("data: grass cover: %w", err)
+	}
+	return g, nil
+}
