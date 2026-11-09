@@ -408,3 +408,25 @@ func EnchantingData() (*Enchanting, error) {
 	}
 	return &e, nil
 }
+
+//go:embed 1.26.60/bds/compost.json
+var compostData []byte
+
+// CompostChances returns BDS 1.26.60's composter table: each item's percent chance that one
+// of it raises a composter's fill level. Items not listed do not compost.
+func CompostChances() (map[string]uint8, error) {
+	var doc struct {
+		Chances []struct {
+			Item   string `json:"item"`
+			Chance uint8  `json:"chance"`
+		} `json:"chances"`
+	}
+	if err := json.Unmarshal(compostData, &doc); err != nil {
+		return nil, fmt.Errorf("data: compost chances: %w", err)
+	}
+	m := make(map[string]uint8, len(doc.Chances))
+	for _, c := range doc.Chances {
+		m[c.Item] = c.Chance
+	}
+	return m, nil
+}
