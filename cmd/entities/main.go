@@ -3,7 +3,7 @@
 // entity loot table and spawn rule, with the
 // vanilla behaviour packs layered the way BDS layers them.
 //
-//	go run ./cmd/entities -bds <bds folder> -out data/<version>
+//	go run ./cmd/entities -bds <bds folder> -out data/files
 package main
 
 import (

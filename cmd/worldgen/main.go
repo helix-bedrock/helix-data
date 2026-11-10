@@ -7,7 +7,7 @@
 // vanilla datapack inside the official Java server jar:
 //
 //	go run ./cmd/worldgen -datapack <extracted datapack>/data/minecraft/worldgen \
-//	    -tree <multi_noise_biome_tree.json> -out data/<version>
+//	    -tree <multi_noise_biome_tree.json> -out data/files
 //
 // The overworld's biome parameters are not a datapack file in Java
 // Edition but built by its code; -tree is that table as Java's search tree,

@@ -10,7 +10,7 @@
 // encode back to the same bytes, so the files are exactly what BDS sends
 // and Helix can read them.
 //
-//	go run ./cmd/joinpackets -capture <join.jsonl> -out data/<version>/bds/packets
+//	go run ./cmd/joinpackets -capture <join.jsonl> -out data/files/bds/packets
 package main
 
 import (

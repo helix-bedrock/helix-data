@@ -3,7 +3,7 @@
 Minecraft: Bedrock Edition game data for Helix, and the tools that build it
 from the official Bedrock Dedicated Server (BDS).
 
-**Status as of 2026-11-09:** in development. The `data` package now serves `data/1.26.60/` (BDS 1.26.60.6): 23,960 block states of 1,480 blocks read from the running server, 1,623 items, and every vanilla behaviour pack file Helix reads, stacked as BDS stacks them, plus each experimental pack's files under `experiments/` (Drop 4 of 2026's ice caves among them). `bds/block_properties.json` holds every state's light, flammability, explosion resistance, friction and destroy time, read from the running 1.26.60.6 server, `bds/block_types.json` each block's translucency (BDS keeps it on the block type), `bds/precipitation.json` each block's precipitation behaviour (what rain and snow do at it: fall through, stop, settle as snow, or snowlog), `bds/compost.json` the composter's item chances (BDS's built-in table, read from the running server), `bds/biome_ids.json` every vanilla biome's numeric ID as BDS registers it, `bds/item_equipment.json` which items BDS lets a player wear in each armour slot and which go in the offhand, `bds/mining.json` what BDS's mining speed rules read (every block type's tags and whether it needs the right tool, each tool's tag and tier, the sword and shears block lists), `bds/break_place.json` each item's max damage and how it wears when breaking blocks and the blocks a placed block may replace, `bds/collision.json` the collision boxes of the 851 blocks whose shape is fixed (stored as data in BDS, or a constant in its code), and for the 629 whose shape BDS computes in code the rule each follows, and `bds/packets/` the registry packets BDS sends every joining player (2,080 items with their network IDs, creative inventory, crafting, biomes, entity identifiers, the 98 data-driven block definitions from StartGame, and the voxel shapes and jigsaw structure data sent before it); the other `bds/` tables are still the 1.26.52.3 ones (each file's `source` says so) until they are read again from 1.26.60.6. `data/1.26.52/` stays as it was.
+**Status as of 2026-11-09:** in development. The `data` package now serves `data/files/` (BDS 1.26.60.6; only the newest version is kept): 23,960 block states of 1,480 blocks read from the running server, 1,623 items, and every vanilla behaviour pack file Helix reads, stacked as BDS stacks them, plus each experimental pack's files under `experiments/` (Drop 4 of 2026's ice caves among them). `bds/block_properties.json` holds every state's light, flammability, explosion resistance, friction and destroy time, read from the running 1.26.60.6 server, `bds/block_types.json` each block's translucency (BDS keeps it on the block type), `bds/precipitation.json` each block's precipitation behaviour (what rain and snow do at it: fall through, stop, settle as snow, or snowlog), `bds/compost.json` the composter's item chances (BDS's built-in table, read from the running server), `bds/biome_ids.json` every vanilla biome's numeric ID as BDS registers it, `bds/item_equipment.json` which items BDS lets a player wear in each armour slot and which go in the offhand, `bds/mining.json` what BDS's mining speed rules read (every block type's tags and whether it needs the right tool, each tool's tag and tier, the sword and shears block lists), `bds/break_place.json` each item's max damage and how it wears when breaking blocks and the blocks a placed block may replace, `bds/collision.json` the collision boxes of the 851 blocks whose shape is fixed (stored as data in BDS, or a constant in its code), and for the 629 whose shape BDS computes in code the rule each follows, and `bds/packets/` the registry packets BDS sends every joining player (2,080 items with their network IDs, creative inventory, crafting, biomes, entity identifiers, the 98 data-driven block definitions from StartGame, and the voxel shapes and jigsaw structure data sent before it); the other `bds/` tables are still the 1.26.52.3 ones (each file's `source` says so) until they are read again from 1.26.60.6.
 
 Part of [Helix](https://github.com/helix-bedrock), an open-source Minecraft: Bedrock
 Edition server engine in Go.
@@ -15,7 +15,7 @@ Edition server engine in Go.
 | `bds-dump/` | A BDS behaviour pack that prints every block state to the server console |
 | `cmd/blockstates` | Turns that console log into `block_states.nbt` and `block_defaults.json`, and compares it with other palettes |
 | `blockstate` | The Go package behind `cmd/blockstates` |
-| `data/<version>/` | Generated files, one folder per Minecraft version |
+| `data/files/` | Generated files of the newest Minecraft version (older versions are not kept) |
 
 ## Dumping block states from BDS
 
@@ -31,32 +31,32 @@ Edition server engine in Go.
    `stop` so the world is written to disk.
 6. Convert it:
    ```bash
-   go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
+   go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/files
    go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
    ```
 7. For items, save the BDS console output while the dump runs (for example
    `bedrock_server > out.log`) and convert it:
    ```bash
-   go run ./cmd/blockstates items -log out.log -out data/<version>
+   go run ./cmd/blockstates items -log out.log -out data/files
    ```
 8. Entities, their loot tables and spawn rules need no dump: they are read straight from
    the BDS folder.
    ```bash
-   go run ./cmd/entities -bds <bds folder> -out data/<version>
+   go run ./cmd/entities -bds <bds folder> -out data/files
    ```
 9. The vanilla behaviour pack files (biomes, features, feature rules, all
    loot tables, recipes, spawn groups, structures, trading and jigsaw
    world generation) need no dump either. BDS ships one pack per game
    version holding only what changed; `cmd/vanilla` stacks them the way BDS
-   does and writes one complete `data/<version>/vanilla/`:
+   does and writes one complete `data/files/vanilla/`:
    ```bash
-   go run ./cmd/vanilla -bds <bds folder> -out data/<version>
+   go run ./cmd/vanilla -bds <bds folder> -out data/files
    ```
-   It also writes `data/<version>/experiments/<name>/`: the files of each
+   It also writes `data/files/experiments/<name>/`: the files of each
    experimental pack (`experimental_y_2026_drop_4` becomes `y_2026_drop_4`)
    on their own. BDS loads an enabled experiment's pack above every vanilla
    pack, so a reader puts these files over `vanilla/`.
-   Go code reads them, and the BDS tables in `data/<version>/bds/`, through
+   Go code reads them, and the BDS tables in `data/files/bds/`, through
    `data.Files()`.
 
 ### How it works
@@ -114,5 +114,5 @@ BDS ships no world generation data, so `worldgen.json` and
 Bedrock's since 1.18 (see CREDITS.md):
 
 ```bash
-go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/<version>
+go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/files
 ```

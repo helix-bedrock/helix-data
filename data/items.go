@@ -11,7 +11,7 @@ import (
 	"github.com/helix-bedrock/protocol/packet"
 )
 
-//go:embed 1.26.60/bds/packets/item_registry.bin
+//go:embed files/bds/packets/item_registry.bin
 var itemRegistry []byte
 
 // ItemRegistry returns every item of [Version] as BDS sends it to joining
@@ -26,7 +26,7 @@ func ItemRegistry() ([]protocol.ItemEntry, error) {
 	return pk.Items, nil
 }
 
-//go:embed 1.26.60/bds/packets/biome_definition_list.bin
+//go:embed files/bds/packets/biome_definition_list.bin
 var biomeDefinitions []byte
 
 // BiomeDefinitions returns the BiomeDefinitionList packet BDS sends joining
@@ -41,7 +41,7 @@ func BiomeDefinitions() (*packet.BiomeDefinitionList, error) {
 	return &pk, nil
 }
 
-//go:embed 1.26.60/bds/biome_ids.json
+//go:embed files/bds/biome_ids.json
 var biomeIDs []byte
 
 // BiomeIDs returns the numeric ID of every vanilla biome of [Version], the
@@ -56,7 +56,7 @@ func BiomeIDs() (map[string]int16, error) {
 	return doc.Biomes, nil
 }
 
-//go:embed 1.26.60/bds/packets/available_actor_identifiers.bin
+//go:embed files/bds/packets/available_actor_identifiers.bin
 var actorIdentifiers []byte
 
 // ActorIdentifiers returns the AvailableActorIdentifiers packet BDS sends
@@ -70,7 +70,7 @@ func ActorIdentifiers() (*packet.AvailableActorIdentifiers, error) {
 	return &pk, nil
 }
 
-//go:embed 1.26.60/bds/packets/creative_content.bin
+//go:embed files/bds/packets/creative_content.bin
 var creativeContent []byte
 
 // CreativeContent returns the CreativeContent packet BDS sends joining
@@ -88,7 +88,7 @@ func CreativeContent() (*packet.CreativeContent, error) {
 	return &pk, nil
 }
 
-//go:embed 1.26.60/bds/packets/crafting_data.bin
+//go:embed files/bds/packets/crafting_data.bin
 var craftingData []byte
 
 // CraftingData returns the CraftingData packet BDS sends joining players:
@@ -138,7 +138,7 @@ func decodePacket(pk packet.Packet, b []byte, shield int32) (err error) {
 	return nil
 }
 
-//go:embed 1.26.60/bds/packets/start_game_blocks.bin
+//go:embed files/bds/packets/start_game_blocks.bin
 var startGameBlocks []byte
 
 // BlockDefinitions returns the block definitions BDS sends joining players
@@ -159,7 +159,7 @@ type blockList struct{ blocks []protocol.BlockEntry }
 func (*blockList) ID() uint32               { return 0 }
 func (b *blockList) Marshal(io protocol.IO) { protocol.Slice(io, &b.blocks) }
 
-//go:embed 1.26.60/bds/packets/voxel_shapes.bin
+//go:embed files/bds/packets/voxel_shapes.bin
 var voxelShapes []byte
 
 // VoxelShapes returns the VoxelShapes packet BDS sends joining players
@@ -172,7 +172,7 @@ func VoxelShapes() (*packet.VoxelShapes, error) {
 	return &pk, nil
 }
 
-//go:embed 1.26.60/bds/packets/jigsaw_structure_data.bin
+//go:embed files/bds/packets/jigsaw_structure_data.bin
 var jigsawStructureData []byte
 
 // JigsawStructureData returns the JigsawStructureData packet BDS sends
@@ -185,7 +185,7 @@ func JigsawStructureData() (*packet.JigsawStructureData, error) {
 	return &pk, nil
 }
 
-//go:embed 1.26.60/bds/item_equipment.json
+//go:embed files/bds/item_equipment.json
 var itemEquipment []byte
 
 // ItemEquipment returns, as BDS checks them, the armour slot of every item
@@ -202,7 +202,7 @@ func ItemEquipment() (armorSlots map[string]uint8, offhand []string, err error) 
 	return doc.ArmorSlots, doc.Offhand, nil
 }
 
-//go:embed 1.26.60/bds/mining.json
+//go:embed files/bds/mining.json
 var mining []byte
 
 // Mining is what BDS's mining speed rules read: the items whose speed BDS
@@ -269,7 +269,7 @@ func MiningData() (*Mining, error) {
 	return &m, nil
 }
 
-//go:embed 1.26.60/bds/break_place.json
+//go:embed files/bds/break_place.json
 var breakPlace []byte
 
 // BreakPlace is what BDS reads when a player breaks or places a block: how
@@ -304,7 +304,7 @@ func BreakPlaceData() (*BreakPlace, error) {
 	return &b, nil
 }
 
-//go:embed 1.26.60/bds/trim.json
+//go:embed files/bds/trim.json
 var trimData []byte
 
 // TrimData returns the armour trim patterns and materials BDS 1.26.60 sends.
@@ -333,7 +333,7 @@ func TrimData() (*packet.TrimData, error) {
 	return pk, nil
 }
 
-//go:embed 1.26.60/bds/item_combat.json
+//go:embed files/bds/item_combat.json
 var itemCombat []byte
 
 // ArmorValue is what a piece of armour gives its wearer.
@@ -360,7 +360,7 @@ func ItemCombatData() (*ItemCombat, error) {
 	return &c, nil
 }
 
-//go:embed 1.26.60/bds/enchantments.json
+//go:embed files/bds/enchantments.json
 var enchantments []byte
 
 // Enchantment is one of BDS's enchantments as bds/enchantments.json holds it. MinCost
@@ -409,7 +409,7 @@ func EnchantingData() (*Enchanting, error) {
 	return &e, nil
 }
 
-//go:embed 1.26.60/bds/compost.json
+//go:embed files/bds/compost.json
 var compostData []byte
 
 // CompostChances returns BDS 1.26.60's composter table: each item's percent chance that one

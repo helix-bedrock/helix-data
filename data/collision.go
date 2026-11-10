@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-//go:embed 1.26.60/bds/collision.json
+//go:embed files/bds/collision.json
 var collision []byte
 
 // Box is a collision box inside the block, min x, y, z then max x, y, z.

@@ -6,10 +6,10 @@ import (
 	"fmt"
 )
 
-//go:embed 1.26.60/bds/climbable.json
+//go:embed files/bds/climbable.json
 var climbable []byte
 
-//go:embed 1.26.60/bds/block_materials.json
+//go:embed files/bds/block_materials.json
 var blockMaterials []byte
 
 // MaterialWater is BDS's MaterialType of water.
@@ -39,7 +39,7 @@ func BlockMaterials() (map[string]uint8, error) {
 	return doc.Blocks, nil
 }
 
-//go:embed 1.26.60/bds/placement.json
+//go:embed files/bds/placement.json
 var placement []byte
 
 // PlacementTrait is one of BDS's placement traits on a block: Kind
@@ -73,7 +73,7 @@ func PlacementData() (map[string]Placement, error) {
 	return doc.Blocks, nil
 }
 
-//go:embed 1.26.60/bds/piston_move.json
+//go:embed files/bds/piston_move.json
 var pistonMove []byte
 
 // PistonMove is what BDS's pistons do with blocks. A block in no list moves
@@ -97,7 +97,7 @@ func PistonMoveData() (*PistonMove, error) {
 	return &doc, nil
 }
 
-//go:embed 1.26.60/bds/support.json
+//go:embed files/bds/support.json
 var support []byte
 
 // Support is what BDS lets blocks be attached to. Rules is each block's rule
@@ -119,7 +119,7 @@ func SupportData() (*Support, error) {
 	return &doc, nil
 }
 
-//go:embed 1.26.60/bds/connections.json
+//go:embed files/bds/connections.json
 var connections []byte
 
 // Connection is a block's rule for what connects to it: Groups is a bit set of
@@ -152,7 +152,7 @@ func ConnectionData() (map[string]Connection, error) {
 	return doc.Blocks, nil
 }
 
-//go:embed 1.26.60/bds/liquids.json
+//go:embed files/bds/liquids.json
 var liquids []byte
 
 // LiquidFacts are how BDS's liquids treat each block: Reaction is what a
@@ -181,7 +181,7 @@ func Liquids() (LiquidFacts, error) {
 	return doc, nil
 }
 
-//go:embed 1.26.60/bds/chest_obstruction.json
+//go:embed files/bds/chest_obstruction.json
 var chestObstruction []byte
 
 // ChestObstruction lists the blocks that do not stop a chest under them opening
@@ -202,7 +202,7 @@ func ChestObstructionData() (ChestObstruction, error) {
 	return doc, nil
 }
 
-//go:embed 1.26.60/bds/block_drops.json
+//go:embed files/bds/block_drops.json
 var blockDrops []byte
 
 // DropNode is one step of a block's drop rule as BDS 1.26.60 builds it: an item
@@ -248,7 +248,7 @@ func BlockDrops() (map[string]BlockDrop, error) {
 	return doc.Blocks, nil
 }
 
-//go:embed 1.26.60/bds/redstone_conductivity.json
+//go:embed files/bds/redstone_conductivity.json
 var redstoneConductivity []byte
 
 // BlockConductivity is what one block does with redstone power: Power is
@@ -272,7 +272,7 @@ func RedstoneConductivity() (map[string]BlockConductivity, error) {
 	return d.Blocks, nil
 }
 
-//go:embed 1.26.60/bds/note_instruments.json
+//go:embed files/bds/note_instruments.json
 var noteInstruments []byte
 
 // NoteInstruments is which instrument a note block plays. Above holds the blocks that
@@ -292,7 +292,7 @@ func NoteInstrumentData() (*NoteInstruments, error) {
 	return &doc, nil
 }
 
-//go:embed 1.26.60/bds/music_discs.json
+//go:embed files/bds/music_discs.json
 var musicDiscs []byte
 
 // MusicDisc is what a disc does in a jukebox.
@@ -315,7 +315,7 @@ func MusicDiscData() (map[string]MusicDisc, error) {
 	return doc, nil
 }
 
-//go:embed 1.26.60/bds/block_push.json
+//go:embed files/bds/block_push.json
 var blockPush []byte
 
 // BlockPush is what BDS's push of items and orbs out of blocks reads of a block type:
@@ -335,7 +335,7 @@ func BlockPushData() (*BlockPush, error) {
 	return &doc, nil
 }
 
-//go:embed 1.26.60/bds/furnace.json
+//go:embed files/bds/furnace.json
 var furnaceFacts []byte
 
 // Furnace is what BDS's furnaces, blast furnaces and smokers read of items. Fuel is
@@ -360,7 +360,7 @@ func FurnaceData() (*Furnace, error) {
 	return &doc, nil
 }
 
-//go:embed 1.26.60/bds/banner.json
+//go:embed files/bds/banner.json
 var bannerFacts []byte
 
 // BannerPattern is one of BDS's banner patterns: its name, the ID banners save and
@@ -391,7 +391,7 @@ func BannerData() (*Banner, error) {
 	return &doc, nil
 }
 
-//go:embed 1.26.60/bds/precipitation.json
+//go:embed files/bds/precipitation.json
 var precipitation []byte
 
 // Precipitation is BDS's precipitation behaviour of a block: what rain and snow do at it.
@@ -434,7 +434,7 @@ func BlockPrecipitation() (map[string]Precipitation, error) {
 	return m, nil
 }
 
-//go:embed 1.26.60/bds/grass_cover.json
+//go:embed files/bds/grass_cover.json
 var grassCover []byte
 
 // GrassCover is what a block above a grass block does to it, as BDS 1.26.60's grass reads it.

@@ -3,7 +3,7 @@
 // stacked the way BDS stacks them, and _provenance.tsv naming the pack each
 // file came from.
 //
-//	go run ./cmd/vanilla -bds <bds folder> -out data/<version>
+//	go run ./cmd/vanilla -bds <bds folder> -out data/files
 package main
 
 import (

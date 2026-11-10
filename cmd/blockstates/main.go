@@ -1,9 +1,9 @@
 // Command blockstates reads the block states the bds-dump add-on made BDS
 // save, writes them as data files, and compares them with another palette.
 //
-//	blockstates convert -world <bds>/worlds/helixdump -out data/1.26.52
+//	blockstates convert -world <bds>/worlds/helixdump -out data/files
 //	blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
-//	blockstates items -log <bds console log> -out data/1.26.52
+//	blockstates items -log <bds console log> -out data/files
 package main
 
 import (

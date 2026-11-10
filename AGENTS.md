@@ -18,13 +18,13 @@ go build ./...
 go vet ./...
 golangci-lint run
 go test -race ./...
-go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/<version>
+go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/files
 go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
-go run ./cmd/blockstates items -log <bds console log> -out data/<version>
-go run ./cmd/entities -bds <bds folder> -out data/<version>
-go run ./cmd/vanilla -bds <bds folder> -out data/<version>
-go run ./cmd/joinpackets -capture <join.jsonl> -out data/<version>/bds/packets
-go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/<version>
+go run ./cmd/blockstates items -log <bds console log> -out data/files
+go run ./cmd/entities -bds <bds folder> -out data/files
+go run ./cmd/vanilla -bds <bds folder> -out data/files
+go run ./cmd/joinpackets -capture <join.jsonl> -out data/files/bds/packets
+go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/files
 ```
 
 ## Layout
@@ -40,7 +40,7 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
 - `cmd/joinpackets/`: writes `bds/packets/` from a capture of a real join on BDS: the raw payloads of the registry packets, each checked to decode and encode back byte for byte.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
 - `data/`: the `data` Go package, which embeds the current version's files so the engine can load them.
-- `data/<version>/`: generated output. Never edit by hand.
+- `data/files/`: generated output. Never edit by hand.
 
 ## Invariants: do not break these
 
@@ -55,7 +55,7 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
    Boolean properties are bytes, numbers are int32.
 3. Every state comes from BDS. Other palettes are only compared against,
    never copied in.
-4. Every `data/<version>/` folder is complete on its own. BDS ships only the
+4. `data/files/` is complete on its own. BDS ships only the
    files that changed in each pack; `cmd/vanilla` stacks them so nothing
    that reads the data has to know about the older packs.
 
@@ -71,7 +71,7 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
   instead (`structureManager.createEmpty`, `@minecraft/server` 2.10.0).
 - Other palettes listed fire, redstone_wire and chorus_plant connection
   properties that BDS 1.26.52 never stores or sends. BDS 1.26.60 has them, so
-  only `data/1.26.60/` and later hold them.
+  `data/files/` holds them.
 - From 1.26.60 the add-on misses a few states (awake `creaking_heart`,
   `sculk_sensor_phase` 2) because saving a structure changes them. Read
   block states from the running server (`update-block-states` skill) and use

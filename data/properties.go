@@ -7,7 +7,7 @@ import (
 	"fmt"
 )
 
-//go:embed 1.26.60/bds/block_properties.json
+//go:embed files/bds/block_properties.json
 var blockProperties []byte
 
 // BlockProperties holds the numbers BDS keeps for every state of one block.
@@ -81,7 +81,7 @@ func AllBlockProperties() (map[string]BlockProperties, error) {
 	return doc.Blocks, nil
 }
 
-//go:embed 1.26.60/block_defaults.json
+//go:embed files/block_defaults.json
 var blockDefaults []byte
 
 // BlockDefaults returns each block's default state of [Version]: block
@@ -96,7 +96,7 @@ func BlockDefaults() (map[string]map[string]any, error) {
 	return m, nil
 }
 
-//go:embed 1.26.60/bds/item_flags.json
+//go:embed files/bds/item_flags.json
 var itemFlags []byte
 
 // ItemFlags are flags BDS keeps per item.
@@ -115,7 +115,7 @@ func AllItemFlags() (ItemFlags, error) {
 	return f, nil
 }
 
-//go:embed 1.26.60/bds/block_types.json
+//go:embed files/bds/block_types.json
 var blockTypes []byte
 
 // BlockTranslucency returns each block's translucency of [Version], 0 (opaque) to 1, keyed by
