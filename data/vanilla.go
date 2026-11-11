@@ -42,6 +42,22 @@ func Items() ([]item.Item, error) {
 	return list, nil
 }
 
+//go:embed files/item_definitions.json
+var itemDefinitions []byte
+
+// ItemDefinitions returns every data-driven vanilla item definition of [Version], keyed
+// by identifier such as "minecraft:bundle". Each value is the definition file BDS uses
+// ("minecraft:item" with its description and components, such as a bundle's
+// "minecraft:storage_item"), with the vanilla behaviour packs layered as BDS layers
+// them. Items BDS defines in code are not here. Each call decodes a fresh copy.
+func ItemDefinitions() (map[string]json.RawMessage, error) {
+	var m map[string]json.RawMessage
+	if err := json.Unmarshal(itemDefinitions, &m); err != nil {
+		return nil, fmt.Errorf("data: item definitions: %w", err)
+	}
+	return m, nil
+}
+
 //go:embed files/entities.json
 var entities []byte
 

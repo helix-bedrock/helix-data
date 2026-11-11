@@ -1,6 +1,6 @@
-// Command entities writes entities.json, entity_loot.json (entity and gameplay loot) and
-// spawn_rules.json from a BDS install: every vanilla entity definition,
-// entity loot table and spawn rule, with the
+// Command entities writes entities.json, entity_loot.json (entity and gameplay loot),
+// spawn_rules.json and item_definitions.json from a BDS install: every vanilla entity
+// definition, entity loot table, spawn rule and data-driven item definition, with the
 // vanilla behaviour packs layered the way BDS layers them.
 //
 //	go run ./cmd/entities -bds <bds folder> -out data/files
@@ -19,6 +19,7 @@ import (
 	"strings"
 
 	"github.com/helix-bedrock/helix-data/brarchive"
+	"github.com/helix-bedrock/helix-data/mcb"
 	"github.com/helix-bedrock/helix-data/pack"
 )
 
@@ -42,7 +43,11 @@ func run(bds, out string) error {
 		return err
 	}
 	entities, loot, spawns := map[string]json.RawMessage{}, map[string]json.RawMessage{}, map[string]json.RawMessage{}
+	items := map[string]json.RawMessage{}
 	for _, p := range packs {
+		if err := readArchive(p, "items.brarchive", "minecraft:item", items); err != nil {
+			return err
+		}
 		if err := readArchive(p, "entities.brarchive", "minecraft:entity", entities); err != nil {
 			return err
 		}
@@ -62,7 +67,10 @@ func run(bds, out string) error {
 	if err := write(filepath.Join(out, "spawn_rules.json"), spawns); err != nil {
 		return err
 	}
-	fmt.Printf("%d entities, %d loot tables, %d spawn rules from %d packs\n", len(entities), len(loot), len(spawns), len(packs))
+	if err := write(filepath.Join(out, "item_definitions.json"), items); err != nil {
+		return err
+	}
+	fmt.Printf("%d entities, %d loot tables, %d spawn rules, %d items from %d packs\n", len(entities), len(loot), len(spawns), len(items), len(packs))
 	return nil
 }
 
@@ -80,8 +88,17 @@ func readArchive(pack, archive, root string, into map[string]json.RawMessage) er
 		return fmt.Errorf("%s: %w", pack, err)
 	}
 	for _, f := range files {
+		data := f.Data
+		if bytes.HasPrefix(data, mcb.Magic) {
+			// Some item definitions are in BDS's binary form, not JSON.
+			raw, err := mcb.Decode(data)
+			if err != nil {
+				return fmt.Errorf("%s: %s: %w", pack, f.Name, err)
+			}
+			data = raw
+		}
 		var doc map[string]json.RawMessage
-		if err := json.Unmarshal(f.Data, &doc); err != nil {
+		if err := json.Unmarshal(data, &doc); err != nil {
 			return fmt.Errorf("%s: %s: %w", pack, f.Name, err)
 		}
 		var body struct {
@@ -100,7 +117,7 @@ func readArchive(pack, archive, root string, into map[string]json.RawMessage) er
 			// identifier, so it cannot apply to any entity.
 			continue
 		}
-		into[id] = json.RawMessage(bytes.Clone(f.Data))
+		into[id] = json.RawMessage(bytes.Clone(data))
 	}
 	return nil
 }
