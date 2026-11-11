@@ -1,4 +1,4 @@
-// Command entities writes entities.json, entity_loot.json and
+// Command entities writes entities.json, entity_loot.json (entity and gameplay loot) and
 // spawn_rules.json from a BDS install: every vanilla entity definition,
 // entity loot table and spawn rule, with the
 // vanilla behaviour packs layered the way BDS layers them.
@@ -105,10 +105,23 @@ func readArchive(pack, archive, root string, into map[string]json.RawMessage) er
 	return nil
 }
 
-// readLoot reads loot_tables/entities, keyed by the path entity
-// definitions use, such as "loot_tables/entities/zombie.json".
+// lootDirs are the loot table folders an entity names: its death drops and equipment
+// (entities), and what a fishing hook catches (gameplay, through its minecraft:loot).
+var lootDirs = []string{"entities", "gameplay"}
+
+// readLoot reads the tables of lootDirs, keyed by the path entity definitions use, such
+// as "loot_tables/entities/zombie.json".
 func readLoot(pack string, into map[string]json.RawMessage) error {
-	dir := filepath.Join(pack, "loot_tables", "entities")
+	for _, sub := range lootDirs {
+		if err := readLootDir(pack, filepath.Join(pack, "loot_tables", sub), into); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+// readLootDir reads one folder of readLoot.
+func readLootDir(pack, dir string, into map[string]json.RawMessage) error {
 	if _, err := os.Stat(dir); os.IsNotExist(err) {
 		return nil
 	}

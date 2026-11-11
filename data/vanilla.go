@@ -60,9 +60,10 @@ func Entities() (map[string]json.RawMessage, error) {
 //go:embed files/entity_loot.json
 var entityLoot []byte
 
-// EntityLoot returns every entity loot table of [Version], keyed by the
-// path entity definitions name them by, such as
-// "loot_tables/entities/zombie.json". Each call decodes a fresh copy.
+// EntityLoot returns every loot table an entity names, keyed by the path
+// entity definitions name them by, such as "loot_tables/entities/zombie.json":
+// loot_tables/entities and loot_tables/gameplay (a fishing hook's catch is
+// "loot_tables/gameplay/fishing.json"). Each call decodes a fresh copy.
 func EntityLoot() (map[string]json.RawMessage, error) {
 	var m map[string]json.RawMessage
 	if err := json.Unmarshal(entityLoot, &m); err != nil {
