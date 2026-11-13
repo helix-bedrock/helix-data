@@ -1,0 +1,9879 @@
+{
+ "source": "BDS 1.26.60.6 Linux, read at runtime at \"Server started.\": each block's map colour as its map render reads it, the minecraft:map_color component (colour, tint) of the Block or BlockType, else BlockType+312; logs' top and side colours, beds from their block entity (update-block-states skill, probe_map_color.py, to_map_colors.py). Blocks missing have no colour.",
+ "tints": [
+  "none",
+  "default_foliage",
+  "birch_foliage",
+  "evergreen_foliage",
+  "dry_foliage",
+  "grass",
+  "water"
+ ],
+ "blocks": {
+  "minecraft:acacia_door": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_double_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_fence": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_fence_gate": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_hanging_sign": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_leaves": {
+   "colour": [
+    138,
+    138,
+    138,
+    255
+   ],
+   "tint": 1
+  },
+  "minecraft:acacia_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    216,
+    127,
+    51,
+    255
+   ],
+   "side": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:acacia_planks": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_pressure_plate": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_sapling": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:acacia_shelf": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_stairs": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_standing_sign": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_trapdoor": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_wall_sign": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:acacia_wood": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:allium": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:allow": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:amethyst_block": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:amethyst_cluster": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:ancient_debris": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:andesite": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:andesite_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:andesite_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:andesite_stairs": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:andesite_wall": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:anvil": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:azalea": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:azalea_leaves": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:azalea_leaves_flowered": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:azure_bluet": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:bamboo": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:bamboo_block": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_door": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_double_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_fence": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_fence_gate": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_hanging_sign": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_mosaic": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_mosaic_double_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_mosaic_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_mosaic_stairs": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_planks": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_pressure_plate": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_sapling": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:bamboo_shelf": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_stairs": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_standing_sign": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_trapdoor": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:bamboo_wall_sign": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:barrel": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:basalt": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:beacon": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:bed": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ],
+   "bed": true
+  },
+  "minecraft:bedrock": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:bee_nest": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:beehive": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:beetroot": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:bell": {
+   "colour": [
+    250,
+    238,
+    77,
+    255
+   ]
+  },
+  "minecraft:big_dripleaf": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:birch_door": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_double_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_fence": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_fence_gate": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_hanging_sign": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_leaves": {
+   "colour": [
+    138,
+    138,
+    138,
+    255
+   ],
+   "tint": 2
+  },
+  "minecraft:birch_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    247,
+    233,
+    163,
+    255
+   ],
+   "side": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:birch_planks": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_pressure_plate": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_sapling": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:birch_shelf": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_stairs": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_standing_sign": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_trapdoor": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_wall_sign": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:birch_wood": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:black_candle": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_carpet": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_concrete": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_concrete_double_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_concrete_powder": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_concrete_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_concrete_stairs": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_glazed_terracotta": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_shulker_box": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_stained_glass": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_terracotta": {
+   "colour": [
+    37,
+    22,
+    16,
+    255
+   ]
+  },
+  "minecraft:black_wool": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:black_wool_double_slab": {
+   "colour": [
+    29,
+    29,
+    33,
+    255
+   ]
+  },
+  "minecraft:black_wool_slab": {
+   "colour": [
+    29,
+    29,
+    33,
+    255
+   ]
+  },
+  "minecraft:black_wool_stairs": {
+   "colour": [
+    29,
+    29,
+    33,
+    255
+   ]
+  },
+  "minecraft:blackstone": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:blackstone_double_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:blackstone_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:blackstone_stairs": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:blackstone_wall": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:blast_furnace": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:blue_candle": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_carpet": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_concrete": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_concrete_double_slab": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_concrete_powder": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_concrete_slab": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_concrete_stairs": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_glazed_terracotta": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_ice": {
+   "colour": [
+    160,
+    160,
+    255,
+    255
+   ]
+  },
+  "minecraft:blue_orchid": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:blue_shulker_box": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_stained_glass": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_terracotta": {
+   "colour": [
+    76,
+    62,
+    92,
+    255
+   ]
+  },
+  "minecraft:blue_wool": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:blue_wool_double_slab": {
+   "colour": [
+    46,
+    56,
+    141,
+    255
+   ]
+  },
+  "minecraft:blue_wool_slab": {
+   "colour": [
+    46,
+    56,
+    141,
+    255
+   ]
+  },
+  "minecraft:blue_wool_stairs": {
+   "colour": [
+    46,
+    56,
+    141,
+    255
+   ]
+  },
+  "minecraft:bone_block": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:bookshelf": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:border_block": {
+   "colour": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  "minecraft:brain_coral": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:brain_coral_block": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:brain_coral_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:brain_coral_wall_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:brewing_stand": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:brick_block": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:brick_double_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:brick_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:brick_stairs": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:brick_wall": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_candle": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_carpet": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_concrete": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_concrete_double_slab": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_concrete_powder": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_concrete_slab": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_concrete_stairs": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_glazed_terracotta": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_mushroom": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_mushroom_block": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:brown_shulker_box": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_stained_glass": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_terracotta": {
+   "colour": [
+    76,
+    50,
+    35,
+    255
+   ]
+  },
+  "minecraft:brown_wool": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:brown_wool_double_slab": {
+   "colour": [
+    131,
+    84,
+    50,
+    255
+   ]
+  },
+  "minecraft:brown_wool_slab": {
+   "colour": [
+    131,
+    84,
+    50,
+    255
+   ]
+  },
+  "minecraft:brown_wool_stairs": {
+   "colour": [
+    131,
+    84,
+    50,
+    255
+   ]
+  },
+  "minecraft:bubble_column": {
+   "colour": [
+    64,
+    64,
+    255,
+    255
+   ]
+  },
+  "minecraft:bubble_coral": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:bubble_coral_block": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:bubble_coral_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:bubble_coral_wall_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:budding_amethyst": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:bush": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:cactus": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:cactus_flower": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:calcite": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:calibrated_sculk_sensor": {
+   "colour": [
+    13,
+    18,
+    23,
+    255
+   ]
+  },
+  "minecraft:camera": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:campfire": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:candle": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:carrots": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:cartography_table": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:carved_pumpkin": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:cauldron": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:cave_vines": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:cave_vines_body_with_berries": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:cave_vines_head_with_berries": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:chain_command_block": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:chalkboard": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:chemical_heat": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:cherry_door": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_double_slab": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_fence": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_fence_gate": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_hanging_sign": {
+   "colour": [
+    160,
+    77,
+    78,
+    255
+   ]
+  },
+  "minecraft:cherry_leaves": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:cherry_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    209,
+    177,
+    161,
+    255
+   ],
+   "side": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:cherry_planks": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_pressure_plate": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_sapling": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:cherry_shelf": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_slab": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_stairs": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_standing_sign": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_trapdoor": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_wall_sign": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:cherry_wood": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:chest": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:chipped_anvil": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:chiseled_bookshelf": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:chiseled_cinnabar": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:chiseled_copper": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:chiseled_deepslate": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:chiseled_nether_bricks": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:chiseled_polished_blackstone": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:chiseled_quartz_block": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:chiseled_red_sandstone": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:chiseled_resin_bricks": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:chiseled_sandstone": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:chiseled_stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:chiseled_sulfur": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:chiseled_tuff": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:chiseled_tuff_bricks": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:chorus_flower": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:chorus_plant": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:cinnabar": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_brick_double_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_brick_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_brick_stairs": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_brick_wall": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_bricks": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_double_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_stairs": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:cinnabar_wall": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:clay": {
+   "colour": [
+    164,
+    168,
+    184,
+    255
+   ]
+  },
+  "minecraft:closed_eyeblossom": {
+   "colour": [
+    76,
+    82,
+    42,
+    255
+   ]
+  },
+  "minecraft:coal_block": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:coal_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:coarse_dirt": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:cobbled_deepslate": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:cobbled_deepslate_double_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:cobbled_deepslate_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:cobbled_deepslate_stairs": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:cobbled_deepslate_wall": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:cobblestone": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:cobblestone_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:cobblestone_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:cobblestone_wall": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:cocoa": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:command_block": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:composter": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:compound_creator": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:conduit": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:copper_block": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:copper_bulb": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:copper_chest": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:copper_door": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:copper_golem_statue": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:copper_grate": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:copper_lantern": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:copper_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:cornflower": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:cracked_deepslate_bricks": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:cracked_deepslate_tiles": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:cracked_nether_bricks": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:cracked_polished_blackstone_bricks": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:cracked_stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:crafter": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:crafting_table": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:creaking_heart": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:crimson_door": {
+   "colour": [
+    148,
+    63,
+    97,
+    255
+   ]
+  },
+  "minecraft:crimson_double_slab": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_fence": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_fence_gate": {
+   "colour": [
+    148,
+    63,
+    97,
+    255
+   ]
+  },
+  "minecraft:crimson_fungus": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_hanging_sign": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_hyphae": {
+   "colour": [
+    92,
+    25,
+    29,
+    255
+   ]
+  },
+  "minecraft:crimson_nylium": {
+   "colour": [
+    189,
+    48,
+    49,
+    255
+   ]
+  },
+  "minecraft:crimson_planks": {
+   "colour": [
+    148,
+    63,
+    97,
+    255
+   ]
+  },
+  "minecraft:crimson_pressure_plate": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_roots": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_shelf": {
+   "colour": [
+    148,
+    63,
+    97,
+    255
+   ]
+  },
+  "minecraft:crimson_slab": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_stairs": {
+   "colour": [
+    148,
+    63,
+    97,
+    255
+   ]
+  },
+  "minecraft:crimson_standing_sign": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_stem": {
+   "colour": [
+    148,
+    63,
+    97,
+    255
+   ]
+  },
+  "minecraft:crimson_trapdoor": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crimson_wall_sign": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:crying_obsidian": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:cut_copper": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:cut_copper_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:cut_copper_stairs": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:cut_red_sandstone": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:cut_red_sandstone_double_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:cut_red_sandstone_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:cut_sandstone": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:cut_sandstone_double_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:cut_sandstone_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:cyan_candle": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_carpet": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_concrete": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_concrete_double_slab": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_concrete_powder": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_concrete_slab": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_concrete_stairs": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_glazed_terracotta": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_shulker_box": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_stained_glass": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_terracotta": {
+   "colour": [
+    87,
+    92,
+    92,
+    255
+   ]
+  },
+  "minecraft:cyan_wool": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:cyan_wool_double_slab": {
+   "colour": [
+    22,
+    156,
+    156,
+    255
+   ]
+  },
+  "minecraft:cyan_wool_slab": {
+   "colour": [
+    22,
+    156,
+    156,
+    255
+   ]
+  },
+  "minecraft:cyan_wool_stairs": {
+   "colour": [
+    22,
+    156,
+    156,
+    255
+   ]
+  },
+  "minecraft:damaged_anvil": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:dandelion": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:dark_oak_door": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_double_slab": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_fence": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_fence_gate": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_hanging_sign": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_leaves": {
+   "colour": [
+    138,
+    138,
+    138,
+    255
+   ],
+   "tint": 1
+  },
+  "minecraft:dark_oak_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    102,
+    76,
+    51,
+    255
+   ],
+   "side": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_planks": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_pressure_plate": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_sapling": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:dark_oak_shelf": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_slab": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_stairs": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_trapdoor": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_oak_wood": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:dark_prismarine": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:dark_prismarine_double_slab": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:dark_prismarine_slab": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:dark_prismarine_stairs": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:darkoak_standing_sign": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:darkoak_wall_sign": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:daylight_detector": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:daylight_detector_inverted": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:dead_brain_coral": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_brain_coral_block": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_brain_coral_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_brain_coral_wall_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_bubble_coral": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_bubble_coral_block": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_bubble_coral_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_bubble_coral_wall_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_fire_coral": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_fire_coral_block": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_fire_coral_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_fire_coral_wall_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_horn_coral": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_horn_coral_block": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_horn_coral_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_horn_coral_wall_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_tube_coral": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_tube_coral_block": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_tube_coral_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dead_tube_coral_wall_fan": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:deadbush": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:decorated_pot": {
+   "colour": [
+    142,
+    60,
+    46,
+    255
+   ]
+  },
+  "minecraft:deepslate": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_brick_double_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_brick_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_brick_stairs": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_brick_wall": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_bricks": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_coal_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_copper_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_diamond_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_emerald_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_gold_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_iron_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_lapis_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_redstone_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_tile_double_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_tile_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_tile_stairs": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_tile_wall": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deepslate_tiles": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:deny": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:deprecated_anvil": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:deprecated_purpur_block_1": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:deprecated_purpur_block_2": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:diamond_block": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:diamond_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:diorite": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:diorite_double_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:diorite_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:diorite_stairs": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:diorite_wall": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:dirt": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:dirt_with_roots": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:dispenser": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:double_cut_copper_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:dragon_egg": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:dried_ghast": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:dried_kelp_block": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:dripstone_block": {
+   "colour": [
+    76,
+    50,
+    35,
+    255
+   ]
+  },
+  "minecraft:dropper": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:element_constructor": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:emerald_block": {
+   "colour": [
+    0,
+    217,
+    58,
+    255
+   ]
+  },
+  "minecraft:emerald_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:enchanting_table": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:end_brick_stairs": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:end_bricks": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:end_gateway": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:end_portal": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:end_portal_frame": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:end_stone": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:end_stone_brick_double_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:end_stone_brick_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:end_stone_brick_wall": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:ender_chest": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:exposed_chiseled_copper": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper_bulb": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper_chest": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper_door": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper_golem_statue": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper_grate": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper_lantern": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:exposed_cut_copper": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_cut_copper_slab": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_cut_copper_stairs": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_double_cut_copper_slab": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:exposed_lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:farmland": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:fence_gate": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:fern": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:fire": {
+   "colour": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  "minecraft:fire_coral": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:fire_coral_block": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:fire_coral_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:fire_coral_wall_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:firefly_bush": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:fletching_table": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:flowering_azalea": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:flowing_lava": {
+   "colour": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  "minecraft:flowing_water": {
+   "colour": [
+    113,
+    132,
+    255,
+    255
+   ],
+   "tint": 6
+  },
+  "minecraft:frog_spawn": {
+   "colour": [
+    64,
+    64,
+    255,
+    255
+   ]
+  },
+  "minecraft:frosted_ice": {
+   "colour": [
+    160,
+    160,
+    255,
+    255
+   ]
+  },
+  "minecraft:furnace": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:gilded_blackstone": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:glow_lichen": {
+   "colour": [
+    127,
+    167,
+    150,
+    255
+   ]
+  },
+  "minecraft:glowingobsidian": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:glowstone": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:gold_block": {
+   "colour": [
+    250,
+    238,
+    77,
+    255
+   ]
+  },
+  "minecraft:gold_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:golden_dandelion": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:granite": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:granite_double_slab": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:granite_slab": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:granite_stairs": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:granite_wall": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:grass_block": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:grass_path": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:gravel": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:gray_candle": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_carpet": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_concrete": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_concrete_double_slab": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_concrete_powder": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_concrete_slab": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_concrete_stairs": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_glazed_terracotta": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_shulker_box": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_stained_glass": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_terracotta": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:gray_wool": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:gray_wool_double_slab": {
+   "colour": [
+    71,
+    79,
+    82,
+    255
+   ]
+  },
+  "minecraft:gray_wool_slab": {
+   "colour": [
+    71,
+    79,
+    82,
+    255
+   ]
+  },
+  "minecraft:gray_wool_stairs": {
+   "colour": [
+    71,
+    79,
+    82,
+    255
+   ]
+  },
+  "minecraft:green_candle": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_carpet": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_concrete": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_concrete_double_slab": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_concrete_powder": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_concrete_slab": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_concrete_stairs": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_glazed_terracotta": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_shulker_box": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_stained_glass": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_terracotta": {
+   "colour": [
+    76,
+    82,
+    42,
+    255
+   ]
+  },
+  "minecraft:green_wool": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:green_wool_double_slab": {
+   "colour": [
+    94,
+    124,
+    22,
+    255
+   ]
+  },
+  "minecraft:green_wool_slab": {
+   "colour": [
+    94,
+    124,
+    22,
+    255
+   ]
+  },
+  "minecraft:green_wool_stairs": {
+   "colour": [
+    94,
+    124,
+    22,
+    255
+   ]
+  },
+  "minecraft:grindstone": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:hanging_roots": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:hard_black_stained_glass": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:hard_blue_stained_glass": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:hard_brown_stained_glass": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:hard_cyan_stained_glass": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:hard_gray_stained_glass": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:hard_green_stained_glass": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:hard_light_blue_stained_glass": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:hard_light_gray_stained_glass": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:hard_lime_stained_glass": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:hard_magenta_stained_glass": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:hard_orange_stained_glass": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:hard_pink_stained_glass": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:hard_purple_stained_glass": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:hard_red_stained_glass": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:hard_white_stained_glass": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:hard_yellow_stained_glass": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:hardened_clay": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:hay_block": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:heavy_core": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:heavy_weighted_pressure_plate": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:honey_block": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:honeycomb_block": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:hopper": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:horn_coral": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:horn_coral_block": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:horn_coral_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:horn_coral_wall_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:ice": {
+   "colour": [
+    160,
+    160,
+    255,
+    255
+   ]
+  },
+  "minecraft:ice_crystal": {
+   "colour": [
+    160,
+    160,
+    255,
+    255
+   ]
+  },
+  "minecraft:infested_chiseled_stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:infested_cobblestone": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:infested_cracked_stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:infested_deepslate": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:infested_mossy_stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:infested_stone": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:infested_stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:info_update": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:info_update2": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:iron_block": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:iron_door": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:iron_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:iron_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:jigsaw": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:jukebox": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_door": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_double_slab": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_fence": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_fence_gate": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_hanging_sign": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_leaves": {
+   "colour": [
+    138,
+    138,
+    138,
+    255
+   ],
+   "tint": 1
+  },
+  "minecraft:jungle_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    151,
+    109,
+    77,
+    255
+   ],
+   "side": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:jungle_planks": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_pressure_plate": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_sapling": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:jungle_shelf": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_slab": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_stairs": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_standing_sign": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_trapdoor": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_wall_sign": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:jungle_wood": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:kelp": {
+   "colour": [
+    64,
+    64,
+    255,
+    255
+   ]
+  },
+  "minecraft:lab_table": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:lantern": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:lapis_block": {
+   "colour": [
+    74,
+    128,
+    255,
+    255
+   ]
+  },
+  "minecraft:lapis_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:large_amethyst_bud": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:large_fern": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:lava": {
+   "colour": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  "minecraft:leaf_litter": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:lectern": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:light_blue_candle": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_carpet": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_concrete": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_concrete_double_slab": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_concrete_powder": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_concrete_slab": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_concrete_stairs": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_glazed_terracotta": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_shulker_box": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_stained_glass": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_terracotta": {
+   "colour": [
+    112,
+    108,
+    138,
+    255
+   ]
+  },
+  "minecraft:light_blue_wool": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:light_blue_wool_double_slab": {
+   "colour": [
+    58,
+    179,
+    218,
+    255
+   ]
+  },
+  "minecraft:light_blue_wool_slab": {
+   "colour": [
+    58,
+    179,
+    218,
+    255
+   ]
+  },
+  "minecraft:light_blue_wool_stairs": {
+   "colour": [
+    58,
+    179,
+    218,
+    255
+   ]
+  },
+  "minecraft:light_gray_candle": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_carpet": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_concrete": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_concrete_double_slab": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_concrete_powder": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_concrete_slab": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_concrete_stairs": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_shulker_box": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_stained_glass": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_terracotta": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:light_gray_wool": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:light_gray_wool_double_slab": {
+   "colour": [
+    157,
+    157,
+    151,
+    255
+   ]
+  },
+  "minecraft:light_gray_wool_slab": {
+   "colour": [
+    157,
+    157,
+    151,
+    255
+   ]
+  },
+  "minecraft:light_gray_wool_stairs": {
+   "colour": [
+    157,
+    157,
+    151,
+    255
+   ]
+  },
+  "minecraft:light_weighted_pressure_plate": {
+   "colour": [
+    250,
+    238,
+    77,
+    255
+   ]
+  },
+  "minecraft:lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:lilac": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:lily_of_the_valley": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:lime_candle": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_carpet": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_concrete": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_concrete_double_slab": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_concrete_powder": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_concrete_slab": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_concrete_stairs": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_glazed_terracotta": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_shulker_box": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_stained_glass": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_terracotta": {
+   "colour": [
+    103,
+    117,
+    53,
+    255
+   ]
+  },
+  "minecraft:lime_wool": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:lime_wool_double_slab": {
+   "colour": [
+    128,
+    199,
+    31,
+    255
+   ]
+  },
+  "minecraft:lime_wool_slab": {
+   "colour": [
+    128,
+    199,
+    31,
+    255
+   ]
+  },
+  "minecraft:lime_wool_stairs": {
+   "colour": [
+    128,
+    199,
+    31,
+    255
+   ]
+  },
+  "minecraft:lit_blast_furnace": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:lit_deepslate_redstone_ore": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:lit_furnace": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:lit_pumpkin": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:lit_redstone_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:lit_smoker": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:lodestone": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:loom": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:magenta_candle": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_carpet": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_concrete": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_concrete_double_slab": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_concrete_powder": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_concrete_slab": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_concrete_stairs": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_glazed_terracotta": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_shulker_box": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_stained_glass": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_terracotta": {
+   "colour": [
+    149,
+    87,
+    108,
+    255
+   ]
+  },
+  "minecraft:magenta_wool": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:magenta_wool_double_slab": {
+   "colour": [
+    199,
+    78,
+    189,
+    255
+   ]
+  },
+  "minecraft:magenta_wool_slab": {
+   "colour": [
+    199,
+    78,
+    189,
+    255
+   ]
+  },
+  "minecraft:magenta_wool_stairs": {
+   "colour": [
+    199,
+    78,
+    189,
+    255
+   ]
+  },
+  "minecraft:magma": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:mangrove_door": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_double_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_fence": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_fence_gate": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_hanging_sign": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_leaves": {
+   "colour": [
+    138,
+    138,
+    138,
+    255
+   ],
+   "tint": 1
+  },
+  "minecraft:mangrove_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    153,
+    51,
+    51,
+    255
+   ],
+   "side": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:mangrove_planks": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_pressure_plate": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_propagule": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:mangrove_roots": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:mangrove_shelf": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:mangrove_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_stairs": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_standing_sign": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_trapdoor": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_wall_sign": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:mangrove_wood": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:material_reducer": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:medium_amethyst_bud": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:melon_block": {
+   "colour": [
+    127,
+    204,
+    25,
+    255
+   ]
+  },
+  "minecraft:melon_stem": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:mob_spawner": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:moss_block": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:moss_carpet": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:mossy_cobblestone": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_cobblestone_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_cobblestone_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_cobblestone_stairs": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_cobblestone_wall": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_stone_brick_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_stone_brick_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_stone_brick_stairs": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_stone_brick_wall": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mossy_stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:moving_block": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:mud": {
+   "colour": [
+    87,
+    92,
+    92,
+    255
+   ]
+  },
+  "minecraft:mud_brick_double_slab": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:mud_brick_slab": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:mud_brick_stairs": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:mud_brick_wall": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:mud_bricks": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:muddy_mangrove_roots": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:mushroom_stem": {
+   "colour": [
+    199,
+    199,
+    199,
+    255
+   ]
+  },
+  "minecraft:mycelium": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:nether_brick": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:nether_brick_double_slab": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:nether_brick_fence": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:nether_brick_slab": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:nether_brick_stairs": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:nether_brick_wall": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:nether_gold_ore": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:nether_sprouts": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:nether_wart": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:nether_wart_block": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:netherite_block": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:netherrack": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:netherreactor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:normal_stone_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:normal_stone_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:normal_stone_stairs": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:noteblock": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_double_slab": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_fence": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_hanging_sign": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_leaves": {
+   "colour": [
+    138,
+    138,
+    138,
+    255
+   ],
+   "tint": 1
+  },
+  "minecraft:oak_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    143,
+    119,
+    72,
+    255
+   ],
+   "side": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:oak_planks": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_sapling": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:oak_shelf": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_slab": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_stairs": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:oak_wood": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:observer": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:obsidian": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:ochre_froglight": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:open_eyeblossom": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_candle": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_carpet": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_concrete": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_concrete_double_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_concrete_powder": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_concrete_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_concrete_stairs": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_glazed_terracotta": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_poplar_leaves": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_shulker_box": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_stained_glass": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_terracotta": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:orange_tulip": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:orange_wool": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:orange_wool_double_slab": {
+   "colour": [
+    249,
+    128,
+    29,
+    255
+   ]
+  },
+  "minecraft:orange_wool_slab": {
+   "colour": [
+    249,
+    128,
+    29,
+    255
+   ]
+  },
+  "minecraft:orange_wool_stairs": {
+   "colour": [
+    249,
+    128,
+    29,
+    255
+   ]
+  },
+  "minecraft:oxeye_daisy": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:oxidized_chiseled_copper": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper_bulb": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper_chest": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper_door": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper_golem_statue": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper_grate": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper_lantern": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:oxidized_cut_copper": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_cut_copper_slab": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_cut_copper_stairs": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_double_cut_copper_slab": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:oxidized_lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:packed_ice": {
+   "colour": [
+    160,
+    160,
+    255,
+    255
+   ]
+  },
+  "minecraft:packed_mud": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:pale_hanging_moss": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:pale_moss_block": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:pale_moss_carpet": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:pale_oak_door": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_double_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_fence": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_fence_gate": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_hanging_sign": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_leaves": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:pale_oak_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    255,
+    252,
+    245,
+    255
+   ],
+   "side": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:pale_oak_planks": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_pressure_plate": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_sapling": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:pale_oak_shelf": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_stairs": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_standing_sign": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_trapdoor": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_wall_sign": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:pale_oak_wood": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:pearlescent_froglight": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:peony": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:petrified_oak_double_slab": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:petrified_oak_slab": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:pink_candle": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_carpet": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_concrete": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_concrete_double_slab": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_concrete_powder": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_concrete_slab": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_concrete_stairs": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_glazed_terracotta": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_shulker_box": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_stained_glass": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_terracotta": {
+   "colour": [
+    160,
+    77,
+    78,
+    255
+   ]
+  },
+  "minecraft:pink_tulip": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:pink_wool": {
+   "colour": [
+    242,
+    127,
+    165,
+    255
+   ]
+  },
+  "minecraft:pink_wool_double_slab": {
+   "colour": [
+    243,
+    139,
+    170,
+    255
+   ]
+  },
+  "minecraft:pink_wool_slab": {
+   "colour": [
+    243,
+    139,
+    170,
+    255
+   ]
+  },
+  "minecraft:pink_wool_stairs": {
+   "colour": [
+    243,
+    139,
+    170,
+    255
+   ]
+  },
+  "minecraft:piston": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:piston_arm_collision": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:pitcher_crop": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:pitcher_plant": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:podzol": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:polished_andesite": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:polished_andesite_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:polished_andesite_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:polished_andesite_stairs": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:polished_basalt": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_brick_double_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_brick_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_brick_stairs": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_brick_wall": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_bricks": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_double_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_pressure_plate": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_slab": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_stairs": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_blackstone_wall": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:polished_cinnabar": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_cinnabar_double_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_cinnabar_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_cinnabar_stairs": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_cinnabar_wall": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_deepslate": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:polished_deepslate_double_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:polished_deepslate_slab": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:polished_deepslate_stairs": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:polished_deepslate_wall": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:polished_diorite": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:polished_diorite_double_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:polished_diorite_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:polished_diorite_stairs": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:polished_granite": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:polished_granite_double_slab": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:polished_granite_slab": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:polished_granite_stairs": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:polished_sulfur": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_sulfur_double_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_sulfur_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_sulfur_stairs": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_sulfur_wall": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:polished_tuff": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:polished_tuff_double_slab": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:polished_tuff_slab": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:polished_tuff_stairs": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:polished_tuff_wall": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:poplar_door": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_double_slab": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_fence": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_fence_gate": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_hanging_sign": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    153,
+    153,
+    153,
+    255
+   ],
+   "side": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_planks": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_pressure_plate": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_sapling": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:poplar_shelf": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_slab": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_stairs": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_standing_sign": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_trapdoor": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_wall_sign": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:poplar_wood": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:poppy": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:potatoes": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:potent_sulfur": {
+   "colour": [
+    250,
+    238,
+    77,
+    255
+   ]
+  },
+  "minecraft:powder_snow": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:prismarine": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:prismarine_brick_double_slab": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:prismarine_brick_slab": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:prismarine_bricks": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:prismarine_bricks_stairs": {
+   "colour": [
+    92,
+    219,
+    213,
+    255
+   ]
+  },
+  "minecraft:prismarine_double_slab": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:prismarine_slab": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:prismarine_stairs": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:prismarine_wall": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:pumpkin": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:pumpkin_stem": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:purple_candle": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_carpet": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_concrete": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_concrete_double_slab": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_concrete_powder": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_concrete_slab": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_concrete_stairs": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_glazed_terracotta": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_shulker_box": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_stained_glass": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_terracotta": {
+   "colour": [
+    122,
+    73,
+    88,
+    255
+   ]
+  },
+  "minecraft:purple_wool": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:purple_wool_double_slab": {
+   "colour": [
+    137,
+    50,
+    184,
+    255
+   ]
+  },
+  "minecraft:purple_wool_slab": {
+   "colour": [
+    137,
+    50,
+    184,
+    255
+   ]
+  },
+  "minecraft:purple_wool_stairs": {
+   "colour": [
+    137,
+    50,
+    184,
+    255
+   ]
+  },
+  "minecraft:purpur_block": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:purpur_double_slab": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:purpur_pillar": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:purpur_slab": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:purpur_stairs": {
+   "colour": [
+    178,
+    76,
+    216,
+    255
+   ]
+  },
+  "minecraft:quartz_block": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:quartz_bricks": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:quartz_double_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:quartz_ore": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:quartz_pillar": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:quartz_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:quartz_stairs": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:raw_copper_block": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:raw_gold_block": {
+   "colour": [
+    250,
+    238,
+    77,
+    255
+   ]
+  },
+  "minecraft:raw_iron_block": {
+   "colour": [
+    216,
+    175,
+    147,
+    255
+   ]
+  },
+  "minecraft:red_candle": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_carpet": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_concrete": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_concrete_double_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_concrete_powder": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_concrete_slab": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_concrete_stairs": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_glazed_terracotta": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_mushroom": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_mushroom_block": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_nether_brick": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:red_nether_brick_double_slab": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:red_nether_brick_slab": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:red_nether_brick_stairs": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:red_nether_brick_wall": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:red_poplar_leaves": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_sand": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_sandstone": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_sandstone_double_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_sandstone_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_sandstone_stairs": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_sandstone_wall": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_shrub": {
+   "colour": [
+    189,
+    48,
+    49,
+    255
+   ]
+  },
+  "minecraft:red_shulker_box": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_stained_glass": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_terracotta": {
+   "colour": [
+    142,
+    60,
+    46,
+    255
+   ]
+  },
+  "minecraft:red_tulip": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:red_wool": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:red_wool_double_slab": {
+   "colour": [
+    160,
+    39,
+    34,
+    255
+   ]
+  },
+  "minecraft:red_wool_slab": {
+   "colour": [
+    160,
+    39,
+    34,
+    255
+   ]
+  },
+  "minecraft:red_wool_stairs": {
+   "colour": [
+    160,
+    39,
+    34,
+    255
+   ]
+  },
+  "minecraft:redstone_block": {
+   "colour": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  "minecraft:redstone_ore": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:reeds": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:reinforced_deepslate": {
+   "colour": [
+    100,
+    100,
+    100,
+    255
+   ]
+  },
+  "minecraft:repeating_command_block": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:reserved6": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:resin_block": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:resin_brick_double_slab": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:resin_brick_slab": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:resin_brick_stairs": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:resin_brick_wall": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:resin_bricks": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:resin_clump": {
+   "colour": [
+    159,
+    82,
+    36,
+    255
+   ]
+  },
+  "minecraft:respawn_anchor": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:rose_bush": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:sand": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:sandstone": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:sandstone_double_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:sandstone_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:sandstone_stairs": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:sandstone_wall": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:scaffolding": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:sculk": {
+   "colour": [
+    13,
+    18,
+    23,
+    255
+   ]
+  },
+  "minecraft:sculk_catalyst": {
+   "colour": [
+    13,
+    18,
+    23,
+    255
+   ]
+  },
+  "minecraft:sculk_sensor": {
+   "colour": [
+    13,
+    18,
+    23,
+    255
+   ]
+  },
+  "minecraft:sculk_shrieker": {
+   "colour": [
+    13,
+    18,
+    23,
+    255
+   ]
+  },
+  "minecraft:sculk_vein": {
+   "colour": [
+    13,
+    18,
+    23,
+    255
+   ]
+  },
+  "minecraft:sea_lantern": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:sea_pickle": {
+   "colour": [
+    102,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:seagrass": {
+   "colour": [
+    64,
+    64,
+    255,
+    255
+   ]
+  },
+  "minecraft:shelf_mushroom": {
+   "colour": [
+    186,
+    133,
+    36,
+    255
+   ]
+  },
+  "minecraft:short_dry_grass": {
+   "colour": [
+    255,
+    255,
+    0,
+    255
+   ]
+  },
+  "minecraft:short_grass": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:shroomlight": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:silver_glazed_terracotta": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:slime": {
+   "colour": [
+    127,
+    178,
+    56,
+    255
+   ]
+  },
+  "minecraft:small_amethyst_bud": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:small_dripleaf_block": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:smithing_table": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:smoker": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:smooth_basalt": {
+   "colour": [
+    25,
+    25,
+    25,
+    255
+   ]
+  },
+  "minecraft:smooth_quartz": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:smooth_quartz_double_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:smooth_quartz_slab": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:smooth_quartz_stairs": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:smooth_red_sandstone": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:smooth_red_sandstone_double_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:smooth_red_sandstone_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:smooth_red_sandstone_stairs": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:smooth_sandstone": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:smooth_sandstone_double_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:smooth_sandstone_slab": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:smooth_sandstone_stairs": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:smooth_stone": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:smooth_stone_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:smooth_stone_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:sniffer_egg": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:snow": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:snow_layer": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:soul_campfire": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:soul_fire": {
+   "colour": [
+    102,
+    153,
+    216,
+    255
+   ]
+  },
+  "minecraft:soul_lantern": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:soul_sand": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:soul_soil": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:sponge": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:spore_blossom": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:spruce_door": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_double_slab": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_fence": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_fence_gate": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_hanging_sign": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_leaves": {
+   "colour": [
+    138,
+    138,
+    138,
+    255
+   ],
+   "tint": 3
+  },
+  "minecraft:spruce_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    129,
+    86,
+    49,
+    255
+   ],
+   "side": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:spruce_planks": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_pressure_plate": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_sapling": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:spruce_shelf": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_slab": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_stairs": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_standing_sign": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_trapdoor": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_wall_sign": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:spruce_wood": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:standing_banner": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:standing_sign": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:sticky_piston": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:sticky_piston_arm_collision": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone_brick_double_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone_brick_slab": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone_brick_stairs": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone_brick_wall": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone_bricks": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone_pressure_plate": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stone_stairs": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stonecutter": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:stonecutter_block": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:straw_bed": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:stripped_acacia_log": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:stripped_acacia_wood": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:stripped_bamboo_block": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:stripped_birch_log": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:stripped_birch_wood": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:stripped_cherry_log": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ],
+   "top": [
+    209,
+    177,
+    161,
+    255
+   ],
+   "side": [
+    160,
+    77,
+    78,
+    255
+   ]
+  },
+  "minecraft:stripped_cherry_wood": {
+   "colour": [
+    160,
+    77,
+    78,
+    255
+   ]
+  },
+  "minecraft:stripped_crimson_hyphae": {
+   "colour": [
+    92,
+    25,
+    29,
+    255
+   ]
+  },
+  "minecraft:stripped_crimson_stem": {
+   "colour": [
+    148,
+    63,
+    97,
+    255
+   ]
+  },
+  "minecraft:stripped_dark_oak_log": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:stripped_dark_oak_wood": {
+   "colour": [
+    102,
+    76,
+    51,
+    255
+   ]
+  },
+  "minecraft:stripped_jungle_log": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:stripped_jungle_wood": {
+   "colour": [
+    151,
+    109,
+    77,
+    255
+   ]
+  },
+  "minecraft:stripped_mangrove_log": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:stripped_mangrove_wood": {
+   "colour": [
+    153,
+    51,
+    51,
+    255
+   ]
+  },
+  "minecraft:stripped_oak_log": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:stripped_oak_wood": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:stripped_pale_oak_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    255,
+    252,
+    245,
+    255
+   ],
+   "side": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:stripped_pale_oak_wood": {
+   "colour": [
+    255,
+    252,
+    245,
+    255
+   ]
+  },
+  "minecraft:stripped_poplar_log": {
+   "colour": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "top": [
+    153,
+    153,
+    153,
+    255
+   ],
+   "side": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:stripped_poplar_wood": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:stripped_spruce_log": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:stripped_spruce_wood": {
+   "colour": [
+    129,
+    86,
+    49,
+    255
+   ]
+  },
+  "minecraft:stripped_warped_hyphae": {
+   "colour": [
+    86,
+    44,
+    62,
+    255
+   ]
+  },
+  "minecraft:stripped_warped_stem": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:structure_block": {
+   "colour": [
+    153,
+    153,
+    153,
+    255
+   ]
+  },
+  "minecraft:sulfur": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_brick_double_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_brick_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_brick_stairs": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_brick_wall": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_bricks": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_double_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_stairs": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sulfur_wall": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:sunflower": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:suspicious_gravel": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:suspicious_sand": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:sweet_berry_bush": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:tall_dry_grass": {
+   "colour": [
+    255,
+    255,
+    0,
+    255
+   ]
+  },
+  "minecraft:tall_grass": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:target": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:tinted_glass": {
+   "colour": [
+    76,
+    76,
+    76,
+    255
+   ]
+  },
+  "minecraft:tnt": {
+   "colour": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  "minecraft:torchflower": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:torchflower_crop": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:trapdoor": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:trapped_chest": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:trial_spawner": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:tube_coral": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:tube_coral_block": {
+   "colour": [
+    51,
+    76,
+    178,
+    255
+   ]
+  },
+  "minecraft:tube_coral_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:tube_coral_wall_fan": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ],
+   "tint": 5
+  },
+  "minecraft:tuff": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_brick_double_slab": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_brick_slab": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_brick_stairs": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_brick_wall": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_bricks": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_double_slab": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_slab": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_stairs": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:tuff_wall": {
+   "colour": [
+    57,
+    41,
+    35,
+    255
+   ]
+  },
+  "minecraft:turtle_egg": {
+   "colour": [
+    247,
+    233,
+    163,
+    255
+   ]
+  },
+  "minecraft:twisting_vines": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:underwater_tnt": {
+   "colour": [
+    255,
+    0,
+    0,
+    255
+   ]
+  },
+  "minecraft:undyed_shulker_box": {
+   "colour": [
+    153,
+    90,
+    205,
+    255
+   ]
+  },
+  "minecraft:vault": {
+   "colour": [
+    112,
+    112,
+    112,
+    255
+   ]
+  },
+  "minecraft:verdant_froglight": {
+   "colour": [
+    127,
+    167,
+    150,
+    255
+   ]
+  },
+  "minecraft:vine": {
+   "colour": [
+    170,
+    170,
+    170,
+    255
+   ],
+   "tint": 1
+  },
+  "minecraft:wall_banner": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:wall_sign": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:warped_door": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:warped_double_slab": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_fence": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_fence_gate": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:warped_fungus": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_hanging_sign": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_hyphae": {
+   "colour": [
+    86,
+    44,
+    62,
+    255
+   ]
+  },
+  "minecraft:warped_nylium": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:warped_planks": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:warped_pressure_plate": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_roots": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_shelf": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:warped_slab": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_stairs": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:warped_standing_sign": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_stem": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:warped_trapdoor": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_wall_sign": {
+   "colour": [
+    76,
+    127,
+    153,
+    255
+   ]
+  },
+  "minecraft:warped_wart_block": {
+   "colour": [
+    20,
+    180,
+    133,
+    255
+   ]
+  },
+  "minecraft:water": {
+   "colour": [
+    113,
+    132,
+    255,
+    255
+   ],
+   "tint": 6
+  },
+  "minecraft:waterlily": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:waxed_chiseled_copper": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper_bulb": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper_chest": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper_door": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper_golem_statue": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper_grate": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper_lantern": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:waxed_cut_copper": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_cut_copper_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_cut_copper_stairs": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_double_cut_copper_slab": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_chiseled_copper": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper_bulb": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper_chest": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper_door": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper_golem_statue": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper_grate": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper_lantern": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_cut_copper": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_cut_copper_slab": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_cut_copper_stairs": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_double_cut_copper_slab": {
+   "colour": [
+    135,
+    107,
+    98,
+    255
+   ]
+  },
+  "minecraft:waxed_exposed_lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_chiseled_copper": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_bulb": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_chest": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_door": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_golem_statue": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_grate": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_lantern": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_cut_copper": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_cut_copper_slab": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_cut_copper_stairs": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_double_cut_copper_slab": {
+   "colour": [
+    22,
+    126,
+    134,
+    255
+   ]
+  },
+  "minecraft:waxed_oxidized_lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_chiseled_copper": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper_bulb": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper_chest": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper_door": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper_golem_statue": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper_grate": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper_lantern": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_cut_copper": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_cut_copper_slab": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_cut_copper_stairs": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_double_cut_copper_slab": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:waxed_weathered_lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:weathered_chiseled_copper": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper_bulb": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper_chest": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper_door": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper_golem_statue": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper_grate": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper_lantern": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_copper_trapdoor": {
+   "colour": [
+    167,
+    167,
+    167,
+    255
+   ]
+  },
+  "minecraft:weathered_cut_copper": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_cut_copper_slab": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_cut_copper_stairs": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_double_cut_copper_slab": {
+   "colour": [
+    58,
+    142,
+    140,
+    255
+   ]
+  },
+  "minecraft:weathered_lightning_rod": {
+   "colour": [
+    216,
+    127,
+    51,
+    255
+   ]
+  },
+  "minecraft:web": {
+   "colour": [
+    199,
+    199,
+    199,
+    255
+   ]
+  },
+  "minecraft:weeping_vines": {
+   "colour": [
+    112,
+    2,
+    0,
+    255
+   ]
+  },
+  "minecraft:wet_sponge": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:wheat": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:white_candle": {
+   "colour": [
+    199,
+    199,
+    199,
+    255
+   ]
+  },
+  "minecraft:white_carpet": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_concrete": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_concrete_double_slab": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_concrete_powder": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_concrete_slab": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_concrete_stairs": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_glazed_terracotta": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_shulker_box": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_stained_glass": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_terracotta": {
+   "colour": [
+    209,
+    177,
+    161,
+    255
+   ]
+  },
+  "minecraft:white_tulip": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:white_wool": {
+   "colour": [
+    255,
+    255,
+    255,
+    255
+   ]
+  },
+  "minecraft:white_wool_double_slab": {
+   "colour": [
+    233,
+    236,
+    236,
+    255
+   ]
+  },
+  "minecraft:white_wool_slab": {
+   "colour": [
+    233,
+    236,
+    236,
+    255
+   ]
+  },
+  "minecraft:white_wool_stairs": {
+   "colour": [
+    233,
+    236,
+    236,
+    255
+   ]
+  },
+  "minecraft:wildflowers": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:wither_rose": {
+   "colour": [
+    0,
+    124,
+    0,
+    255
+   ]
+  },
+  "minecraft:wooden_door": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:wooden_pressure_plate": {
+   "colour": [
+    143,
+    119,
+    72,
+    255
+   ]
+  },
+  "minecraft:yellow_candle": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_carpet": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_concrete": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_concrete_double_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_concrete_powder": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_concrete_slab": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_concrete_stairs": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_glazed_terracotta": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_poplar_leaves": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_shulker_box": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_stained_glass": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_terracotta": {
+   "colour": [
+    186,
+    133,
+    36,
+    255
+   ]
+  },
+  "minecraft:yellow_wool": {
+   "colour": [
+    229,
+    229,
+    51,
+    255
+   ]
+  },
+  "minecraft:yellow_wool_double_slab": {
+   "colour": [
+    254,
+    216,
+    61,
+    255
+   ]
+  },
+  "minecraft:yellow_wool_slab": {
+   "colour": [
+    254,
+    216,
+    61,
+    255
+   ]
+  },
+  "minecraft:yellow_wool_stairs": {
+   "colour": [
+    254,
+    216,
+    61,
+    255
+   ]
+  }
+ }
+}
