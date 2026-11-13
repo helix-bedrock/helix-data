@@ -22,3 +22,21 @@ func SolidBlocks() ([]string, error) {
 	}
 	return doc.Solid, nil
 }
+
+//go:embed files/bds/suffocating.json
+var blockSuffocating []byte
+
+// SuffocatingBlocks returns the block types BDS's breathing check calls solid: a mob or
+// player whose breathing point is inside one has no air. They are the SolidBlocks less those
+// whose block type lacks two more of BDS's flags (camera, jigsaw, structure block, honey
+// block, the client request placeholder). Glass, ice, leaves, slabs and stairs are not among
+// them. Each call decodes a fresh copy.
+func SuffocatingBlocks() ([]string, error) {
+	var doc struct {
+		Suffocating []string `json:"suffocating"`
+	}
+	if err := json.Unmarshal(blockSuffocating, &doc); err != nil {
+		return nil, fmt.Errorf("data: suffocating blocks: %w", err)
+	}
+	return doc.Suffocating, nil
+}
