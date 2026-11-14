@@ -14257,6 +14257,14 @@
     ]
   },
   {
+    "name": "minecraft:written_book",
+    "maxStack": 16,
+    "tags": [
+      "minecraft:bookshelf_books",
+      "minecraft:lectern_books"
+    ]
+  },
+  {
     "name": "minecraft:yellow_bundle",
     "maxStack": 1,
     "components": [

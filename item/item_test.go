@@ -15,7 +15,8 @@ func TestFromLogRoundTrip(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if len(items) != 2 || items[0].Name != "minecraft:bed" || items[1].MaxStack != 64 {
+	// The pinned written book is added: the Script API cannot make one.
+	if len(items) != 3 || items[2].Name != "minecraft:written_book" || items[2].MaxStack != 16 || items[0].Name != "minecraft:bed" || items[1].MaxStack != 64 {
 		t.Fatalf("got %+v", items)
 	}
 	var buf bytes.Buffer
@@ -23,7 +24,7 @@ func TestFromLogRoundTrip(t *testing.T) {
 		t.Fatal(err)
 	}
 	back, err := ReadJSON(&buf)
-	if err != nil || len(back) != 2 || back[0].Name != items[0].Name || back[1].Tags[0] != "a" || back[1].Components[0] != "b" {
+	if err != nil || len(back) != 3 || back[0].Name != items[0].Name || back[1].Tags[0] != "a" || back[1].Components[0] != "b" {
 		t.Fatalf("round trip: %+v, %v", back, err)
 	}
 }

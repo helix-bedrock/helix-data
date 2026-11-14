@@ -59,8 +59,27 @@ func FromLog(r io.Reader) ([]Item, error) {
 	if len(items) == 0 {
 		return nil, fmt.Errorf("item: no %q lines in the log", strings.TrimSpace(logPrefix))
 	}
+	return AddPinned(items), nil
+}
+
+// pinned are items the Script API cannot make an ItemStack of, so the add-on prints no
+// line for them, with their values read from BDS 1.26.60 instead.
+var pinned = []Item{
+	// WrittenBookItem: its constructor sets the max stack size to 16 (byte +0x88, 0xC681ECD)
+	// and adds minecraft:lectern_books; registerItems adds minecraft:bookshelf_books
+	// (0xC67F50D). The book and quill's constructor beside it sets 1, as its dump line says.
+	{Name: "minecraft:written_book", MaxStack: 16, Tags: []string{"minecraft:bookshelf_books", "minecraft:lectern_books"}},
+}
+
+// AddPinned adds the pinned items missing from items and sorts them by name.
+func AddPinned(items []Item) []Item {
+	for _, p := range pinned {
+		if !slices.ContainsFunc(items, func(it Item) bool { return it.Name == p.Name }) {
+			items = append(items, p)
+		}
+	}
 	slices.SortFunc(items, func(a, b Item) int { return strings.Compare(a.Name, b.Name) })
-	return items, nil
+	return items
 }
 
 // WriteJSON writes items as an indented JSON array.

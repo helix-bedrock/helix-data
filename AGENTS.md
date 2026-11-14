@@ -30,7 +30,7 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
 ## Layout
 
 - `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures and print every item type with its stack size.
-- `item/`: reads the item lines of the BDS console log and writes and reads `items.json`.
+- `item/`: reads the item lines of the BDS console log and writes and reads `items.json`. Items the Script API cannot make (the written book) are `pinned` there with their values read from BDS in IDA.
 - `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
 - `brarchive/`: reads the `.brarchive` files BDS packs behaviour pack folders into.
 - `pack/`: stacks BDS's vanilla behaviour packs (`vanilla`, then `vanilla_<version>` oldest first, over `definitions/`) the way BDS does, unpacking their archives.
