@@ -1,0 +1,9072 @@
+{
+ "source": "AvailableCommands packet BDS 1.26.60.6 sent to an operator on join, read at runtime",
+ "version": "1.26.60.6",
+ "commands": [
+  {
+   "name": "aimassist",
+   "description": "commands.aimassist.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "AimAssistActionSet"
+      },
+      {
+       "name": "x angle",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "y angle",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "max distance",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "target mode",
+       "type": "enum",
+       "enum": "AimAssistTargetMode",
+       "optional": true
+      },
+      {
+       "name": "preset id",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "clear",
+       "type": "enum",
+       "enum": "AimAssistActionClear"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "allowlist",
+   "description": "commands.allowlist.description",
+   "permission": 4,
+   "alias_enum": "allowlistCommandAliases",
+   "aliases": [
+    "allowlist",
+    "whitelist"
+   ],
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "AllowListAction"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "camera",
+   "description": "commands.camera.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtEntity",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtPosition",
+       "type": "position",
+       "id": 65
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtEntity",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtPosition",
+       "type": "position",
+       "id": 65
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "default",
+       "type": "enum",
+       "enum": "default",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtEntity",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtPosition",
+       "type": "position",
+       "id": 65
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "attach_to_entity",
+       "type": "enum",
+       "enum": "attach_to_entity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "detach_from_entity",
+       "type": "enum",
+       "enum": "detach_from_entity"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "play_spline",
+       "type": "enum",
+       "enum": "play_spline"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "targetEntity",
+       "type": "enum",
+       "enum": "target_entity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "targetEntity",
+       "type": "enum",
+       "enum": "target_entity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "targetCenterOffset",
+       "type": "enum",
+       "enum": "target_center_offset"
+      },
+      {
+       "name": "xTargetCenterOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yTargetCenterOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zTargetCenterOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "removeTarget",
+       "type": "enum",
+       "enum": "remove_target"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "ease",
+       "type": "enum",
+       "enum": "ease"
+      },
+      {
+       "name": "easeTime",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "easeType",
+       "type": "enum",
+       "enum": "Easing"
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "view_offset",
+       "type": "enum",
+       "enum": "view_offset"
+      },
+      {
+       "name": "xViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yViewOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "entity_offset",
+       "type": "enum",
+       "enum": "entity_offset"
+      },
+      {
+       "name": "xEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "yEntityOffset",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "zEntityOffset",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "pos",
+       "type": "enum",
+       "enum": "pos"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "rot",
+       "type": "enum",
+       "enum": "rot"
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtEntity",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "facing"
+      },
+      {
+       "name": "lookAtPosition",
+       "type": "position",
+       "id": 65
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "set"
+      },
+      {
+       "name": "preset",
+       "type": "enum",
+       "enum": "CameraPresets",
+       "soft": true
+      },
+      {
+       "name": "default",
+       "type": "enum",
+       "enum": "default",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "clear",
+       "type": "enum",
+       "enum": "clear"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "fade",
+       "type": "enum",
+       "enum": "fade"
+      },
+      {
+       "name": "time",
+       "type": "enum",
+       "enum": "time"
+      },
+      {
+       "name": "fadeInSeconds",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "holdSeconds",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "fadeOutSeconds",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "color",
+       "type": "enum",
+       "enum": "color"
+      },
+      {
+       "name": "red",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "green",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "blue",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "fade",
+       "type": "enum",
+       "enum": "fade"
+      },
+      {
+       "name": "time",
+       "type": "enum",
+       "enum": "time"
+      },
+      {
+       "name": "fadeInSeconds",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "holdSeconds",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "fadeOutSeconds",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "fade",
+       "type": "enum",
+       "enum": "fade"
+      },
+      {
+       "name": "color",
+       "type": "enum",
+       "enum": "color"
+      },
+      {
+       "name": "red",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "green",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "blue",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "fade",
+       "type": "enum",
+       "enum": "fade"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "fov_set",
+       "type": "enum",
+       "enum": "fov_set"
+      },
+      {
+       "name": "fov_value",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "fovEaseTime",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "fovEaseType",
+       "type": "enum",
+       "enum": "Easing",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "fov_clear",
+       "type": "enum",
+       "enum": "fov_clear"
+      },
+      {
+       "name": "fovEaseTime",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "fovEaseType",
+       "type": "enum",
+       "enum": "Easing",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "camerashake",
+   "description": "commands.screenshake.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "CameraShakeActionAdd"
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "intensity",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "seconds",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "shakeType",
+       "type": "enum",
+       "enum": "CameraShakeType",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "CameraShakeActionStop"
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "changesetting",
+   "description": "commands.change-setting.description",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "setting",
+       "type": "enum",
+       "enum": "BoolSettingName"
+      },
+      {
+       "name": "value",
+       "type": "enum",
+       "enum": "Boolean"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "setting",
+       "type": "enum",
+       "enum": "DifficultySettingName"
+      },
+      {
+       "name": "value",
+       "type": "enum",
+       "enum": "Difficulty"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "setting",
+       "type": "enum",
+       "enum": "DifficultySettingName"
+      },
+      {
+       "name": "value",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "clear",
+   "description": "commands.clear.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      },
+      {
+       "name": "itemName",
+       "type": "enum",
+       "enum": "Item",
+       "optional": true,
+       "options": 2
+      },
+      {
+       "name": "data",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "maxCount",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "clearspawnpoint",
+   "description": "commands.clearspawnpoint.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "clone",
+   "description": "commands.clone.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "begin",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "end",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "destination",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "maskMode",
+       "type": "enum",
+       "enum": "MaskMode",
+       "optional": true
+      },
+      {
+       "name": "cloneMode",
+       "type": "enum",
+       "enum": "CloneMode",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "begin",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "end",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "destination",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "maskMode",
+       "type": "enum",
+       "enum": "MaskModeFiltered"
+      },
+      {
+       "name": "cloneMode",
+       "type": "enum",
+       "enum": "CloneMode"
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "blockStates",
+       "type": "block_states",
+       "id": 84,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "controlscheme",
+   "description": "commands.controlscheme.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "set",
+       "type": "enum",
+       "enum": "CameraControlSchemeSet"
+      },
+      {
+       "name": "control scheme",
+       "type": "enum",
+       "enum": "controlscheme"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "clear",
+       "type": "enum",
+       "enum": "CameraControlSchemeClear"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "damage",
+   "description": "commands.damage.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "cause",
+       "type": "enum",
+       "enum": "DamageCause",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "cause",
+       "type": "enum",
+       "enum": "DamageCause"
+      },
+      {
+       "name": "origin",
+       "type": "enum",
+       "enum": "DamageOriginActor",
+       "options": 1
+      },
+      {
+       "name": "damager",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "daylock",
+   "description": "commands.daylock.description",
+   "permission": 1,
+   "alias_enum": "daylockCommandAliases",
+   "aliases": [
+    "daylock",
+    "alwaysday"
+   ],
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "lock",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "deop",
+   "description": "commands.deop.description",
+   "permission": 2,
+   "flags": 1152,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "dialogue",
+   "description": "commands.dialogue.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "open",
+       "type": "enum",
+       "enum": "DialogueOpenAction"
+      },
+      {
+       "name": "npc",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "sceneName",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "change",
+       "type": "enum",
+       "enum": "DialogueChangeAction"
+      },
+      {
+       "name": "npc",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "sceneName",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "difficulty",
+   "description": "commands.difficulty.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "difficulty",
+       "type": "enum",
+       "enum": "Difficulty"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "difficulty",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "editor-allowlist",
+   "description": "commands.editor-allowlist.description",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "EditorAllowListAction"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "effect",
+   "description": "commands.effect.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "Mode",
+       "type": "enum",
+       "enum": "ClearEffects"
+      },
+      {
+       "name": "effect",
+       "type": "enum",
+       "enum": "Effect",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "effect",
+       "type": "enum",
+       "enum": "Effect"
+      },
+      {
+       "name": "seconds",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "amplifier",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "hideParticles",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "effect",
+       "type": "enum",
+       "enum": "Effect"
+      },
+      {
+       "name": "Mode",
+       "type": "enum",
+       "enum": "AddInfiniteEffect"
+      },
+      {
+       "name": "amplifier",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "hideParticles",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "enchant",
+   "description": "commands.enchant.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "enchantmentName",
+       "type": "enum",
+       "enum": "Enchant"
+      },
+      {
+       "name": "level",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "enchantmentId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "level",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "event",
+   "description": "commands.event.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "EventEntityAction"
+      },
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "eventName",
+       "type": "enum",
+       "enum": "EntityEvents",
+       "soft": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "execute",
+   "description": "commands.execute.description",
+   "permission": 1,
+   "chained": "ExecuteChainedOption_0",
+   "overloads": [
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_As"
+      },
+      {
+       "name": "origin",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_At"
+      },
+      {
+       "name": "origin",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_In"
+      },
+      {
+       "name": "dimension",
+       "type": "enum",
+       "enum": "Dimension"
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Positioned"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Positioned"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_As"
+      },
+      {
+       "name": "origin",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Rotated"
+      },
+      {
+       "name": "yaw",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "pitch",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Rotated"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_As"
+      },
+      {
+       "name": "origin",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Facing"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Facing"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_Entity"
+      },
+      {
+       "name": "origin",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "anchor",
+       "type": "enum",
+       "enum": "ActorLocation",
+       "options": 1
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Align"
+      },
+      {
+       "name": "axes",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Anchored"
+      },
+      {
+       "name": "anchored",
+       "type": "enum",
+       "enum": "ActorLocation",
+       "options": 1
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_If_Unless"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_Condition_Block"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "optional": true,
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_If_Unless"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_Condition_Block"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "blockStates",
+       "type": "block_states",
+       "id": 84
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "optional": true,
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_If_Unless"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_Condition_Blocks"
+      },
+      {
+       "name": "begin",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "end",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "destination",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "scan mode",
+       "type": "enum",
+       "enum": "BlocksScanMode"
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "optional": true,
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_If_Unless"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_Condition_Entity"
+      },
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "optional": true,
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_If_Unless"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_Condition_Score"
+      },
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "operation",
+       "type": "compare_operator",
+       "id": 7
+      },
+      {
+       "name": "source",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "optional": true,
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_If_Unless"
+      },
+      {
+       "name": "secondary subcommand",
+       "type": "enum",
+       "enum": "Option_Condition_Score"
+      },
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "matches",
+       "type": "enum",
+       "enum": "ScoreRangeMode"
+      },
+      {
+       "name": "range",
+       "type": "integer_range",
+       "id": 23
+      },
+      {
+       "name": "chainedCommand",
+       "type": "chained",
+       "optional": true,
+       "options": 4
+      }
+     ]
+    },
+    {
+     "chaining": true,
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "Option_Run"
+      },
+      {
+       "name": "command",
+       "type": "command",
+       "id": 90,
+       "options": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fill",
+   "description": "commands.fill.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "blockStates",
+       "type": "block_states",
+       "id": 84
+      },
+      {
+       "name": "oldBlockHandling",
+       "type": "enum",
+       "enum": "FillMode",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "oldBlockHandling",
+       "type": "enum",
+       "enum": "FillMode",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "blockStates",
+       "type": "block_states",
+       "id": 84
+      },
+      {
+       "name": "oldBlockHandling",
+       "type": "enum",
+       "enum": "Replace"
+      },
+      {
+       "name": "replaceTileName",
+       "type": "enum",
+       "enum": "Block",
+       "optional": true,
+       "options": 2
+      },
+      {
+       "name": "replaceBlockStates",
+       "type": "block_states",
+       "id": 84,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "oldBlockHandling",
+       "type": "enum",
+       "enum": "Replace"
+      },
+      {
+       "name": "replaceTileName",
+       "type": "enum",
+       "enum": "Block",
+       "optional": true,
+       "options": 2
+      },
+      {
+       "name": "replaceBlockStates",
+       "type": "block_states",
+       "id": 84,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "fog",
+   "description": "commands.fog.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "add"
+      },
+      {
+       "name": "fogId",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "userProvidedId",
+       "type": "string",
+       "id": 56
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "delete"
+      },
+      {
+       "name": "userProvidedId",
+       "type": "string",
+       "id": 56
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "function",
+   "description": "commands.function.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "name",
+       "type": "filepath",
+       "id": 17
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "gamemode",
+   "description": "commands.gamemode.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "gameMode",
+       "type": "enum",
+       "enum": "GameMode"
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "gameMode",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "gamerule",
+   "description": "commands.gamerule.description",
+   "permission": 1,
+   "flags": 128,
+   "overloads": [
+    {
+     "params": []
+    },
+    {
+     "params": [
+      {
+       "name": "rule",
+       "type": "enum",
+       "enum": "playerwaypointsRule"
+      },
+      {
+       "name": "value",
+       "type": "enum",
+       "enum": "playerwaypointsValues"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "rule",
+       "type": "enum",
+       "enum": "BoolGameRule",
+       "options": 2
+      },
+      {
+       "name": "value",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "rule",
+       "type": "enum",
+       "enum": "IntGameRule",
+       "options": 2
+      },
+      {
+       "name": "value",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "gametest",
+   "description": "gameTest.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeRunThis"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeRun"
+      },
+      {
+       "name": "testName",
+       "type": "enum",
+       "enum": "GameTestName",
+       "soft": true
+      },
+      {
+       "name": "rotationSteps",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeRun"
+      },
+      {
+       "name": "testName",
+       "type": "enum",
+       "enum": "GameTestName",
+       "soft": true
+      },
+      {
+       "name": "stopOnFailure",
+       "type": "enum",
+       "enum": "Boolean"
+      },
+      {
+       "name": "repeatCount",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "rotationSteps",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeRunSet"
+      },
+      {
+       "name": "tag",
+       "type": "enum",
+       "enum": "GameTestTag",
+       "soft": true,
+       "optional": true
+      },
+      {
+       "name": "rotationSteps",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeRunSetUntilFail"
+      },
+      {
+       "name": "tag",
+       "type": "enum",
+       "enum": "GameTestTag",
+       "soft": true,
+       "optional": true
+      },
+      {
+       "name": "rotationSteps",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeClearAll"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeShowPosition"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestModeCreateTest"
+      },
+      {
+       "name": "testName",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "width",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "height",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "depth",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestRunNearbyTests"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "GameTestStopTests"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "give",
+   "description": "commands.give.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "itemName",
+       "type": "enum",
+       "enum": "Item",
+       "options": 2
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "data",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "components",
+       "type": "json",
+       "id": 74,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "hud",
+   "description": "commands.hud.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "visible",
+       "type": "enum",
+       "enum": "HudVisibility"
+      },
+      {
+       "name": "hud_element",
+       "type": "enum",
+       "enum": "HudElement",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "inputpermission",
+   "description": "commands.inputpermission.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "option",
+       "type": "enum",
+       "enum": "Option_Set"
+      },
+      {
+       "name": "targets",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "permission",
+       "type": "enum",
+       "enum": "permission"
+      },
+      {
+       "name": "state",
+       "type": "enum",
+       "enum": "state"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "option",
+       "type": "enum",
+       "enum": "Option_Query"
+      },
+      {
+       "name": "targets",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "permission",
+       "type": "enum",
+       "enum": "permission"
+      },
+      {
+       "name": "state",
+       "type": "enum",
+       "enum": "state",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "kick",
+   "description": "commands.kick.description",
+   "permission": 1,
+   "flags": 128,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "name",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "reason",
+       "type": "message",
+       "id": 68
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "kill",
+   "description": "commands.kill.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "list",
+   "description": "commands.list.description",
+   "permission": 0,
+   "flags": 128,
+   "overloads": [
+    {
+     "params": []
+    }
+   ]
+  },
+  {
+   "name": "locate",
+   "description": "commands.locate.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "LocateSubcommandStructure"
+      },
+      {
+       "name": "structure",
+       "type": "enum",
+       "enum": "StructureFeature",
+       "soft": true
+      },
+      {
+       "name": "useNewChunksOnly",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "subcommand",
+       "type": "enum",
+       "enum": "LocateSubcommandBiome"
+      },
+      {
+       "name": "biome",
+       "type": "enum",
+       "enum": "Biome"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "loot",
+   "description": "commands.loot.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetSpawn"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceLoot"
+      },
+      {
+       "name": "loot_table",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetSpawn"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceKill"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetSpawn"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceMine"
+      },
+      {
+       "name": "TargetBlockPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetGive"
+      },
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceLoot"
+      },
+      {
+       "name": "loot_table",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetGive"
+      },
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceKill"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetGive"
+      },
+      {
+       "name": "players",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceMine"
+      },
+      {
+       "name": "TargetBlockPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetInsert"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceLoot"
+      },
+      {
+       "name": "loot_table",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetInsert"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceKill"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetInsert"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceMine"
+      },
+      {
+       "name": "TargetBlockPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "TargetEntity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "count",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceLoot"
+      },
+      {
+       "name": "loot_table",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "TargetEntity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceLoot"
+      },
+      {
+       "name": "loot_table",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "TargetEntity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "count",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceKill"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "TargetEntity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceKill"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "TargetEntity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "count",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceMine"
+      },
+      {
+       "name": "TargetBlockPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "TargetEntity"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceMine"
+      },
+      {
+       "name": "TargetBlockPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "TargetBlock"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "count",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceLoot"
+      },
+      {
+       "name": "loot_table",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "TargetBlock"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceLoot"
+      },
+      {
+       "name": "loot_table",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "TargetBlock"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "count",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceKill"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "TargetBlock"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceKill"
+      },
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "TargetBlock"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "count",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceMine"
+      },
+      {
+       "name": "TargetBlockPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "enum",
+       "enum": "TargetReplace"
+      },
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "TargetBlock"
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "source",
+       "type": "enum",
+       "enum": "SourceMine"
+      },
+      {
+       "name": "TargetBlockPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "<tool>|mainhand|offhand",
+       "type": "enum",
+       "enum": "Tool",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "me",
+   "description": "commands.me.description",
+   "permission": 0,
+   "flags": 192,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "message",
+       "type": "message",
+       "id": 68
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "mobevent",
+   "description": "commands.mobevent.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "event",
+       "type": "enum",
+       "enum": "MobEvent"
+      },
+      {
+       "name": "value",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "music",
+   "description": "commands.music.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "MusicQueueAction"
+      },
+      {
+       "name": "trackName",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "volume",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "fadeSeconds",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "repeatMode",
+       "type": "enum",
+       "enum": "MusicRepeatMode",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "MusicPlayAction"
+      },
+      {
+       "name": "trackName",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "volume",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "fadeSeconds",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "repeatMode",
+       "type": "enum",
+       "enum": "MusicRepeatMode",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "MusicStopAction"
+      },
+      {
+       "name": "fadeSeconds",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "MusicVolumeAction"
+      },
+      {
+       "name": "volume",
+       "type": "float",
+       "id": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "op",
+   "description": "commands.op.description",
+   "permission": 2,
+   "flags": 1152,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "packstack",
+   "description": "Prints client or server pack stack to chat",
+   "permission": 0,
+   "flags": 128,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "stackType",
+       "type": "enum",
+       "enum": "stackType"
+      },
+      {
+       "name": "verbose",
+       "type": "enum",
+       "enum": "verbose",
+       "optional": true
+      },
+      {
+       "name": "exclude-vanilla",
+       "type": "enum",
+       "enum": "exclude-vanilla",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "particle",
+   "description": "commands.spawnParticleEmitter.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "effect",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "permission",
+   "description": "commands.permissions.description",
+   "permission": 2,
+   "flags": 1152,
+   "alias_enum": "permissionCommandAliases",
+   "aliases": [
+    "permission",
+    "ops"
+   ],
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "PermissionsAction"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "PermissionsAction"
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "permission",
+       "type": "enum",
+       "enum": "PermissionLevel",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "place",
+   "description": "commands.place.description",
+   "permission": 2,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "PlaceStructureAction"
+      },
+      {
+       "name": "structure",
+       "type": "enum",
+       "enum": "JigsawStructure",
+       "soft": true
+      },
+      {
+       "name": "pos",
+       "type": "block_position",
+       "id": 64,
+       "optional": true
+      },
+      {
+       "name": "ignoreStartHeight",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "keepJigsaws",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "includeEntities",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "liquidSettings",
+       "type": "enum",
+       "enum": "LiquidSettings",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "PlaceJigsawAction"
+      },
+      {
+       "name": "pool",
+       "type": "filepath",
+       "id": 17
+      },
+      {
+       "name": "jigsawTarget",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "maxDepth",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "pos",
+       "type": "block_position",
+       "id": 64,
+       "optional": true
+      },
+      {
+       "name": "keepJigsaws",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "includeEntities",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "liquidSettings",
+       "type": "enum",
+       "enum": "LiquidSettings",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "PlaceFeatureAction"
+      },
+      {
+       "name": "feature",
+       "type": "enum",
+       "enum": "features"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "PlaceFeatureRuleAction"
+      },
+      {
+       "name": "featurerule",
+       "type": "enum",
+       "enum": "featureRules"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "playanimation",
+   "description": "commands.playanimation.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "entity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "animation",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "next_state",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      },
+      {
+       "name": "blend_out_time",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "stop_expression",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      },
+      {
+       "name": "controller",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "playsound",
+   "description": "commands.playsound.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "sound",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      },
+      {
+       "name": "position",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      },
+      {
+       "name": "volume",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "pitch",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "minimumVolume",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "recipe",
+   "description": "commands.recipes.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "give",
+       "type": "enum",
+       "enum": "Give"
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "recipe",
+       "type": "enum",
+       "enum": "UnlockableRecipeValues",
+       "soft": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "take",
+       "type": "enum",
+       "enum": "Take"
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "recipe",
+       "type": "enum",
+       "enum": "UnlockableRecipeValues",
+       "soft": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "reload",
+   "description": "commands.reload.all.description",
+   "permission": 2,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "all",
+       "type": "enum",
+       "enum": "reload_all",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "reloadconfig",
+   "description": "commands.reloadconfig.description",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": []
+    }
+   ]
+  },
+  {
+   "name": "reloadpacketlimitconfig",
+   "description": "Reload packet limit config from file",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": []
+    }
+   ]
+  },
+  {
+   "name": "replaceitem",
+   "description": "commands.replaceitem.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "ReplaceItemBlock"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "itemName",
+       "type": "enum",
+       "enum": "Item",
+       "options": 2
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "data",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "components",
+       "type": "json",
+       "id": 74,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "ReplaceItemEntity"
+      },
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "itemName",
+       "type": "enum",
+       "enum": "Item",
+       "options": 2
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "data",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "components",
+       "type": "json",
+       "id": 74,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "block",
+       "type": "enum",
+       "enum": "ReplaceItemBlock"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "BlockEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "oldItemHandling",
+       "type": "enum",
+       "enum": "ReplaceMode"
+      },
+      {
+       "name": "itemName",
+       "type": "enum",
+       "enum": "Item",
+       "options": 2
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "data",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "components",
+       "type": "json",
+       "id": 74,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "entity",
+       "type": "enum",
+       "enum": "ReplaceItemEntity"
+      },
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "slotType",
+       "type": "enum",
+       "enum": "EntityEquipmentSlot"
+      },
+      {
+       "name": "slotId",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "oldItemHandling",
+       "type": "enum",
+       "enum": "ReplaceMode"
+      },
+      {
+       "name": "itemName",
+       "type": "enum",
+       "enum": "Item",
+       "options": 2
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "data",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      },
+      {
+       "name": "components",
+       "type": "json",
+       "id": 74,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "ride",
+   "description": "commands.ride.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "riders",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "RideModeStart"
+      },
+      {
+       "name": "ride",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "teleportRules",
+       "type": "enum",
+       "enum": "TeleportRules",
+       "optional": true
+      },
+      {
+       "name": "howToFill",
+       "type": "enum",
+       "enum": "FillType",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "riders",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "RideModeStop"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "rides",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "RideModeEvict"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "rides",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "RideModeSummonRider"
+      },
+      {
+       "name": "entityType",
+       "type": "enum",
+       "enum": "EntityType"
+      },
+      {
+       "name": "spawnEvent",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      },
+      {
+       "name": "nameTag",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "riders",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "RideModeSummonRide"
+      },
+      {
+       "name": "entityType",
+       "type": "enum",
+       "enum": "EntityType"
+      },
+      {
+       "name": "rideRules",
+       "type": "enum",
+       "enum": "RideRules",
+       "optional": true
+      },
+      {
+       "name": "spawnEvent",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      },
+      {
+       "name": "nameTag",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "save",
+   "description": "commands.save.description",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "SaveMode"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "say",
+   "description": "commands.say.description",
+   "permission": 1,
+   "flags": 192,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "message",
+       "type": "message",
+       "id": 68
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "schedule",
+   "description": "commands.schedule.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionDelay"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionAdd"
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      },
+      {
+       "name": "time",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "DelayMode",
+       "type": "enum",
+       "enum": "DelayMode",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionDelay"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionAdd"
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      },
+      {
+       "name": "time",
+       "type": "int",
+       "suffix": "t"
+      },
+      {
+       "name": "DelayMode",
+       "type": "enum",
+       "enum": "DelayMode",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionDelay"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionAdd"
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      },
+      {
+       "name": "time",
+       "type": "int",
+       "suffix": "s"
+      },
+      {
+       "name": "DelayMode",
+       "type": "enum",
+       "enum": "DelayMode",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionDelay"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionAdd"
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      },
+      {
+       "name": "time",
+       "type": "int",
+       "suffix": "d"
+      },
+      {
+       "name": "DelayMode",
+       "type": "enum",
+       "enum": "DelayMode",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionDelay"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionClear"
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionClear"
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionOnAreaLoaded"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionAdd"
+      },
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionOnAreaLoaded"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionAdd"
+      },
+      {
+       "name": "type",
+       "type": "enum",
+       "enum": "CircleArea"
+      },
+      {
+       "name": "center",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "radius",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionOnAreaLoaded"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionAdd"
+      },
+      {
+       "name": "type",
+       "type": "enum",
+       "enum": "TickingArea"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionOnAreaLoaded"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionClear"
+      },
+      {
+       "name": "cleartype",
+       "type": "enum",
+       "enum": "TickingAreaName"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScheduleActionOnAreaLoaded"
+      },
+      {
+       "name": "condition",
+       "type": "enum",
+       "enum": "RequestActionClear"
+      },
+      {
+       "name": "cleartype",
+       "type": "enum",
+       "enum": "FunctionName"
+      },
+      {
+       "name": "function",
+       "type": "filepath",
+       "id": 17
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "scoreboard",
+   "description": "commands.scoreboard.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardObjectivesCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardAddAction"
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "criteria",
+       "type": "enum",
+       "enum": "ScoreboardCriteria"
+      },
+      {
+       "name": "displayName",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardObjectivesCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardRemoveAction"
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardObjectivesCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardListAction"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardObjectivesCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardSetDisplayAction"
+      },
+      {
+       "name": "displaySlot",
+       "type": "enum",
+       "enum": "ScoreboardDisplaySlotSortable",
+       "options": 1
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true,
+       "optional": true
+      },
+      {
+       "name": "sortOrder",
+       "type": "enum",
+       "enum": "ScoreboardSortOrder",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardObjectivesCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardSetDisplayAction"
+      },
+      {
+       "name": "displaySlot",
+       "type": "enum",
+       "enum": "ScoreboardDisplaySlotNonSortable"
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardPlayersCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardListAction"
+      },
+      {
+       "name": "playername",
+       "type": "wildcard_target",
+       "id": 10,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardPlayersCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardResetAction"
+      },
+      {
+       "name": "player",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardPlayersCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardTestAction"
+      },
+      {
+       "name": "player",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "min",
+       "type": "wildcard_int",
+       "id": 5
+      },
+      {
+       "name": "max",
+       "type": "wildcard_int",
+       "id": 5,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardPlayersCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardRandomAction"
+      },
+      {
+       "name": "player",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "min",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "max",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardPlayersCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardPlayersNumAction",
+       "options": 1
+      },
+      {
+       "name": "player",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "count",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "category",
+       "type": "enum",
+       "enum": "ScoreboardPlayersCategory"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScoreboardOperationAction"
+      },
+      {
+       "name": "targetName",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "targetObjective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      },
+      {
+       "name": "operation",
+       "type": "operator",
+       "id": 6
+      },
+      {
+       "name": "selector",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "objective",
+       "type": "enum",
+       "enum": "ScoreboardObjectives",
+       "soft": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "script",
+   "description": "script.description",
+   "permission": 2,
+   "flags": 32,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScriptDebugModeDebugger"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScriptDebuggerListen"
+      },
+      {
+       "name": "port",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScriptDebugModeDebugger"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScriptDebuggerConnect"
+      },
+      {
+       "name": "host",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      },
+      {
+       "name": "port",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScriptDebugModeDebugger"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScriptDebuggerClose"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScriptDebugModeProfiler"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScriptProfilerStart"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScriptDebugModeProfiler"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScriptProfilerStop"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScriptDebugModeDiagnostics"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScriptDiagnosticsStartCapture"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "ScriptDebugModeDiagnostics"
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ScriptDiagnosticsStopCapture"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "scriptevent",
+   "description": "commands.scriptevent.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "messageId",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "message",
+       "type": "message",
+       "id": 68
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "sendshowstoreoffer",
+   "description": "Sends a request to show a store offer to the target player.",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "redirectType",
+       "type": "enum",
+       "enum": "RedirectLocation"
+      },
+      {
+       "name": "offerId",
+       "type": "string",
+       "id": 56
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "redirectType",
+       "type": "enum",
+       "enum": "3PServerOfferList"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "serveridentity",
+   "description": "commands.serveridentity.description",
+   "permission": 4,
+   "flags": 128,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "ServerIdentityAction"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "setblock",
+   "description": "commands.setblock.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "blockStates",
+       "type": "block_states",
+       "id": 84
+      },
+      {
+       "name": "oldBlockHandling",
+       "type": "enum",
+       "enum": "SetBlockMode",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "oldBlockHandling",
+       "type": "enum",
+       "enum": "SetBlockMode",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "setmaxplayers",
+   "description": "commands.setmaxplayers.description",
+   "permission": 3,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "maxPlayers",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "setworldspawn",
+   "description": "commands.setworldspawn.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "spawnPoint",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "spawnpoint",
+   "description": "commands.spawnpoint.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      },
+      {
+       "name": "spawnPos",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "spreadplayers",
+   "description": "commands.spreadplayers.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "x",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "z",
+       "type": "value",
+       "id": 4
+      },
+      {
+       "name": "spreadDistance",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "maxRange",
+       "type": "float",
+       "id": 3
+      },
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "maxHeight",
+       "type": "value",
+       "id": 4,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "stop",
+   "description": "commands.stop.description",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": []
+    }
+   ]
+  },
+  {
+   "name": "stopsound",
+   "description": "commands.stopsound.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "sound",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "structure",
+   "description": "commands.structure.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "StructureSaveAction"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "saveMode",
+       "type": "enum",
+       "enum": "StructureSaveMode",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "StructureSaveAction"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "includeEntities",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "saveMode",
+       "type": "enum",
+       "enum": "StructureSaveMode",
+       "optional": true
+      },
+      {
+       "name": "includeBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "StructureDeleteAction"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "StructureLoadAction"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "rotation",
+       "type": "enum",
+       "enum": "Rotation",
+       "optional": true
+      },
+      {
+       "name": "mirror",
+       "type": "enum",
+       "enum": "Mirror",
+       "optional": true
+      },
+      {
+       "name": "includeEntities",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "includeBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "waterlogged",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "integrity",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "seed",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "StructureLoadAction"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "rotation",
+       "type": "enum",
+       "enum": "Rotation",
+       "optional": true
+      },
+      {
+       "name": "mirror",
+       "type": "enum",
+       "enum": "Mirror",
+       "optional": true
+      },
+      {
+       "name": "animationMode",
+       "type": "enum",
+       "enum": "StructureAnimationMode",
+       "optional": true
+      },
+      {
+       "name": "animationSeconds",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "includeEntities",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "includeBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "waterlogged",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "integrity",
+       "type": "float",
+       "id": 3,
+       "optional": true
+      },
+      {
+       "name": "seed",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "summon",
+   "description": "commands.summon.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "entityType",
+       "type": "enum",
+       "enum": "EntityType"
+      },
+      {
+       "name": "spawnPos",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4,
+       "optional": true
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4,
+       "optional": true
+      },
+      {
+       "name": "spawnEvent",
+       "type": "enum",
+       "enum": "EntityEvents",
+       "soft": true,
+       "optional": true
+      },
+      {
+       "name": "nameTag",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "entityType",
+       "type": "enum",
+       "enum": "EntityType"
+      },
+      {
+       "name": "nameTag",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "spawnPos",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "entityType",
+       "type": "enum",
+       "enum": "EntityType"
+      },
+      {
+       "name": "spawnPos",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "TeleportFacing"
+      },
+      {
+       "name": "lookAtPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "spawnEvent",
+       "type": "enum",
+       "enum": "EntityEvents",
+       "soft": true,
+       "optional": true
+      },
+      {
+       "name": "nameTag",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "entityType",
+       "type": "enum",
+       "enum": "EntityType"
+      },
+      {
+       "name": "spawnPos",
+       "type": "position",
+       "id": 65,
+       "optional": true
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "TeleportFacing"
+      },
+      {
+       "name": "lookAtEntity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "spawnEvent",
+       "type": "enum",
+       "enum": "EntityEvents",
+       "soft": true,
+       "optional": true
+      },
+      {
+       "name": "nameTag",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "tag",
+   "description": "commands.tag.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "entity",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "TagChangeAction",
+       "options": 1
+      },
+      {
+       "name": "name",
+       "type": "enum",
+       "enum": "TagValues",
+       "soft": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "entity",
+       "type": "wildcard_target",
+       "id": 10
+      },
+      {
+       "name": "action",
+       "type": "enum",
+       "enum": "TagListAction"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "teleport",
+   "description": "commands.tp.description",
+   "permission": 1,
+   "alias_enum": "teleportCommandAliases",
+   "aliases": [
+    "teleport",
+    "tp"
+   ],
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4,
+       "optional": true
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4,
+       "optional": true
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "TeleportFacing"
+      },
+      {
+       "name": "lookAtPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "TeleportFacing"
+      },
+      {
+       "name": "lookAtEntity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "yRot",
+       "type": "value",
+       "id": 4,
+       "optional": true
+      },
+      {
+       "name": "xRot",
+       "type": "value",
+       "id": 4,
+       "optional": true
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "TeleportFacing"
+      },
+      {
+       "name": "lookAtPosition",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "destination",
+       "type": "position",
+       "id": 65
+      },
+      {
+       "name": "facing",
+       "type": "enum",
+       "enum": "TeleportFacing"
+      },
+      {
+       "name": "lookAtEntity",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "destination",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "destination",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "checkForBlocks",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      },
+      {
+       "name": "forceProvidedPositionOnDimensionChange",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "tell",
+   "description": "commands.tell.description",
+   "permission": 0,
+   "flags": 192,
+   "alias_enum": "tellCommandAliases",
+   "aliases": [
+    "tell",
+    "w",
+    "msg"
+   ],
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "message",
+       "type": "message",
+       "id": 68
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "tellraw",
+   "description": "commands.tellraw.description",
+   "permission": 1,
+   "flags": 192,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "target",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "raw json message",
+       "type": "json",
+       "id": 74
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "testfor",
+   "description": "commands.testfor.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "victim",
+       "type": "target",
+       "id": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "testforblock",
+   "description": "commands.testforblock.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "tileName",
+       "type": "enum",
+       "enum": "Block",
+       "options": 2
+      },
+      {
+       "name": "blockStates",
+       "type": "block_states",
+       "id": 84,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "testforblocks",
+   "description": "commands.testforblocks.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "begin",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "end",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "destination",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TestForBlocksMode",
+       "optional": true,
+       "options": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "tickingarea",
+   "description": "commands.tickingarea.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModeAdd"
+      },
+      {
+       "name": "from",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "to",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      },
+      {
+       "name": "preload",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModeAdd"
+      },
+      {
+       "name": "circle",
+       "type": "enum",
+       "enum": "AddTickingAreaType"
+      },
+      {
+       "name": "center",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "radius",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56,
+       "optional": true
+      },
+      {
+       "name": "preload",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModeRemove"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModeRemove"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModeRemoveAll"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModeList"
+      },
+      {
+       "name": "all-dimensions",
+       "type": "enum",
+       "enum": "AllDimensions",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModePreload"
+      },
+      {
+       "name": "position",
+       "type": "block_position",
+       "id": 64
+      },
+      {
+       "name": "preload",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TickingAreaModePreload"
+      },
+      {
+       "name": "name",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "preload",
+       "type": "enum",
+       "enum": "Boolean",
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "time",
+   "description": "commands.time.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeAdd"
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeSet"
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeSet"
+      },
+      {
+       "name": "timeMarkerName",
+       "type": "time_marker",
+       "id": 86
+      },
+      {
+       "name": "timeMarkerOccurrence",
+       "type": "enum",
+       "enum": "TimeMarkerOccurrence",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeQuery"
+      },
+      {
+       "name": "time",
+       "type": "enum",
+       "enum": "TimeQuery2"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModePause"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeResume"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "command",
+       "type": "enum",
+       "enum": "TimeOfCommand"
+      },
+      {
+       "name": "clockName",
+       "type": "enum",
+       "enum": "WorldClocks",
+       "soft": true
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeAdd"
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "command",
+       "type": "enum",
+       "enum": "TimeOfCommand"
+      },
+      {
+       "name": "clockName",
+       "type": "enum",
+       "enum": "WorldClocks",
+       "soft": true
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeSet"
+      },
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "command",
+       "type": "enum",
+       "enum": "TimeOfCommand"
+      },
+      {
+       "name": "clockName",
+       "type": "enum",
+       "enum": "WorldClocks",
+       "soft": true
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeSet"
+      },
+      {
+       "name": "timeMarkerName",
+       "type": "time_marker",
+       "id": 86
+      },
+      {
+       "name": "timeMarkerOccurrence",
+       "type": "enum",
+       "enum": "TimeMarkerOccurrence",
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "command",
+       "type": "enum",
+       "enum": "TimeOfCommand"
+      },
+      {
+       "name": "clockName",
+       "type": "enum",
+       "enum": "WorldClocks",
+       "soft": true
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeQuery"
+      },
+      {
+       "name": "clockQuery",
+       "type": "enum",
+       "enum": "ClockTimeQuery"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "command",
+       "type": "enum",
+       "enum": "TimeOfCommand"
+      },
+      {
+       "name": "clockName",
+       "type": "enum",
+       "enum": "WorldClocks",
+       "soft": true
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModePause"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "command",
+       "type": "enum",
+       "enum": "TimeOfCommand"
+      },
+      {
+       "name": "clockName",
+       "type": "enum",
+       "enum": "WorldClocks",
+       "soft": true
+      },
+      {
+       "name": "mode",
+       "type": "enum",
+       "enum": "TimeModeResume"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "title",
+   "description": "commands.title.description",
+   "permission": 1,
+   "flags": 64,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "clear",
+       "type": "enum",
+       "enum": "TitleClear"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "reset",
+       "type": "enum",
+       "enum": "TitleReset"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "titleLocation",
+       "type": "enum",
+       "enum": "TitleSet",
+       "options": 1
+      },
+      {
+       "name": "titleText",
+       "type": "message",
+       "id": 68
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "times",
+       "type": "enum",
+       "enum": "TitleTimes"
+      },
+      {
+       "name": "fadeIn",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "stay",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "fadeOut",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "titleraw",
+   "description": "commands.titleraw.description",
+   "permission": 1,
+   "flags": 64,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "clear",
+       "type": "enum",
+       "enum": "TitleRawClear"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "reset",
+       "type": "enum",
+       "enum": "TitleRawReset"
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "titleLocation",
+       "type": "enum",
+       "enum": "TitleRawSet"
+      },
+      {
+       "name": "raw json titleText",
+       "type": "json",
+       "id": 74
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8
+      },
+      {
+       "name": "times",
+       "type": "enum",
+       "enum": "TitleRawTimes"
+      },
+      {
+       "name": "fadeIn",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "stay",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "fadeOut",
+       "type": "int",
+       "id": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "toggledownfall",
+   "description": "commands.toggledownfall.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": []
+    }
+   ]
+  },
+  {
+   "name": "transfer",
+   "description": "commands.transferserver.description",
+   "permission": 4,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "pfidOrMSA",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "server",
+       "type": "string",
+       "id": 56
+      },
+      {
+       "name": "port",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "weather",
+   "description": "commands.weather.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "type",
+       "type": "enum",
+       "enum": "WeatherType",
+       "options": 1
+      },
+      {
+       "name": "duration",
+       "type": "int",
+       "id": 1,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "query",
+       "type": "enum",
+       "enum": "WeatherQuery"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "wsserver",
+   "description": "commands.wsserver.description",
+   "permission": 2,
+   "flags": 32,
+   "alias_enum": "wsserverCommandAliases",
+   "aliases": [
+    "connect",
+    "wsserver"
+   ],
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "serverUri",
+       "type": "raw_text",
+       "id": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "xp",
+   "description": "commands.xp.description",
+   "permission": 1,
+   "overloads": [
+    {
+     "params": [
+      {
+       "name": "amount",
+       "type": "int",
+       "id": 1
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    },
+    {
+     "params": [
+      {
+       "name": "amount",
+       "type": "int",
+       "suffix": "l"
+      },
+      {
+       "name": "player",
+       "type": "target",
+       "id": 8,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "enums": {
+  "3PServerOfferList": [
+   "server"
+  ],
+  "ActorLocation": [
+   "eyes",
+   "feet"
+  ],
+  "AddInfiniteEffect": [
+   "infinite"
+  ],
+  "AddTickingAreaType": [
+   "circle"
+  ],
+  "AimAssistActionClear": [
+   "clear"
+  ],
+  "AimAssistActionSet": [
+   "set"
+  ],
+  "AimAssistTargetMode": [
+   "distance",
+   "angle"
+  ],
+  "AllDimensions": [
+   "all-dimensions"
+  ],
+  "AllowListAction": [
+   "add",
+   "remove",
+   "off",
+   "list",
+   "reload",
+   "on"
+  ],
+  "Biome": null,
+  "Block": null,
+  "BlockEquipmentSlot": [
+   "slot.container"
+  ],
+  "BlocksScanMode": [
+   "masked",
+   "all"
+  ],
+  "BoolGameRule": [
+   "commandblockoutput",
+   "dodaylightcycle",
+   "doentitydrops",
+   "dofiretick",
+   "recipesunlock",
+   "dolimitedcrafting",
+   "domobloot",
+   "domobspawning",
+   "dotiledrops",
+   "doweathercycle",
+   "drowningdamage",
+   "falldamage",
+   "firedamage",
+   "keepinventory",
+   "mobgriefing",
+   "pvp",
+   "showcoordinates",
+   "showdaysplayed",
+   "naturalregeneration",
+   "tntexplodes",
+   "sendcommandfeedback",
+   "doinsomnia",
+   "commandblocksenabled",
+   "doimmediaterespawn",
+   "showdeathmessages",
+   "showtags",
+   "freezedamage",
+   "respawnblocksexplode",
+   "showbordereffect",
+   "showrecipemessages",
+   "projectilescanbreakblocks",
+   "tntexplosiondropdecay"
+  ],
+  "BoolSettingName": [
+   "allow-cheats"
+  ],
+  "Boolean": [
+   "true",
+   "false"
+  ],
+  "CameraControlSchemeClear": [
+   "clear"
+  ],
+  "CameraControlSchemeSet": [
+   "set"
+  ],
+  "CameraShakeActionAdd": [
+   "add"
+  ],
+  "CameraShakeActionStop": [
+   "stop"
+  ],
+  "CameraShakeType": [
+   "positional",
+   "rotational"
+  ],
+  "CircleArea": [
+   "circle"
+  ],
+  "ClearEffects": [
+   "clear"
+  ],
+  "ClockTimeQuery": [
+   "time"
+  ],
+  "CloneMode": [
+   "normal",
+   "force",
+   "move"
+  ],
+  "DamageCause": [
+   "piston",
+   "lava",
+   "campfire",
+   "fire",
+   "anvil",
+   "magma",
+   "soul_campfire",
+   "falling_block",
+   "wither",
+   "fireworks",
+   "thorns",
+   "none",
+   "entity_attack",
+   "contact",
+   "fly_into_wall",
+   "projectile",
+   "fire_tick",
+   "charging",
+   "stalactite",
+   "lightning",
+   "drowning",
+   "entity_explosion",
+   "magic",
+   "self_destruct",
+   "freezing",
+   "override",
+   "void",
+   "starve",
+   "suffocation",
+   "stalagmite",
+   "fall",
+   "temperature",
+   "ram_attack",
+   "block_explosion",
+   "sonic_boom",
+   "mace_smash"
+  ],
+  "DamageOriginActor": [
+   "entity"
+  ],
+  "DelayMode": [
+   "replace",
+   "append"
+  ],
+  "DialogueChangeAction": [
+   "change"
+  ],
+  "DialogueOpenAction": [
+   "open"
+  ],
+  "Difficulty": [
+   "normal",
+   "peaceful",
+   "easy",
+   "hard",
+   "p",
+   "e",
+   "n",
+   "h"
+  ],
+  "DifficultySettingName": [
+   "difficulty"
+  ],
+  "Dimension": [
+   "overworld",
+   "nether",
+   "the_end"
+  ],
+  "Easing": [
+   "linear",
+   "spring",
+   "in_quad",
+   "out_quad",
+   "in_out_quad",
+   "in_cubic",
+   "out_cubic",
+   "in_out_cubic",
+   "in_quart",
+   "out_quart",
+   "in_out_quart",
+   "in_quint",
+   "out_quint",
+   "in_out_quint",
+   "in_sine",
+   "out_sine",
+   "in_out_sine",
+   "in_expo",
+   "out_expo",
+   "in_out_expo",
+   "in_circ",
+   "out_circ",
+   "in_out_circ",
+   "in_bounce",
+   "out_bounce",
+   "in_out_bounce",
+   "in_back",
+   "out_back",
+   "in_out_back",
+   "in_elastic",
+   "out_elastic",
+   "in_out_elastic"
+  ],
+  "EditorAllowListAction": [
+   "reload"
+  ],
+  "Effect": [
+   "wither",
+   "freezing",
+   "speed",
+   "slowness",
+   "haste",
+   "mining_fatigue",
+   "strength",
+   "instant_health",
+   "instant_damage",
+   "jump_boost",
+   "nausea",
+   "regeneration",
+   "resistance",
+   "fire_resistance",
+   "water_breathing",
+   "invisibility",
+   "blindness",
+   "night_vision",
+   "hunger",
+   "weakness",
+   "poison",
+   "health_boost",
+   "absorption",
+   "saturation",
+   "levitation",
+   "fatal_poison",
+   "conduit_power",
+   "slow_falling",
+   "bad_omen",
+   "village_hero",
+   "darkness",
+   "trial_omen",
+   "wind_charged",
+   "weaving",
+   "oozing",
+   "infested",
+   "raid_omen",
+   "breath_of_the_nautilus"
+  ],
+  "Enchant": [
+   "protection",
+   "fire_protection",
+   "feather_falling",
+   "blast_protection",
+   "projectile_protection",
+   "thorns",
+   "respiration",
+   "depth_strider",
+   "aqua_affinity",
+   "sharpness",
+   "smite",
+   "bane_of_arthropods",
+   "knockback",
+   "fire_aspect",
+   "looting",
+   "efficiency",
+   "silk_touch",
+   "unbreaking",
+   "fortune",
+   "power",
+   "punch",
+   "flame",
+   "infinity",
+   "luck_of_the_sea",
+   "lure",
+   "frost_walker",
+   "mending",
+   "binding",
+   "vanishing",
+   "impaling",
+   "riptide",
+   "loyalty",
+   "channeling",
+   "multishot",
+   "piercing",
+   "quick_charge",
+   "soul_speed",
+   "swift_sneak",
+   "wind_burst",
+   "density",
+   "breach",
+   "lunge"
+  ],
+  "EntityEquipmentSlot": [
+   "slot.weapon.mainhand",
+   "slot.weapon.offhand",
+   "slot.armor.head",
+   "slot.armor.chest",
+   "slot.armor.legs",
+   "slot.armor.feet",
+   "slot.armor.body",
+   "slot.hotbar",
+   "slot.inventory",
+   "slot.enderchest",
+   "slot.saddle",
+   "slot.armor",
+   "slot.chest",
+   "slot.equippable"
+  ],
+  "EntityType": null,
+  "EventEntityAction": [
+   "entity"
+  ],
+  "FillMode": [
+   "outline",
+   "hollow",
+   "destroy",
+   "keep"
+  ],
+  "FillType": [
+   "until_full",
+   "if_group_fits"
+  ],
+  "FunctionName": [
+   "function"
+  ],
+  "GameMode": [
+   "default",
+   "creative",
+   "spectator",
+   "survival",
+   "adventure",
+   "d",
+   "c",
+   "s",
+   "a"
+  ],
+  "GameTestModeClearAll": [
+   "clearall"
+  ],
+  "GameTestModeCreateTest": [
+   "create"
+  ],
+  "GameTestModeRun": [
+   "run"
+  ],
+  "GameTestModeRunSet": [
+   "runset"
+  ],
+  "GameTestModeRunSetUntilFail": [
+   "runsetuntilfail"
+  ],
+  "GameTestModeRunThis": [
+   "runthis"
+  ],
+  "GameTestModeShowPosition": [
+   "pos"
+  ],
+  "GameTestRunNearbyTests": [
+   "runthese"
+  ],
+  "GameTestStopTests": [
+   "stopall"
+  ],
+  "Give": [
+   "give"
+  ],
+  "HudElement": [
+   "hunger",
+   "all",
+   "paperdoll",
+   "armor",
+   "tooltips",
+   "touch_controls",
+   "crosshair",
+   "hotbar",
+   "health",
+   "progress_bar",
+   "air_bubbles",
+   "horse_health",
+   "status_effects",
+   "item_text"
+  ],
+  "HudVisibility": [
+   "hide",
+   "reset"
+  ],
+  "IntGameRule": [
+   "maxcommandchainlength",
+   "randomtickspeed",
+   "functioncommandlimit",
+   "spawnradius",
+   "playerssleepingpercentage"
+  ],
+  "Item": null,
+  "LiquidSettings": [
+   "apply_waterlogging",
+   "ignore_waterlogging"
+  ],
+  "LocateSubcommandBiome": [
+   "biome"
+  ],
+  "LocateSubcommandStructure": [
+   "structure"
+  ],
+  "MaskMode": [
+   "replace",
+   "masked"
+  ],
+  "MaskModeFiltered": [
+   "filtered"
+  ],
+  "Mirror": [
+   "x",
+   "z",
+   "none",
+   "xz"
+  ],
+  "MobEvent": [
+   "minecraft:pillager_patrols_event",
+   "minecraft:wandering_trader_event",
+   "minecraft:ender_dragon_event",
+   "events_enabled"
+  ],
+  "MusicPlayAction": [
+   "play"
+  ],
+  "MusicQueueAction": [
+   "queue"
+  ],
+  "MusicRepeatMode": [
+   "play_once",
+   "loop"
+  ],
+  "MusicStopAction": [
+   "stop"
+  ],
+  "MusicVolumeAction": [
+   "volume"
+  ],
+  "Option_Align": [
+   "align"
+  ],
+  "Option_Anchored": [
+   "anchored"
+  ],
+  "Option_As": [
+   "as"
+  ],
+  "Option_At": [
+   "at"
+  ],
+  "Option_Condition_Block": [
+   "block"
+  ],
+  "Option_Condition_Blocks": [
+   "blocks"
+  ],
+  "Option_Condition_Entity": [
+   "entity"
+  ],
+  "Option_Condition_Score": [
+   "score"
+  ],
+  "Option_Entity": [
+   "entity"
+  ],
+  "Option_Facing": [
+   "facing"
+  ],
+  "Option_If_Unless": [
+   "if",
+   "unless"
+  ],
+  "Option_In": [
+   "in"
+  ],
+  "Option_Positioned": [
+   "positioned"
+  ],
+  "Option_Query": [
+   "query"
+  ],
+  "Option_Rotated": [
+   "rotated"
+  ],
+  "Option_Run": [
+   "run"
+  ],
+  "Option_Set": [
+   "set"
+  ],
+  "PermissionLevel": [
+   "visitor",
+   "member",
+   "operator"
+  ],
+  "PermissionsAction": [
+   "set",
+   "list",
+   "reload"
+  ],
+  "PlaceFeatureAction": [
+   "feature"
+  ],
+  "PlaceFeatureRuleAction": [
+   "featurerule"
+  ],
+  "PlaceJigsawAction": [
+   "jigsaw"
+  ],
+  "PlaceStructureAction": [
+   "structure"
+  ],
+  "RedirectLocation": [
+   "marketplace",
+   "character"
+  ],
+  "Replace": [
+   "replace"
+  ],
+  "ReplaceItemBlock": [
+   "block"
+  ],
+  "ReplaceItemEntity": [
+   "entity"
+  ],
+  "ReplaceMode": [
+   "destroy",
+   "keep"
+  ],
+  "RequestActionAdd": [
+   "add"
+  ],
+  "RequestActionClear": [
+   "clear"
+  ],
+  "RideModeEvict": [
+   "evict_riders"
+  ],
+  "RideModeStart": [
+   "start_riding"
+  ],
+  "RideModeStop": [
+   "stop_riding"
+  ],
+  "RideModeSummonRide": [
+   "summon_ride"
+  ],
+  "RideModeSummonRider": [
+   "summon_rider"
+  ],
+  "RideRules": [
+   "no_ride_change",
+   "reassign_rides",
+   "skip_riders"
+  ],
+  "Rotation": [
+   "0_degrees",
+   "90_degrees",
+   "180_degrees",
+   "270_degrees"
+  ],
+  "SaveMode": [
+   "query",
+   "resume",
+   "hold"
+  ],
+  "ScheduleActionClear": [
+   "clear"
+  ],
+  "ScheduleActionDelay": [
+   "delay"
+  ],
+  "ScheduleActionOnAreaLoaded": [
+   "on_area_loaded"
+  ],
+  "ScoreRangeMode": [
+   "matches"
+  ],
+  "ScoreboardAddAction": [
+   "add"
+  ],
+  "ScoreboardCriteria": [
+   "dummy"
+  ],
+  "ScoreboardDisplaySlotNonSortable": [
+   "belowname"
+  ],
+  "ScoreboardDisplaySlotSortable": [
+   "list",
+   "sidebar"
+  ],
+  "ScoreboardListAction": [
+   "list"
+  ],
+  "ScoreboardObjectivesCategory": [
+   "objectives"
+  ],
+  "ScoreboardOperationAction": [
+   "operation"
+  ],
+  "ScoreboardPlayersCategory": [
+   "players"
+  ],
+  "ScoreboardPlayersNumAction": [
+   "set",
+   "add",
+   "remove"
+  ],
+  "ScoreboardRandomAction": [
+   "random"
+  ],
+  "ScoreboardRemoveAction": [
+   "remove"
+  ],
+  "ScoreboardResetAction": [
+   "reset"
+  ],
+  "ScoreboardSetDisplayAction": [
+   "setdisplay"
+  ],
+  "ScoreboardSortOrder": [
+   "ascending",
+   "descending"
+  ],
+  "ScoreboardTestAction": [
+   "test"
+  ],
+  "ScriptDebugModeDebugger": [
+   "debugger"
+  ],
+  "ScriptDebugModeDiagnostics": [
+   "diagnostics"
+  ],
+  "ScriptDebugModeProfiler": [
+   "profiler"
+  ],
+  "ScriptDebuggerClose": [
+   "close"
+  ],
+  "ScriptDebuggerConnect": [
+   "connect"
+  ],
+  "ScriptDebuggerListen": [
+   "listen"
+  ],
+  "ScriptDiagnosticsStartCapture": [
+   "startcapture"
+  ],
+  "ScriptDiagnosticsStopCapture": [
+   "stopcapture"
+  ],
+  "ScriptProfilerStart": [
+   "start"
+  ],
+  "ScriptProfilerStop": [
+   "stop"
+  ],
+  "ServerIdentityAction": [
+   "save",
+   "delete",
+   "status"
+  ],
+  "SetBlockMode": [
+   "replace",
+   "destroy",
+   "keep"
+  ],
+  "SourceKill": [
+   "kill"
+  ],
+  "SourceLoot": [
+   "loot"
+  ],
+  "SourceMine": [
+   "mine"
+  ],
+  "StructureAnimationMode": [
+   "block_by_block",
+   "layer_by_layer"
+  ],
+  "StructureDeleteAction": [
+   "delete"
+  ],
+  "StructureLoadAction": [
+   "load"
+  ],
+  "StructureSaveAction": [
+   "save"
+  ],
+  "StructureSaveMode": [
+   "disk",
+   "memory"
+  ],
+  "TagChangeAction": [
+   "add",
+   "remove"
+  ],
+  "TagListAction": [
+   "list"
+  ],
+  "Take": [
+   "take"
+  ],
+  "TargetBlock": [
+   "block"
+  ],
+  "TargetEntity": [
+   "entity"
+  ],
+  "TargetGive": [
+   "give"
+  ],
+  "TargetInsert": [
+   "insert"
+  ],
+  "TargetReplace": [
+   "replace"
+  ],
+  "TargetSpawn": [
+   "spawn"
+  ],
+  "TeleportFacing": [
+   "facing"
+  ],
+  "TeleportRules": [
+   "teleport_rider",
+   "teleport_ride"
+  ],
+  "TestForBlocksMode": [
+   "masked",
+   "all"
+  ],
+  "TickingArea": [
+   "tickingarea"
+  ],
+  "TickingAreaModeAdd": [
+   "add"
+  ],
+  "TickingAreaModeList": [
+   "list"
+  ],
+  "TickingAreaModePreload": [
+   "preload"
+  ],
+  "TickingAreaModeRemove": [
+   "remove"
+  ],
+  "TickingAreaModeRemoveAll": [
+   "remove_all"
+  ],
+  "TickingAreaName": [
+   "tickingarea"
+  ],
+  "TimeMarkerOccurrence": [
+   "next",
+   "previous",
+   "stay"
+  ],
+  "TimeModeAdd": [
+   "add"
+  ],
+  "TimeModePause": [
+   "pause"
+  ],
+  "TimeModeQuery": [
+   "query"
+  ],
+  "TimeModeResume": [
+   "resume"
+  ],
+  "TimeModeSet": [
+   "set"
+  ],
+  "TimeOfCommand": [
+   "of"
+  ],
+  "TimeQuery2": [
+   "time",
+   "daytime",
+   "gametime",
+   "day"
+  ],
+  "TitleClear": [
+   "clear"
+  ],
+  "TitleRawClear": [
+   "clear"
+  ],
+  "TitleRawReset": [
+   "reset"
+  ],
+  "TitleRawSet": [
+   "title",
+   "subtitle",
+   "actionbar"
+  ],
+  "TitleRawTimes": [
+   "times"
+  ],
+  "TitleReset": [
+   "reset"
+  ],
+  "TitleSet": [
+   "title",
+   "subtitle",
+   "actionbar"
+  ],
+  "TitleTimes": [
+   "times"
+  ],
+  "WeatherQuery": [
+   "query"
+  ],
+  "WeatherType": [
+   "clear",
+   "rain",
+   "thunder"
+  ],
+  "add": [
+   "push"
+  ],
+  "attach_to_entity": [
+   "attach_to_entity"
+  ],
+  "clear": [
+   "clear"
+  ],
+  "color": [
+   "color"
+  ],
+  "controlscheme": [
+   "camera_relative_strafe",
+   "camera_relative",
+   "player_relative_strafe",
+   "player_relative",
+   "locked_player_relative_strafe"
+  ],
+  "default": [
+   "default"
+  ],
+  "delete": [
+   "pop",
+   "remove"
+  ],
+  "detach_from_entity": [
+   "detach_from_entity"
+  ],
+  "ease": [
+   "ease"
+  ],
+  "entity_offset": [
+   "entity_offset"
+  ],
+  "exclude-vanilla": [
+   "exclude-vanilla"
+  ],
+  "facing": [
+   "facing"
+  ],
+  "fade": [
+   "fade"
+  ],
+  "featureRules": null,
+  "features": null,
+  "fov_clear": [
+   "fov_clear"
+  ],
+  "fov_set": [
+   "fov_set"
+  ],
+  "permission": [
+   "camera",
+   "movement",
+   "jump",
+   "lateral_movement",
+   "sneak",
+   "dismount",
+   "mount",
+   "move_backward",
+   "move_forward",
+   "move_left",
+   "move_right"
+  ],
+  "play_spline": [
+   "play_spline"
+  ],
+  "playerwaypointsRule": [
+   "playerwaypoints"
+  ],
+  "playerwaypointsValues": [
+   "everyone",
+   "off"
+  ],
+  "pos": [
+   "pos"
+  ],
+  "reload_all": [
+   "all"
+  ],
+  "remove_target": [
+   "remove_target"
+  ],
+  "rot": [
+   "rot"
+  ],
+  "set": [
+   "set"
+  ],
+  "stackType": [
+   "server",
+   "client"
+  ],
+  "state": [
+   "enabled",
+   "disabled"
+  ],
+  "target_center_offset": [
+   "target_center_offset"
+  ],
+  "target_entity": [
+   "target_entity"
+  ],
+  "time": [
+   "time"
+  ],
+  "verbose": [
+   "verbose"
+  ],
+  "view_offset": [
+   "view_offset"
+  ]
+ },
+ "soft_enums": {
+  "CameraPresets": [
+   "minecraft:first_person",
+   "minecraft:fixed_boom",
+   "minecraft:follow_orbit",
+   "minecraft:free",
+   "minecraft:third_person",
+   "minecraft:third_person_front"
+  ],
+  "EntityEvents": null,
+  "GameTestName": null,
+  "GameTestTag": null,
+  "JigsawStructure": [
+   "minecraft:abandoned_camp_bamboo_jungle",
+   "minecraft:abandoned_camp_birch_forest",
+   "minecraft:abandoned_camp_birch_forest_mutated",
+   "minecraft:abandoned_camp_cherry_grove",
+   "minecraft:abandoned_camp_cold_taiga",
+   "minecraft:abandoned_camp_dappled_forest",
+   "minecraft:abandoned_camp_extreme_hills_plus_trees",
+   "minecraft:abandoned_camp_flower_forest",
+   "minecraft:abandoned_camp_forest",
+   "minecraft:abandoned_camp_jungle_edge",
+   "minecraft:abandoned_camp_meadow",
+   "minecraft:abandoned_camp_mega_taiga",
+   "minecraft:abandoned_camp_mesa_plateau_stone",
+   "minecraft:abandoned_camp_pale_garden",
+   "minecraft:abandoned_camp_redwood_taiga_mutated",
+   "minecraft:abandoned_camp_savanna",
+   "minecraft:abandoned_camp_swampland",
+   "minecraft:abandoned_camp_taiga",
+   "minecraft:trail_ruins",
+   "minecraft:trial_chambers"
+  ],
+  "ScoreboardObjectives": null,
+  "StructureFeature": [
+   "minecraft:end_city",
+   "minecraft:fortress",
+   "minecraft:mineshaft",
+   "minecraft:monument",
+   "minecraft:stronghold",
+   "minecraft:temple",
+   "minecraft:village",
+   "minecraft:mansion",
+   "minecraft:shipwreck",
+   "minecraft:buried_treasure",
+   "minecraft:ruins",
+   "minecraft:pillager_outpost",
+   "minecraft:ruined_portal",
+   "minecraft:bastion_remnant",
+   "minecraft:ancient_city",
+   "minecraft:trail_ruins",
+   "minecraft:trial_chambers",
+   "minecraft:abandoned_camp_birch_forest",
+   "minecraft:abandoned_camp_bamboo_jungle",
+   "minecraft:abandoned_camp_cherry_grove",
+   "minecraft:abandoned_camp_dappled_forest",
+   "minecraft:abandoned_camp_extreme_hills_plus_trees",
+   "minecraft:abandoned_camp_flower_forest",
+   "minecraft:abandoned_camp_pale_garden",
+   "minecraft:abandoned_camp_swampland",
+   "minecraft:abandoned_camp_birch_forest_mutated",
+   "minecraft:abandoned_camp_cold_taiga",
+   "minecraft:abandoned_camp_forest",
+   "minecraft:abandoned_camp_jungle_edge",
+   "minecraft:abandoned_camp_meadow",
+   "minecraft:abandoned_camp_mega_taiga",
+   "minecraft:abandoned_camp_mesa_plateau_stone",
+   "minecraft:abandoned_camp_redwood_taiga_mutated",
+   "minecraft:abandoned_camp_savanna",
+   "minecraft:abandoned_camp_taiga"
+  ],
+  "TagValues": null,
+  "Tool": null,
+  "UnlockableRecipeValues": null,
+  "WorldClocks": [
+   "minecraft:overworld"
+  ]
+ },
+ "chained": {
+  "ExecuteChainedOption_0": [
+   {
+    "word": "as",
+    "enum": "Option_As"
+   },
+   {
+    "word": "at",
+    "enum": "Option_At"
+   },
+   {
+    "word": "in",
+    "enum": "Option_In"
+   },
+   {
+    "word": "positioned",
+    "enum": "Option_Positioned"
+   },
+   {
+    "word": "rotated",
+    "enum": "Option_Rotated"
+   },
+   {
+    "word": "facing",
+    "enum": "Option_Facing"
+   },
+   {
+    "word": "align",
+    "enum": "Option_Align"
+   },
+   {
+    "word": "anchored",
+    "enum": "Option_Anchored"
+   },
+   {
+    "word": "if",
+    "enum": "Option_If_Unless"
+   },
+   {
+    "word": "unless",
+    "enum": "Option_If_Unless"
+   },
+   {
+    "word": "run",
+    "enum": "Option_Run"
+   }
+  ]
+ },
+ "note": "Item, Block, EntityType, Biome, features, featureRules and the soft enums UnlockableRecipeValues, Tool and EntityEvents are filled by the engine from its registries, so their values are left out. chained maps a chained subcommand set to its words and the literal enum each word starts."
+}
