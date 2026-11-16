@@ -130,3 +130,44 @@ func BlockTranslucency() (map[string]float32, error) {
 	}
 	return doc.Translucency, nil
 }
+
+//go:embed files/bds/block_type_flags.json
+var blockTypeFlags []byte
+
+// BlockTypeFlags is what BDS keeps on a block type (every state shares it) as flags.
+type BlockTypeFlags struct {
+	// Properties is BDS's BlockProperty bit set: CubeShaped 1<<18, Leaves 1<<5,
+	// PreventsJumping 1<<30 and the rest (the BlockProperty* constants).
+	Properties uint64 `json:"properties"`
+	// MaterialFlags is the flag byte of the block's Material (the Material* constants).
+	MaterialFlags uint8 `json:"material_flags"`
+}
+
+// BlockProperty bits of [BlockTypeFlags.Properties] that Helix reads, BDS's numbering.
+const (
+	BlockPropertyLeaves          = 1 << 5
+	BlockPropertyCubeShaped      = 1 << 18
+	BlockPropertyPreventsJumping = 1 << 30
+)
+
+// Material flag bits of [BlockTypeFlags.MaterialFlags], BDS's order.
+const (
+	MaterialNeverBuildable      = 1 << 0
+	MaterialLiquid              = 1 << 1
+	MaterialBlocksMotion        = 1 << 2
+	MaterialBlocksPrecipitation = 1 << 3
+	MaterialSolid               = 1 << 4
+	MaterialSuperHot            = 1 << 5
+)
+
+// AllBlockTypeFlags returns each block type's flags of [Version], keyed by block name. Each
+// call decodes a fresh copy.
+func AllBlockTypeFlags() (map[string]BlockTypeFlags, error) {
+	var doc struct {
+		Blocks map[string]BlockTypeFlags `json:"blocks"`
+	}
+	if err := json.Unmarshal(blockTypeFlags, &doc); err != nil {
+		return nil, fmt.Errorf("data: block type flags: %w", err)
+	}
+	return doc.Blocks, nil
+}
