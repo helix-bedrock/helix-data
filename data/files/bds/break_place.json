@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill) once the server started, memory reads only: each item's max damage and the rule its durability follows when it breaks a block (weapon: 2 on a block with a destroy time above 0; digger: 1 on such a block; shears: 1 on any block; none; component: a data-driven item component decides), for items with a max damage; and the block types that carry BDS's replaceable component, which the base canBeBuiltOver reads (a placed block may replace them). Light blocks override canBeBuiltOver: they are not replaced by another light block. Leaf litter, pink petals, wildflowers and snow layer have their own rules on top (stacking, layer height), not listed here.",
+ "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill) once the server started, memory reads only: each item's max damage and the rule its durability follows when it breaks a block (weapon: 2 on a block with a destroy time above 0; digger: 1 on such a block; shears: 1 on any block; none; component: a data-driven item component decides), for items with a max damage; and the block types that carry BDS's replaceable component, which the base canBeBuiltOver reads (a placed block may replace them). Light blocks override canBeBuiltOver: they are not replaced by another light block. Leaf litter, pink petals, wildflowers and snow layer have their own rules on top (stacking, layer height), not listed here. Wolf armour, a data-driven item the max damage read missed, is its durability component as BDS builds it (max damage 64).",
  "items": {
   "minecraft:bow": {
    "maxDamage": 384,
@@ -283,6 +283,10 @@
   },
   "minecraft:turtle_helmet": {
    "maxDamage": 275,
+   "rule": "none"
+  },
+  "minecraft:wolf_armor": {
+   "maxDamage": 64,
    "rule": "none"
   },
   "minecraft:wooden_axe": {

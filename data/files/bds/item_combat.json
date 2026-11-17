@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill) once the server started, memory reads only: each item's melee damage as its getAttackDamage reads it, the armour protection and toughness each armour item gives, and the weapons that wear by 1 per hit (other durable items wear by 2).",
+ "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill) once the server started, memory reads only: each item's melee damage as its getAttackDamage reads it, the armour protection and toughness each armour item gives, and the weapons that wear by 1 per hit (other durable items wear by 2). Wolf armour, a data-driven item the armour read missed, is WolfArmorItem::getArmorValue (11; toughness the Item default 0).",
  "damage": {
   "minecraft:copper_axe": 4,
   "minecraft:copper_hoe": 3,
@@ -209,6 +209,10 @@
   },
   "minecraft:turtle_helmet": {
    "protection": 2,
+   "toughness": 0
+  },
+  "minecraft:wolf_armor": {
+   "protection": 11,
    "toughness": 0
   }
  },
