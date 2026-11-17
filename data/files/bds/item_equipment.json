@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill): for every item, once the server started, whether BDS lets a player wear it (an armour item, or a skull or carved pumpkin block item) and in which armour slot (0 head, 1 chest, 2 legs, 3 feet), as its armour container checks, and whether its offhand container accepts it.",
+ "source": "BDS 1.26.60.6 Linux, read at runtime under gdb (bds-runtime-dump skill): for every item, once the server started, whether BDS lets a player wear it (an armour item, or a skull or carved pumpkin block item) and in which armour slot (0 head, 1 chest, 2 legs, 3 feet), as its armour container checks, and whether its offhand container accepts it. bodyArmor: the items whose class makes Item::isBodyArmor true (HorseArmorItem, WolfArmorItem, NautilusArmorItem), told apart by each item's vtable once the server started; a mob wears them in its body slot.",
  "armorSlots": {
   "minecraft:carved_pumpkin": 0,
   "minecraft:chainmail_boots": 3,
@@ -49,5 +49,19 @@
   "minecraft:shield",
   "minecraft:sparkler",
   "minecraft:totem_of_undying"
+ ],
+ "bodyArmor": [
+  "minecraft:copper_horse_armor",
+  "minecraft:copper_nautilus_armor",
+  "minecraft:diamond_horse_armor",
+  "minecraft:diamond_nautilus_armor",
+  "minecraft:golden_horse_armor",
+  "minecraft:golden_nautilus_armor",
+  "minecraft:iron_horse_armor",
+  "minecraft:iron_nautilus_armor",
+  "minecraft:leather_horse_armor",
+  "minecraft:netherite_horse_armor",
+  "minecraft:netherite_nautilus_armor",
+  "minecraft:wolf_armor"
  ]
 }

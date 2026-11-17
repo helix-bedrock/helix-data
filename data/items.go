@@ -202,6 +202,18 @@ func ItemEquipment() (armorSlots map[string]uint8, offhand []string, err error) 
 	return doc.ArmorSlots, doc.Offhand, nil
 }
 
+// BodyArmor is the items BDS 1.26.60 treats as body armour (Item::isBodyArmor): horse,
+// wolf and nautilus armour, which a mob wears in its body slot.
+func BodyArmor() ([]string, error) {
+	var doc struct {
+		BodyArmor []string `json:"bodyArmor"`
+	}
+	if err := json.Unmarshal(itemEquipment, &doc); err != nil {
+		return nil, fmt.Errorf("data: body armour: %w", err)
+	}
+	return doc.BodyArmor, nil
+}
+
 //go:embed files/bds/mining.json
 var mining []byte
 
