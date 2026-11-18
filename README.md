@@ -70,19 +70,6 @@ with `helix-bedrock/world`'s LevelDB.
 `minecraft:structure_void` cannot be stored in a structure, so the add-on
 places one in the world and the converter reads it from the chunk on disk.
 
-### Compared with CloudburstMC/Data (1.26.52)
-
-`compare` against CloudburstMC/Data's 1.26.50 `block_palette.nbt`: 22,058
-states are identical. The differences, all checked against BDS:
-
-- Cloudburst lists `minecraft:fire`, `redstone_wire` and `chorus_plant` with
-  connection properties (1,872 states). BDS 1.26.52 never stores or sends
-  those properties: built next to real neighbours, these blocks were saved
-  and sent to a joined client without them. The 33 forms BDS does use are in
-  our data and not in Cloudburst's.
-- `disc_press`, `ice_crystal` and `icicle` (30 states) do not exist in BDS
-  1.26.52, with or without experiments.
-
 ### 1.26.60
 
 BDS 1.26.60.6 adds `disc_press`, `ice_crystal` and `icicle`, and the
