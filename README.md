@@ -13,7 +13,7 @@ Edition server engine in Go.
 | Path | What it is |
 |---|---|
 | `bds-dump/` | A BDS behaviour pack that prints every block state to the server console |
-| `cmd/blockstates` | Turns that console log into `block_states.nbt` and `block_defaults.json`, and compares it with other palettes |
+| `cmd/blockstates` | Turns that console log into `block_states.nbt` and `block_defaults.json` |
 | `blockstate` | The Go package behind `cmd/blockstates` |
 | `data/files/` | Generated files of the newest Minecraft version (older versions are not kept) |
 
@@ -32,7 +32,6 @@ Edition server engine in Go.
 6. Convert it:
    ```bash
    go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/files
-   go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
    ```
 7. For items, save the BDS console output while the dump runs (for example
    `bedrock_server > out.log`) and convert it:

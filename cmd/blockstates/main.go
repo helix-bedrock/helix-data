@@ -1,13 +1,11 @@
 // Command blockstates reads the block states the bds-dump add-on made BDS
-// save, writes them as data files, and compares them with another palette.
+// save and writes them as data files.
 //
 //	blockstates convert -world <bds>/worlds/helixdump -out data/files
-//	blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
 //	blockstates items -log <bds console log> -out data/files
 package main
 
 import (
-	"bufio"
 	"errors"
 	"flag"
 	"fmt"
@@ -30,13 +28,11 @@ func main() {
 
 func run(args []string, out io.Writer) error {
 	if len(args) == 0 {
-		return errors.New("usage: blockstates convert|compare|experiments|items [flags]")
+		return errors.New("usage: blockstates convert|experiments|items [flags]")
 	}
 	switch args[0] {
 	case "convert":
 		return convert(args[1:], out)
-	case "compare":
-		return compare(args[1:], out)
 	case "experiments":
 		return experiments(args[1:], out)
 	case "items":
@@ -122,54 +118,6 @@ func items(args []string, out io.Writer) error {
 	}
 	_, err = fmt.Fprintf(out, "%d items\n", len(list))
 	return err
-}
-
-func compare(args []string, out io.Writer) error {
-	fs := flag.NewFlagSet("compare", flag.ContinueOnError)
-	world := fs.String("world", "", "BDS world folder the dump ran in (required)")
-	palette := fs.String("palette", "", "gzipped big-endian block_palette.nbt, as in CloudburstMC/Data (required)")
-	limit := fs.Int("limit", 50, "differences to print per side")
-	if err := fs.Parse(args); err != nil {
-		return err
-	}
-	if *world == "" || *palette == "" {
-		return errors.New("compare needs -world and -palette")
-	}
-	d, err := blockstate.FromWorld(filepath.Join(*world, "db"))
-	if err != nil {
-		return err
-	}
-	f, err := os.Open(*palette)
-	if err != nil {
-		return err
-	}
-	defer func() { _ = f.Close() }()
-	p, err := blockstate.ReadPalette(f)
-	if err != nil {
-		return err
-	}
-	diff := blockstate.Compare(d.Plain(), p)
-	// Write errors stick in the bufio.Writer and are returned by Flush.
-	w := bufio.NewWriter(out)
-	_, _ = fmt.Fprintf(w, "same: %d, only in dump: %d, only in palette: %d\n", diff.Same, len(diff.OnlyA), len(diff.OnlyB))
-	sections := []struct {
-		title string
-		list  []string
-	}{{"only in dump", diff.OnlyA}, {"only in palette", diff.OnlyB}}
-	for _, sec := range sections {
-		if len(sec.list) == 0 {
-			continue
-		}
-		_, _ = fmt.Fprintf(w, "\n%s:\n", sec.title)
-		for i, k := range sec.list {
-			if i == *limit {
-				_, _ = fmt.Fprintf(w, "  ... %d more\n", len(sec.list)-i)
-				break
-			}
-			_, _ = fmt.Fprintf(w, "  %s\n", k)
-		}
-	}
-	return w.Flush()
 }
 
 // experiments turns experiment toggles on in a world's level.dat, so a dump

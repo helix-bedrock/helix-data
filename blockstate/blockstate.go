@@ -1,11 +1,10 @@
 // Package blockstate reads the block states BDS saved for the bds-dump
-// add-on, writes them as data files, and compares them with other palettes.
+// add-on and writes them as data files.
 package blockstate
 
 import (
 	"bufio"
 	"bytes"
-	"compress/gzip"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -128,38 +127,6 @@ func WriteNBT(w io.Writer, states []VersionedState) error {
 		}
 	}
 	return nil
-}
-
-// ReadPalette reads a gzipped big-endian palette with a "blocks" list, the
-// block_palette.nbt layout CloudburstMC/Data publishes.
-func ReadPalette(r io.Reader) ([]State, error) {
-	gz, err := gzip.NewReader(r)
-	if err != nil {
-		return nil, fmt.Errorf("blockstate: palette: %w", err)
-	}
-	data, err := io.ReadAll(gz)
-	if err != nil {
-		return nil, fmt.Errorf("blockstate: palette: %w", err)
-	}
-	var root struct {
-		Blocks []map[string]any `nbt:"blocks"`
-	}
-	if err := nbt.UnmarshalEncoding(data, &root, nbt.BigEndian); err != nil {
-		return nil, fmt.Errorf("blockstate: palette: %w", err)
-	}
-	out := make([]State, 0, len(root.Blocks))
-	for i, m := range root.Blocks {
-		name, ok := m["name"].(string)
-		if !ok {
-			return nil, fmt.Errorf("blockstate: palette entry %d has no name", i)
-		}
-		props, _ := m["states"].(map[string]any)
-		if props == nil {
-			props = map[string]any{}
-		}
-		out = append(out, State{Name: name, Properties: props})
-	}
-	return out, nil
 }
 
 // Diff is the result of Compare.

@@ -9,6 +9,5 @@ No ported code. `bds-dump`, `brarchive`, `pack`, `cmd/blockstates`, `cmd/entitie
 
 ## Data
 
-[CloudburstMC/Data](https://github.com/CloudburstMC/Data)'s 1.26.50
-`block_palette.nbt` (commit `a8a4341`) is used only to compare against; none
-of it is copied into this repo.
+No third-party data. Every data file is read out of BDS by the tools in this repo
+or the workspace's dump skills.

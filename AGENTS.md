@@ -19,7 +19,6 @@ go vet ./...
 golangci-lint run
 go test -race ./...
 go run ./cmd/blockstates convert -world <bds>/worlds/helixdump -out data/files
-go run ./cmd/blockstates compare -world <bds>/worlds/helixdump -palette block_palette.nbt
 go run ./cmd/blockstates items -log <bds console log> -out data/files
 go run ./cmd/entities -bds <bds folder> -out data/files
 go run ./cmd/vanilla -bds <bds folder> -out data/files
@@ -30,7 +29,7 @@ go run ./cmd/joinpackets -capture <join.jsonl> -out data/files/bds/packets
 
 - `bds-dump/`: behaviour pack (Script API) that makes BDS save every block state into structures and print every item type with its stack size.
 - `item/`: reads the item lines of the BDS console log and writes and reads `items.json`. Items the Script API cannot make (the written book) are `pinned` there with their values read from BDS in IDA.
-- `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, reads and compares palettes, and computes network hashes.
+- `blockstate/`: reads those structures (and structure_void from the chunk) from the world, writes `block_states.nbt`, and computes network hashes.
 - `brarchive/`: reads the `.brarchive` files BDS packs behaviour pack folders into.
 - `pack/`: stacks BDS's vanilla behaviour packs (`vanilla`, then `vanilla_<version>` oldest first, over `definitions/`) the way BDS does, unpacking their archives.
 - `cmd/vanilla/`: writes `vanilla/` from the stacked packs: biomes, features, feature_rules, loot_tables, recipes, spawn_groups, structures, trading and worldgen, with `_provenance.tsv` naming each file's pack, and `experiments/<name>/` with each `experimental_*` pack's own files, unstacked (BDS loads an enabled experiment's pack above every vanilla pack).
@@ -50,8 +49,7 @@ go run ./cmd/joinpackets -capture <join.jsonl> -out data/files/bds/packets
 2. `block_states.nbt` uses pmmp's `canonical_block_states.nbt` layout:
    little-endian NBT compounds `{name, states, version}` one after another.
    Boolean properties are bytes, numbers are int32.
-3. Every state comes from BDS. Other palettes are only compared against,
-   never copied in.
+3. Every state comes from BDS.
 4. `data/files/` is complete on its own. BDS ships only the
    files that changed in each pack; `cmd/vanilla` stacks them so nothing
    that reads the data has to know about the older packs.
