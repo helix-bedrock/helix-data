@@ -77,21 +77,6 @@ func TestSpawnRules(t *testing.T) {
 	}
 }
 
-func TestWorldgen(t *testing.T) {
-	wg, err := Worldgen()
-	if err != nil {
-		t.Fatal(err)
-	}
-	for _, k := range []string{"noise_settings/overworld", "density_function/overworld/continents", "noise/continentalness"} {
-		if _, ok := wg[k]; !ok {
-			t.Errorf("no %s", k)
-		}
-	}
-	if len(BiomeTree()) < 1000 {
-		t.Fatal("biome tree is empty")
-	}
-}
-
 func TestFiles(t *testing.T) {
 	f := Files()
 	for _, p := range []string{"vanilla/biomes/plains.biome.json", "vanilla/trading/librarian_trades.json", "bds/villages.json"} {

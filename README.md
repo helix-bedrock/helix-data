@@ -114,12 +114,3 @@ associated with Mojang or Microsoft.
 The game data files belong to Mojang and are not covered by this license. Sources are
 listed in [`CREDITS.md`](CREDITS.md).
 
-## World generation data
-
-BDS ships no world generation data, so `worldgen.json` and
-`biome_tree.json` come from Java Edition, whose terrain and biomes match
-Bedrock's since 1.18 (see CREDITS.md):
-
-```bash
-go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/files
-```

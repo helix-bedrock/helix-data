@@ -24,7 +24,6 @@ go run ./cmd/blockstates items -log <bds console log> -out data/files
 go run ./cmd/entities -bds <bds folder> -out data/files
 go run ./cmd/vanilla -bds <bds folder> -out data/files
 go run ./cmd/joinpackets -capture <join.jsonl> -out data/files/bds/packets
-go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_noise_biome_tree.json> -out data/files
 ```
 
 ## Layout
@@ -37,7 +36,6 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
 - `cmd/vanilla/`: writes `vanilla/` from the stacked packs: biomes, features, feature_rules, loot_tables, recipes, spawn_groups, structures, trading and worldgen, with `_provenance.tsv` naming each file's pack, and `experiments/<name>/` with each `experimental_*` pack's own files, unstacked (BDS loads an enabled experiment's pack above every vanilla pack).
 - `cmd/entities/`: writes `entities.json`, `entity_loot.json` (loot_tables/entities and loot_tables/gameplay), `spawn_rules.json` and `item_definitions.json` (data-driven item definitions, such as bundles' storage components) from BDS's vanilla behaviour packs.
 - `mcb/`: reads the binary (starting with the bytes 0x7F "MCB") form some item definitions take in `.brarchive` files into their JSON form. Components are named by the FNV-1a hash of their name, with fields in a fixed order; an unknown component fails the run, so add its fields to `components` when BDS adds one.
-- `cmd/worldgen/`: writes `worldgen.json` and `biome_tree.json` from Java Edition's vanilla datapack.
 - `cmd/joinpackets/`: writes `bds/packets/` from a capture of a real join on BDS: the raw payloads of the registry packets, each checked to decode and encode back byte for byte.
 - `cmd/blockstates/`: command line for the above, plus `experiments` to turn on experiment toggles in a world's level.dat.
 - `data/`: the `data` Go package, which embeds the current version's files so the engine can load them.
@@ -46,9 +44,7 @@ go run ./cmd/worldgen -datapack <datapack>/data/minecraft/worldgen -tree <multi_
 ## Invariants: do not break these
 
 1. Every file in `data/` comes from BDS, made by a tool in this repo or,
-   for `bds/`, read out of BDS with the workspace's dump skills. The one
-   exception is world generation (`worldgen.json`, `biome_tree.json`),
-   which comes from Java Edition and is credited in `CREDITS.md`. Data
+   for `bds/`, read out of BDS with the workspace's dump skills. Data
    taken from BDS gets no `CREDITS.md` entry (decided by the maintainer,
    2026-11-01).
 2. `block_states.nbt` uses pmmp's `canonical_block_states.nbt` layout:

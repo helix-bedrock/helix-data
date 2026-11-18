@@ -102,30 +102,6 @@ func SpawnRules() (map[string]json.RawMessage, error) {
 	return m, nil
 }
 
-//go:embed files/worldgen.json
-var worldgen []byte
-
-// Worldgen returns Java Edition's world generation data that Helix uses
-// for terrain: density functions, noises, noise settings and material rules and conditions, keyed by
-// their Minecraft name such as "density_function/overworld/depth" or
-// "noise_settings/overworld". See CREDITS.md for why it is Java's. Each call
-// decodes a fresh copy.
-func Worldgen() (map[string]json.RawMessage, error) {
-	var m map[string]json.RawMessage
-	if err := json.Unmarshal(worldgen, &m); err != nil {
-		return nil, fmt.Errorf("data: worldgen: %w", err)
-	}
-	return m, nil
-}
-
-//go:embed files/biome_tree.json
-var biomeTree []byte
-
-// BiomeTree returns the overworld's and nether's biome parameters as Java
-// Edition's search tree, raw. Walking this exact tree, not searching the
-// leaves for the nearest, is what picks the same biomes as the game.
-func BiomeTree() []byte { return bytes.Clone(biomeTree) }
-
 // Files returns the vanilla pack files and BDS tables of [Version]; see
 // [files.FS].
 func Files() files.FS { return files.Files() }
