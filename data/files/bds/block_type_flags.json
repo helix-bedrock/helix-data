@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.60.6 Linux, read at runtime at \"Server started.\" from probe_block_raw.py's copy of every BlockType (update-block-states skill, to_block_type_flags.py): properties is the BlockProperty bit set (BlockType +264), material_flags the Material's flag byte (BlockType +33: bit 0 never buildable, 1 liquid, 2 blocks motion, 3 blocks precipitation, 4 solid, 5 super hot).",
+ "source": "BDS 1.26.60.6 Linux, read at runtime at \"Server started.\" from probe_block_raw.py's copy of every BlockType (update-block-states skill, to_block_type_flags.py): properties is the BlockProperty bit set, material_flags the Material's flag byte (: bit 0 never buildable, 1 liquid, 2 blocks motion, 3 blocks precipitation, 4 solid, 5 super hot).",
  "blocks": {
   "minecraft:acacia_button": {
    "properties": 256,

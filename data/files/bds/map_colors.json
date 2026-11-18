@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.60.6 Linux, read at runtime at \"Server started.\": each block's map colour as its map render reads it, the minecraft:map_color component (colour, tint) of the Block or BlockType, else BlockType+312; logs' top and side colours, beds from their block entity (update-block-states skill, probe_map_color.py, to_map_colors.py). Blocks missing have no colour.",
+ "source": "BDS 1.26.60.6 Linux, read at runtime at \"Server started.\": each block's map colour as its map render reads it, the minecraft:map_color component (colour, tint) of the Block or BlockType, else BlockType; logs' top and side colours, beds from their block entity (update-block-states skill, probe_map_color.py, to_map_colors.py). Blocks missing have no colour.",
  "tints": [
   "none",
   "default_foliage",

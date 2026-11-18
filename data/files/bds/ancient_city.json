@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.52.3 Linux: pools sub_504EA80, elements sub_505A930, block rules sub_5057D70; extracted with notes/tools/ida_registry_emu.py",
+ "source": "BDS 1.26.52.3 Linux: the jigsaw pools, elements and block rules BDS registers for ancient cities.",
  "pools": [
   {
    "name": "minecraft:ancient_city/city_center",

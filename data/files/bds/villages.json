@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.52.3 Linux: pools registered in sub_4FD2920 (empty elements from sub_D228790), elements in sub_50CE980; extracted with notes/tools/ida_registry_emu.py; block rules sub_50AB940 (hashes are FNV-1 of the block names)",
+ "source": "BDS 1.26.52.3 Linux: the jigsaw pools (with their empty elements), elements and block rules BDS registers for villages (hashes are FNV-1 of the block names).",
  "pools": [
   {
    "name": "minecraft:village/plains/town_centers",

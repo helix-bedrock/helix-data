@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.60.6 Linux, read at runtime: each Item's flag byte at +274, at \"Server started.\" Bit 0x20 is fire resistant: a dropped item of it takes no fire or lava damage (ItemActor isInvulnerableTo).",
+ "source": "BDS 1.26.60.6 Linux, read at runtime: each Item's flag byte, at \"Server started.\" Bit 0x20 is fire resistant: a dropped item of it takes no fire or lava damage (ItemActor isInvulnerableTo).",
  "fire_resistant": [
   "minecraft:ancient_debris",
   "minecraft:netherite_axe",

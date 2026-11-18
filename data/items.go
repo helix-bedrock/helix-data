@@ -202,7 +202,7 @@ func ItemEquipment() (armorSlots map[string]uint8, offhand []string, err error) 
 	return doc.ArmorSlots, doc.Offhand, nil
 }
 
-// BodyArmor is the items BDS 1.26.60 treats as body armour (Item::isBodyArmor): horse,
+// BodyArmor is the items BDS 1.26.60 treats as body armour: horse,
 // wolf and nautilus armour, which a mob wears in its body slot.
 func BodyArmor() ([]string, error) {
 	var doc struct {

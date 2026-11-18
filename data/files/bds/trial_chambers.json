@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.52.3 Linux: pools built in sub_5092590 (element builders sub_D237D60 = minecraft:trial_chambers_copper_bulb_degradation (the processor passed in), sub_D237B80 = no processors (its string is the element id); pools sub_D23DD60), weights read from its stores; extracted with notes/tools/ida_registry_emu.py. Pool names from the templates jigsaw blocks; the three dispensers are one pool in BDS. Empty elements (off_F360D78, an empty template here) come first in six pools.",
+ "source": "BDS 1.26.52.3 Linux: the jigsaw pools BDS builds (elements either with the minecraft:trial_chambers_copper_bulb_degradation processor or with none), weights read from its stores. Pool names from the templates jigsaw blocks; the three dispensers are one pool in BDS. Empty elements (an empty template here) come first in six pools.",
  "processors": {
   "minecraft:trial_chambers_copper_bulb_degradation": [
    {

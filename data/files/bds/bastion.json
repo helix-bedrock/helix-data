@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.52.3 Linux: pools sub_5032880, elements sub_5071920, block rules sub_506A230 (rule tests by vtable: off_F360860 random_block_match, sub_D234240 block_match, off_F360910 axis_aligned_linear position test); extracted with notes/tools/ida_registry_emu.py",
+ "source": "BDS 1.26.52.3 Linux: the jigsaw pools, elements and block rules (random_block_match, block_match and axis_aligned_linear position tests) BDS registers for bastions.",
  "pools": [
   {
    "name": "minecraft:bastion/bridge/start",

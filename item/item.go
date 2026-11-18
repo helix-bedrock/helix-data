@@ -65,9 +65,9 @@ func FromLog(r io.Reader) ([]Item, error) {
 // pinned are items the Script API cannot make an ItemStack of, so the add-on prints no
 // line for them, with their values read from BDS 1.26.60 instead.
 var pinned = []Item{
-	// WrittenBookItem: its constructor sets the max stack size to 16 (byte +0x88, 0xC681ECD)
-	// and adds minecraft:lectern_books; registerItems adds minecraft:bookshelf_books
-	// (0xC67F50D). The book and quill's constructor beside it sets 1, as its dump line says.
+	// WrittenBookItem: its constructor sets the max stack size to 16 (byte)
+	// and adds minecraft:lectern_books; registerItems adds minecraft:bookshelf_books.
+	// The book and quill's constructor beside it sets 1, as its dump line says.
 	{Name: "minecraft:written_book", MaxStack: 16, Tags: []string{"minecraft:bookshelf_books", "minecraft:lectern_books"}},
 }
 
