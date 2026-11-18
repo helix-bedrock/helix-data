@@ -1,5 +1,7 @@
 # helix-data
 
+[![Discord](https://img.shields.io/discord/1568071670097518763?label=discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/Fbmc69Gqr7)
+
 Minecraft: Bedrock Edition game data for Helix, and the tools that build it
 from the official Bedrock Dedicated Server (BDS).
 
