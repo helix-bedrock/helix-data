@@ -1,5 +1,5 @@
 {
- "source": "BDS 1.26.52.3 Linux: the jigsaw pools BDS builds (elements either with the minecraft:trial_chambers_copper_bulb_degradation processor or with none), weights read from its stores. Pool names from the templates jigsaw blocks; the three dispensers are one pool in BDS. Empty elements (an empty template here) come first in six pools.",
+ "source": "BDS 1.26.52.3 Linux: the jigsaw pools BDS builds (elements either with the minecraft:trial_chambers_copper_bulb_degradation processor or with none), weights read from its stores. Pool names from the templates jigsaw blocks; the three dispensers are one pool in BDS. Empty elements (an empty template here) come first in six pools. Fallbacks and element order checked against the running BDS 1.26.60.6 server; entrance_cap falls back to itself there, and the decor pool names its first pot template trial_chambers/decor/EMPTY_pot, which matches no file, so BDS never places that pot.",
  "processors": {
   "minecraft:trial_chambers_copper_bulb_degradation": [
    {
@@ -41,7 +41,7 @@
   },
   {
    "name": "minecraft:trial_chambers/chamber/entrance_cap",
-   "fallback": "minecraft:empty",
+   "fallback": "minecraft:trial_chambers/chamber/entrance_cap",
    "elements": [
     {
      "template": "trial_chambers/chamber/entrance_cap",
@@ -845,7 +845,7 @@
      "weight": 22
     },
     {
-     "template": "trial_chambers/decor/empty_pot",
+     "template": "trial_chambers/decor/EMPTY_pot",
      "weight": 2,
      "processors": ""
     },
